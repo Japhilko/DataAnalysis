@@ -1,0 +1,64 @@
+---
+title: "Multilevel models"
+author: "Jan-Philipp Kolb"
+date: "23. Juli 2015"
+output: ioslides_presentation
+---
+
+## Multilevel models ([Bates](http://www.unil.ch/webdav/site/ee/shared/WorkshopD.pdf))
+
+- Starts with slide 56
+- Dyestuff-Data are explained in the book: "Statistical Methods in Research and Production"
+
+```{r}
+library(lme4)
+fm1 <- lmer(Yield ~ 1 + (1 | Batch), Dyestuff)
+```
+
+fm1 is an objekt of class `mer` (mixed-effects representation).
+
+```{r}
+print(fm1)
+```
+
+
+## Function to apply on fm1
+
+There are some functions to get information about Object fm1
+
+```{r}
+fixef(fm1)
+
+ranef(fm1, drop = TRUE)
+
+fitted(fm1)
+```
+
+## More information
+
+```{r}
+with(Dyestuff, as(Batch, "sparseMatrix"))
+
+invisible(update(fm1, verbose = TRUE))
+
+# (efm1 <- expand(fm1))$S
+
+# (fm1S <- tcrossprod(efm1$T %*% efm1$S))
+
+# (fm1M <- update(fm1, REML = FALSE))
+```
+
+## Resources
+
+- Workshop - [Intro lme4 package](http://www.unil.ch/webdav/site/ee/shared/WorkshopD.pdf)
+ 
+
+ - [Changes lme4 package](lme4.R-forge.R-project.org)
+ 
+
+- [How to find influence points](http://www.r-bloggers.com/influence-me-tools-for-detecting-influential-data-in-multilevel-regression-models/) 
+
+
+ - [Generalized hierarchical models](http://journal.r-project.org/archive/2010-2/RJournal_2010-2_Roennegaard~et~al.pdf)
+ 
+
