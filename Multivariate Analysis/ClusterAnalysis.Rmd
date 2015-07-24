@@ -1,0 +1,33 @@
+---
+title: "Cluster Analysis"
+author: "Jan-Philipp Kolb"
+date: "24. Juli 2015"
+output: ioslides_presentation
+---
+
+
+```{r,echo=F}
+library(ggplot2)
+library(knitr)
+vCA <- T
+```
+
+
+## Buzz words
+
+- Jaccard Coefficient
+- Single Linkage (Nearest neighbour)
+- Complete Linkage
+- Between Group Linkage
+- Within Groups Linkage
+
+
+## [Hierarchical Clustering](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/hclust.html)
+
+Violent crime rates by US state
+
+```{r}
+hc <- hclust(dist(USArrests), "ave")
+plot(hc)
+```
+

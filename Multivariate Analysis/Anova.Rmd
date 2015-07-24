@@ -1,0 +1,88 @@
+---
+title: "Anova"
+author: "Jan-Philipp Kolb"
+date: "24. Juli 2015"
+output: ioslides_presentation
+---
+
+```{r,echo=F}
+library(ggplot2)
+library(knitr)
+vCA <- T
+```
+
+## Example data set
+
+```{r}
+WiWi    <- c(37097 ,45617, 41115 ,32510, 35940, 38247, 33352 ,42367 ,29564 ,34896)
+Sozi    <- c(46109, 28399, 42363 ,32928, 36893, 41527, 41074 ,27341, 36904 ,36247)
+Math    <- c(41527, 36891 ,35220, 43529, 34941, 41565 ,52383 ,36348, 37014 ,37897) 
+
+Studis <- c(WiWi, Sozi ,Math)
+Index <- as.factor(rep(1:3,c(10,10,10)))
+levels(Index) <- c("WiWi", "Sozi", "Math")
+
+Data <- data.frame(gruppe=factor(Index),Studis)
+```
+
+## 
+
+```{r}
+M <- tapply(Studis, Index, mean)
+V <- tapply(Studis, Index, var)
+
+VH.test <- fligner.test(Studis ~ Index)
+VN.test <- bartlett.test(Studis ~ Index)
+```
+
+##
+
+```{r}
+boxplot(Studis ~ Index, col=c(2,3,4)); abline(h=mean(Studis), lty=2)
+lines(c(0.55,1.45), c(mean(WiWi),mean(WiWi)), type="o")
+lines(c(1.55,2.45), c(mean(Sozi),mean(Sozi)), type="o")
+lines(c(2.55,3.45), c(mean(Math),mean(Math)), type="o")
+```
+
+##
+
+```{r}
+summary(aov(Studis ~ Index, data=Data))
+```
+
+##
+
+```{r}
+plot(aov(Studis~Index),1)
+```
+
+##
+```{r}
+plot(aov(Studis~Index),2)
+```
+
+##
+```{r}
+plot(aov(Studis~Index),3)
+```
+
+##
+```{r}
+plot(aov(Studis~Index),4)
+```
+
+##
+```{r}
+plot(aov(Studis~Index),5)
+```
+
+##
+```{r}
+plot(aov(Studis~Index),6)
+```
+
+##
+```{r}
+c <- aov(Studis ~ Index, data=Data)
+TukeyHSD(c,ordered=FALSE,conf.level=0.95)
+```

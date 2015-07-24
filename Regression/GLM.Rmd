@@ -1,0 +1,23 @@
+---
+title: "Generalized linear regression"
+author: "Jan-Philipp Kolb"
+date: "24. Juli 2015"
+output: ioslides_presentation
+---
+
+```{r,echo=F}
+library(ggplot2)
+library(knitr)
+vCA <- T
+```
+
+## Challenger example
+```{r}
+library(faraway)
+data ( orings )
+plot ( damage /6 ~ temp , orings , xlim =c(0 ,100) , ylim =c(0 ,1) ,
+xlab =" temperature", ylab ="accident")
+lmod <- lm( damage /6 ~ temp , orings )
+abline (lmod , col =4); abline (h =0); abline (h=1)
+```
+
