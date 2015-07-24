@@ -40,6 +40,9 @@ Video
 - [python](https://www.python.org/dev/peps/pep-0350/#what-are-codetags)
 
 
+- [IDE](http://xcorr.net/2013/04/17/evaluating-ides-for-scientific-python/)
+
+
 ## Something like Rstudio
 
 -[this Python IDE](http://ask.metafilter.com/270841/People-who-liked-Rstudio-also-liked-this-Python-IDE)
