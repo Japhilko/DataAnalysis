@@ -19,7 +19,7 @@ library(ggplot2)
 
 - [Plotting Factor Analysis Results ](http://mindingthebrain.blogspot.de/2015/04/plotting-factor-analysis-results.html)
 
-[Plotting Factor Analysis Results II](http://rpubs.com/danmirman/plotting_factor_analysis)
+- [Plotting Factor Analysis Results II](http://rpubs.com/danmirman/plotting_factor_analysis)
 
 
 ## Get data set
@@ -59,17 +59,4 @@ ggplot(loadings.m, aes(Test, abs(Loading), fill=Loading)) +
 
 ## A ggplot 2 graphic
 
-```{r,echo=F}
-library(ggplot2)
-ggplot(loadings.m, aes(Test, abs(Loading), fill=Loading)) + 
-  facet_wrap(~ Factor, nrow=1) + #place the factors in separate facets
-  geom_bar(stat="identity") + #make the bars
-  coord_flip() + #flip the axes so the test names can be horizontal  
-  #define the fill color gradient: blue=positive, red=negative
-  scale_fill_gradient2(name = "Loading", 
-                       high = "blue", mid = "white", low = "red", 
-                       midpoint=0, guide=F) +
-  ylab("Loading Strength") + #improve y-axis label
-  theme_bw(base_size=10) #use a black-and0white theme with set font size
-```
-
+![factor analysis](http://i2.wp.com/3.bp.blogspot.com/-vSVrsYeTRLk/VTRYZF_YKKI/AAAAAAAABJc/Jn3OFn5Aikc/s1600/fig1.png?zoom=1.5&resize=456%2C326)

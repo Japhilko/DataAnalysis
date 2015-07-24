@@ -1,0 +1,77 @@
+---
+title: "Principal Component Analysis"
+author: "Jan-Philipp Kolb"
+date: "24. Juli 2015"
+output: ioslides_presentation
+---
+
+
+```{r,echo=F}
+vCA <- T
+library(knitr)
+```
+
+
+## Intro Principal Component Analysis
+
+- Al-Ahmadgaid Asaad [Analysis Programming](http://alstatr.blogspot.de/2014/12/principal-component-analysis-on-imaging.html)
+
+- [Analysis with Programming](http://alstatr.blogspot.de/)
+
+
+## Intro Principal Component Analysis
+
+![PCA](http://i2.wp.com/1.bp.blogspot.com/-oIhTE11jN2M/VJal1FsTndI/AAAAAAAACCU/BQOhihmxKbg/s1600/Screen%2BShot%2B2014-12-21%2Bat%2B6.49.01%2BPM.png?zoom=1.5&resize=456%2C310)
+
+
+## Intro Principal Component Analysis
+
+![Intro2](http://i1.wp.com/1.bp.blogspot.com/-wXHcQqUbIg4/VJuuXbZlUKI/AAAAAAAACGc/ythfr395Z5s/s1600/Screen%2BShot%2B2014-12-25%2Bat%2B2.25.12%2BPM.png?zoom=1.5&resize=456%2C382)
+
+
+## [Plot Principal Component Analysis](https://martinsbioblogg.wordpress.com/2013/06/26/using-r-two-plots-of-principal-component-analysis/)
+```{r}
+sample.groups <- c(rep(1, 10), rep(2, 10), rep(3, 10),
+  rep(4, 10), rep(5, 10))
+variable.groups <- c(rep(1, 10), rep(2, 10), rep(3, 10),
+  rep(4, 10), rep(5, 10), rep(6, 10),
+  rep(7, 10))
+ 
+data <- matrix(nrow=length(sample.groups), ncol=70)
+base.data <- matrix(nrow=length(sample.groups), ncol=7)
+ 
+for (j in 1:ncol(base.data)) {
+  mu <- rnorm(1, 0, 4)
+  sigma <- runif(1, 5, 10)
+  base.data[,j] <- sample.groups*mu +
+  rnorm(length(sample.groups), 0, sigma)
+}
+```
+
+
+## Prepare data
+
+```{r}
+for (j in 1:ncol(data)) {
+  mu <- runif(1, 0, 4)
+  data[,j] <- base.data[,variable.groups[j]] +
+  rnorm(length(sample.groups), mu, 10)
+}
+```
+
+
+## qplot
+
+```{r}
+library(ggplot2)
+library(reshape2)
+qplot(x=Var1, y=Var2, data=melt(cor(data)), geom="tile",
+fill=value)
+```
+
+
+
+## Resources
+
+- [Principal Component Analysis on Imaging](http://www.r-bloggers.com/principal-component-analysis-on-imaging/)
+
