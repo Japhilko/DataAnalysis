@@ -8,16 +8,173 @@ output: ioslides_presentation
 ```{r,echo=F}
 library(ggplot2)
 library(knitr)
+library(MASS)
 vCA <- T
 ```
 
 ## Challenger example
-```{r}
+```{r,eval=F,cache=vCA,warning=F}
 library(faraway)
-data ( orings )
+data(orings)
 plot ( damage /6 ~ temp , orings , xlim =c(0 ,100) , ylim =c(0 ,1) ,
 xlab =" temperature", ylab ="accident")
 lmod <- lm( damage /6 ~ temp , orings )
 abline (lmod , col =4); abline (h =0); abline (h=1)
+```
+
+## Challenger example
+```{r,echo=F,cache=vCA,warning=F}
+library(faraway)
+data(orings)
+plot ( damage /6 ~ temp , orings , xlim =c(0 ,100) , ylim =c(0 ,1) ,
+xlab =" temperature", ylab ="accident")
+lmod <- lm( damage /6 ~ temp , orings )
+
+abline (lmod , col =4); abline (h =0); abline (h=1)
+```
+
+
+
+## Galapagos example
+```{r,cache=vCA,warning=F}
+data ( gala )
+gala <-gala [,-2]
+gala $ Species <- round ( sqrt ( gala $ Species ))
+head ( gala )
+```
+
+
+## Galapagos example - splom
+
+```{r,cache=vCA,warning=F}
+library ( solaR )
+splom(gala [,c(1 ,2 ,3 ,4)])
+```
+
+
+## Logit Link:
+
+```{r,warning=F}
+x <-seq (0,1, by =.001)
+plot ( binomial ()$ linkfun (x),x, xlab =" Logit (p)"
+       ,ylab ="p",type ="l")
+```
+
+## Probit Link:
+
+```{r,warning=F}
+plot(binomial ( link ="probit")$ linkfun (x),x, xlab ="Probit(p)"
+     ,ylab ="p",type ="l")
+abline (h=c(0 ,1))
+abline (h=0.5 , col=" blue ")
+abline (v=0, col=" blue ")
+```
+
+## Logit vs. Probit
+
+- [binomial data](http://stat.ethz.ch/education/semesters/WS_2005_06/asr/folien.pdf)
+
+
+##
+
+```{r,warning=F}
+summary (glm(am ~ hp + wt , data =mtcars , family = binomial ) )
+```
+
+## Multinomial logistic regression
+
+```{r,warning=F}
+library ( MASS )
+example ( birthwt )
+```
+
+## 
+```{r,warning=F}
+head (bwt)
+```
+
+##
+```{r,warning=F}
+summary (bwt)
+```
+
+## multinom - nnet
+```{r,warning=F}
+library ( nnet )
+multinom ( formula = low ~ ., data = bwt)
+```
+
+## Multinomial regression
+```{r,warning=F}
+library(faraway)
+data(nes96)
+head(nes96 [,c(1:7)])
+```
+
+## 
+```{r,warning=F}
+data ( nes96 )
+sPID <- nes96 $PID
+summary ( sPID )
+```
+
+##
+```{r,warning=F}
+levels ( sPID ) <- c(" Democrat "," Democrat "," Independent ",
+                     " Independent ", " Independent "," Republican "," Republican ")
+summary ( sPID )
+```
+
+## 
+```{r,warning=F}
+inca <- c (1.5 ,4 ,6 ,8 ,9.5 ,10.5 ,11.5 ,12.5 ,13.5 ,14.5 ,16 ,18.5 ,
+           21 ,23.5 ,27.5 ,32.5 ,37.5 ,42.5 ,47.5 ,55 ,67.5 ,82.5 ,97.5 ,115)
+nincome <- inca [ unclass ( nes96 $ income )]
+summary ( nincome )
+```
+
+##
+```{r,warning=F}
+barplot ( table ( nes96 $ educ ),col=" chocolate1 ")
+```
+
+## 
+```{r,warning=F}
+matplot(prop.table(table(nes96$educ,sPID),1), type ="l",
+        xlab =" Education",ylab ="Proportion",lty=c(1 ,2 ,5))
+```
+
+##
+```{r,warning=F}
+library ( nnet )
+mmod <- multinom(sPID~age + educ + nincome , nes96 )
+```
+
+##
+```{r,warning=F}
+mmodi <- step ( mmod )
+```
+
+## Ordered Logistic or Probit Regression
+```{r,warning=F}
+library ( MASS )
+pomod <- polr ( sPID ~ age + educ + nincome , nes96 )
+```
+
+
+## Deviance and nr. of parameter:
+```{r,warning=F}
+c( deviance ( pomod ), pomod $edf)
+```
+
+## Variable selection
+```{r,warning=F}
+pomodi <- step ( pomod )
+```
+
+## Summary of model
+
+```{r}
+summary ( pomodi )
 ```
 

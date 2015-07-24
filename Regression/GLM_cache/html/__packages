@@ -1,0 +1,10 @@
+base
+ggplot2
+knitr
+MASS
+faraway
+zoo
+lattice
+RColorBrewer
+latticeExtra
+solaR

@@ -1,0 +1,30 @@
+---
+title: "Untitled"
+author: "Jan-Philipp Kolb"
+date: "24. Juli 2015"
+output: ioslides_presentation
+---
+
+## Intro to Python
+
+- [An Informal Introduction to Python](https://docs.python.org/2/tutorial/introduction.html)
+
+- [Introduction to Python for Econometrics, Statistics and Data Analysis](https://www.kevinsheppard.com/images/0/09/Python_introduction.pdf)
+
+- [How to Think Like a Computer Scientist](http://openbookproject.net/thinkcs/python/english2e/)
+
+- [Which Integrated development environment (IDE) to choose](https://wiki.python.org/moin/IntegratedDevelopmentEnvironments)
+
+- [How to learn Python and R](http://www.thinkor.org/2013/10/how-to-learn-python-and-r-data-science.html)
+
+## Google python class
+
+- [Google python class - Intro](https://developers.google.com/edu/python/introduction)
+
+Video
+- [Google python class](https://www.youtube.com/watch?v=tKTZoB2Vjuk&feature=youtu.be)
+
+
+## Popularity of Python
+
+- [10 Reasons Python Rocks for Research](https://www.stat.washington.edu/~hoytak/blog/whypython.html)
