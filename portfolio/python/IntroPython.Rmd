@@ -7,6 +7,8 @@ output: ioslides_presentation
 
 ## Intro to Python
 
+- [Python for Non Programmers](https://wiki.python.org/moin/BeginnersGuide/NonProgrammers)
+
 - [An Informal Introduction to Python](https://docs.python.org/2/tutorial/introduction.html)
 
 - [Introduction to Python for Econometrics, Statistics and Data Analysis](https://www.kevinsheppard.com/images/0/09/Python_introduction.pdf)
@@ -28,3 +30,16 @@ Video
 ## Popularity of Python
 
 - [10 Reasons Python Rocks for Research](https://www.stat.washington.edu/~hoytak/blog/whypython.html)
+
+## More links
+
+- [ipython](http://ipython.org/)
+
+- [ipython](http://ipython.org/notebook.html)
+
+- [python](https://www.python.org/dev/peps/pep-0350/#what-are-codetags)
+
+
+## Something like Rstudio
+
+-[this Python IDE](http://ask.metafilter.com/270841/People-who-liked-Rstudio-also-liked-this-Python-IDE)
