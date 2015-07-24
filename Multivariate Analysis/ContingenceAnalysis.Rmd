@@ -1,0 +1,228 @@
+---
+title: "ContingenceAnalysis"
+author: "Jan-Philipp Kolb"
+date: "24. Juli 2015"
+output: ioslides_presentation
+---
+
+```{r,echo=F}
+vCA <- T
+library(knitr)
+```
+
+
+
+## Create basic data
+
+```{r,cache=vCA}
+sex <- rep(1,100)
+sex[sample(1:100,50)] <- 2
+```
+
+```{r}
+smog <- rep(1,100)
+smog[sample(which(sex==1),20)]<- 2
+smog[sample(which(sex==2),24)]<- 2
+```
+
+
+```{r}
+kont <- cbind(smog,sex)
+```
+
+## First summary statistics
+
+```{r}
+kont1 <- table(smog,sex)
+kable(data.frame(kont1))
+```
+
+
+## `chisq.test`
+
+```{r}
+chi <- chisq.test(kont1)
+kable(data.frame(chi$expected))
+```
+
+
+
+```{r}
+mu_e <- kont1
+mu_e[1,1] <- prop.table(colSums(kont1))[1]*prop.table(rowSums(kont1))[1]
+mu_e[1,2] <- prop.table(colSums(kont1))[1]*prop.table(rowSums(kont1))[2]
+mu_e[2,1] <- prop.table(colSums(kont1))[2]*prop.table(rowSums(kont1))[1]
+mu_e[2,2] <- prop.table(colSums(kont1))[2]*prop.table(rowSums(kont1))[2]
+sum(((prop.table(kont1) - mu_e)^2) /mu_e)
+```
+
+## Phi
+
+```{r}
+sumK <- summary(kont1)
+n <- sumK$n.cases
+chisq <- sumK$statistic
+
+phi= sqrt(chisq/n)
+phi
+```
+
+## Cramer's V
+
+```{r}
+kon= sqrt (chisq / (n+chisq))
+kon
+```
+
+## Odds ratios
+
+```{r,message=F,warning=F}
+library(vcd)
+```
+
+## Data set [CoalMiners](https://cran.r-project.org/web/packages/vcd/vcd.pdf)
+
+```{r,echo=F}
+kable(head(data.frame(CoalMiners),n=8))
+```
+
+## Compute the Odds
+
+```{r}
+a <- CoalMiners [1 ,1 ,1]* CoalMiners [2 ,2 ,1]
+b <- CoalMiners [2 ,1 ,1]* CoalMiners [1 ,2 ,1]
+log(a/b)
+```
+
+
+## Odds ratios
+
+```{r}
+summary (l <- oddsratio ( CoalMiners ))
+```
+
+
+## Plot odds ratios
+
+```{r,chache=vCA}
+plot(oddsratio ( CoalMiners ))
+```
+
+## Fourfold plot
+
+```{r,chache=vCA}
+fourfold(CoalMiners)
+```
+
+
+## Example from [Sachs](https://books.google.de/books?hl=de&lr=&id=MLElBAAAQBAJ&oi=fnd&pg=PA1&dq=Angewandte+Statistik:+Methodensammlung+Mit+R&ots=Z8lQyvaNvv&sig=v0nbdnOOoG4fGy2SOJAb2vrE6To#v=onepage&q=Angewandte%20Statistik%3A%20Methodensammlung%20Mit%20R&f=false) S. 599
+
+
+```{r}
+a <- c(123,233,56,35)
+aLev <- c("no","vocational","specialist","university")
+
+aLev2 <- c("n","v","s","u")
+
+education <- rep(aLev,a)
+b <- c(86,19,18)
+bLev <- c("<= 6 months","7-12 months",">12 months") 
+bLev2 <- c("short","intermediate","long")
+
+b1 <- c(170,43,20)
+b2 <- c(40,11,5)
+b3 <- c(28,4,3)
+
+duration  <- c(rep(bLev,b),rep(bLev,b1),rep(bLev,b2),rep(bLev,b3))
+```
+
+## Example data set
+
+```{r,echo=F}
+kable(table(education,duration ))
+```
+
+## mosaicplot
+
+```{r}
+education <- rep(aLev2,a)
+duration <- c(rep(bLev2,b),rep(bLev2,b1),rep(bLev2,b2),rep(bLev2,b3))
+
+mosaicplot(table(education,duration ),shade=T,main="")
+```
+
+## Deviance
+
+```{r}
+y <- c(86,19,18,170,43,20,40,11,5,28,4,3)
+n <- sum(y)
+tab <- matrix(y,byrow=TRUE,nrow=4)
+time.sum <- apply(tab,2, sum)
+ausb.sum <- apply(tab,1, sum)
+
+L.c <- c(0)
+for (i in 1:4){for (j in 1:3){
+  L.c <- L.c + tab[i,j]* log(ausb.sum[i]*time.sum[j]/n^2)
+}}
+
+L.sat <- -2*sum(y*log(y/n))
+
+devianz <- L.c - L.sat
+```
+
+## glm
+
+```{r}
+chisq.test(tab)
+
+education <- c(rep("K",3),rep("L",3), rep("F",3),rep("H",3))
+time <- rep(c("k","m","l"),4)
+tab <- data.frame(education,time,y)
+fit.sat <- glm(y~time + education + time:education, family=poisson, data=tab)
+```
+
+
+## Example from [Thompson](https://home.comcast.net/~lthompson221/Splusdiscrete2.pdf)
+
+```{r}
+table.8.3<-data.frame(expand.grid(
+marijuana=factor(c("Yes","No"),levels=c("No","Yes")),
+cigarette=factor(c("Yes","No"),levels=c("No","Yes")),
+alcohol=factor(c("Yes","No"),levels=c("No","Yes"))),
+count=c(911,538,44,456,3,43,2,279))
+```
+
+## Data set
+
+```{r,echo=F}
+kable(table.8.3)
+```
+
+## loglinear model
+
+```{r}
+library (MASS)
+fitACM <-loglm ( count ~ alcohol * cigarette * marijuana , data = table.8.3
+,param =T,fit=T)
+summary(fitACM)
+```
+
+## fitted values
+
+```{r,eval=F}
+fitted ( fitACM )
+```
+
+
+```{r,echo=F}
+kable(data.frame(fitted ( fitACM )))
+```
+
+
+## Regression output
+
+```{r}
+# http://www.princeton.edu/~otorres/NiceOutputR.pdf
+library(stargazer)
+```
+

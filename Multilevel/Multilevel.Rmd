@@ -5,6 +5,13 @@ date: "23. Juli 2015"
 output: ioslides_presentation
 ---
 
+## Intro Regression
+
+- [Multivariate statistics](http://www.statistics4u.info/fundstat_germ/cc_multivar_stat.html)
+
+![cartoon](http://www.statistics4u.info/fundstat_germ/img/gm_bivarstat_tusche.png)
+
+
 ## Multilevel models ([Bates](http://www.unil.ch/webdav/site/ee/shared/WorkshopD.pdf))
 
 - Starts with slide 56
