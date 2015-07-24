@@ -5,7 +5,8 @@ Spyder Editor
 This is a temporary script file.
 """
 
-
+# install new things with pip
+# e.g. pip install rodeo
 spam = 1
 
 2 +2 
