@@ -13,4 +13,18 @@ print("Hello world")
 myName = input("What is your name?")
 
 print(myName)
+if(myName =="Philipp"):
+	print("Hallo" , myName)
+elif(myName =="Bob"):
+		print("Bob is OK")
+else:
+	print("You are OK")
 
+
+# type python to start python in cmd
+# Ctrl + Z to quit
+# exit()
+
+# https://www.youtube.com/watch?v=6r1DFGpBzrc
+
+	

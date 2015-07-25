@@ -1,0 +1,8 @@
+def helloWorld():
+myNr = input("Enter a number")
+if(myNr ==7):
+	print("Great number" , myName)
+
+
+	
+helloWorld()
