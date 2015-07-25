@@ -42,6 +42,15 @@ Video
 
 - [IDE](http://xcorr.net/2013/04/17/evaluating-ides-for-scientific-python/)
 
+## Even more Links
+
+<http://civilstat.com/2012/10/javascript-and-d3-for-r-users-part-2-running-off-the-r-server-instead-of-python/>
+
+<http://rforwork.info/2015/05/28/an-r-enthusiast-goes-pythonic/>
+
+<http://www.r-bloggers.com/choosing-r-or-python-for-data-analysis-an-infographic/>
+
+
 
 ## Something like Rstudio
 

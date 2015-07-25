@@ -1,0 +1,14 @@
+---
+title: "Julia Language"
+author: "Jan-Philipp Kolb"
+date: "25. Juli 2015"
+output: ioslides_presentation
+---
+
+## Julia Language
+
+<http://julialang.org/learning/>
+
+<http://www.inwt-statistics.de/blog-artikel-lesen/Statistik-Software_R.html>
+
+<https://github.com/openlayers/openlayers>
