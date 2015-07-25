@@ -23,8 +23,13 @@ output: ioslides_presentation
 
 - [Google python class - Intro](https://developers.google.com/edu/python/introduction)
 
-Video
+## Videos
 - [Google python class](https://www.youtube.com/watch?v=tKTZoB2Vjuk&feature=youtu.be)
+
+- [Zero to Hero with Python](https://www.youtube.com/watch?v=9uq3w6JJS00)
+```{r,echo=F}
+ # bis Minute 28:14
+```
 
 
 ## Popularity of Python
@@ -55,3 +60,7 @@ Video
 ## Something like Rstudio
 
 -[this Python IDE](http://ask.metafilter.com/270841/People-who-liked-Rstudio-also-liked-this-Python-IDE)
+
+-[ipython notebook](http://ipython.org/install.html)
+
+-[Video - Intro to ipython notebook](https://www.youtube.com/watch?v=DUCQ_HZamhs)
