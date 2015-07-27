@@ -64,3 +64,25 @@ output: ioslides_presentation
 -[ipython notebook](http://ipython.org/install.html)
 
 -[Video - Intro to ipython notebook](https://www.youtube.com/watch?v=DUCQ_HZamhs)
+
+
+## Python
+
+<http://civilstat.com/2012/10/javascript-and-d3-for-r-users-part-2-running-off-the-r-server-instead-of-python/>
+
+<http://rforwork.info/2015/05/28/an-r-enthusiast-goes-pythonic/>
+
+<http://www.r-bloggers.com/choosing-r-or-python-for-data-analysis-an-infographic/>
+
+## Further Links
+
+- [Execute script](http://www.python-kurs.eu/skript_ausfuehren.php)
+
+- [Python Course](http://www.python-kurs.eu/python_tkinter.php)
+
+
+- [workflow SAS, Python und R](http://proceedings.esri.com/library/userconf/proc14/papers/480_724.pdf)
+
+- [ArPy](http://video.esri.com/watch/1819/python-map-automation-_dash_-introduction-to-arcpymapping)
+
+
