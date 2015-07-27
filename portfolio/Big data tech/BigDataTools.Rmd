@@ -1,0 +1,35 @@
+---
+title: "Big data technologies"
+author: "Jan-Philipp Kolb"
+date: "20. Juli 2015"
+output: ioslides_presentation
+---
+
+## Spark
+
+- [Running Spark on R](http://www.infoq.com/news/2014/02/sparkr-announcement)
+
+- [Intro to SparkR](http://de.slideshare.net/KienDang5/introduction-to-sparkr)
+
+- [Spark summit](https://www.youtube.com/watch?v=mHF3UPqLOL8)
+
+- [Distributed computing with spark](https://www.youtube.com/watch?list=PL87GtQd0bfJzt1mZZQSj7NCRLeFdh_How&t=86&v=-TiMNoj7Rrs)
+
+- [Starting with Spark](http://strataconf.com/big-data-conference-ca-2015/public/content/apache-spark)
+
+## Buzz words 
+
+- Resiliant distributed datasets (RDD)
+- MapReduce
+
+
+## The R-package
+
+[Hints on the usage](http://amplab-extras.github.io/SparkR-pkg/)
+
+```{r,eval=F}
+library(devtools)
+install_github("amplab-extras/SparkR-pkg", subdir="pkg")
+library(SparkR)
+```
+

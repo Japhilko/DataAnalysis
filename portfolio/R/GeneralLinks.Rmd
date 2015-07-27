@@ -1,0 +1,98 @@
+---
+title: "Links/Resources on R"
+author: "Jan-Philipp Kolb"
+date: "27. Juli 2015"
+output: ioslides_presentation
+---
+
+
+## Popularity R
+
+- On [Usage of R in Germany](http://www.gulli.com/news/23740-programmiersprache-r-in-der-wissenschaft-immer-beliebter-2014-04-24). R in an [article in the New York Times](http://community.oreilly.de/blog/2011/01/18/statistiksoftware-r/)
+
+- [Data Analysts Captivated by R’s Power](http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?_r=1&)
+
+- [Top 100 R packages for 2013 (Jan-May)](http://www.r-statistics.com/2013/06/top-100-r-packages-for-2013-jan-may/)
+
+- [A list of R packages, by popularity](http://blog.revolutionanalytics.com/2013/06/a-list-of-r-packages-by-popularity.html)
+
+## Intro R
+
+- [Thomas Girke - Programming in R](http://manuals.bioinformatics.ucr.edu/home/programming-in-r)
+
+- [Teaching R](http://www.r-bloggers.com/teaching-a-short-topic-to-beginner-r-users/)
+
+- [Data Wrangling etc.](http://stat545-ubc.github.io/)
+
+- [youtube on R](http://www.revolutionanalytics.com/what-r)
+
+
+## R conferences
+
+- [Some R conferences in 2015](http://www.r-bloggers.com/some-r-conferences-in-2015/)
+
+- [Get an overview of events](http://10times.com/)
+
+- [Inspire Conference](http://inspire.ec.europa.eu/events/conferences/inspire_2014/page/home)
+
+## Writing own packages
+
+- [R packages by Hadley Wickham](http://r-pkgs.had.co.nz/description.html)
+
+## [xkcd comics](http://xkcd.com/1138/)
+
+![comic](http://imgs.xkcd.com/comics/heatmap.png)
+
+## Further Languages
+
+Comparison of R and other statistical programs
+
+<http://blog.datacamp.com/statistical-language-wars-the-infograph/>
+
+<http://www.rzbt.haw-hamburg.de/dankert/ccppjava.html/>
+
+## New Developments UseR 2015 in Aalborg
+
+[Overview in German](http://blog.eoda.de/2015/07/01/eoda-auf-der-user-conference-2015-in-aalborg-die-eindruecke-vom-tutorial-tuesday/)
+
+[Another overview](http://blog.revolutionanalytics.com/user-groups/)
+
+Have a look at Docker
+<https://www.docker.com/>
+
+[network analysis with igraph](http://igraph.org/r/)
+
+[Tutorial RHadoop](http://hortonworks.com/hadoop-tutorial/using-rhadoop-to-predict-visitors-amount/)
+
+<http://www.rdatamining.com/big-data/r-hadoop-setup-guide>
+
+[Analyze and manage Facebook ads from R](https://github.com/cardcorp/fbRads)
+
+
+Get into contact
+<https://ropensci.org/community/#join-us>
+<https://www.r-consortium.org/>
+
+[An alternative for rstudio](http://www.openanalytics.eu/downloads/architect)
+
+## Further links
+
+<http://www.r-bloggers.com/introducing-v8-an-embedded-javascript-engine-for-r/>
+
+<http://jsfiddle.net/user/opencpu/fiddles/>
+
+<https://www.opencpu.org/posts/v8-release-0-2/>
+<https://www.r-bloggers.com/introducing-v8-an-embedded-javascript-engine-for-r/>
+
+<http://rforge.net/JRI/index.html>
+
+
+```{r,eval=F}
+system.file("jri",package="rJava")
+```
+
+```{r}
+# install.packages("DiscreteRV")
+```
+
+
