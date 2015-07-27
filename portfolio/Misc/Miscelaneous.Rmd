@@ -5,12 +5,15 @@ date: "27. Juli 2015"
 output: ioslides_presentation
 ---
 
-## Data science
+## [Data scientist](http://www.r-bloggers.com/oreilly-data-scientist-salary-and-tools-survey-november-2014/)
 
-- [Data scientist](http://www.r-bloggers.com/oreilly-data-scientist-salary-and-tools-survey-november-2014/)
+<img src="http://lazowska.cs.washington.edu/MS/DS.wordle.jpg" alt="alt text" width="700x" height="500x">
 
 
-![pic data science](http://lazowska.cs.washington.edu/MS/DS.wordle.jpg)
+## Way to become a data scientis
+
+<img src="http://nirvacana.com/thoughts/wp-content/uploads/2013/07/RoadToDataScientist1.png" alt="alt text" width="700x" height="500x">
+
 
 ## Java
 

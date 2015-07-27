@@ -5,6 +5,13 @@ date: "5. Mai 2015"
 output: ioslides_presentation
 ---
 
+
+## Listings environment
+
+- [Change font size](http://tex.stackexchange.com/questions/180222/how-to-change-font-size-for-specific-lstlisting)
+- [Define a comment](http://tex.stackexchange.com/questions/89574/language-option-supported-in-listings)
+- [Manual on the listings package](http://texdoc.net/texmf-dist/doc/latex/listings/listings.pdf)
+
 ## XeLaTeX
 
 <http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=xetex>

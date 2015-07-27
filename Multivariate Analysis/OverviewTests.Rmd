@@ -1,0 +1,12 @@
+---
+title: "Overview Statistical Tests"
+author: "Jan-Philipp Kolb"
+date: "27. Juli 2015"
+output: html_document
+---
+
+## Overview
+
+- [Overview](http://statistik-dresden.de/archives/6026)
+
+![Tests](http://www.methodenberatung.uzh.ch/static/entscheidbaum/entscheidbaum.jpg)
