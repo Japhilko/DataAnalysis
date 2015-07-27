@@ -7,7 +7,7 @@ output: ioslides_presentation
 
 ## Intro to Python
 
-- - [Python webpage](https://www.python.org/)
+- [Python webpage](https://www.python.org/)
 
 - [Python for Non Programmers](https://wiki.python.org/moin/BeginnersGuide/NonProgrammers)
 
@@ -33,6 +33,7 @@ output: ioslides_presentation
  # bis Minute 28:14
 ```
 
+- [Video on python](https://www.youtube.com/watch?v=F1_FqvbXHb4)
 
 ## Popularity of Python
 
@@ -53,6 +54,7 @@ output: ioslides_presentation
 
 - [r enthusiast goes pythonic](http://rforwork.info/2015/05/28/an-r-enthusiast-goes-pythonic/)
 
+- [Think of python](http://www.greenteapress.com/thinkpython/thinkpython.pdf)
 
 ## [R or Python for data analysis?](http://blog.datacamp.com/r-or-python-for-data-analysis/)
 

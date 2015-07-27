@@ -10,3 +10,5 @@ output: ioslides_presentation
 - [Hadley Wickham - High performance functions with Rcpp](http://adv-r.had.co.nz/Rcpp.html)
 
 - [Rcpp: Seamless R and C++ Integration](http://www.quantide.com/R/ramarro-chapter-10/)
+
+- [Video on cpp - Integrating R with C++: Rcpp, RInside, and RProtobuf ](https://www.youtube.com/watch?v=UZkaZhsOfT4#t=232)

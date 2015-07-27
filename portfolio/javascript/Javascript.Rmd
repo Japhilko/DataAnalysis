@@ -7,12 +7,21 @@ output: ioslides_presentation
 
 ## Javascript
 
+- [Intro Javascript](https://facebook.github.io/react/docs/tutorial.html)
+
 - [Fiddles](http://jsfiddle.net/user/opencpu/fiddles/)
+
+- [Videos on Javascript](https://facebook.github.io/react/docs/videos.html)
+
+- [Bets practices for Javascript beginners](http://code.tutsplus.com/tutorials/24-javascript-best-practices-for-beginners--net-5399)
+
+[Grunt The JavaScript Task Runner](http://gruntjs.com/)
+
+## R and Javascript
 
 - Jeroen Ooms - [Introducing V8: An Embedded JavaScript Engine for R](https://www.opencpu.org/posts/v8-release-0-2/)
 <https://www.r-bloggers.com/introducing-v8-an-embedded-javascript-engine-for-r/>
 
-## R and Javascript
 
 - [Statistical computation in JavaScript — am I nuts?](http://www.r-bloggers.com/statistical-computation-in-javascript-am-i-nuts/)
 
@@ -29,7 +38,7 @@ output: ioslides_presentation
 library(r2d3)
 ```
 
-
+- [Introducing shinyjs:](http://deanattali.com/2015/04/23/shinyjs-r-package/) perform common JavaScript operations in Shiny apps using plain R code
 
 ## Running javascript using V8
 

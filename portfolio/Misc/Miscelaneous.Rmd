@@ -14,12 +14,28 @@ output: ioslides_presentation
 
 <img src="http://nirvacana.com/thoughts/wp-content/uploads/2013/07/RoadToDataScientist1.png" alt="alt text" width="700x" height="500x">
 
+## Become-a-Computer-Scientist
+
+- [Data scientist but where](http://ibmexperts.computerwoche.de/analytics-big-data/artikel/data-scientist-werden-aber-wo)
+- [Become-a-Computer-Scientist](http://www.wikihow.com/Become-a-Computer-Scientist)
+- [Coursera specializations](http://www.r-bloggers.com/coursera-specializations-data-science-systems-biology-python-programming/)
+
 
 ## Videos on data science
 
-## 
 <a href="https://www.youtube.com/watch?v=fZuDwiM1XBQ" target="_blank"><img src="https://raw.githubusercontent.com/Japhilko/DataAnalysis/master/data/figure/SecretsDataScience.PNG" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="https://www.youtube.com/watch?v=wki0BqlztCo&list=PLok5gPJ2j9hPgEicGynF3jxDSvGylw5w0" target="_blank"><img src="https://raw.githubusercontent.com/Japhilko/DataAnalysis/master/data/figure/ExpressingYourself inR.PNG" width="240" height="180" border="10" /></a>
+<a href="https://www.youtube.com/watch?v=3_1reLdh5xw" target="_blank"><img src="https://raw.githubusercontent.com/Japhilko/DataAnalysis/master/data/figure/DataScienceWhere2go.PNG" width="240" height="180" border="10" /></a>
+
+<a href="https://www.youtube.com/watch?v=c52IOlnPw08" target="_blank"><img src="https://raw.githubusercontent.com/Japhilko/DataAnalysis/master/data/figure/How2becomeDataScientist.PNG" width="240" height="180" border="10" /></a>
+
+
+## Writing R-packages
+
+- [Packages in Rstudio](http://www.r-bloggers.com/smart-hackathon-day-2-writing-packages-in-rstudio/)
+- [Overview R-packages](http://www.rstudio.com/ide/docs/packages/overview)
+
 
 ## Java
 
@@ -44,9 +60,32 @@ library(rJava)
 
 - [Which programming language should you learn](http://www.rzbt.haw-hamburg.de/dankert/ccppjava.html/)
 
+- [Language war](http://www.r-bloggers.com/r-beats-python-r-beats-julia-anyone-else-wanna-challenge-r/)
+
+- [Don't R alone! A guide to tools for collaboration with R](http://www.noamross.net/blog/2013/1/7/collaborating-with-r.html)
+
+
+## Ruby
+
+-[Jekyll](http://nicolewhite.github.io/r/2015/02/07/r-blogging-with-rmarkdown-knitr-jekyll.html)
+-[Ruby webpage](https://www.ruby-lang.org/en/downloads/)
+-[Try ruby](http://tryruby.org/levels/1/challenges/0)
+
+
 
 ## Links
 
 - [Google programming language GO](https://golang.org/)
 - [Open CPU](https://www.opencpu.org/)
+- [KNIME](https://tech.knime.org/getting-started)
 
+
+- [kaggle](https://www.kaggle.com/)
+
+
+
+
+## [net awards](https://thenetawards.com/previous-winners/)
+
+- [Zach Holman](http://zachholman.com/)
+- [Zach Holman - What They Don't Tell You About Public Speaking](http://zachholman.com/posts/what-they-dont-tell-you-about-public-speaking/)
