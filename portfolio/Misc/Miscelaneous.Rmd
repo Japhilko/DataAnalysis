@@ -21,6 +21,7 @@ output: ioslides_presentation
 
 ```{r,eval=F}
 system.file("jri",package="rJava")
+library(rJava)
 ```
 
 - [Clojure](http://clojure.org/) is a dynamic programming language that targets the Java Virtual Machine

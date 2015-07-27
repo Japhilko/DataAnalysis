@@ -19,6 +19,10 @@ output: ioslides_presentation
 
 - [R hadoop stack](http://www.r-bloggers.com/become-an-effective-data-hacker-with-the-r-hadoop-stack/)
 
+- [Hadoop on Windows](https://wiki.apache.org/hadoop/Hadoop2OnWindows)
+
+- [Alternatives to Hadoop](http://siliconangle.com/blog/2011/11/03/3-alternatives-to-apache-hadoop/)
+
 - [Mapreduce](http://blog.revolutionanalytics.com/2011/09/mapreduce-hadoop-r.html)
 
 ## Spark
