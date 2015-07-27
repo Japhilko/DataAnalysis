@@ -43,56 +43,20 @@ output: ioslides_presentation
 
 ![comic](http://imgs.xkcd.com/comics/heatmap.png)
 
-## Further Languages
-
-Comparison of R and other statistical programs
-
-<http://blog.datacamp.com/statistical-language-wars-the-infograph/>
-
-<http://www.rzbt.haw-hamburg.de/dankert/ccppjava.html/>
 
 ## New Developments UseR 2015 in Aalborg
 
-[Overview in German](http://blog.eoda.de/2015/07/01/eoda-auf-der-user-conference-2015-in-aalborg-die-eindruecke-vom-tutorial-tuesday/)
+- [Overview in German](http://blog.eoda.de/2015/07/01/eoda-auf-der-user-conference-2015-in-aalborg-die-eindruecke-vom-tutorial-tuesday/)
 
-[Another overview](http://blog.revolutionanalytics.com/user-groups/)
+- [Another overview](http://blog.revolutionanalytics.com/user-groups/)
 
-Have a look at Docker
-<https://www.docker.com/>
+- Have a look at [Docker](https://www.docker.com/)
 
-[network analysis with igraph](http://igraph.org/r/)
+- [Network analysis with igraph](http://igraph.org/r/)
 
-[Tutorial RHadoop](http://hortonworks.com/hadoop-tutorial/using-rhadoop-to-predict-visitors-amount/)
+- [Analyze and manage Facebook ads from R](https://github.com/cardcorp/fbRads)
 
-<http://www.rdatamining.com/big-data/r-hadoop-setup-guide>
-
-[Analyze and manage Facebook ads from R](https://github.com/cardcorp/fbRads)
-
-
-Get into contact
-<https://ropensci.org/community/#join-us>
+- Get into contact - [RopenSci](https://ropensci.org/community/#join-us)
 <https://www.r-consortium.org/>
 
-[An alternative for rstudio](http://www.openanalytics.eu/downloads/architect)
-
-## Further links
-
-<http://www.r-bloggers.com/introducing-v8-an-embedded-javascript-engine-for-r/>
-
-<http://jsfiddle.net/user/opencpu/fiddles/>
-
-<https://www.opencpu.org/posts/v8-release-0-2/>
-<https://www.r-bloggers.com/introducing-v8-an-embedded-javascript-engine-for-r/>
-
-<http://rforge.net/JRI/index.html>
-
-
-```{r,eval=F}
-system.file("jri",package="rJava")
-```
-
-```{r}
-# install.packages("DiscreteRV")
-```
-
-
+- [An alternative for rstudio](http://www.openanalytics.eu/downloads/architect)

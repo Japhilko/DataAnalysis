@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Links/Resources on R</title>
+  <title>Javascript</title>
 
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -25,7 +25,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'Links/Resources on R',
+                title: 'Javascript',
                         useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -94,52 +94,33 @@
           </hgroup>
   </slide>
 
-<slide class=''><hgroup><h2>Popularity R</h2></hgroup><article  id="popularity-r">
+<slide class=''><hgroup><h2>Javascript</h2></hgroup><article  id="javascript">
 
 <ul>
-<li><p>On <a href='http://www.gulli.com/news/23740-programmiersprache-r-in-der-wissenschaft-immer-beliebter-2014-04-24' title=''>Usage of R in Germany</a>. R in an <a href='http://community.oreilly.de/blog/2011/01/18/statistiksoftware-r/' title=''>article in the New York Times</a></p></li>
-<li><p><a href='http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?_r=1&amp;' title=''>Data Analysts Captivated by R’s Power</a></p></li>
-<li><p><a href='http://www.r-statistics.com/2013/06/top-100-r-packages-for-2013-jan-may/' title=''>Top 100 R packages for 2013 (Jan-May)</a></p></li>
-<li><p><a href='http://blog.revolutionanalytics.com/2013/06/a-list-of-r-packages-by-popularity.html' title=''>A list of R packages, by popularity</a></p></li>
+<li><p><a href='http://jsfiddle.net/user/opencpu/fiddles/' title=''>Fiddles</a></p></li>
+<li><p>Jeroen Ooms - <a href='https://www.opencpu.org/posts/v8-release-0-2/' title=''>Introducing V8: An Embedded JavaScript Engine for R</a> <a href='https://www.r-bloggers.com/introducing-v8-an-embedded-javascript-engine-for-r/' title=''>https://www.r-bloggers.com/introducing-v8-an-embedded-javascript-engine-for-r/</a></p></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Intro R</h2></hgroup><article  id="intro-r">
+</article></slide><slide class=''><hgroup><h2>R and Javascript</h2></hgroup><article  id="r-and-javascript">
 
 <ul>
-<li><p><a href='http://manuals.bioinformatics.ucr.edu/home/programming-in-r' title=''>Thomas Girke - Programming in R</a></p></li>
-<li><p><a href='http://www.r-bloggers.com/teaching-a-short-topic-to-beginner-r-users/' title=''>Teaching R</a></p></li>
-<li><p><a href='http://stat545-ubc.github.io/' title=''>Data Wrangling etc.</a></p></li>
-<li><p><a href='http://www.revolutionanalytics.com/what-r' title=''>youtube on R</a></p></li>
+<li><p><a href='http://www.r-bloggers.com/statistical-computation-in-javascript-am-i-nuts/' title=''>Statistical computation in JavaScript — am I nuts?</a></p></li>
+<li><p><a href='http://www.htmlwidgets.org/' title=''>Bring the best of JavaScript data visualization to R</a></p></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>R conferences</h2></hgroup><article  id="r-conferences">
+</article></slide><slide class=''><hgroup><h2>Running javascript using V8</h2></hgroup><article  id="running-javascript-using-v8">
+
+<pre class = 'prettyprint lang-r'>library(V8)
+data(diamonds, package=&quot;ggplot2&quot;)
+ct &lt;- new_context()
+ct$assign(&quot;diamonds&quot;, diamonds)
+ 
+# Load CrossFilter JavaScript library
+ct$source(&quot;http://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.11/crossfilter.min.js&quot;)
+ct$console()</pre>
 
 <ul>
-<li><p><a href='http://www.r-bloggers.com/some-r-conferences-in-2015/' title=''>Some R conferences in 2015</a></p></li>
-<li><p><a href='http://10times.com/' title=''>Get an overview of events</a></p></li>
-<li><p><a href='http://inspire.ec.europa.eu/events/conferences/inspire_2014/page/home' title=''>Inspire Conference</a></p></li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>Writing own packages</h2></hgroup><article  id="writing-own-packages">
-
-<ul>
-<li><a href='http://r-pkgs.had.co.nz/description.html' title=''>R packages by Hadley Wickham</a></li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2><a href='http://xkcd.com/1138/' title=''>xkcd comics</a></h2></hgroup><article  id="xkcd-comics">
-
-<img src='http://imgs.xkcd.com/comics/heatmap.png' title=''/>
-
-</article></slide><slide class=''><hgroup><h2>New Developments UseR 2015 in Aalborg</h2></hgroup><article  id="new-developments-user-2015-in-aalborg">
-
-<ul>
-<li><p><a href='http://blog.eoda.de/2015/07/01/eoda-auf-der-user-conference-2015-in-aalborg-die-eindruecke-vom-tutorial-tuesday/' title=''>Overview in German</a></p></li>
-<li><p><a href='http://blog.revolutionanalytics.com/user-groups/' title=''>Another overview</a></p></li>
-<li><p>Have a look at <a href='https://www.docker.com/' title=''>Docker</a></p></li>
-<li><p><a href='http://igraph.org/r/' title=''>Network analysis with igraph</a></p></li>
-<li><p><a href='https://github.com/cardcorp/fbRads' title=''>Analyze and manage Facebook ads from R</a></p></li>
-<li><p>Get into contact - <a href='https://ropensci.org/community/#join-us' title=''>RopenSci</a> <a href='https://www.r-consortium.org/' title=''>https://www.r-consortium.org/</a></p></li>
-<li><p><a href='http://www.openanalytics.eu/downloads/architect' title=''>An alternative for rstudio</a></p></li>
+<li><a href='http://www.dateiendung.com/format/js' title=''>File ending .js</a></li>
 </ul></article></slide>
 
 

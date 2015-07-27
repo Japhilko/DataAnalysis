@@ -5,7 +5,9 @@ date: "27. Juli 2015"
 output: ioslides_presentation
 ---
 
+## Using a database and R
 
+- [Using Azure as an R datasource](http://www.r-bloggers.com/using-azure-as-an-r-datasource-part-2-pulling-data-from-mysqlmariadb/)
 
 - [PostgreSQ](http://wiki.openstreetmap.org/wiki/PostgreSQL)
 

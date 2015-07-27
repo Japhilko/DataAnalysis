@@ -5,6 +5,22 @@ date: "20. Juli 2015"
 output: ioslides_presentation
 ---
 
+## R and Hadoop
+
+- [RHadoop](https://github.com/RevolutionAnalytics/RHadoop/wiki)
+
+```{r}
+# http://rapache.net/
+```
+
+- [Step-by-Step Guide to Setting Up an R-Hadoop System](http://www.rdatamining.com/big-data/r-hadoop-setup-guide)
+
+- [Tutorial RHadoop](http://hortonworks.com/hadoop-tutorial/using-rhadoop-to-predict-visitors-amount/)
+
+- [R hadoop stack](http://www.r-bloggers.com/become-an-effective-data-hacker-with-the-r-hadoop-stack/)
+
+- [Mapreduce](http://blog.revolutionanalytics.com/2011/09/mapreduce-hadoop-r.html)
+
 ## Spark
 
 - [Running Spark on R](http://www.infoq.com/news/2014/02/sparkr-announcement)
