@@ -18,6 +18,19 @@ output: ioslides_presentation
 
 - [Bring the best of JavaScript data visualization to R](http://www.htmlwidgets.org/)
 
+- [an-example-of-writing-native-javascript-bindings-in-r](http://www.r-bloggers.com/minimist-an-example-of-writing-native-javascript-bindings-in-r/)
+
+
+- [d3-cartographic-envy-with-r-ggplot](http://rud.is/b/2014/09/26/overcoming-d3-cartographic-envy-with-r-ggplot/)
+
+- [Javascript and d3 for R users](http://civilstat.com/2012/10/basics-of-javascript-and-d3-for-r-users/)
+
+```{r,eval=F}
+library(r2d3)
+```
+
+
+
 ## Running javascript using V8
 
 
@@ -33,3 +46,6 @@ ct$console()
 ```
 
 - [File ending .js](http://www.dateiendung.com/format/js)
+
+
+

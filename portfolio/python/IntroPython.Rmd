@@ -7,6 +7,8 @@ output: ioslides_presentation
 
 ## Intro to Python
 
+- - [Python webpage](https://www.python.org/)
+
 - [Python for Non Programmers](https://wiki.python.org/moin/BeginnersGuide/NonProgrammers)
 
 - [An Informal Introduction to Python](https://docs.python.org/2/tutorial/introduction.html)
@@ -49,11 +51,23 @@ output: ioslides_presentation
 
 ## Even more Links
 
-<http://civilstat.com/2012/10/javascript-and-d3-for-r-users-part-2-running-off-the-r-server-instead-of-python/>
+- [r enthusiast goes pythonic](http://rforwork.info/2015/05/28/an-r-enthusiast-goes-pythonic/)
 
-<http://rforwork.info/2015/05/28/an-r-enthusiast-goes-pythonic/>
 
-<http://www.r-bloggers.com/choosing-r-or-python-for-data-analysis-an-infographic/>
+## [Choosing R or Python for data analysis?](http://blog.datacamp.com/r-or-python-for-data-analysis/)
+
+![pic](http://blog.datacamp.com/wp-content/uploads/2015/05/R-vs-Python-216-2.png)
+
+## R and python
+
+- [using one programming language in the context of another python and r](http://www.r-bloggers.com/using-one-programming-language-in-the-context-of-another-python-and-r/)
+
+```{r,eval=F}
+library(RPyGeo)
+```
+
+- [rpy2 - R in Python](http://rpy.sourceforge.net/)
+- [Introduction to OpenCPU for R on EC2 with Python](http://www.r-bloggers.com/introduction-to-opencpu-for-r-on-ec2-with-python/)
 
 
 
@@ -68,11 +82,15 @@ output: ioslides_presentation
 
 ## Python
 
-<http://civilstat.com/2012/10/javascript-and-d3-for-r-users-part-2-running-off-the-r-server-instead-of-python/>
+<>
 
 <http://rforwork.info/2015/05/28/an-r-enthusiast-goes-pythonic/>
 
 <http://www.r-bloggers.com/choosing-r-or-python-for-data-analysis-an-infographic/>
+
+## Webscraping
+
+- [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/)
 
 ## Further Links
 

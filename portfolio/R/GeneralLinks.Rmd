@@ -60,3 +60,41 @@ output: ioslides_presentation
 <https://www.r-consortium.org/>
 
 - [An alternative for rstudio](http://www.openanalytics.eu/downloads/architect)
+
+## Use API's with R
+
+- [Cran Task View - Web Technologies](http://cran.r-project.org/web/views/WebTechnologies.html)
+
+- [Tobi Bosede - Working with XML Data in R](http://www.informit.com/articles/article.aspx?p=2215520)
+
+```{r,eval=F}
+library(downloader)
+library(RCurl)
+require("XML")
+require("plyr")
+require("ggplot2")
+require("gridExtra")
+library(htmlwidgets)
+```
+
+## Blogging and R
+
+RWordPress 
+
+- [knitr + wordpress](http://yihui.name/knitr/demo/wordpress/)
+
+
+- [web app using R](http://stathack.wordpress.com/2012/11/14/building-a-simple-web-app-using-r/)
+
+- [R using google blogger](http://nevilleandrade.blogspot.de/2014/10/testing-r-using-google-blogger.html)
+
+
+## Webscraping
+
+- [Gaston Sanchez - Getting Data from the Web with R](http://gastonsanchez.com/work/webdata/getting_web_data_r1_introduction.pdf)
+
+- [Introduction to Webscraping](http://www.training.cam.ac.uk/event/740618)
+
+## Tipps and Tricks
+
+- [Petr Keil - 12 nifty tips for scientists who use computers](http://www.petrkeil.com/?p=2356)
