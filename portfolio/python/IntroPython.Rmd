@@ -54,9 +54,9 @@ output: ioslides_presentation
 - [r enthusiast goes pythonic](http://rforwork.info/2015/05/28/an-r-enthusiast-goes-pythonic/)
 
 
-## [Choosing R or Python for data analysis?](http://blog.datacamp.com/r-or-python-for-data-analysis/)
+## [R or Python for data analysis?](http://blog.datacamp.com/r-or-python-for-data-analysis/)
 
-![pic](http://blog.datacamp.com/wp-content/uploads/2015/05/R-vs-Python-216-2.png)
+<img src="http://blog.datacamp.com/wp-content/uploads/2015/05/R-vs-Python-216-2.png" alt="alt text" width="700x" height="6500x">
 
 ## R and python
 
@@ -81,8 +81,6 @@ library(RPyGeo)
 
 
 ## Python
-
-<>
 
 <http://rforwork.info/2015/05/28/an-r-enthusiast-goes-pythonic/>
 

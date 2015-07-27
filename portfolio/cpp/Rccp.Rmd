@@ -1,5 +1,5 @@
 ---
-title: "Rccp"
+title: "Rcpp"
 author: "Jan-Philipp Kolb"
 date: "27. Juli 2015"
 output: ioslides_presentation
