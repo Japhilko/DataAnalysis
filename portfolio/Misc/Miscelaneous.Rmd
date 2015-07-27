@@ -15,6 +15,12 @@ output: ioslides_presentation
 <img src="http://nirvacana.com/thoughts/wp-content/uploads/2013/07/RoadToDataScientist1.png" alt="alt text" width="700x" height="500x">
 
 
+## Videos on data science
+
+## 
+<a href="https://www.youtube.com/watch?v=fZuDwiM1XBQ" target="_blank"><img src="https://raw.githubusercontent.com/Japhilko/DataAnalysis/master/data/figure/SecretsDataScience.PNG" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 ## Java
 
 - [JRI - Java/R Interface](http://rforge.net/JRI/index.html)
