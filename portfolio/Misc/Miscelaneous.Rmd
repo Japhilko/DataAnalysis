@@ -82,10 +82,16 @@ library(rJava)
 
 - [kaggle](https://www.kaggle.com/)
 
+- [net awards](https://thenetawards.com/previous-winners/)
 
 
+## Persons
 
-## [net awards](https://thenetawards.com/previous-winners/)
+- [Zach Holman](http://zachholman.com/) - [What They Don't Tell You About Public Speaking](http://zachholman.com/posts/what-they-dont-tell-you-about-public-speaking/)
 
-- [Zach Holman](http://zachholman.com/)
-- [Zach Holman - What They Don't Tell You About Public Speaking](http://zachholman.com/posts/what-they-dont-tell-you-about-public-speaking/)
+
+The R-Files
+- [Hadley Wickham](http://blog.revolutionanalytics.com/2010/09/the-r-files-hadley-wickham.html)
+
+- [Dirk Eddelbuettel](http://datascience.la/dirk-eddelbuettel-the-user-2014-interview/)
+
