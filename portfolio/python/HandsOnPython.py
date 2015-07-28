@@ -23,3 +23,10 @@ my_list[-1]
 my_list.append("b")
 
 len(my_list)
+
+
+# to the power of 3
+2**3
+
+
+# http://dbs.ifi.uni-heidelberg.de/index.php?id=177
