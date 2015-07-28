@@ -1,0 +1,2 @@
+    window.JST = window.JST || {};
+    window.JST['widgets/preview/preview'] = "\u003Cdiv class='cc-preview__overlay'\u003E\n  \u003Cdiv class=\"widget-spinner widget-spinner--small widget-spinner--blue\"\u003E\u003C/div\u003E\n  \u003Cdiv class='cc-preview__controls'\u003E\n    \u003Ca class='js-preview-minimize cc-preview__control cc-preview__control--minimize'\u003E\u003C/a\u003E\n  \u003C/div\u003E\n\u003C/div\u003E\n\u003Cdiv class='cc-preview__stuff is-hidden {{^ fadeIn }}no-fadein{{/ fadeIn }}'\u003E\u003C/div\u003E\n";
