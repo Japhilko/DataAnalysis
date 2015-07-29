@@ -11,7 +11,7 @@ output: ioslides_presentation
 - [Change font size](http://tex.stackexchange.com/questions/180222/how-to-change-font-size-for-specific-lstlisting)
 - [Define a comment](http://tex.stackexchange.com/questions/89574/language-option-supported-in-listings)
 - [Manual on the listings package](http://texdoc.net/texmf-dist/doc/latex/listings/listings.pdf)
-
+- [Listings caption](http://tex.stackexchange.com/questions/54819/listings-caption)
 
 ## Defining multiple languages (listings)
 
@@ -33,6 +33,10 @@ In LaTeX and R a command rgb can be used to define colors:
 barplot(1,col=rgb(.9,0.8,0.6))
 ```
 
+
+## Citations
+
+- [Abbreviation](http://www.mrunix.de/forums/showthread.php?67873-Abk%FCrzung-bei-BibTex)
 
 ## XeLaTeX
 

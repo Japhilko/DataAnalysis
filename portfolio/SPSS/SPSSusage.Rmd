@@ -1,0 +1,10 @@
+---
+title: "Using SPSS"
+author: "Jan-Philipp Kolb"
+date: "29. Juli 2015"
+output: ioslides_presentation
+---
+
+## Import data 
+
+- [Import data](http://libguides.library.kent.edu/SPSS/ImportData)
