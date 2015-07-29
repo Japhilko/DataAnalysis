@@ -12,6 +12,28 @@ output: ioslides_presentation
 - [Define a comment](http://tex.stackexchange.com/questions/89574/language-option-supported-in-listings)
 - [Manual on the listings package](http://texdoc.net/texmf-dist/doc/latex/listings/listings.pdf)
 
+
+## Defining multiple languages (listings)
+
+- [Define languages](http://tex.stackexchange.com/questions/45711/defining-lstset-parameters-for-multiple-languages)
+
+![pic](http://i.stack.imgur.com/bX7s6.png)
+
+## Colors in LaTeX
+
+- [Overview of colors](https://en.wikibooks.org/wiki/LaTeX/Colors)
+
+![pic](http://i.stack.imgur.com/Aaxb9.png)
+
+## Finding a color in R
+
+In LaTeX and R a command rgb can be used to define colors:
+
+```{r}
+barplot(1,col=rgb(.9,0.8,0.6))
+```
+
+
 ## XeLaTeX
 
 <http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=xetex>
