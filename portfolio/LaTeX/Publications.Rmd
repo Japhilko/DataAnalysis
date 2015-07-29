@@ -5,6 +5,9 @@ date: "5. Mai 2015"
 output: ioslides_presentation
 ---
 
+## Fonts in LaTeX
+
+- [Overview of fonts](http://www.math.tu-dresden.de/~rudl/latex/fonts.pdf)
 
 ## Listings environment
 
@@ -34,8 +37,8 @@ barplot(1,col=rgb(.9,0.8,0.6))
 ```
 
 
-## Citations
-
+## Citations and References
+- [Reference sheet for natbib usage](http://merkel.zoneo.net/Latex/natbib.php)
 - [Abbreviation](http://www.mrunix.de/forums/showthread.php?67873-Abk%FCrzung-bei-BibTex)
 
 ## XeLaTeX
