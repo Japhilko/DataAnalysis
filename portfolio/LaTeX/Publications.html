@@ -103,10 +103,11 @@
 </article></slide><slide class=''><hgroup><h2>Listings environment</h2></hgroup><article  id="listings-environment">
 
 <ul>
-<li><a href='http://tex.stackexchange.com/questions/180222/how-to-change-font-size-for-specific-lstlisting' title=''>Change font size</a></li>
+<li><a href='http://tex.stackexchange.com/questions/180222/how-to-change-font-size-for-specific-lstlisting' title=''>Change font size in listings</a></li>
 <li><a href='http://tex.stackexchange.com/questions/89574/language-option-supported-in-listings' title=''>Define a comment</a></li>
 <li><a href='http://texdoc.net/texmf-dist/doc/latex/listings/listings.pdf' title=''>Manual on the listings package</a></li>
 <li><a href='http://tex.stackexchange.com/questions/54819/listings-caption' title=''>Listings caption</a></li>
+<li><a href='http://tex.stackexchange.com/questions/73174/add-another-color-at-other-keywords-in-listings' title=''>Add another color at other keywords in listings</a></li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Defining multiple languages (listings)</h2></hgroup><article  id="defining-multiple-languages-listings">
@@ -144,7 +145,40 @@
 
 <p><a href='http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=xetex' title=''>http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=xetex</a></p>
 
-<p><a href='http://www.r-bloggers.com/using-sweave-with-xelatex/' title=''>http://www.r-bloggers.com/using-sweave-with-xelatex/</a></p></article></slide>
+<p><a href='http://www.r-bloggers.com/using-sweave-with-xelatex/' title=''>http://www.r-bloggers.com/using-sweave-with-xelatex/</a></p>
+
+</article></slide><slide class=''><hgroup><h2>Making LaTeX tables with knitr</h2></hgroup><article  id="making-latex-tables-with-knitr">
+
+<pre class = 'prettyprint lang-r'>library(xtable)
+N &lt;- 1000
+A &lt;- sample(1:5,N,replace=T)
+B &lt;- sample(6:8,N,replace=T)
+tabAB &lt;- table(A,B)</pre>
+
+</article></slide><slide class=''><hgroup><h2>Making the table</h2></hgroup><article  id="making-the-table">
+
+<ul>
+<li><a href='https://cran.r-project.org/web/packages/xtable/vignettes/xtableGallery.pdf' title=''>xtable gallery</a></li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>xtable(tabAB)</pre>
+
+<pre >## % latex table generated in R 3.2.0 by xtable 1.7-4 package
+## % Thu Jul 30 10:17:29 2015
+## \begin{table}[ht]
+## \centering
+## \begin{tabular}{rrrr}
+##   \hline
+##  &amp; 6 &amp; 7 &amp; 8 \\ 
+##   \hline
+## 1 &amp;  74 &amp;  57 &amp;  65 \\ 
+##   2 &amp;  80 &amp;  65 &amp;  58 \\ 
+##   3 &amp;  65 &amp;  78 &amp;  70 \\ 
+##   4 &amp;  65 &amp;  61 &amp;  63 \\ 
+##   5 &amp;  57 &amp;  59 &amp;  83 \\ 
+##    \hline
+## \end{tabular}
+## \end{table}</pre></article></slide>
 
 
   <slide class="backdrop"></slide>

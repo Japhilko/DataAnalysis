@@ -76,6 +76,7 @@ library(rJava)
 ## Links
 
 - [Google programming language GO](https://golang.org/)
+- [Go language blocks in Rmarkdown](http://datadrivensecurity.info/blog/posts/2015/Jun/running-other-languages-in-r-markdown-files/)
 - [Open CPU](https://www.opencpu.org/)
 - [KNIME](https://tech.knime.org/getting-started)
 

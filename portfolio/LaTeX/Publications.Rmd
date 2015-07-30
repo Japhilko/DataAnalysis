@@ -5,6 +5,11 @@ date: "5. Mai 2015"
 output: ioslides_presentation
 ---
 
+## Creating a minimal example
+
+- [Minimal example](ftp://ftp.dante.de/tex-archive/info/dickimaw/dickimaw-minexample.pdf)
+
+
 ## Fonts in LaTeX
 
 - [Overview of fonts](http://www.math.tu-dresden.de/~rudl/latex/fonts.pdf)
@@ -48,3 +53,31 @@ barplot(1,col=rgb(.9,0.8,0.6))
 <http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=xetex>
 
 <http://www.r-bloggers.com/using-sweave-with-xelatex/>
+
+
+## Making LaTeX tables with knitr
+
+```{r}
+library(xtable)
+N <- 1000
+A <- sample(1:5,N,replace=T)
+B <- sample(6:8,N,replace=T)
+tabAB <- table(A,B)
+```
+
+- [xtable gallery](https://cran.r-project.org/web/packages/xtable/vignettes/xtableGallery.pdf)
+
+
+## Making the table
+
+```{r}
+xtable(tabAB)
+```
+
+## Formulas in the header
+
+```{r}
+colnames(tabAB)[3] <- "$A^2$"
+xtable(tabAB)
+```
+

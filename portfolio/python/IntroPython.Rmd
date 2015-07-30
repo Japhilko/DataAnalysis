@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Python Programming"
 author: "Jan-Philipp Kolb"
 date: "24. Juli 2015"
 output: ioslides_presentation
@@ -103,4 +103,11 @@ library(RPyGeo)
 
 - [ArPy](http://video.esri.com/watch/1819/python-map-automation-_dash_-introduction-to-arcpymapping)
 
+## Code chunk with python
 
+```{python}
+x = 'hello, python world!'
+print(x.split(' '))
+```
+
+- [Source of example](https://raw.githubusercontent.com/yihui/knitr-examples/master/023-engine-python.Rmd)
