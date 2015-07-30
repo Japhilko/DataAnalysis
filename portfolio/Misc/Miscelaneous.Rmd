@@ -36,6 +36,9 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 - [Packages in Rstudio](http://www.r-bloggers.com/smart-hackathon-day-2-writing-packages-in-rstudio/)
 - [Overview R-packages](http://www.rstudio.com/ide/docs/packages/overview)
 
+## Where to publish research
+
+- [In which journals should I publish my software?](http://www.software.ac.uk/resources/guides/which-journals-should-i-publish-my-software)
 
 ## Java
 
