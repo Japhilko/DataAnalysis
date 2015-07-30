@@ -11,10 +11,12 @@ output: ioslides_presentation
 
 ## Listings environment
 
-- [Change font size](http://tex.stackexchange.com/questions/180222/how-to-change-font-size-for-specific-lstlisting)
+- [Change font size in listings](http://tex.stackexchange.com/questions/180222/how-to-change-font-size-for-specific-lstlisting)
 - [Define a comment](http://tex.stackexchange.com/questions/89574/language-option-supported-in-listings)
 - [Manual on the listings package](http://texdoc.net/texmf-dist/doc/latex/listings/listings.pdf)
 - [Listings caption](http://tex.stackexchange.com/questions/54819/listings-caption)
+- [Add another color at other keywords in listings](http://tex.stackexchange.com/questions/73174/add-another-color-at-other-keywords-in-listings)
+
 
 ## Defining multiple languages (listings)
 
