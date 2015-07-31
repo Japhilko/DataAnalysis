@@ -12,3 +12,14 @@ output: ioslides_presentation
 - [Rcpp: Seamless R and C++ Integration](http://www.quantide.com/R/ramarro-chapter-10/)
 
 - [Video on cpp - Integrating R with C++: Rcpp, RInside, and RProtobuf ](https://www.youtube.com/watch?v=UZkaZhsOfT4#t=232)
+
+## Work with Rcpp
+
+```{r,install=F}
+install.packages("Rcpp")
+```
+
+
+## Working Examples
+
+- [Contact Overpass API with C++](https://help.openstreetmap.org/questions/18684/i-want-to-use-mainoverpass-api-for-retrieving-data-in-c-program)

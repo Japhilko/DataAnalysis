@@ -427,7 +427,7 @@ install.packages("reshape")
 install.packages("Rmpi")
 install.packages("SNOW")
 install.packages("nws")
-
+install.packages("Rcpp")
 #------------------------#
 # image recognition 
 #------------------------#
