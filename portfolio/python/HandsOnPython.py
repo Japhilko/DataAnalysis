@@ -30,3 +30,18 @@ len(my_list)
 
 
 # http://dbs.ifi.uni-heidelberg.de/index.php?id=177
+
+
+
+ animals = ["A","B","C"]
+ 
+ animals.index("B")
+ 
+ animals.insert(1,"AB")
+ 
+ 
+ my_list = [1,9,3,8,5,7]
+
+for number in my_list:
+    # Your code here
+    2*number
