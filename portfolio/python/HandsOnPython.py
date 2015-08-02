@@ -45,3 +45,5 @@ len(my_list)
 for number in my_list:
     # Your code here
     2*number
+
+# instead of pip install it is sometimes better to use conda install
