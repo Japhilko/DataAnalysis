@@ -106,5 +106,5 @@ The R-Files
 -[OpenSourceConvention](http://www.oscon.com/open-source-2015)
 - [OSCON Europe](http://www.oscon.com/open-source-eu-2015)
 - [GDR Ecologie Statistique](https://sites.google.com/site/gdrecostat/)
-
+- [O'Reilly Strata Conference](http://strataconf.com/)
 
