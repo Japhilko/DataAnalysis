@@ -12,7 +12,7 @@ output:
 # Another slide
 
 ## Second slide
-
+- [Use revealjs package](https://github.com/jjallaire/revealjs)
 - [Reveal presentation](http://stackoverflow.com/questions/22965084/how-do-i-get-vertical-slides-using-rpres-markdown).
 
 ```{r,eval=F}
