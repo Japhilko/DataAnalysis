@@ -1,0 +1,40 @@
+---
+title: "Presentation with reveal underlying"
+author: "Your name"
+output: 
+  revealjs::revealjs_presentation:
+    theme;sky
+    pandoc_args: [ "--slide-level", "2" ]
+---
+
+# First slide
+
+# Another slide
+
+## Second slide
+
+- [Reveal presentation](http://stackoverflow.com/questions/22965084/how-do-i-get-vertical-slides-using-rpres-markdown).
+
+```{r,eval=F}
+library(devtools)
+install_github("jjallaire/revealjs")
+```
+
+# Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+# Slide with R Code and Output
+
+```{r}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
