@@ -1,8 +1,8 @@
 ---
 title: "Miscelaneous"
 author: "Jan-Philipp Kolb"
-date: "27. Juli 2015"
-output: ioslides_presentation
+date: "07/27/2015"
+output: beamer_presentation
 ---
 
 ## [Data scientist](http://www.r-bloggers.com/oreilly-data-scientist-salary-and-tools-survey-november-2014/)
@@ -98,4 +98,13 @@ The R-Files
 - [Hadley Wickham](http://blog.revolutionanalytics.com/2010/09/the-r-files-hadley-wickham.html)
 
 - [Dirk Eddelbuettel](http://datascience.la/dirk-eddelbuettel-the-user-2014-interview/)
+
+## Conferences
+
+-[Overview of conferences](http://lanyrd.com/)
+- [EARL conference](http://www.earl-conference.com/)
+-[OpenSourceConvention](http://www.oscon.com/open-source-2015)
+- [OSCON Europe](http://www.oscon.com/open-source-eu-2015)
+- [GDR Ecologie Statistique](https://sites.google.com/site/gdrecostat/)
+
 
