@@ -2,9 +2,72 @@
 title: "Multidimensional scaling"
 author: "Jan-Philipp Kolb"
 date: "08/04/2015"
-output: 
-  revealjs::revealjs_presentation:
-    theme;sky
+output: revealjs::revealjs_presentation
 ---
 
-## R Markdown
+```{r,echo=F}
+library(knitr)
+```
+
+
+
+# Get the data set
+
+- Map features per zip code area
+- Downloaded with [geosmdata2 package](https://github.com/Japhilko/GeoData/blob/master/geosmdata2/vignettes/geoosmdata2.Rmd) via [Overpass API](http://wiki.openstreetmap.org/wiki/Overpass_API)
+
+```{r,eval=F}
+link<-"https://github.com/Japhilko/DataAnalysis/raw/master/data/MannheimOSM2ZIP.RData"
+download.file(link,destfile="dat.RData")
+load("dat.RData")
+```
+
+```{r,echo=F,cache=T}
+setwd("C:/Users/kolbjp/Documents/GitHub/DataAnalysis/data")
+load("Mannheim_OSM2ZIP.RData")
+```
+
+
+# Overview of data
+
+```{r,cache=T,echo=F}
+kable(dat[1:10,1:5])
+```
+
+
+# Polygon info
+
+- Polygon info for [zip code areas in Germany](http://datahub.io/de/dataset/postal-codes-de)
+
+
+```{r,cache=T,message=F,warning=F}
+setwd("D:/Daten/Daten/GeoDaten")
+library(rgdal)
+PLZ <- readOGR("post_pl.shp","post_pl")
+MA <- PLZ[PLZ@data$PLZORT99=="Mannheim",]
+```
+
+# Plot the map
+
+```{r,cache=T}
+plot(MA)
+```
+
+
+# Apply MDS
+
+```{r,cache=T}
+d <- dist(dat) 
+fit <- cmdscale(d,eig=TRUE, k=2)
+x <- fit$points[,1]
+y <- fit$points[,2]
+```
+
+# Plot results
+
+```{r}
+plot(x, y, xlab="Coordinate 1", ylab="Coordinate 2",
+     main="Nonmetric MDS", type="n")
+text(x, y, labels = row.names(dat), cex=.7) 
+```
+
