@@ -288,7 +288,7 @@ install.packages("Amelia")
 	# Packages fuer internet of things
 install.packages("rjson")
 install.packages("googleVis")
-install.packages("plotKML")
+install.packages("plotKML") # isualization of Spatial and Spatio-Temporal Objects in Google Earth
 install.packages("lubridate")
 
 install.packages("rplos")   #Interface to PLoS Journals API methods

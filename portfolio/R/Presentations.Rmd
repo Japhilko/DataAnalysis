@@ -1,8 +1,10 @@
 ---
-title: "Habits"
-author: John Doe
-date: March 22, 2005
-output: revealjs::revealjs_presentation
+title: "Presentation with reveal underlying"
+author: "Jan-Philipp Kolb"
+output: 
+  revealjs::revealjs_presentation:
+    theme;sky
+    pandoc_args: [ "--slide-level", "2" ]
 ---
 
 # First slide
@@ -36,3 +38,6 @@ summary(cars)
 plot(cars)
 ```
 
+## Include a picture
+
+<img src="http://lazowska.cs.washington.edu/MS/DS.wordle.jpg" alt="alt text" width="700x" height="500x">
