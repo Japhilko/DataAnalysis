@@ -1,0 +1,10 @@
+---
+title: "Multidimensional scaling"
+author: "Jan-Philipp Kolb"
+date: "08/04/2015"
+output: 
+  revealjs::revealjs_presentation:
+    theme;sky
+---
+
+## R Markdown

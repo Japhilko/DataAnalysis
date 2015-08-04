@@ -1,10 +1,8 @@
 ---
-title: "Presentation with reveal underlying"
-author: "Your name"
-output: 
-  revealjs::revealjs_presentation:
-    theme;sky
-    pandoc_args: [ "--slide-level", "2" ]
+title: "Habits"
+author: John Doe
+date: March 22, 2005
+output: revealjs::revealjs_presentation
 ---
 
 # First slide
