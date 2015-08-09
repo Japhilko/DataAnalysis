@@ -47,3 +47,21 @@ for number in my_list:
     2*number
 
 # instead of pip install it is sometimes better to use conda install
+
+
+#---------------------------#
+# For loops in python
+
+for x in range(0, 3):
+    print "We're on time %d" % (x)
+
+# https://wiki.python.org/moin/ForLoop
+
+for x in range(0, 3):
+    print "We're on time" 
+
+for x in range(0, 3):
+    print "We're on time %f" % (x)
+
+for i in range(7):
+    print i

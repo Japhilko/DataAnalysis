@@ -39,23 +39,6 @@ output: ioslides_presentation
 
 - [10 Reasons Python Rocks for Research](https://www.stat.washington.edu/~hoytak/blog/whypython.html)
 
-## More links
-
-- [ipython](http://ipython.org/)
-
-- [ipython](http://ipython.org/notebook.html)
-
-- [python](https://www.python.org/dev/peps/pep-0350/#what-are-codetags)
-
-
-- [IDE](http://xcorr.net/2013/04/17/evaluating-ides-for-scientific-python/)
-
-## Even more Links
-
-- [r enthusiast goes pythonic](http://rforwork.info/2015/05/28/an-r-enthusiast-goes-pythonic/)
-
-- [Think of python](http://www.greenteapress.com/thinkpython/thinkpython.pdf)
-
 ## [R or Python for data analysis?](http://blog.datacamp.com/r-or-python-for-data-analysis/)
 
 <img src="http://blog.datacamp.com/wp-content/uploads/2015/05/R-vs-Python-216-2.png" alt="alt text" width="700x" height="6500x">
@@ -71,7 +54,11 @@ library(RPyGeo)
 - [rpy2 - R in Python](http://rpy.sourceforge.net/)
 - [Introduction to OpenCPU for R on EC2 with Python](http://www.r-bloggers.com/introduction-to-opencpu-for-r-on-ec2-with-python/)
 
+## Blogs on python
 
+- [10 python bloggs](http://pythontips.com/2013/07/31/10-python-blogs-worth-following/)
+- [planet python](http://planetpython.org/)
+- [Love python](http://love-python.blogspot.de/)
 
 ## Something like Rstudio
 
@@ -111,3 +98,22 @@ print(x.split(' '))
 ```
 
 - [Source of example](https://raw.githubusercontent.com/yihui/knitr-examples/master/023-engine-python.Rmd)
+
+
+## More links
+
+- [ipython](http://ipython.org/)
+
+- [ipython](http://ipython.org/notebook.html)
+
+- [python](https://www.python.org/dev/peps/pep-0350/#what-are-codetags)
+
+
+- [IDE](http://xcorr.net/2013/04/17/evaluating-ides-for-scientific-python/)
+
+## Even more Links
+
+- [r enthusiast goes pythonic](http://rforwork.info/2015/05/28/an-r-enthusiast-goes-pythonic/)
+
+- [Think of python](http://www.greenteapress.com/thinkpython/thinkpython.pdf)
+
