@@ -19,7 +19,7 @@ output: beamer_presentation
 - [Data scientist but where](http://ibmexperts.computerwoche.de/analytics-big-data/artikel/data-scientist-werden-aber-wo)
 - [Become-a-Computer-Scientist](http://www.wikihow.com/Become-a-Computer-Scientist)
 - [Coursera specializations](http://www.r-bloggers.com/coursera-specializations-data-science-systems-biology-python-programming/)
-
+- [Data science job skills](http://blog.udacity.com/2014/11/data-science-job-skills.html)
 
 ## Videos on data science
 
@@ -108,3 +108,7 @@ The R-Files
 - [GDR Ecologie Statistique](https://sites.google.com/site/gdrecostat/)
 - [O'Reilly Strata Conference](http://strataconf.com/)
 
+## Predictive analysis
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Predictive_analytics)
+- [R-bloggers](http://www.r-bloggers.com/tag/predictive-analytics/)
