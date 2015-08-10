@@ -2,7 +2,7 @@
 title: "Miscelaneous"
 author: "Jan-Philipp Kolb"
 date: "07/27/2015"
-output: beamer_presentation
+output: ioslides_presentation
 ---
 
 ## [Data scientist](http://www.r-bloggers.com/oreilly-data-scientist-salary-and-tools-survey-november-2014/)
@@ -10,7 +10,7 @@ output: beamer_presentation
 <img src="http://lazowska.cs.washington.edu/MS/DS.wordle.jpg" alt="alt text" width="700x" height="500x">
 
 
-## Way to become a data scientis
+## Way to become a data scientist
 
 <img src="http://nirvacana.com/thoughts/wp-content/uploads/2013/07/RoadToDataScientist1.png" alt="alt text" width="700x" height="500x">
 
@@ -108,7 +108,9 @@ The R-Files
 - [GDR Ecologie Statistique](https://sites.google.com/site/gdrecostat/)
 - [O'Reilly Strata Conference](http://strataconf.com/)
 
-## Predictive analysis
+## Hackatons
 
-- [Wikipedia](https://en.wikipedia.org/wiki/Predictive_analytics)
-- [R-bloggers](http://www.r-bloggers.com/tag/predictive-analytics/)
+- [Hackaton Mannheim](https://www.facebook.com/events/350012525205487/)
+- [DB Hackaton](http://www.heise.de/developer/meldung/Hackathon-der-Deutschen-Bahn-in-Frankfurt-2571719.html)
+
+- [Overview events](http://fly.mpi-cbg.de/~preibisch/conferences.html)

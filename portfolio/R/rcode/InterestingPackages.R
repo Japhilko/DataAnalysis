@@ -274,6 +274,8 @@ install.packages("psy")
 
 install.packages("homals")
 
+install.packages("ChoiceModelR")
+
 #------------------------#
 # Imputation
 #------------------------#

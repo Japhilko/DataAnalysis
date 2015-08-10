@@ -1,0 +1,28 @@
+---
+title: "Predictive Analysis"
+author: "Jan-Philipp Kolb"
+date: "10. August 2015"
+output: ioslides_presentation
+---
+
+## Predictive analysis
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Predictive_analytics)
+- [R-bloggers](http://www.r-bloggers.com/tag/predictive-analytics/)
+
+
+## Discrete choice models
+
+- Multivariate regression for discrete dependent variables
+- package [ChoiceModelR](https://cran.r-project.org/web/packages/ChoiceModelR/ChoiceModelR.pdf)
+
+```{r}
+library(ChoiceModelR)
+```
+
+## [Online Analytic Processing](https://de.wikipedia.org/wiki/Online_Analytical_Processing)
+
+- [OLAP with R](https://dzone.com/articles/olap-operation-r)
+
+![pic](http://3.bp.blogspot.com/-zoM8RVLiJPs/UfaQlM8JSCI/AAAAAAAABAo/OPMaICn5oQY/s1600/p1.png)
+
