@@ -20,6 +20,7 @@ output: ioslides_presentation
 - [Become-a-Computer-Scientist](http://www.wikihow.com/Become-a-Computer-Scientist)
 - [Coursera specializations](http://www.r-bloggers.com/coursera-specializations-data-science-systems-biology-python-programming/)
 - [Data science job skills](http://blog.udacity.com/2014/11/data-science-job-skills.html)
+- [Description in German](https://www.de.capgemini-consulting.com/blog/digital-transformation-blog/2014/01/data-scientists-die-begehrtesten-alleskonner-des-21)
 
 ## Videos on data science
 
@@ -39,6 +40,9 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 ## Where to publish research
 
 - [In which journals should I publish my software?](http://www.software.ac.uk/resources/guides/which-journals-should-i-publish-my-software)
+
+- [Github and DOI](https://guides.github.com/activities/citable-code/)
+- [Radical Openness](http://www.r-bloggers.com/on-radical-manuscript-openness/)
 
 ## Java
 
@@ -107,6 +111,7 @@ The R-Files
 - [OSCON Europe](http://www.oscon.com/open-source-eu-2015)
 - [GDR Ecologie Statistique](https://sites.google.com/site/gdrecostat/)
 - [O'Reilly Strata Conference](http://strataconf.com/)
+- [JSM](http://www.r-bloggers.com/jsm-2015-day-2/)
 
 ## Hackatons
 
@@ -114,3 +119,7 @@ The R-Files
 - [DB Hackaton](http://www.heise.de/developer/meldung/Hackathon-der-Deutschen-Bahn-in-Frankfurt-2571719.html)
 
 - [Overview events](http://fly.mpi-cbg.de/~preibisch/conferences.html)
+
+## Causal Inference
+
+- [Andrew Gelman](http://andrewgelman.com/2014/12/11/fallacy-placing-confidence-confidence-intervals/)
