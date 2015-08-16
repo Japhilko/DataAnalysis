@@ -81,3 +81,6 @@ colnames(tabAB)[3] <- "$A^2$"
 xtable(tabAB)
 ```
 
+## More tips and tricks
+
+- [Horizontal line](http://www.mrunix.de/forums/showthread.php?41932-Horizontale-Linie)
