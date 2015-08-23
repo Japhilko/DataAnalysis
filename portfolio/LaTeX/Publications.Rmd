@@ -83,4 +83,6 @@ xtable(tabAB)
 
 ## More tips and tricks
 
-- [Horizontal line](http://www.mrunix.de/forums/showthread.php?41932-Horizontale-Linie)
+- Horizontal line [here](http://www.mrunix.de/forums/showthread.php?41932-Horizontale-Linie) or [here](http://tex.stackexchange.com/questions/19579/horizontal-line-spanning-the-entire-document-in-latex)
+- [Work with titles](http://ctan.space-pro.be/tex-archive/macros/latex/contrib/titlesec/titlesec.pdf)
+- [Change fonts](http://www.math.tu-dresden.de/~rudl/latex/fonts.pdf)

@@ -21,6 +21,7 @@ output: ioslides_presentation
 - [Coursera specializations](http://www.r-bloggers.com/coursera-specializations-data-science-systems-biology-python-programming/)
 - [Data science job skills](http://blog.udacity.com/2014/11/data-science-job-skills.html)
 - [Description in German](https://www.de.capgemini-consulting.com/blog/digital-transformation-blog/2014/01/data-scientists-die-begehrtesten-alleskonner-des-21)
+- [Data science](http://will-stanton.com/how-do-i-get-my-first-job-in-data-science/)
 
 ## Videos on data science
 
@@ -31,6 +32,12 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 <a href="https://www.youtube.com/watch?v=c52IOlnPw08" target="_blank"><img src="https://raw.githubusercontent.com/Japhilko/DataAnalysis/master/data/figure/How2becomeDataScientist.PNG" width="240" height="180" border="10" /></a>
 
+
+## Data challenges
+
+- [Kaggle](https://www.kaggle.com/)
+- [DrivenData](http://www.drivendata.org/)
+- [More alternatives](http://www.quora.com/What-are-some-alternatives-to-Kaggle)
 
 ## Writing R-packages
 
@@ -119,6 +126,8 @@ The R-Files
 - [DB Hackaton](http://www.heise.de/developer/meldung/Hackathon-der-Deutschen-Bahn-in-Frankfurt-2571719.html)
 
 - [Overview events](http://fly.mpi-cbg.de/~preibisch/conferences.html)
+
+- [nodeschool](http://nodeschool.io/)
 
 ## Causal Inference
 
