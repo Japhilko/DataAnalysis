@@ -10,6 +10,7 @@
 
 
 
+  <meta name="date" content="2015-05-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -88,17 +89,23 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;"><ol start="5" style="list-style-type: decimal">
-<li>Mai 2015</li>
-</ol></p>
+            <p style="margin-top: 6px; margin-left: -2px;">05/05/2015</p>
           </hgroup>
   </slide>
 
-<slide class=''><hgroup><h2>Fonts in LaTeX</h2></hgroup><article  id="fonts-in-latex">
+<slide class=''><hgroup><h2>Creating a minimal example</h2></hgroup><article  id="creating-a-minimal-example">
+
+<ul>
+<li><a href='ftp://ftp.dante.de/tex-archive/info/dickimaw/dickimaw-minexample.pdf' title=''>Minimal example</a></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Fonts in LaTeX</h2></hgroup><article  id="fonts-in-latex">
 
 <ul>
 <li><a href='http://www.math.tu-dresden.de/~rudl/latex/fonts.pdf' title=''>Overview of fonts</a></li>
 </ul>
+
+<img src='http://homepage3.nifty.com/tsato/xfig/html/images/text-font-panel.gif' title=''/>
 
 </article></slide><slide class=''><hgroup><h2>Listings environment</h2></hgroup><article  id="listings-environment">
 
@@ -155,27 +162,49 @@ A &lt;- sample(1:5,N,replace=T)
 B &lt;- sample(6:8,N,replace=T)
 tabAB &lt;- table(A,B)</pre>
 
-</article></slide><slide class=''><hgroup><h2>Making the table</h2></hgroup><article  id="making-the-table">
-
 <ul>
 <li><a href='https://cran.r-project.org/web/packages/xtable/vignettes/xtableGallery.pdf' title=''>xtable gallery</a></li>
 </ul>
 
+</article></slide><slide class=''><hgroup><h2>Making the table</h2></hgroup><article  id="making-the-table">
+
 <pre class = 'prettyprint lang-r'>xtable(tabAB)</pre>
 
 <pre >## % latex table generated in R 3.2.0 by xtable 1.7-4 package
-## % Thu Jul 30 10:17:29 2015
+## % Mon Aug 24 13:18:48 2015
 ## \begin{table}[ht]
 ## \centering
 ## \begin{tabular}{rrrr}
 ##   \hline
 ##  &amp; 6 &amp; 7 &amp; 8 \\ 
 ##   \hline
-## 1 &amp;  74 &amp;  57 &amp;  65 \\ 
-##   2 &amp;  80 &amp;  65 &amp;  58 \\ 
-##   3 &amp;  65 &amp;  78 &amp;  70 \\ 
-##   4 &amp;  65 &amp;  61 &amp;  63 \\ 
-##   5 &amp;  57 &amp;  59 &amp;  83 \\ 
+## 1 &amp;  68 &amp;  66 &amp;  66 \\ 
+##   2 &amp;  70 &amp;  67 &amp;  67 \\ 
+##   3 &amp;  74 &amp;  69 &amp;  59 \\ 
+##   4 &amp;  72 &amp;  65 &amp;  52 \\ 
+##   5 &amp;  69 &amp;  70 &amp;  66 \\ 
+##    \hline
+## \end{tabular}
+## \end{table}</pre>
+
+</article></slide><slide class=''><hgroup><h2>Formulas in the header</h2></hgroup><article  id="formulas-in-the-header">
+
+<pre class = 'prettyprint lang-r'>colnames(tabAB)[3] &lt;- &quot;$A^2$&quot;
+xtable(tabAB)</pre>
+
+<pre >## % latex table generated in R 3.2.0 by xtable 1.7-4 package
+## % Mon Aug 24 13:18:48 2015
+## \begin{table}[ht]
+## \centering
+## \begin{tabular}{rrrr}
+##   \hline
+##  &amp; 6 &amp; 7 &amp; \$A\verb|^|2\$ \\ 
+##   \hline
+## 1 &amp;  68 &amp;  66 &amp;  66 \\ 
+##   2 &amp;  70 &amp;  67 &amp;  67 \\ 
+##   3 &amp;  74 &amp;  69 &amp;  59 \\ 
+##   4 &amp;  72 &amp;  65 &amp;  52 \\ 
+##   5 &amp;  69 &amp;  70 &amp;  66 \\ 
 ##    \hline
 ## \end{tabular}
 ## \end{table}</pre></article></slide>

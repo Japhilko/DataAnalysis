@@ -1,7 +1,7 @@
 ---
 title: "Publications"
 author: "Jan-Philipp Kolb"
-date: "5. Mai 2015"
+date: "05/05/2015"
 output: ioslides_presentation
 ---
 
@@ -13,6 +13,9 @@ output: ioslides_presentation
 ## Fonts in LaTeX
 
 - [Overview of fonts](http://www.math.tu-dresden.de/~rudl/latex/fonts.pdf)
+
+
+![picFonts](http://homepage3.nifty.com/tsato/xfig/html/images/text-font-panel.gif)
 
 ## Listings environment
 
@@ -75,6 +78,8 @@ xtable(tabAB)
 ```
 
 ## Formulas in the header
+
+- [Get formulas right](http://stackoverflow.com/questions/14877305/using-xtable-with-r-and-latex-math-mode-in-column-names)
 
 ```{r}
 colnames(tabAB)[3] <- "$A^2$"
