@@ -40,6 +40,10 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 - [In which journals should I publish my software?](http://www.software.ac.uk/resources/guides/which-journals-should-i-publish-my-software)
 
+## Github
+
+- [Intro Github](https://guides.github.com/introduction/)
+
 ## Java
 
 - [JRI - Java/R Interface](http://rforge.net/JRI/index.html)
@@ -74,7 +78,6 @@ library(rJava)
 - [Ruby webpage](https://www.ruby-lang.org/en/downloads/)
 - [Try ruby](http://tryruby.org/levels/1/challenges/0)
 - [Overpass with Ruby](http://jamescpoole.com/tag/overpass-api/)
-
 
 ## Links
 
