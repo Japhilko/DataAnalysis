@@ -40,6 +40,10 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 - [In which journals should I publish my software?](http://www.software.ac.uk/resources/guides/which-journals-should-i-publish-my-software)
 
+Journals:
+
+- [J-reading](http://www.j-reading.org/index.php/geography)
+
 ## Github
 
 - [Intro Github](https://guides.github.com/introduction/)
@@ -54,6 +58,8 @@ library(rJava)
 ```
 
 - [Clojure](http://clojure.org/) is a dynamic programming language that targets the Java Virtual Machine
+
+- [R and V8/json](http://www.r-bloggers.com/doh-i-could-have-had-just-used-v8/)
 
 ##  Getting to know html
 
