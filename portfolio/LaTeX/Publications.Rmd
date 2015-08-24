@@ -86,3 +86,6 @@ colnames(tabAB)[3] <- "$A^2$"
 xtable(tabAB)
 ```
 
+## Flushed left
+
+- [Whole table](http://stackoverflow.com/questions/12470306/xtable-left-just)
