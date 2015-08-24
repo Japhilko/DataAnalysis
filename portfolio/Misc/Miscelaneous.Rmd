@@ -2,7 +2,7 @@
 title: "Miscelaneous"
 author: "Jan-Philipp Kolb"
 date: "07/27/2015"
-output: beamer_presentation
+output: ioslides_presentation
 ---
 
 ## [Data scientist](http://www.r-bloggers.com/oreilly-data-scientist-salary-and-tools-survey-november-2014/)
@@ -70,9 +70,9 @@ library(rJava)
 
 ## Ruby
 
--[Jekyll](http://nicolewhite.github.io/r/2015/02/07/r-blogging-with-rmarkdown-knitr-jekyll.html)
--[Ruby webpage](https://www.ruby-lang.org/en/downloads/)
--[Try ruby](http://tryruby.org/levels/1/challenges/0)
+- [Jekyll](http://nicolewhite.github.io/r/2015/02/07/r-blogging-with-rmarkdown-knitr-jekyll.html)
+- [Ruby webpage](https://www.ruby-lang.org/en/downloads/)
+- [Try ruby](http://tryruby.org/levels/1/challenges/0)
 - [Overpass with Ruby](http://jamescpoole.com/tag/overpass-api/)
 
 
@@ -101,10 +101,15 @@ The R-Files
 
 ## Conferences
 
--[Overview of conferences](http://lanyrd.com/)
+- [Overview of conferences](http://lanyrd.com/)
+
 - [EARL conference](http://www.earl-conference.com/)
--[OpenSourceConvention](http://www.oscon.com/open-source-2015)
+
+- [OpenSourceConvention](http://www.oscon.com/open-source-2015)
+
 - [OSCON Europe](http://www.oscon.com/open-source-eu-2015)
+
 - [GDR Ecologie Statistique](https://sites.google.com/site/gdrecostat/)
+
 - [O'Reilly Strata Conference](http://strataconf.com/)
 
