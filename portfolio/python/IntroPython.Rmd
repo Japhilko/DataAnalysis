@@ -111,3 +111,7 @@ print(x.split(' '))
 ```
 
 - [Source of example](https://raw.githubusercontent.com/yihui/knitr-examples/master/023-engine-python.Rmd)
+
+## Python and geographics
+
+![pic](https://books.google.de/books/content?id=rfirBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72A3g9yLboFkyYsTjA10KFiXScBerlS_qI1EzwyKLjk7QqHQwKFzJ7PvRui3BJS0rDZnk4tPs3YTmA4U9xDArZCDBorRb1V4TtToCFCmPsahgWJLWDDWJlwKzNFs9-N5VBGTncb)

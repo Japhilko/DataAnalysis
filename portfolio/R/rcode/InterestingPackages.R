@@ -136,6 +136,7 @@ install.packages("maptools")
 install.packages("rworldmap")
 install.packages("rgeos")                 # Interface to Geometry Engine
 install.packages("rasterVis")
+install.packages("raster")
 install.packages("spacetime")
 install.packages("PBSmapping")
 install.packages("PBSmodelling")
@@ -191,6 +192,8 @@ install.packages("micromapST")
 install.packages("Grid2Polygons")
 
 devtools::install_github("hrbrmstr/nominatim")
+
+install.packages("rgrass7")
 #------------------------#
 # Data sources (geographical)
 #------------------------#
