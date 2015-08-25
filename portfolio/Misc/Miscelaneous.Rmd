@@ -44,9 +44,17 @@ Journals:
 
 - [J-reading](http://www.j-reading.org/index.php/geography)
 
-## Github
+## Open Source platforms
 
 - [Intro Github](https://guides.github.com/introduction/)
+
+- [Codeplex](https://www.codeplex.com/)
+
+- [Bitbucket](https://bitbucket.org/)
+
+- [Google code](https://code.google.com/)
+
+- [sourceforge](http://sourceforge.net/)
 
 ## Java
 
