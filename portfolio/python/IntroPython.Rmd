@@ -122,3 +122,6 @@ print(x.split(' '))
 
 ![pic](http://flowingdata.com/wp-content/themes/fd-modern-5-3/images/logo-v2d.png)
 
+## Web development with django
+
+- [Tutorial django](https://www.djangoproject.com/start/)

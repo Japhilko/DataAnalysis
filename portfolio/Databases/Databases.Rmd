@@ -8,7 +8,7 @@ output: ioslides_presentation
 ## Learning the query language
 
 - [w3schools](http://www.w3schools.com/sql/default.asp)
-
+- SQLite is already included in Python 
 
 ## Using a database and R
 
