@@ -10,27 +10,15 @@ output:
     center: true
 ---
 
-## R Markdown
+## Animations
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+- [HTML widgets](http://rmarkdown.rstudio.com/developer_html_widgets.html)
+- [Leaflet](http://www.htmlwidgets.org/showcase_leaflet.html)
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
-
-## Slide with Bullets
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-## Slide with R Code and Output
+## Animate data tables
 
 ```{r}
-summary(cars)
-```
-
-## Slide with Plot
-
-```{r, echo=FALSE}
-plot(cars)
+library(DT)
+datatable(iris, options = list(pageLength = 5))
 ```
 

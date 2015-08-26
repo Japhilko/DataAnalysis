@@ -43,6 +43,15 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 Journals:
 
 - [J-reading](http://www.j-reading.org/index.php/geography)
+- [Social Science Computer Review](http://ssc.sagepub.com/)
+
+
+[Computational Statistics and Data Analysis](http://www.journals.elsevier.com/computational-statistics-and-data-analysis/)
+
+- [Guide for authors](http://www.elsevier.com/journals/computational-statistics-and-data-analysis/0167-9473/guide-for-authors)
+- [style file](http://www.ctan.org/pkg/elsarticle)
+- [What is important](http://www.elsevier.com/connect/8-reasons-i-accepted-your-article)
+
 
 ## Open Source platforms
 
@@ -130,3 +139,4 @@ The R-Files
 
 - [O'Reilly Strata Conference](http://strataconf.com/)
 
+- [European Congress of Methodology](https://www.metheval.uni-jena.de/projekte/eam/index.php)

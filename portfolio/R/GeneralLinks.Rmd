@@ -28,6 +28,10 @@ output: ioslides_presentation
 - [youtube on R](http://www.revolutionanalytics.com/what-r)
 
 
+## Advanced R tipps
+
+- [Coding with pipes](http://www.r-statistics.com/2014/08/simpler-r-coding-with-pipes-the-present-and-future-of-the-magrittr-package/)
+
 ## R conferences
 
 - [Some R conferences in 2015](http://www.r-bloggers.com/some-r-conferences-in-2015/)

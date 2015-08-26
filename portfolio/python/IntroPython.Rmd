@@ -114,4 +114,11 @@ print(x.split(' '))
 
 ## Python and geographics
 
+<center>
+
 ![pic](https://books.google.de/books/content?id=rfirBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72A3g9yLboFkyYsTjA10KFiXScBerlS_qI1EzwyKLjk7QqHQwKFzJ7PvRui3BJS0rDZnk4tPs3YTmA4U9xDArZCDBorRb1V4TtToCFCmPsahgWJLWDDWJlwKzNFs9-N5VBGTncb)
+
+- [Map challenge and beautiful soup](http://flowingdata.com/2009/11/12/how-to-make-a-us-county-thematic-map-using-free-tools/)
+
+![pic](http://flowingdata.com/wp-content/themes/fd-modern-5-3/images/logo-v2d.png)
+

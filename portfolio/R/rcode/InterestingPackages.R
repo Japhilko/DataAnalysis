@@ -40,7 +40,7 @@ install.packages("TeachingDemos")
 
 
 #------------------------#
-# GraphikPackages
+# Graphic Packages
 #------------------------#
 
 install.packages("lattice")
@@ -86,6 +86,7 @@ install.packages("readstata13")
 #------------------------#
 
 install.packages("dplyr")
+install.packages("magrittr")
 
 # dates and times 
 install.packages("lubridate")
@@ -108,6 +109,9 @@ install.packages("xtable")
 install.packages("apsrtable")
 
 install.packages("tables")
+
+install.packages("DT")
+install.packages("leaflet")
 
 #------------------------#
 # Graphical user interfaces (gui)
@@ -194,6 +198,9 @@ install.packages("Grid2Polygons")
 devtools::install_github("hrbrmstr/nominatim")
 
 install.packages("rgrass7")
+
+install.packages("choroplethrMaps")
+
 #------------------------#
 # Data sources (geographical)
 #------------------------#
@@ -385,6 +392,7 @@ install.packages("rvest")
 #------------------------#
 # Databases
 #------------------------#
+
 install.packages("RPostgreSQL")
 
 install.packages("RMySQL")
@@ -418,10 +426,10 @@ install.packages("clusterSim")
 install.packages("archivist")
 
 install.packages("rj")
+
 #------------------------#
 # Packages for faster or better computation
 #------------------------#
-
 
 install.packages("plyr")
 install.packages("reshape")
