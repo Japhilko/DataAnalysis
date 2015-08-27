@@ -1,0 +1,14 @@
+---
+title: "Perl"
+author: "Jan-Philipp Kolb"
+date: "27. August 2015"
+output: slidy_presentation
+---
+
+## Perl
+
+- [General info](http://fileinfo.com/extension/pl)
+
+## Application example
+
+- [Borders for Finland](https://help.openstreetmap.org/questions/19336/get-city-borders-for-finland)

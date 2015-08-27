@@ -124,6 +124,8 @@ print(x.split(' '))
 
 - [Convert XML to Shapefile](http://gis.stackexchange.com/questions/71182/how-to-programmatically-convert-arbitrary-xml-data-to-shapefile)
 
+- [Convert to polygon](http://polygons.openstreetmap.fr/index.py)
+
 ## Web development with django
 
 - [Tutorial django](https://www.djangoproject.com/start/)
