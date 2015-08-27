@@ -5,6 +5,21 @@ date: "17. April 2015"
 output: ioslides_presentation
 ---
 
+## Update R
+
+- [installr package](http://www.r-statistics.com/2013/03/updating-r-from-r-on-windows-using-the-installr-package/)
+
+```{r,eval=F}
+# installing/loading the package:
+if(!require(installr)) {
+install.packages("installr"); require(installr)} #load / install+load installr
+ 
+# using the package:
+updateR() 
+```
+
+
+
 ## HTML and CSS
 
 - [HTML & CSS](http://www.codecademy.com/tracks/web) 

@@ -88,7 +88,7 @@ install.packages("readstata13")
 install.packages("dplyr")
 install.packages("magrittr")
 
-# dates and times 
+# dates and times
 install.packages("lubridate")
 
 #------------------------#
@@ -160,7 +160,7 @@ install.packages("spatgraphs")
 
 install.packages("DCluster")   # spatial clusters of diseases
 
-  # uas R as GIS 
+  # uas R as GIS
 install.packages("gdistance")
 install.packages("googleVis")
 
@@ -228,7 +228,7 @@ install.packages("sampling")
 install.packages("samplingVarEst")
 
 install.packages("VGAM")
-install.packages("fmsb") # Nagelkerke 
+install.packages("fmsb") # Nagelkerke
 
   # Hierarchical Models, und Multilevel Models
 install.packages("lme4")
@@ -297,6 +297,7 @@ install.packages("Amelia")
 
 	# Packages fuer internet of things
 install.packages("rjson")
+install.packages("RCurl")
 install.packages("googleVis")
 install.packages("plotKML") # isualization of Spatial and Spatio-Temporal Objects in Google Earth
 install.packages("lubridate")
@@ -378,9 +379,11 @@ install.packages("modeest")
 #------------------------#
 # Screen Scraping
 #------------------------#
+install.packages("XML")
+
 install.packages("RSXML")
 
-install.packages("scrapeR") 
+install.packages("scrapeR")
 install.packages("RGoogleAnalytics")
 install.packages("rga")
 
@@ -416,7 +419,7 @@ install.packages("simba")
 install.packages("proxy")
 install.packages("gregmisc")
 
-  # combinatorics 
+  # combinatorics
 install.packages("combinat")
 
 install.packages("animation")
@@ -440,13 +443,13 @@ install.packages("SNOW")
 install.packages("nws")
 install.packages("Rcpp")
 #------------------------#
-# image recognition 
+# image recognition
 #------------------------#
 
 install.packages("adimpro")
 
 #------------------------#
-# Interfaces 
+# Interfaces
 #------------------------#
 
 install.packages("rggobi")  # Interface between R and GGobi
@@ -466,6 +469,14 @@ Sys.setenv(JAVA_HOME='C:\\Program Files (x86)\\Java\\jre7') # for 32-bit version
 library(rJava)
 
 # http://www.omegahat.org/RSPerl/
+
+#------------------------#
+# Misc
+#------------------------#
+
+install.packages("roxygen2")
+
+
 
 #------------------------#
 # Links

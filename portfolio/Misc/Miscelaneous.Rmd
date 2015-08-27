@@ -140,3 +140,9 @@ The R-Files
 - [O'Reilly Strata Conference](http://strataconf.com/)
 
 - [European Congress of Methodology](https://www.metheval.uni-jena.de/projekte/eam/index.php)
+
+## Events
+
+- [Heidelberg Unseminars in Bioinformatics](http://www.hub-hub.de/wiki/index.php?title=HUB_-_Heidelberg_Unseminars_in_Bioinformatics)
+
+- [HUB Events](http://www.hub-hub.de/wiki/index.php?title=EventAds)
