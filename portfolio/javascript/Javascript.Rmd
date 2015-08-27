@@ -56,5 +56,7 @@ ct$console()
 
 - [File ending .js](http://www.dateiendung.com/format/js)
 
+## Javascript and geographics
 
+- [Code snippets](http://wiki.openstreetmap.org/wiki/Tag_Processing_Snippets)
 

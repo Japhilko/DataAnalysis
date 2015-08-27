@@ -17,3 +17,7 @@ output: ioslides_presentation
 - [PostgreSQ](http://wiki.openstreetmap.org/wiki/PostgreSQL)
 
 - [Video](https://www.youtube.com/watch?v=2AVnuu4Ty_A)
+
+## Database for geographic purposes
+
+- PostGIS
