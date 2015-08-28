@@ -1,0 +1,49 @@
+---
+title: "PostGIS"
+author: "Jan-Philipp Kolb"
+date: "Fri Aug 28 10:07:51 2015"
+output: slidy_presentation
+---
+
+
+## Why PostGIS
+
+- [PostGIS and R](http://gis.stackexchange.com/questions/64950/which-is-the-best-way-of-working-with-postgis-data-in-r)
+
+## Get started
+
+- [Getting started tutorial](http://www.bostongis.com/?content_name=postgis_tut01)
+
+- [Download of Postgresql](http://de.enterprisedb.com/products-services-training/pgdownload)
+
+- [Get started](http://km-bw.de/site/pbs-bw/get/documents/KULTUS.Dachmandant/KULTUS/Dienststellen/it.kultus-bw/pdf/SVP_BW/Postgres_Datenbankinstallation.pdf) with pgAdmin III.
+
+
+## [Create an osm database](http://learnosm.org/en/osm-data/setting-up-postgresql/)
+
+![pic](http://learnosm.org/images/en/osm-data/setting-up-postgresql/new-database.png)
+
+## Create database
+
+- [First steps](http://doc.postgres.de/postgresql_9.0/tutorial-createdb.html)
+
+- [OSM and PostGIS](http://cnr.ncsu.edu/geospatial/wp-content/uploads/sites/6/2014/08/Zielstra_Tonini_021215.pdf)
+
+
+- [PostGIS](http://wiki.openstreetmap.org/wiki/PostGIS)
+
+
+## Import of OSM data
+
+- [Set up database](http://wiki.openstreetmap.org/wiki/PostGIS)
+
+- [Use python program imposm](http://imposm.org/)
+
+
+## Additional information
+
+- [Standard Ports](https://de.wikipedia.org/wiki/Liste_der_standardisierten_Ports)
+
+Google Searches
+
+r-project + postgis

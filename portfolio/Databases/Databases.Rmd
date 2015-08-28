@@ -20,4 +20,6 @@ output: ioslides_presentation
 
 ## Database for geographic purposes
 
-- PostGIS
+- [Install PostGIS](http://www.bostongis.com/?content_name=postgis_tut01)
+
+- [PostGIS in combination with R](http://gis.stackexchange.com/questions/64950/which-is-the-best-way-of-working-with-postgis-data-in-r)
