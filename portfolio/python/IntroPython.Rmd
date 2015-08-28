@@ -1,7 +1,7 @@
 ---
 title: "Python Programming"
 author: "Jan-Philipp Kolb"
-date: "24. Juli 2015"
+date: "Fri Aug 28 10:40:22 2015"
 output: slidy_presentation
 ---
 
@@ -11,6 +11,7 @@ Popularity of Python
 
 - [10 Reasons Python Rocks for Research](https://www.stat.washington.edu/~hoytak/blog/whypython.html)
 
+![pic](https://raw.githubusercontent.com/Japhilko/DataAnalysis/master/data/figure/tenReasonsPython.PNG)
 
 ## Intro to Python
 

@@ -22,3 +22,10 @@ library(DT)
 datatable(iris, options = list(pageLength = 5))
 ```
 
+## [Embed shell script](http://stackoverflow.com/questions/20303826/highlight-bash-shell-code-in-markdown)
+
+```shell
+C:\
+```
+
+

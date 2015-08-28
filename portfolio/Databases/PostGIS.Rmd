@@ -32,21 +32,44 @@ output: slidy_presentation
 
 - [OSM and PostGIS](http://cnr.ncsu.edu/geospatial/wp-content/uploads/sites/6/2014/08/Zielstra_Tonini_021215.pdf)
 
-
-- [PostGIS](http://wiki.openstreetmap.org/wiki/PostGIS)
-
+- Set up [PostGIS](http://wiki.openstreetmap.org/wiki/PostGIS) database
 
 ## Import of OSM data
 
-- [Set up database](http://wiki.openstreetmap.org/wiki/PostGIS)
+- [osmosis](http://skipperkongen.dk/2012/08/02/import-osm-data-into-postgis-using-osmosis/)
+
+- [osm2pgsql](http://learnosm.org/en/osm-data/osm2pgsql/)
 
 - [Use python program imposm](http://imposm.org/)
 
+imposm does not work with windows
+
+- [Import PostGIS](http://www.postgis.us/Presentations/PGOpen2014_Session1.html#/)
+
 - [Intro imposm](http://imposm.org/docs/imposm/latest/tutorial.html)
+
+
+## Work with osmosis
+
+- Get data from [Geofabrik](http://download.geofabrik.de/europe/germany.html)
+
+
+- [Learn osmosis](http://learnosm.org/en/osm-data/osmosis/)
+
+- Work with [osmosis](http://wiki.openstreetmap.org/wiki/User:Ajoessen/Osmosis)
+```shell
+D:\Programme\osmosis-latest\bin\osmosis.bat --read-pbf
+D:\Daten\Daten\GeoDaten\rheinland-pfalz-latest.osm.pbf
+```
 
 ## Additional information
 
 - [Standard Ports](https://de.wikipedia.org/wiki/Liste_der_standardisierten_Ports)
+
+
+- [Solution](http://gis.19327.n5.nabble.com/osmosis-dev-Codehaus-discontinued-Osmosis-not-working-td5847581.html) for problem with running osmosis
+
+
 
 Google Searches
 
