@@ -2,8 +2,15 @@
 title: "Python Programming"
 author: "Jan-Philipp Kolb"
 date: "24. Juli 2015"
-output: ioslides_presentation
+output: slidy_presentation
 ---
+
+## Why use python
+
+Popularity of Python
+
+- [10 Reasons Python Rocks for Research](https://www.stat.washington.edu/~hoytak/blog/whypython.html)
+
 
 ## Intro to Python
 
@@ -35,9 +42,6 @@ output: ioslides_presentation
 
 - [Video on python](https://www.youtube.com/watch?v=F1_FqvbXHb4)
 
-## Popularity of Python
-
-- [10 Reasons Python Rocks for Research](https://www.stat.washington.edu/~hoytak/blog/whypython.html)
 
 ## More links
 

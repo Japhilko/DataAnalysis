@@ -10,6 +10,9 @@ output: slidy_presentation
 
 - [PostGIS and R](http://gis.stackexchange.com/questions/64950/which-is-the-best-way-of-working-with-postgis-data-in-r)
 
+![pic](https://raw.githubusercontent.com/Japhilko/DataAnalysis/master/data/figure/PostGISR.PNG)
+
+
 ## Get started
 
 - [Getting started tutorial](http://www.bostongis.com/?content_name=postgis_tut01)
@@ -39,6 +42,7 @@ output: slidy_presentation
 
 - [Use python program imposm](http://imposm.org/)
 
+- [Intro imposm](http://imposm.org/docs/imposm/latest/tutorial.html)
 
 ## Additional information
 
