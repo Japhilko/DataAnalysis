@@ -44,6 +44,7 @@ Jan-Philipp Kolb
 <li><p><a href="http://doc.postgres.de/postgresql_9.0/tutorial-createdb.html">First steps</a></p></li>
 <li><p><a href="http://cnr.ncsu.edu/geospatial/wp-content/uploads/sites/6/2014/08/Zielstra_Tonini_021215.pdf">OSM and PostGIS</a></p></li>
 <li><p>Set up <a href="http://wiki.openstreetmap.org/wiki/PostGIS">PostGIS</a> database</p></li>
+<li><p>PostGIS <a href="http://workshops.boundlessgeo.com/postgis-intro/">Boundless workshop</a></p></li>
 </ul>
 </div>
 <div id="import-of-osm-data" class="slide section level2">
@@ -62,17 +63,31 @@ Jan-Philipp Kolb
 <div id="work-with-osmosis" class="slide section level2">
 <h1>Work with osmosis</h1>
 <ul>
-<li><p>Get data from <a href="http://download.geofabrik.de/europe/germany.html">Geofabrik</a></p></li>
 <li><p><a href="http://learnosm.org/en/osm-data/osmosis/">Learn osmosis</a></p></li>
-<li><p>Work with <a href="http://wiki.openstreetmap.org/wiki/User:Ajoessen/Osmosis">osmosis</a></p>
-<pre class="shell"><code>D:\Programme\osmosis-latest\bin\osmosis.bat --read-pbf
-D:\Daten\Daten\GeoDaten\rheinland-pfalz-latest.osm.pbf</code></pre></li>
+<li><p>Work with <a href="http://wiki.openstreetmap.org/wiki/User:Ajoessen/Osmosis">osmosis</a></p></li>
+<li><p><a href="http://wiki.openstreetmap.org/wiki/Osmosis/Detailed_Usage_0.43">detailed usage osmosis</a></p></li>
 </ul>
+<pre class="shell"><code>osmosis --rbf sample_osmosis.osm.pbf --write-xml sample.osm</code></pre>
+<pre class="shell"><code>osmosis --rbf rheinland-pfalz-latest.osm.pbf --write-xml RLP.osm</code></pre>
+<p>More examples:</p>
+<ul>
+<li>Get data from <a href="http://download.geofabrik.de/europe/germany.html">Geofabrik</a></li>
+</ul>
+<pre class="shell"><code>osmosis --read-xml niedersachsen.osm --bb left=7.917 right=8.1694 \
+                                top=52.3537 bottom=52.3537 --write-xml osnabrueck.osm</code></pre>
+<pre class="shell"><code>D:\Programme\osmosis-latest\bin\osmosis.bat --read-pbf
+D:\Daten\Daten\GeoDaten\rheinland-pfalz-latest.osm.pbf</code></pre>
+</div>
+<div id="export-to-postgis-using-osmosis" class="slide section level2">
+<h1>Export to PostGIS using osmosis</h1>
+<p><a href="http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup">Export</a></p>
+<pre class="shell"><code>osmosis --read-pbf erheinland-pfalz-latest.osm.pbf --write-pgsql database=gisdb </code></pre>
 </div>
 <div id="additional-information" class="slide section level2">
 <h1>Additional information</h1>
 <ul>
-<li><a href="https://de.wikipedia.org/wiki/Liste_der_standardisierten_Ports">Standard Ports</a></li>
+<li><p><a href="https://de.wikipedia.org/wiki/Liste_der_standardisierten_Ports">Standard Ports</a></p></li>
+<li><p><a href="http://gis.19327.n5.nabble.com/osmosis-dev-Codehaus-discontinued-Osmosis-not-working-td5847581.html">Solution</a> for problem with running osmosis</p></li>
 </ul>
 <p>Google Searches</p>
 <p>r-project + postgis</p>

@@ -34,6 +34,8 @@ output: slidy_presentation
 
 - Set up [PostGIS](http://wiki.openstreetmap.org/wiki/PostGIS) database
 
+- PostGIS [Boundless workshop](http://workshops.boundlessgeo.com/postgis-intro/)
+
 ## Import of OSM data
 
 - [osmosis](http://skipperkongen.dk/2012/08/02/import-osm-data-into-postgis-using-osmosis/)
@@ -51,16 +53,59 @@ imposm does not work with windows
 
 ## Work with osmosis
 
-- Get data from [Geofabrik](http://download.geofabrik.de/europe/germany.html)
-
-
 - [Learn osmosis](http://learnosm.org/en/osm-data/osmosis/)
 
 - Work with [osmosis](http://wiki.openstreetmap.org/wiki/User:Ajoessen/Osmosis)
+
+- [detailed usage osmosis](http://wiki.openstreetmap.org/wiki/Osmosis/Detailed_Usage_0.43)
+
+
+```shell
+osmosis --rbf sample_osmosis.osm.pbf --write-xml sample.osm
+```
+
+```shell
+osmosis --rbf rheinland-pfalz-latest.osm.pbf --write-xml RLP.osm
+```
+
+More examples: 
+
+- Get data from [Geofabrik](http://download.geofabrik.de/europe/germany.html)
+
+```shell
+osmosis --read-xml niedersachsen.osm --bb left=7.917 right=8.1694 \
+                                top=52.3537 bottom=52.3537 --write-xml osnabrueck.osm
+```
+
+
 ```shell
 D:\Programme\osmosis-latest\bin\osmosis.bat --read-pbf
 D:\Daten\Daten\GeoDaten\rheinland-pfalz-latest.osm.pbf
 ```
+
+
+## Export to PostGIS using osmosis
+
+[Export](http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup)
+
+```shell
+osmosis --read-pbf erheinland-pfalz-latest.osm.pbf --write-pgsql database=gisdb 
+```
+
+## Back to R
+
+```{r,echo=F,eval=F}
+setwd("")
+```
+
+
+```{r,eval=F,message=F,warning=F}
+require(rgdal)
+dsn="PG:dbname='gisdb'"
+ogrListLayers(dsn)
+```
+
+
 
 ## Additional information
 
@@ -74,3 +119,13 @@ D:\Daten\Daten\GeoDaten\rheinland-pfalz-latest.osm.pbf
 Google Searches
 
 r-project + postgis
+
+```{r}
+
+# http://postgis.net/
+
+# http://gis.stackexchange.com/questions/64950/which-is-the-best-way-of-working-with-postgis-data-in-r
+require(rgdal)
+```
+
+
