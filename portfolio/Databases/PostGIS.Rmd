@@ -94,6 +94,8 @@ osmosis --read-pbf erheinland-pfalz-latest.osm.pbf --write-pgsql database=gisdb
 
 ## Back to R
 
+- [How to make R, PostGIS and QGis cooperate](https://hal.inria.fr/file/index/docid/737397/filename/bonin_V2.pdf)
+
 ```{r,echo=F,eval=F}
 setwd("")
 ```
