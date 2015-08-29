@@ -47,3 +47,9 @@ for number in my_list:
     2*number
 
 # instead of pip install it is sometimes better to use conda install
+
+
+
+import sys
+
+print (sys.version)

@@ -76,7 +76,7 @@ library(RPyGeo)
 - [rpy2 - R in Python](http://rpy.sourceforge.net/)
 - [Introduction to OpenCPU for R on EC2 with Python](http://www.r-bloggers.com/introduction-to-opencpu-for-r-on-ec2-with-python/)
 
-
+- [Choose Python or R](http://blog.udacity.com/2015/01/python-vs-r-learn-first.html)
 
 ## Something like Rstudio
 
@@ -92,6 +92,8 @@ library(RPyGeo)
 <http://rforwork.info/2015/05/28/an-r-enthusiast-goes-pythonic/>
 
 <http://www.r-bloggers.com/choosing-r-or-python-for-data-analysis-an-infographic/>
+
+- [Python anywhere](https://www.pythonanywhere.com/)
 
 ## Webscraping
 
@@ -131,6 +133,14 @@ print(x.split(' '))
 
 - [Convert to polygon](http://polygons.openstreetmap.fr/index.py)
 
+- [Mapping with python](https://www.youtube.com/watch?v=a0dT1Q2iPWA)
+
 ## Web development with django
 
 - [Tutorial django](https://www.djangoproject.com/start/)
+
+## Data science
+
+- [Python for open data lovers](https://www.youtube.com/watch?v=GxyfYEe8MiQ)
+
+- [Python's Role in Big Data Analytics: Past, Present, and...](https://www.youtube.com/watch?v=oXRvpBJ-Dkc)
