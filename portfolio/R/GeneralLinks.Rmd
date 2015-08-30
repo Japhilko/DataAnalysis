@@ -17,6 +17,8 @@ output: ioslides_presentation
 
 - [A list of R packages, by popularity](http://blog.revolutionanalytics.com/2013/06/a-list-of-r-packages-by-popularity.html)
 
+- [R for journalists](http://www.scoop.it/t/r-for-journalists)
+
 ## Intro R
 
 - [Thomas Girke - Programming in R](http://manuals.bioinformatics.ucr.edu/home/programming-in-r)
@@ -114,3 +116,7 @@ RWordPress
 ## Tipps and Tricks
 
 - [Petr Keil - 12 nifty tips for scientists who use computers](http://www.petrkeil.com/?p=2356)
+
+# Interactive presentation
+
+- [htmlwidgets](http://www.buildingwidgets.com/)

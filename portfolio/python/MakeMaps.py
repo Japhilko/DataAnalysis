@@ -5,6 +5,7 @@ Created on Sun Aug 02 13:15:37 2015
 @author: Kolb
 """
 
+
 # http://matplotlib.org/basemap/users/examples.html
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
@@ -58,3 +59,5 @@ plt.show()
 # http://de.slideshare.net/mishok13/making-use-of-openstreetmap-data-with-python
 
 # http://www.geophysique.be/2010/11/26/matplotlib-basemap-tutorial-06-real-case-pie-charts/
+
+# http://blog.lifeeth.in/2011/02/extract-pois-from-osm-pbf.html
