@@ -1,14 +1,22 @@
 ---
 title: "Command Line"
 author: "Jan-Philipp Kolb"
-date: "28. August 2015"
+date: "Mon Aug 31 09:21:53 2015"
 output: slidy_presentation
 ---
 
-## 
+## Basics
 
 - [Change the drive](http://www.7tutorials.com/command-prompt-how-use-basic-commands)
 
 ```shell
 d:
+```
+
+- [Most important commands](https://www.thomas-krenn.com/de/wiki/Cmd-Befehle_unter_Windows)
+
+- To see all path variables:
+
+```shell
+echo %PATH%
 ```

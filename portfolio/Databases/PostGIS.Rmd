@@ -38,17 +38,19 @@ output: slidy_presentation
 
 ## Import of OSM data
 
-- [osmosis](http://skipperkongen.dk/2012/08/02/import-osm-data-into-postgis-using-osmosis/)
+General methods:
 
 - [osm2pgsql](http://learnosm.org/en/osm-data/osm2pgsql/)
 
 - [Use python program imposm](http://imposm.org/)
 
-imposm does not work with windows
-
 - [Import PostGIS](http://www.postgis.us/Presentations/PGOpen2014_Session1.html#/)
 
 - [Intro imposm](http://imposm.org/docs/imposm/latest/tutorial.html)
+
+Methods for windows
+
+- [osmosis](http://skipperkongen.dk/2012/08/02/import-osm-data-into-postgis-using-osmosis/)
 
 
 ## Work with osmosis
@@ -74,14 +76,20 @@ More examples:
 
 ```shell
 osmosis --read-xml niedersachsen.osm --bb left=7.917 right=8.1694 \
-                                top=52.3537 bottom=52.3537 --write-xml osnabrueck.osm
+                                top=52.3537 bottom=52.3537 
+                                --write-xml osnabrueck.osm
 ```
 
 
-```shell
-D:\Programme\osmosis-latest\bin\osmosis.bat --read-pbf
-D:\Daten\Daten\GeoDaten\rheinland-pfalz-latest.osm.pbf
-```
+## Setup PostGIS to use osmosis
+
+- [PostGIS setup](http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup)
+
+- [Setup PostGIS windows](http://wiki.openstreetmap.org/wiki/DE:Postgis92_Win7_64bit)
+
+- To use the command `psql` [set a path variable](https://support.microsoft.com/de-de/kb/310519)
+
+- [Documentation](http://www.postgresql.org/docs/9.4/static/app-psql.html) command `psql` 
 
 
 ## Export to PostGIS using osmosis
@@ -89,7 +97,8 @@ D:\Daten\Daten\GeoDaten\rheinland-pfalz-latest.osm.pbf
 [Export](http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup)
 
 ```shell
-osmosis --read-pbf erheinland-pfalz-latest.osm.pbf --write-pgsql database=gisdb 
+osmosis --read-pbf erheinland-pfalz-latest.osm.pbf 
+--write-pgsql database=gisdb 
 ```
 
 ## Back to R
