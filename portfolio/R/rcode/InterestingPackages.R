@@ -200,6 +200,9 @@ devtools::install_github("hrbrmstr/nominatim")
 install.packages("rgrass7")
 
 install.packages("choroplethrMaps")
+install.packages("choroplethr")
+
+install.packages("mapplots")
 
 #------------------------#
 # Data sources (geographical)

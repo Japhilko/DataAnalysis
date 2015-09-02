@@ -46,6 +46,8 @@ output:
 ```
 
 
+
+
 ## [Github](http://github.org) 
 
 - Use [github with Rstudio](http://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/)
@@ -111,7 +113,7 @@ citation(package = "foreign")
 citation(package = "mice")
 ```
 
-
+- [Citations in Rmarkdown](https://cran.r-project.org/web/packages/RefManageR/vignettes/TestRmd.html)
 
 
 <http://www.blopig.com/blog/2013/07/citing-r-packages-in-your-thesispaperassignments/>

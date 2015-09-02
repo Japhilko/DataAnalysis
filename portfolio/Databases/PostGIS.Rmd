@@ -50,9 +50,21 @@ General methods:
 
 Methods for windows
 
+- [pgshapeloader](http://suite.opengeo.org/4.1/dataadmin/pgGettingStarted/pgshapeloader.html)
+
+- [shp2pgsql](http://gis.stackexchange.com/questions/50107/where-to-find-shp2pgsql-windows-binaries)
+
 - [osmosis](http://skipperkongen.dk/2012/08/02/import-osm-data-into-postgis-using-osmosis/)
 
+## Work with pgshapeloader
 
+- [How it works](http://suite.opengeo.org/4.1/dataadmin/pgGettingStarted/pgshapeloader.html)
+
+## Work with shp2pgsql
+
+```shell
+shp2pgsql -I -s 900913 D:/Daten/Daten/GeoDaten/bremen-140226.shp/points.shp public.geospatial-data | psql -p 5432 -d RLPgis
+```
 ## Work with osmosis
 
 - [Learn osmosis](http://learnosm.org/en/osm-data/osmosis/)
@@ -79,6 +91,15 @@ osmosis --read-xml niedersachsen.osm --bb left=7.917 right=8.1694 \
                                 top=52.3537 bottom=52.3537 
                                 --write-xml osnabrueck.osm
 ```
+
+## osmosis in R
+
+```{r,eval=F}
+library(osmar)
+?osmsource_osmosis
+```
+
+
 
 
 ## Setup PostGIS to use osmosis
