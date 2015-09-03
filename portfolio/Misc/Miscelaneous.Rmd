@@ -40,6 +40,10 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 - [In which journals should I publish my software?](http://www.software.ac.uk/resources/guides/which-journals-should-i-publish-my-software)
 
+- [List of journals](http://www.jammuuniversity.in/journals/statistics-journals.htm)
+
+- [journal list](http://www.statsci.org/jourlist.html)
+
 Journals:
 
 - [J-reading](http://www.j-reading.org/index.php/geography)

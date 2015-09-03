@@ -82,6 +82,10 @@ library(rmarkdown)
 
 - [Rmarkdown - other language engines](http://yihui.name/knitr/demo/engines/)
 
+- [Markdown syntax](http://sourceforge.net/p/pgbarman/tickets/markdown_syntax#md_ex_text)
+
+- [Syntax highlighting in markdown](https://support.codebasehq.com/articles/tips-tricks/syntax-highlighting-in-markdown)
+
 ## Rpresentations
 
 - [Rpresentations](http://stackoverflow.com/questions/23619319/rpresentation-in-rstudio-make-image-fill-out-the-whole-screen)

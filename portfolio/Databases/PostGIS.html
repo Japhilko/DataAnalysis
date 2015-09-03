@@ -66,6 +66,15 @@ Jan-Philipp Kolb
 <li><p>PostGIS <a href="http://workshops.boundlessgeo.com/postgis-intro/">Boundless workshop</a></p></li>
 </ul>
 </div>
+<div id="setup-postgis" class="slide section level2">
+<h1>Setup PostGIS</h1>
+<ul>
+<li><p><a href="http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup">PostGIS setup</a></p></li>
+<li><p><a href="http://wiki.openstreetmap.org/wiki/DE:Postgis92_Win7_64bit">Setup PostGIS windows</a></p></li>
+<li><p>To use the command <code>psql</code> <a href="https://support.microsoft.com/de-de/kb/310519">set a path variable</a></p></li>
+<li><p><a href="http://www.postgresql.org/docs/9.4/static/app-psql.html">Documentation</a> command <code>psql</code></p></li>
+</ul>
+</div>
 <div id="import-of-osm-data" class="slide section level2">
 <h1>Import of OSM data</h1>
 <p>General methods:</p>
@@ -77,20 +86,10 @@ Jan-Philipp Kolb
 </ul>
 <p>Methods for windows</p>
 <ul>
-<li><p><a href="http://suite.opengeo.org/4.1/dataadmin/pgGettingStarted/pgshapeloader.html">pgshapeloader</a></p></li>
-<li><p><a href="http://gis.stackexchange.com/questions/50107/where-to-find-shp2pgsql-windows-binaries">shp2pgsql</a></p></li>
+<li><p><a href="http://suite.opengeo.org/4.1/dataadmin/pgGettingStarted/pgshapeloader.html">pgshapeloader</a> - <a href="http://suite.opengeo.org/4.1/dataadmin/pgGettingStarted/pgshapeloader.html">how it works</a></p></li>
 <li><p><a href="http://skipperkongen.dk/2012/08/02/import-osm-data-into-postgis-using-osmosis/">osmosis</a></p></li>
+<li><p><a href="http://gis.stackexchange.com/questions/50107/where-to-find-shp2pgsql-windows-binaries">shp2pgsql</a></p></li>
 </ul>
-</div>
-<div id="work-with-pgshapeloader" class="slide section level2">
-<h1>Work with pgshapeloader</h1>
-<ul>
-<li><a href="http://suite.opengeo.org/4.1/dataadmin/pgGettingStarted/pgshapeloader.html">How it works</a></li>
-</ul>
-</div>
-<div id="work-with-shp2pgsql" class="slide section level2">
-<h1>Work with shp2pgsql</h1>
-<pre class="shell"><code>shp2pgsql -I -s 900913 D:/Daten/Daten/GeoDaten/bremen-140226.shp/points.shp public.geospatial-data | psql -p 5432 -d RLPgis</code></pre>
 </div>
 <div id="work-with-osmosis" class="slide section level2">
 <h1>Work with osmosis</h1>
@@ -101,36 +100,69 @@ Jan-Philipp Kolb
 </ul>
 <pre class="shell"><code>osmosis --rbf sample_osmosis.osm.pbf --write-xml sample.osm</code></pre>
 <pre class="shell"><code>osmosis --rbf rheinland-pfalz-latest.osm.pbf --write-xml RLP.osm</code></pre>
-<p>More examples:</p>
+</div>
+<div id="work-with-shp2pgsql" class="slide section level2">
+<h1>Work with shp2pgsql</h1>
+<pre class="shell"><code>shp2pgsql -I -s 900913 D:/Daten/Daten/GeoDaten/bremen-140226.shp/points.shp
+public.geospatial-data | psql -p 5432 -d RLPgis</code></pre>
+</div>
+<div id="postgresql-queries" class="slide section level2">
+<h1>PostgreSQL queries</h1>
 <ul>
-<li>Get data from <a href="http://download.geofabrik.de/europe/germany.html">Geofabrik</a></li>
+<li><a href="http://www.postgresql.org/docs/8.1/static/queries.html">PostgreSQL queries</a></li>
+<li><a href="http://www.bostongis.com/PrinterFriendly.aspx?content_name=postgis_tut01">Querying data</a></li>
 </ul>
-<pre class="shell"><code>osmosis --read-xml niedersachsen.osm --bb left=7.917 right=8.1694 \
-                                top=52.3537 bottom=52.3537 
-                                --write-xml osnabrueck.osm</code></pre>
+<pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> <span class="ot">&quot;geospatial-data&quot;</span>.osm_id <span class="kw">FROM</span> public.<span class="ot">&quot;geospatial-data&quot;</span>;</code></pre>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-create-data-queries-in-postgresql-by-using-the-select-command">Get ordered results:</a></p>
+<pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> 
+  <span class="ot">&quot;geospatial-data&quot;</span>.type, 
+  <span class="ot">&quot;geospatial-data&quot;</span>.osm_id
+<span class="kw">FROM</span> 
+  public.<span class="ot">&quot;geospatial-data&quot;</span>
+<span class="kw">ORDER</span> <span class="kw">BY</span>
+  <span class="ot">&quot;geospatial-data&quot;</span>.type
+;</code></pre>
+<p>Get filtered results:</p>
+<pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> 
+  <span class="ot">&quot;geospatial-data&quot;</span>.type, 
+  <span class="ot">&quot;geospatial-data&quot;</span>.osm_id
+<span class="kw">FROM</span> 
+  public.<span class="ot">&quot;geospatial-data&quot;</span>
+<span class="kw">WHERE</span>
+  <span class="ot">&quot;geospatial-data&quot;</span>.type = <span class="st">'advertising'</span>
+;</code></pre>
+<pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> 
+  <span class="ot">&quot;geospatial-data&quot;</span>.type, 
+  <span class="ot">&quot;geospatial-data&quot;</span>.osm_id
+<span class="kw">FROM</span> 
+  public.<span class="ot">&quot;geospatial-data&quot;</span>
+<span class="kw">WHERE</span>
+  <span class="ot">&quot;geospatial-data&quot;</span>.type <span class="kw">LIKE</span> <span class="st">'a%'</span>
+;</code></pre>
 </div>
-<div id="osmosis-in-r" class="slide section level2">
-<h1>osmosis in R</h1>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(osmar)
-?osmsource_osmosis</code></pre>
-</div>
-<div id="setup-postgis-to-use-osmosis" class="slide section level2">
-<h1>Setup PostGIS to use osmosis</h1>
+<div id="postgis" class="slide section level2">
+<h1>PostGIS</h1>
 <ul>
-<li><p><a href="http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup">PostGIS setup</a></p></li>
-<li><p><a href="http://wiki.openstreetmap.org/wiki/DE:Postgis92_Win7_64bit">Setup PostGIS windows</a></p></li>
-<li><p>To use the command <code>psql</code> <a href="https://support.microsoft.com/de-de/kb/310519">set a path variable</a></p></li>
-<li><p><a href="http://www.postgresql.org/docs/9.4/static/app-psql.html">Documentation</a> command <code>psql</code></p></li>
+<li><a href="http://postgis.net/docs/">Manual</a></li>
+<li><a href="http://manual.linfiniti.com/en/postgis/spatial_queries.html">Spatial queries</a></li>
+<li><a href="http://www.gistutor.com/postgresqlpostgis/10-intermediate-postgresqlpostgis-tutorials/75-understanding-postgis-spatial-queries.html">Understanding PostGIS Spatial Queries</a></li>
 </ul>
-</div>
-<div id="export-to-postgis-using-osmosis" class="slide section level2">
-<h1>Export to PostGIS using osmosis</h1>
-<p><a href="http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup">Export</a></p>
-<pre class="shell"><code>osmosis --read-pbf erheinland-pfalz-latest.osm.pbf 
---write-pgsql database=gisdb </code></pre>
 </div>
 <div id="back-to-r" class="slide section level2">
 <h1>Back to R</h1>
+<ul>
+<li><a href="https://datashenanigan.wordpress.com/2015/05/18/getting-started-with-postgresql-in-r/">Getting started with PostgreSQL in R</a></li>
+</ul>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">require</span>(<span class="st">&quot;RPostgreSQL&quot;</span>)
+pw &lt;-<span class="st"> </span>{<span class="st">&quot;xyz&quot;</span>}
+drv &lt;-<span class="st"> </span><span class="kw">dbDriver</span>(<span class="st">&quot;PostgreSQL&quot;</span>)
+<span class="co"># and so on</span></code></pre>
+<ul>
+<li><a href="https://fenix.tecnico.ulisboa.pt/downloadFile/3779576719789/introducao-PostGIS.pdf">PostGIS and R</a></li>
+</ul>
+</div>
+<div id="more-info-about-postgis-and-r" class="slide section level2">
+<h1>More info about PostGIS and R</h1>
 <ul>
 <li><a href="https://hal.inria.fr/file/index/docid/737397/filename/bonin_V2.pdf">How to make R, PostGIS and QGis cooperate</a></li>
 </ul>

@@ -203,6 +203,7 @@ install.packages("choroplethrMaps")
 install.packages("choroplethr")
 
 install.packages("mapplots")
+install.packages("intamap")
 
 #------------------------#
 # Data sources (geographical)
@@ -220,6 +221,8 @@ install.packages("Quandl") # https://www.quandl.com/help/r
 install.packages("eurostat")
 
 install.packages("GDELTtools")
+
+install.packages("HistData")
 
 #------------------------#
 # Packages for samples estimation etc

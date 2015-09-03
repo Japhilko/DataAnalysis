@@ -36,6 +36,20 @@ output: slidy_presentation
 
 - PostGIS [Boundless workshop](http://workshops.boundlessgeo.com/postgis-intro/)
 
+
+
+## Setup PostGIS 
+
+- [PostGIS setup](http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup)
+
+- [Setup PostGIS windows](http://wiki.openstreetmap.org/wiki/DE:Postgis92_Win7_64bit)
+
+- To use the command `psql` [set a path variable](https://support.microsoft.com/de-de/kb/310519)
+
+- [Documentation](http://www.postgresql.org/docs/9.4/static/app-psql.html) command `psql` 
+
+
+
 ## Import of OSM data
 
 General methods:
@@ -50,21 +64,13 @@ General methods:
 
 Methods for windows
 
-- [pgshapeloader](http://suite.opengeo.org/4.1/dataadmin/pgGettingStarted/pgshapeloader.html)
-
-- [shp2pgsql](http://gis.stackexchange.com/questions/50107/where-to-find-shp2pgsql-windows-binaries)
+- [pgshapeloader](http://suite.opengeo.org/4.1/dataadmin/pgGettingStarted/pgshapeloader.html) - [how it works](http://suite.opengeo.org/4.1/dataadmin/pgGettingStarted/pgshapeloader.html)
 
 - [osmosis](http://skipperkongen.dk/2012/08/02/import-osm-data-into-postgis-using-osmosis/)
 
-## Work with pgshapeloader
+- [shp2pgsql](http://gis.stackexchange.com/questions/50107/where-to-find-shp2pgsql-windows-binaries)
 
-- [How it works](http://suite.opengeo.org/4.1/dataadmin/pgGettingStarted/pgshapeloader.html)
 
-## Work with shp2pgsql
-
-```shell
-shp2pgsql -I -s 900913 D:/Daten/Daten/GeoDaten/bremen-140226.shp/points.shp public.geospatial-data | psql -p 5432 -d RLPgis
-```
 ## Work with osmosis
 
 - [Learn osmosis](http://learnosm.org/en/osm-data/osmosis/)
@@ -82,45 +88,83 @@ osmosis --rbf sample_osmosis.osm.pbf --write-xml sample.osm
 osmosis --rbf rheinland-pfalz-latest.osm.pbf --write-xml RLP.osm
 ```
 
-More examples: 
 
-- Get data from [Geofabrik](http://download.geofabrik.de/europe/germany.html)
+## Work with shp2pgsql
 
 ```shell
-osmosis --read-xml niedersachsen.osm --bb left=7.917 right=8.1694 \
-                                top=52.3537 bottom=52.3537 
-                                --write-xml osnabrueck.osm
+shp2pgsql -I -s 900913 D:/Daten/Daten/GeoDaten/bremen-140226.shp/points.shp
+public.geospatial-data | psql -p 5432 -d RLPgis
 ```
 
 
+## PostgreSQL queries
 
-SELECT ST_Extent(geom) FROM towns WHERE town = 'BOSTON';
+- [PostgreSQL queries](http://www.postgresql.org/docs/8.1/static/queries.html)
+- [Querying data](http://www.bostongis.com/PrinterFriendly.aspx?content_name=postgis_tut01)
 
-
-
-
-
-## Setup PostGIS to use osmosis
-
-- [PostGIS setup](http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup)
-
-- [Setup PostGIS windows](http://wiki.openstreetmap.org/wiki/DE:Postgis92_Win7_64bit)
-
-- To use the command `psql` [set a path variable](https://support.microsoft.com/de-de/kb/310519)
-
-- [Documentation](http://www.postgresql.org/docs/9.4/static/app-psql.html) command `psql` 
-
-
-## Export to PostGIS using osmosis
-
-[Export](http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup)
-
-```shell
-osmosis --read-pbf erheinland-pfalz-latest.osm.pbf 
---write-pgsql database=gisdb 
+```sql
+SELECT "geospatial-data".osm_id FROM public."geospatial-data";
 ```
+
+[Get ordered results:](https://www.digitalocean.com/community/tutorials/how-to-create-data-queries-in-postgresql-by-using-the-select-command)
+
+```sql
+SELECT 
+  "geospatial-data".type, 
+  "geospatial-data".osm_id
+FROM 
+  public."geospatial-data"
+ORDER BY
+  "geospatial-data".type
+;
+```
+
+Get filtered results:
+
+```sql
+SELECT 
+  "geospatial-data".type, 
+  "geospatial-data".osm_id
+FROM 
+  public."geospatial-data"
+WHERE
+  "geospatial-data".type = 'advertising'
+;
+```
+
+```sql
+SELECT 
+  "geospatial-data".type, 
+  "geospatial-data".osm_id
+FROM 
+  public."geospatial-data"
+WHERE
+  "geospatial-data".type LIKE 'a%'
+;
+```
+
+## PostGIS 
+
+- [Manual](http://postgis.net/docs/)
+- [Spatial queries](http://manual.linfiniti.com/en/postgis/spatial_queries.html)
+- [Understanding PostGIS Spatial Queries](http://www.gistutor.com/postgresqlpostgis/10-intermediate-postgresqlpostgis-tutorials/75-understanding-postgis-spatial-queries.html)
+
 
 ## Back to R
+
+- [Getting started with PostgreSQL in R](https://datashenanigan.wordpress.com/2015/05/18/getting-started-with-postgresql-in-r/)
+
+
+```{r,eval=F}
+require("RPostgreSQL")
+pw <- {"xyz"}
+drv <- dbDriver("PostgreSQL")
+# and so on
+```
+
+- [PostGIS and R](https://fenix.tecnico.ulisboa.pt/downloadFile/3779576719789/introducao-PostGIS.pdf)
+
+## More info about PostGIS and R
 
 - [How to make R, PostGIS and QGis cooperate](https://hal.inria.fr/file/index/docid/737397/filename/bonin_V2.pdf)
 
@@ -149,6 +193,8 @@ ogrListLayers(dsn)
 - [Intro GeoServer and PostGIS](http://blog.geoserver.org/2009/01/30/geoserver-and-openstreetmap/)
 
 - [Cartography with TileMill, PostGIS and OpenStreetMap ](https://www.youtube.com/watch?v=rUfj993tPUo)
+
+- [PostGIS Initialization](http://forum.openstreetmap.org/viewtopic.php?id=21810)
 
 Google Searches
 
