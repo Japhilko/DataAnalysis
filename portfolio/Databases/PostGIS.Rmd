@@ -92,12 +92,10 @@ osmosis --read-xml niedersachsen.osm --bb left=7.917 right=8.1694 \
                                 --write-xml osnabrueck.osm
 ```
 
-## osmosis in R
 
-```{r,eval=F}
-library(osmar)
-?osmsource_osmosis
-```
+
+SELECT ST_Extent(geom) FROM towns WHERE town = 'BOSTON';
+
 
 
 
@@ -137,7 +135,7 @@ dsn="PG:dbname='gisdb'"
 ogrListLayers(dsn)
 ```
 
-
+- [Getting started with PostgreSQL in R](https://datashenanigan.wordpress.com/2015/05/18/getting-started-with-postgresql-in-r/)
 
 ## Additional information
 
@@ -146,18 +144,22 @@ ogrListLayers(dsn)
 
 - [Solution](http://gis.19327.n5.nabble.com/osmosis-dev-Codehaus-discontinued-Osmosis-not-working-td5847581.html) for problem with running osmosis
 
+- [Intro PostGIS](https://wiki.postgresql.org/images/7/7d/2011-11-11_pg.conf.de_darf_ich_vorstellen_postgis_aemde.pdf)
 
+- [Intro GeoServer and PostGIS](http://blog.geoserver.org/2009/01/30/geoserver-and-openstreetmap/)
+
+- [Cartography with TileMill, PostGIS and OpenStreetMap ](https://www.youtube.com/watch?v=rUfj993tPUo)
 
 Google Searches
 
 r-project + postgis
 
 ```{r}
-
 # http://postgis.net/
 
 # http://gis.stackexchange.com/questions/64950/which-is-the-best-way-of-working-with-postgis-data-in-r
 require(rgdal)
+library("intamap")
 ```
 
 

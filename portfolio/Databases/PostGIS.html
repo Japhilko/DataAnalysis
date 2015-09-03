@@ -77,8 +77,20 @@ Jan-Philipp Kolb
 </ul>
 <p>Methods for windows</p>
 <ul>
-<li><a href="http://skipperkongen.dk/2012/08/02/import-osm-data-into-postgis-using-osmosis/">osmosis</a></li>
+<li><p><a href="http://suite.opengeo.org/4.1/dataadmin/pgGettingStarted/pgshapeloader.html">pgshapeloader</a></p></li>
+<li><p><a href="http://gis.stackexchange.com/questions/50107/where-to-find-shp2pgsql-windows-binaries">shp2pgsql</a></p></li>
+<li><p><a href="http://skipperkongen.dk/2012/08/02/import-osm-data-into-postgis-using-osmosis/">osmosis</a></p></li>
 </ul>
+</div>
+<div id="work-with-pgshapeloader" class="slide section level2">
+<h1>Work with pgshapeloader</h1>
+<ul>
+<li><a href="http://suite.opengeo.org/4.1/dataadmin/pgGettingStarted/pgshapeloader.html">How it works</a></li>
+</ul>
+</div>
+<div id="work-with-shp2pgsql" class="slide section level2">
+<h1>Work with shp2pgsql</h1>
+<pre class="shell"><code>shp2pgsql -I -s 900913 D:/Daten/Daten/GeoDaten/bremen-140226.shp/points.shp public.geospatial-data | psql -p 5432 -d RLPgis</code></pre>
 </div>
 <div id="work-with-osmosis" class="slide section level2">
 <h1>Work with osmosis</h1>
@@ -96,6 +108,11 @@ Jan-Philipp Kolb
 <pre class="shell"><code>osmosis --read-xml niedersachsen.osm --bb left=7.917 right=8.1694 \
                                 top=52.3537 bottom=52.3537 
                                 --write-xml osnabrueck.osm</code></pre>
+</div>
+<div id="osmosis-in-r" class="slide section level2">
+<h1>osmosis in R</h1>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(osmar)
+?osmsource_osmosis</code></pre>
 </div>
 <div id="setup-postgis-to-use-osmosis" class="slide section level2">
 <h1>Setup PostGIS to use osmosis</h1>
@@ -120,12 +137,18 @@ Jan-Philipp Kolb
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">require</span>(rgdal)
 dsn=<span class="st">&quot;PG:dbname='gisdb'&quot;</span>
 <span class="kw">ogrListLayers</span>(dsn)</code></pre>
+<ul>
+<li><a href="https://datashenanigan.wordpress.com/2015/05/18/getting-started-with-postgresql-in-r/">Getting started with PostgreSQL in R</a></li>
+</ul>
 </div>
 <div id="additional-information" class="slide section level2">
 <h1>Additional information</h1>
 <ul>
 <li><p><a href="https://de.wikipedia.org/wiki/Liste_der_standardisierten_Ports">Standard Ports</a></p></li>
 <li><p><a href="http://gis.19327.n5.nabble.com/osmosis-dev-Codehaus-discontinued-Osmosis-not-working-td5847581.html">Solution</a> for problem with running osmosis</p></li>
+<li><p><a href="https://wiki.postgresql.org/images/7/7d/2011-11-11_pg.conf.de_darf_ich_vorstellen_postgis_aemde.pdf">Intro PostGIS</a></p></li>
+<li><p><a href="http://blog.geoserver.org/2009/01/30/geoserver-and-openstreetmap/">Intro GeoServer and PostGIS</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=rUfj993tPUo">Cartography with TileMill, PostGIS and OpenStreetMap</a></p></li>
 </ul>
 <p>Google Searches</p>
 <p>r-project + postgis</p>
@@ -143,6 +166,7 @@ dsn=<span class="st">&quot;PG:dbname='gisdb'&quot;</span>
 ##  Loaded PROJ.4 runtime: Rel. 4.9.1, 04 March 2015, [PJ_VERSION: 491]
 ##  Path to PROJ.4 shared files: C:/Program Files/R/R-3.2.2/library/rgdal/proj
 ##  Linking to sp version: 1.1-1</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(<span class="st">&quot;intamap&quot;</span>)</code></pre>
 </div>
 
   <!-- dynamically load mathjax for compatibility with self-contained -->
