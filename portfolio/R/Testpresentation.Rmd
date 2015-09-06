@@ -1,0 +1,57 @@
+---
+title: "Testpresentation"
+author: "Jan-Philipp Kolb"
+date: "5. September 2015"
+output: slidy_presentation
+---
+
+## R Markdown
+
+```{r}
+link <- "http://ichef.bbci.co.uk/news/624/cpsprodpb/32F6/production/_85164031_migrant_journeys_turkey_to_germany_624.png"
+
+internet <- T
+```
+
+![pic](`r link `)
+
+## 
+
+![pic](../stata/BIP2BLA.png)
+
+## 
+
+```{r}
+graph.path <- paste("../stata/BIP2BLA.png")
+```
+
+![pic](`r graph.path `)
+
+`r "## Hallo Seggene"`
+
+
+## 
+
+```{r,echo=F}
+if(internet)paste(
+  "## Hallo Welt" 
+)
+```
+
+
+## 
+
+```{r,echo=F}
+a <- "<a href=\"https://uchicagoconsulting.wordpress.com/\" target=\"_blank\"><img src=\"https://uchicagoconsulting.files.wordpress.com/2011/04/5.png?w=450&h=309\" width=\"240\" height=\"180\" border=\"10\" /></a>"
+```
+
+`r a `
+
+## 
+
+- guess about picture taker's mode of transportation
+- time stamps and distance traveled between a user's pictures
+* Black is walking (less than 7mph), 
+* Red is bicycling or equivalent speed (less than 19mph), 
+    + Blue is motor vehicles on normal roads (less than 43mph); 
+    + Green is freeways or rapid transit. 
