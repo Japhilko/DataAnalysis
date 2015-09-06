@@ -145,3 +145,8 @@ print(x.split(' '))
 - [Python for open data lovers](https://www.youtube.com/watch?v=GxyfYEe8MiQ)
 
 - [Python's Role in Big Data Analytics: Past, Present, and...](https://www.youtube.com/watch?v=oXRvpBJ-Dkc)
+
+
+## Create maps
+
+- [Map on touristiness](http://www.bluemoon.ee/~ahti/touristiness-map/build_map.py)

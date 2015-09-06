@@ -2,8 +2,10 @@
 title: "Testpresentation"
 author: "Jan-Philipp Kolb"
 date: "5. September 2015"
-output: slidy_presentation
+output: ioslides_presentation
 ---
+
+# First section
 
 ## R Markdown
 
@@ -30,7 +32,7 @@ graph.path <- paste("../stata/BIP2BLA.png")
 `r "## Hallo Seggene"`
 
 
-## 
+## Hello world
 
 ```{r,echo=F}
 if(internet)paste(
@@ -38,6 +40,7 @@ if(internet)paste(
 )
 ```
 
+# Second section
 
 ## 
 
@@ -55,3 +58,11 @@ a <- "<a href=\"https://uchicagoconsulting.wordpress.com/\" target=\"_blank\"><i
 * Red is bicycling or equivalent speed (less than 19mph), 
     + Blue is motor vehicles on normal roads (less than 43mph); 
     + Green is freeways or rapid transit. 
+
+
+- [Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+
+## Tipps and tricks for Rmarkdown
+
+- [Mathjax](https://www.mathjax.org/)
+- [Understand markdown](http://svmiller.com/blog/2015/02/moving-from-beamer-to-r-markdown/)
