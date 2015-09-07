@@ -44,17 +44,18 @@ output: slidy_presentation
 
 - [Setup PostGIS windows](http://wiki.openstreetmap.org/wiki/DE:Postgis92_Win7_64bit)
 
-- To use the command `psql` [set a path variable](https://support.microsoft.com/de-de/kb/310519)
+-  Just create a database and then on the SQL view in pgAdmin, [type and run:](http://gis.stackexchange.com/questions/26508/how-to-create-postgis-template)
 
-- [Documentation](http://www.postgresql.org/docs/9.4/static/app-psql.html) command `psql` 
-
+```shell
+CREATE EXTENSION postgis;
+```
 
 
 ## Import of OSM data
 
 General methods:
 
-- [osm2pgsql](http://learnosm.org/en/osm-data/osm2pgsql/)
+- [Installer](http://gis.stackexchange.com/questions/118334/download-link-to-osm2pgsql) for [osm2pgsql](http://learnosm.org/en/osm-data/osm2pgsql/)
 
 - [Use python program imposm](http://imposm.org/)
 
@@ -69,6 +70,17 @@ Methods for windows
 - [osmosis](http://skipperkongen.dk/2012/08/02/import-osm-data-into-postgis-using-osmosis/)
 
 - [shp2pgsql](http://gis.stackexchange.com/questions/50107/where-to-find-shp2pgsql-windows-binaries)
+
+- Overview of import and export [methods](http://manual.linfiniti.com/en/postgis/import_export.html)
+
+## Work with osm2psql
+
+- [Get started with osm2psql](http://learnosm.org/en/osm-data/osm2pgsql/)
+
+```shell
+osm2pgsql -c -d BWgis -U kolbjp -H localhost -S D:\Daten\Daten\GeoDaten\default.style D:\Daten\Daten\GeoDaten\baden-wuerttemberg-latest.osm.pbf
+```
+
 
 
 ## Work with osmosis
@@ -90,6 +102,10 @@ osmosis --rbf rheinland-pfalz-latest.osm.pbf --write-xml RLP.osm
 
 
 ## Work with shp2pgsql
+
+- To use the command `psql` [set a path variable](https://support.microsoft.com/de-de/kb/310519)
+
+- [Documentation](http://www.postgresql.org/docs/9.4/static/app-psql.html) command `psql` 
 
 ```shell
 shp2pgsql -I -s 900913 D:/Daten/Daten/GeoDaten/bremen-140226.shp/points.shp

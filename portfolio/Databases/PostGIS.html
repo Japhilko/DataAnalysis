@@ -71,15 +71,15 @@ Jan-Philipp Kolb
 <ul>
 <li><p><a href="http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup">PostGIS setup</a></p></li>
 <li><p><a href="http://wiki.openstreetmap.org/wiki/DE:Postgis92_Win7_64bit">Setup PostGIS windows</a></p></li>
-<li><p>To use the command <code>psql</code> <a href="https://support.microsoft.com/de-de/kb/310519">set a path variable</a></p></li>
-<li><p><a href="http://www.postgresql.org/docs/9.4/static/app-psql.html">Documentation</a> command <code>psql</code></p></li>
+<li><p>Just create a database and then on the SQL view in pgAdmin, <a href="http://gis.stackexchange.com/questions/26508/how-to-create-postgis-template">type and run:</a></p></li>
 </ul>
+<pre class="shell"><code>CREATE EXTENSION postgis;</code></pre>
 </div>
 <div id="import-of-osm-data" class="slide section level2">
 <h1>Import of OSM data</h1>
 <p>General methods:</p>
 <ul>
-<li><p><a href="http://learnosm.org/en/osm-data/osm2pgsql/">osm2pgsql</a></p></li>
+<li><p><a href="http://gis.stackexchange.com/questions/118334/download-link-to-osm2pgsql">Installer</a> for <a href="http://learnosm.org/en/osm-data/osm2pgsql/">osm2pgsql</a></p></li>
 <li><p><a href="http://imposm.org/">Use python program imposm</a></p></li>
 <li><p><a href="http://www.postgis.us/Presentations/PGOpen2014_Session1.html#/">Import PostGIS</a></p></li>
 <li><p><a href="http://imposm.org/docs/imposm/latest/tutorial.html">Intro imposm</a></p></li>
@@ -89,6 +89,7 @@ Jan-Philipp Kolb
 <li><p><a href="http://suite.opengeo.org/4.1/dataadmin/pgGettingStarted/pgshapeloader.html">pgshapeloader</a> - <a href="http://suite.opengeo.org/4.1/dataadmin/pgGettingStarted/pgshapeloader.html">how it works</a></p></li>
 <li><p><a href="http://skipperkongen.dk/2012/08/02/import-osm-data-into-postgis-using-osmosis/">osmosis</a></p></li>
 <li><p><a href="http://gis.stackexchange.com/questions/50107/where-to-find-shp2pgsql-windows-binaries">shp2pgsql</a></p></li>
+<li><p>Overview of import and export <a href="http://manual.linfiniti.com/en/postgis/import_export.html">methods</a></p></li>
 </ul>
 </div>
 <div id="work-with-osmosis" class="slide section level2">
@@ -103,6 +104,10 @@ Jan-Philipp Kolb
 </div>
 <div id="work-with-shp2pgsql" class="slide section level2">
 <h1>Work with shp2pgsql</h1>
+<ul>
+<li><p>To use the command <code>psql</code> <a href="https://support.microsoft.com/de-de/kb/310519">set a path variable</a></p></li>
+<li><p><a href="http://www.postgresql.org/docs/9.4/static/app-psql.html">Documentation</a> command <code>psql</code></p></li>
+</ul>
 <pre class="shell"><code>shp2pgsql -I -s 900913 D:/Daten/Daten/GeoDaten/bremen-140226.shp/points.shp
 public.geospatial-data | psql -p 5432 -d RLPgis</code></pre>
 </div>
@@ -181,6 +186,7 @@ dsn=<span class="st">&quot;PG:dbname='gisdb'&quot;</span>
 <li><p><a href="https://wiki.postgresql.org/images/7/7d/2011-11-11_pg.conf.de_darf_ich_vorstellen_postgis_aemde.pdf">Intro PostGIS</a></p></li>
 <li><p><a href="http://blog.geoserver.org/2009/01/30/geoserver-and-openstreetmap/">Intro GeoServer and PostGIS</a></p></li>
 <li><p><a href="https://www.youtube.com/watch?v=rUfj993tPUo">Cartography with TileMill, PostGIS and OpenStreetMap</a></p></li>
+<li><p><a href="http://forum.openstreetmap.org/viewtopic.php?id=21810">PostGIS Initialization</a></p></li>
 </ul>
 <p>Google Searches</p>
 <p>r-project + postgis</p>
