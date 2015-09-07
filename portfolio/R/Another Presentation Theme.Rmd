@@ -4,7 +4,7 @@ author: "Jan-Philipp Kolb"
 date: "3. August 2015"
 output:
   revealjs::revealjs_presentation:
-    theme: blood
+    theme: league
     transition: convex
     highlight: pygments
     center: true
@@ -22,7 +22,7 @@ output:
 
 ## Animate data tables
 
-```{r}
+```{r,eval=F}
 library(DT)
 datatable(iris, options = list(pageLength = 5))
 ```
@@ -40,3 +40,12 @@ C:\
 
 - [figure width and height](https://rstudio.github.io/dygraphs/r-markdown.html)
 
+## Get further presentation themes
+
+```{r,eval=F}
+library(devtools)
+install_github('ramnathv/slidify')
+install_github('ramnathv/slidifyLibraries')
+```
+
+- [html5 presentations](https://benjaminlmoore.wordpress.com/2014/02/24/slidify-presentations-in-r-markdown/)
