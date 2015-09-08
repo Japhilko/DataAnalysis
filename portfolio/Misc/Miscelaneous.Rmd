@@ -151,3 +151,7 @@ The R-Files
 - [Heidelberg Unseminars in Bioinformatics](http://www.hub-hub.de/wiki/index.php?title=HUB_-_Heidelberg_Unseminars_in_Bioinformatics)
 
 - [HUB Events](http://www.hub-hub.de/wiki/index.php?title=EventAds)
+
+## Intersting websites
+
+- [Best of the web](http://code.tutsplus.com/articles/best-of-the-web-july--net-6088)

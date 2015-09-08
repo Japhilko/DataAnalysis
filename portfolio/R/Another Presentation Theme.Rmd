@@ -4,9 +4,9 @@ author: "Jan-Philipp Kolb"
 date: "3. August 2015"
 output:
   revealjs::revealjs_presentation:
-    theme: league
+    theme: solarized
     transition: convex
-    highlight: pygments
+    highlight: haddock
     center: true
 ---
 
