@@ -89,3 +89,8 @@ xtable(tabAB)
 ## Flushed left
 
 - [Whole table](http://stackoverflow.com/questions/12470306/xtable-left-just)
+
+
+## Include graphics
+
+- [Include graphics](http://www.golatex.de/wiki/%5Cincludegraphics)
