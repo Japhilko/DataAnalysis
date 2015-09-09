@@ -19,7 +19,8 @@ output: ioslides_presentation
 - [Data scientist but where](http://ibmexperts.computerwoche.de/analytics-big-data/artikel/data-scientist-werden-aber-wo)
 - [Become-a-Computer-Scientist](http://www.wikihow.com/Become-a-Computer-Scientist)
 - [Coursera specializations](http://www.r-bloggers.com/coursera-specializations-data-science-systems-biology-python-programming/)
-
+- [Stack overflow](http://stackoverflow.com/questions/2860314/essential-skills-of-a-data-scientist)
+- [Become a data scientist](http://radar.oreilly.com/2010/09/data-week-becoming-a-data-scie.html)
 
 ## Videos on data science
 
@@ -151,3 +152,11 @@ The R-Files
 - [Heidelberg Unseminars in Bioinformatics](http://www.hub-hub.de/wiki/index.php?title=HUB_-_Heidelberg_Unseminars_in_Bioinformatics)
 
 - [HUB Events](http://www.hub-hub.de/wiki/index.php?title=EventAds)
+
+## R jobs
+
+- [Where are all the R jobs](http://insights.dice.com/2011/01/28/where-are-all-the-r-jobs-places-like-amazon-and-resonant-networks-to-start/)
+
+- [How are the job opportunities for R statistics language ](http://www.quora.com/How-are-the-job-opportunities-for-R-statistics-language-in-India)
+
+- [Demand for R jobs on the rise](http://blog.revolutionanalytics.com/2013/08/job-trends-for-statistics-packages.html)
