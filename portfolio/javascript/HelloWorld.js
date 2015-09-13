@@ -32,3 +32,23 @@ while (a < 5){
 	alert("Hallo")
 	a++
 } 
+
+// do while Schleifen
+
+var i =1
+do {
+	alert("Hallo" + i);
+	var Nerven = confirm("Weiter nerven")
+	if (!Nerven){
+		break;
+	}
+	i++ 
+} while (i < 5);
+
+function halloWelt(){
+	alert("Guten Tag")
+}
+
+prompt("Wie heißt Du")
+
+halloWelt()

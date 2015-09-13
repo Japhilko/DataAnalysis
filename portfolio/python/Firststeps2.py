@@ -36,3 +36,8 @@ letters[2]
 # the sum of two elements defines the next
 a, b = 0, 1
 
+# https://www.youtube.com/watch?v=goypZR_lQ7I
+
+# https://www.youtube.com/watch?v=j2hp2-u0cHU
+
+# https://www.youtube.com/watch?v=zTNA0MtZwso - 10:23
