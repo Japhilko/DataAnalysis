@@ -96,6 +96,8 @@ library(RPyGeo)
 
 - [Python anywhere](https://www.pythonanywhere.com/)
 
+- [Fast lane to python](http://heather.cs.ucdavis.edu/~matloff/Python/PLN/FastLanePython.pdf)
+
 ## Webscraping
 
 - [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/)

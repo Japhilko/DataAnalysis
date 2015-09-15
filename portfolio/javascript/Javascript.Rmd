@@ -60,3 +60,11 @@ ct$console()
 
 - [Code snippets](http://wiki.openstreetmap.org/wiki/Tag_Processing_Snippets)
 
+- [Intro Javascript - German video](https://www.youtube.com/watch?v=5WqO5u2at-A)
+- [Object and array](https://www.youtube.com/watch?v=49C0FmftYfU)
+
+- [Intro](https://www.youtube.com/watch?v=mG6AEPhLOl8&index=12&list=PLWjV3rrL77CAZGdXwnqJDUDXCCqh-Au-0)
+- [Part 3](https://www.youtube.com/watch?v=5kvAFSCkufs&list=PLWjV3rrL77CAZGdXwnqJDUDXCCqh-Au-0&index=13)
+
+- [Web development](https://www.youtube.com/watch?v=gBi8Obib0tw&spfreload=1)
+

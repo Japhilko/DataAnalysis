@@ -1,0 +1,9 @@
+---
+title: "HTML"
+author: "Jan-Philipp Kolb"
+date: "12. September 2015"
+output: slidy_presentation
+---
+
+## [Background color](http://www.w3schools.com/tags/att_body_bgcolor.asp)
+
