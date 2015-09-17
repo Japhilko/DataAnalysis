@@ -22,27 +22,17 @@ output: slidy_presentation
 - [Get started](http://km-bw.de/site/pbs-bw/get/documents/KULTUS.Dachmandant/KULTUS/Dienststellen/it.kultus-bw/pdf/SVP_BW/Postgres_Datenbankinstallation.pdf) with pgAdmin III.
 
 
-## [Create an osm database](http://learnosm.org/en/osm-data/setting-up-postgresql/)
+## [Create a database](http://learnosm.org/en/osm-data/setting-up-postgresql/)
 
 ![pic](http://learnosm.org/images/en/osm-data/setting-up-postgresql/new-database.png)
 
-## Create database
 
-- [First steps](http://doc.postgres.de/postgresql_9.0/tutorial-createdb.html)
-
-- [OSM and PostGIS](http://cnr.ncsu.edu/geospatial/wp-content/uploads/sites/6/2014/08/Zielstra_Tonini_021215.pdf)
-
-- Set up [PostGIS](http://wiki.openstreetmap.org/wiki/PostGIS) database
-
-- PostGIS [Boundless workshop](http://workshops.boundlessgeo.com/postgis-intro/)
-
-
+![pic](https://github.com/Japhilko/DataAnalysis/tree/master/data/figure/LoginRolle.png)
 
 ## Setup PostGIS 
 
-- [PostGIS setup](http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup)
-
-- [Setup PostGIS windows](http://wiki.openstreetmap.org/wiki/DE:Postgis92_Win7_64bit)
+- Hints on the setup of [PostGIS ](http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup)
+and [PostGIS windows setup ](http://wiki.openstreetmap.org/wiki/DE:Postgis92_Win7_64bit)
 
 -  Just create a database and then on the SQL view in pgAdmin, [type and run:](http://gis.stackexchange.com/questions/26508/how-to-create-postgis-template)
 
@@ -73,32 +63,6 @@ Methods for windows
 
 - Overview of import and export [methods](http://manual.linfiniti.com/en/postgis/import_export.html)
 
-## Work with osm2psql
-
-- [Get started with osm2psql](http://learnosm.org/en/osm-data/osm2pgsql/)
-
-```shell
-osm2pgsql -c -d BWgis -U kolbjp -H localhost -S D:\Daten\Daten\GeoDaten\default.style D:\Daten\Daten\GeoDaten\baden-wuerttemberg-latest.osm.pbf
-```
-
-
-
-## Work with osmosis
-
-- [Learn osmosis](http://learnosm.org/en/osm-data/osmosis/)
-
-- Work with [osmosis](http://wiki.openstreetmap.org/wiki/User:Ajoessen/Osmosis)
-
-- [detailed usage osmosis](http://wiki.openstreetmap.org/wiki/Osmosis/Detailed_Usage_0.43)
-
-
-```shell
-osmosis --rbf sample_osmosis.osm.pbf --write-xml sample.osm
-```
-
-```shell
-osmosis --rbf rheinland-pfalz-latest.osm.pbf --write-xml RLP.osm
-```
 
 
 ## Work with shp2pgsql
@@ -111,6 +75,37 @@ osmosis --rbf rheinland-pfalz-latest.osm.pbf --write-xml RLP.osm
 shp2pgsql -I -s 900913 D:/Daten/Daten/GeoDaten/bremen-140226.shp/points.shp
 public.geospatial-data | psql -p 5432 -d RLPgis
 ```
+
+```shell
+shp2pgsql -I -s 900913 D:/Daten/Daten/GeoDaten/rheinland-pfalz-latest.shp/roads.shp public.geospatial-data | psql -p 5432 -d RLPgis2
+```
+
+
+## [Work with psql](http://stackoverflow.com/questions/15618530/how-can-i-get-all-roads-ways-from-an-osm2pgsql-shema)
+
+```shell
+psql RLPgis2
+```
+
+## Work with osm2psql
+
+- [Get started with osm2psql](http://learnosm.org/en/osm-data/osm2pgsql/)
+
+```shell
+osm2pgsql -c -d BWgis -U kolbjp -H localhost -S D:\Daten\Daten\GeoDaten\default.style D:\Daten\Daten\GeoDaten\baden-wuerttemberg-latest.osm.pbf
+```
+
+```shell
+osm2pgsql germany-latest.osm.bz2 -d GermanyOSM -U kolbjp -P 5432 -S D:\Daten\Daten\GeoDaten\default.style --hstore
+```
+
+
+- [install legacy.sql](https://github.com/springmeyer/win-osm-workshop/blob/master/Tutorial.md#step-6-configure-the-osm-postgis-database)
+
+```shell
+osm2pgsql -d GermanyOSM -U kolbjp -H localhost -S D:\Daten\Daten\GeoDaten\default.style -p osm -l -s -c germany-latest.osm.bz2
+```
+
 
 
 ## PostgreSQL queries
@@ -158,6 +153,7 @@ WHERE
   "geospatial-data".type LIKE 'a%'
 ;
 ```
+
 
 ## PostGIS 
 
@@ -225,3 +221,45 @@ library("intamap")
 ```
 
 
+
+## Resources
+
+- [First steps](http://doc.postgres.de/postgresql_9.0/tutorial-createdb.html)
+
+- [OSM and PostGIS](http://cnr.ncsu.edu/geospatial/wp-content/uploads/sites/6/2014/08/Zielstra_Tonini_021215.pdf)
+
+- Set up [PostGIS](http://wiki.openstreetmap.org/wiki/PostGIS) database
+
+- PostGIS [Boundless workshop](http://workshops.boundlessgeo.com/postgis-intro/)
+
+
+
+## Work with osmosis
+
+- [Learn osmosis](http://learnosm.org/en/osm-data/osmosis/)
+
+- Work with [osmosis](http://wiki.openstreetmap.org/wiki/User:Ajoessen/Osmosis)
+
+- [detailed usage osmosis](http://wiki.openstreetmap.org/wiki/Osmosis/Detailed_Usage_0.43)
+
+
+```shell
+osmosis --rbf sample_osmosis.osm.pbf --write-xml sample.osm
+```
+
+```shell
+osmosis --rbf rheinland-pfalz-latest.osm.pbf --write-xml RLP.osm
+```
+
+- [postgis](https://gist.github.com/jpetazzo/5177554)
+
+- [Three tools explained](https://me4bruno.wordpress.com/2012/03/25/osmosis-osm2postgresql-osm2pgsql-openstreetmap-daten-datenbanken-und-spielplatze/)
+
+
+```shell
+osmosis --read-xml "D:\Daten\Daten\GeoDaten\germany-latest.osm.bz2" --write-pgsimp database="GermanyOSM"  user="kolbjp" 
+```
+
+```shell
+osm2pgsql -c -d GermanyOSM -U kolbjp -W --latlong -H localhost D:\Daten\Daten\GeoDaten\germany-latest.osm.bz2 --style D:\Daten\Daten\GeoDaten\default.style
+```
