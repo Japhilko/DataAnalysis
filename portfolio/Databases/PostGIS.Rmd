@@ -103,7 +103,11 @@ osm2pgsql germany-latest.osm.bz2 -d GermanyOSM -U kolbjp -P 5432 -S D:\Daten\Dat
 - [install legacy.sql](https://github.com/springmeyer/win-osm-workshop/blob/master/Tutorial.md#step-6-configure-the-osm-postgis-database)
 
 ```shell
-osm2pgsql -d GermanyOSM -U kolbjp -H localhost -S D:\Daten\Daten\GeoDaten\default.style -p osm -l -s -c germany-latest.osm.bz2
+C:\Program Files\PostgreSQL\9.4\share\contrib\postgis-2.1
+```
+
+```shell
+osm2pgsql -d SALgis -U kolbjp -H localhost -S D:\Daten\Daten\GeoDaten\default.style -p osm -l -s -c saarland-latest.osm.bz2
 ```
 
 

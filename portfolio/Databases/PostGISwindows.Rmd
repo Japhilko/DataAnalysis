@@ -1,0 +1,12 @@
+---
+title: "PostGis under Windows"
+author: "Jan-Philipp Kolb"
+date: "18. September 2015"
+output: html_document
+---
+
+[Quick install of osmosis und windows](http://wiki.openstreetmap.org/wiki/Osmosis/Quick_Install_%28Windows%29)
+
+
+
+[java environmental settings](http://wiki.openstreetmap.org/wiki/Osmosis/Installation#Environment_variables_and_config_files)
