@@ -86,6 +86,15 @@ library(rmarkdown)
 
 - [Syntax highlighting in markdown](https://support.codebasehq.com/articles/tips-tricks/syntax-highlighting-in-markdown)
 
+- [Get code from Rmarkdown](http://stackoverflow.com/questions/18884941/how-to-extract-r-code-from-a-markdown-file-md)
+
+```{r,eval=F}
+library(knitr)
+purl("/Readme.md")
+```
+
+
+
 ## Rpresentations
 
 - [Rpresentations](http://stackoverflow.com/questions/23619319/rpresentation-in-rstudio-make-image-fill-out-the-whole-screen)
