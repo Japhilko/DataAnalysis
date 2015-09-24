@@ -130,6 +130,14 @@ install.packages("Rz")
 # install.packages("ReadImages")
 
 #------------------------#
+# Packages for big data
+#------------------------#
+
+
+install.packages("data.table")
+
+
+#------------------------#
 # Packages for Geography
 #------------------------#
 
@@ -204,6 +212,8 @@ install.packages("choroplethr")
 
 install.packages("mapplots")
 install.packages("intamap")
+
+install.packages("mapproj")
 
 #------------------------#
 # Data sources (geographical)

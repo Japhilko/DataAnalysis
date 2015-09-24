@@ -7,7 +7,9 @@ output: ioslides_presentation
 
 ## Update R
 
-- [installr package](http://www.r-statistics.com/2013/03/updating-r-from-r-on-windows-using-the-installr-package/)
+- installr package [here](http://www.r-statistics.com/2013/03/updating-r-from-r-on-windows-using-the-installr-package/) and 
+[here](https://cran.r-project.org/web/packages/installr/installr.pdf)
+
 
 ```{r,eval=F}
 # installing/loading the package:
