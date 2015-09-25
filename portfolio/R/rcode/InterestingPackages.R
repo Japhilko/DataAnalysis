@@ -167,7 +167,7 @@ install.packages("MarkedPointProcess")
 install.packages("spatgraphs")
 
 install.packages("DCluster")   # spatial clusters of diseases
-
+install.packages("SpatialEpi")
   # uas R as GIS
 install.packages("gdistance")
 install.packages("googleVis")
