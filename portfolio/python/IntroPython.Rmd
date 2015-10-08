@@ -79,6 +79,8 @@ library(RPyGeo)
 
 - [Choose Python or R](http://blog.udacity.com/2015/01/python-vs-r-learn-first.html)
 
+- [R in Python](http://www.r-bloggers.com/a-few-days-of-python-using-r-in-python/)
+
 ## Something like Rstudio
 
 -[this Python IDE](http://ask.metafilter.com/270841/People-who-liked-Rstudio-also-liked-this-Python-IDE)

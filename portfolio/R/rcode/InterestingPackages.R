@@ -327,6 +327,7 @@ install.packages("rgbif") # A programmatic interface to the Web Service methods
 
 install.packages("Rfacebook")
 
+install.packages("htmltab")
 #------------------------#
 # Text Mining
 #------------------------#
@@ -492,6 +493,11 @@ library(rJava)
 
 install.packages("roxygen2")
 
+#------------------------#
+# Just for fun
+#------------------------#
+
+devtools::install_github("jbkunst/rchess")
 
 
 #------------------------#

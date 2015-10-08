@@ -19,7 +19,7 @@ output: slidy_presentation
 
 - [R for journalists](http://www.scoop.it/t/r-for-journalists)
 
-
+- [R creativity](http://www.r-bloggers.com/r-user-groups-highlight-r-creativity/)
 ## Intro R
 
 - [Thomas Girke - Programming in R](http://manuals.bioinformatics.ucr.edu/home/programming-in-r)
@@ -30,6 +30,7 @@ output: slidy_presentation
 
 - [youtube on R](http://www.revolutionanalytics.com/what-r)
 
+- [Learn R](http://www.r-bloggers.com/learn-r-interactively-with-our-new-introduction-to-r-tutorial/)
 
 ## Advanced R tipps
 
@@ -133,6 +134,12 @@ RWordPress
 
 - [Petr Keil - 12 nifty tips for scientists who use computers](http://www.petrkeil.com/?p=2356)
 
+- [Reproducability](http://www.r-bloggers.com/reproducibility-in-computational-research/)
+
+- [Cross Validation](http://www.r-bloggers.com/how-do-you-know-if-your-model-is-going-to-work-part-4-cross-validation-techniques-2/)
+
 ## Interactive presentation
 
 - [htmlwidgets](http://www.buildingwidgets.com/)
+
+- [Data Science and R](http://www.r-bloggers.com/some-key-win-vector-serial-data-science-articles/)

@@ -25,6 +25,8 @@ output: ioslides_presentation
 
 - [Mapreduce](http://blog.revolutionanalytics.com/2011/09/mapreduce-hadoop-r.html)
 
+- [RHadoop](http://www.r-bloggers.com/making-it-easy-to-use-rhadoop-on-hdinsight-hadoop-clusters/)
+
 ## Spark
 
 - [Installing and Starting SparkR ](http://blog.danielemaasit.com/2015/07/26/installing-and-starting-sparkr-locally-on-windows-8-1-and-rstudio/)
