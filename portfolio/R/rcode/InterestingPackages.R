@@ -410,6 +410,13 @@ install.packages("grConvert")
 install.packages("rvest")
 
 #------------------------#
+# Linked Open Data
+#------------------------#
+
+
+install.packages("datamart")
+install.packages(c('SPARQL','igraph','network','ergm'),dependencies=TRUE)
+#------------------------#
 # Databases
 #------------------------#
 

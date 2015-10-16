@@ -20,7 +20,7 @@ install.packages("installr"); require(installr)} #load / install+load installr
 updateR() 
 ```
 
-
+- [10 tipps to become a better coder](http://www.r-bloggers.com/10-top-tips-for-becoming-a-better-coder/)
 
 ## HTML and CSS
 
