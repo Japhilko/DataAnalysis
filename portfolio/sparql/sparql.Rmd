@@ -1,0 +1,8 @@
+---
+title: "SPARQL"
+author: "Jan-Philipp Kolb"
+date: "19. Oktober 2015"
+output: html_document
+---
+
+[Intro SPARQL for beginners](https://upload.wikimedia.org/wikipedia/commons/d/d6/Wikidata%27s_SPARQL_introduction_presentation.pdf)
