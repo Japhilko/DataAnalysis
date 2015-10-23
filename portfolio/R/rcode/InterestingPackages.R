@@ -231,6 +231,8 @@ install.packages("HistData")
 install.packages("survey")
 install.packages("sampling")
 
+install.packages("svyPVpack")
+
 install.packages("samplingVarEst")
 
 install.packages("VGAM")
