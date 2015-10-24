@@ -7,7 +7,9 @@ output: ioslides_presentation
 
 ## Update R
 
-- [installr package](http://www.r-statistics.com/2013/03/updating-r-from-r-on-windows-using-the-installr-package/)
+- installr package [here](http://www.r-statistics.com/2013/03/updating-r-from-r-on-windows-using-the-installr-package/) and 
+[here](https://cran.r-project.org/web/packages/installr/installr.pdf)
+
 
 ```{r,eval=F}
 # installing/loading the package:
@@ -18,7 +20,7 @@ install.packages("installr"); require(installr)} #load / install+load installr
 updateR() 
 ```
 
-
+- [10 tipps to become a better coder](http://www.r-bloggers.com/10-top-tips-for-becoming-a-better-coder/)
 
 ## HTML and CSS
 

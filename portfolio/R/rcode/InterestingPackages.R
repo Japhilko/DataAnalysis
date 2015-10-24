@@ -130,6 +130,14 @@ install.packages("Rz")
 # install.packages("ReadImages")
 
 #------------------------#
+# Packages for big data
+#------------------------#
+
+
+install.packages("data.table")
+
+
+#------------------------#
 # Packages for Geography
 #------------------------#
 
@@ -159,7 +167,7 @@ install.packages("MarkedPointProcess")
 install.packages("spatgraphs")
 
 install.packages("DCluster")   # spatial clusters of diseases
-
+install.packages("SpatialEpi")
   # uas R as GIS
 install.packages("gdistance")
 install.packages("googleVis")
@@ -204,6 +212,8 @@ install.packages("choroplethr")
 
 install.packages("mapplots")
 install.packages("intamap")
+
+install.packages("mapproj")
 
 #------------------------#
 # Data sources (geographical)
@@ -319,6 +329,7 @@ install.packages("rgbif") # A programmatic interface to the Web Service methods
 
 install.packages("Rfacebook")
 
+install.packages("htmltab")
 #------------------------#
 # Text Mining
 #------------------------#
@@ -400,6 +411,13 @@ install.packages("grConvert")
 
 install.packages("rvest")
 
+#------------------------#
+# Linked Open Data
+#------------------------#
+
+
+install.packages("datamart")
+install.packages(c('SPARQL','igraph','network','ergm'),dependencies=TRUE)
 #------------------------#
 # Databases
 #------------------------#
@@ -484,6 +502,11 @@ library(rJava)
 
 install.packages("roxygen2")
 
+#------------------------#
+# Just for fun
+#------------------------#
+
+devtools::install_github("jbkunst/rchess")
 
 
 #------------------------#
