@@ -148,3 +148,16 @@ citation(package = "mice")
 Get [news messages](http://cran.r-project.org/src/base/NEWS) about R. 
 
 [Teaching with R](http://gastonsanchez.com/teaching/)
+
+## Creating Shiny Apps
+
+- [Hosting an App](http://shiny.rstudio.com/articles/deployment-local.html)
+
+```{r,eval=F}
+shiny::runGitHub('shiny_example', 'rstudio')
+
+
+shiny::runGitHub(repo='ShinyApps', username='Japhilko',
+                 subdir='EurostatMapApp/')
+```
+
