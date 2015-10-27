@@ -411,6 +411,8 @@ install.packages("grConvert")
 
 install.packages("rvest")
 
+install.packages("splitstackshape")
+
 #------------------------#
 # Linked Open Data
 #------------------------#
