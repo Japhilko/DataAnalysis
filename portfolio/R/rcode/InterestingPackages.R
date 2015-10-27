@@ -215,6 +215,8 @@ install.packages("intamap")
 
 install.packages("mapproj")
 
+install.packages("pheatmap")
+
 #------------------------#
 # Data sources (geographical)
 #------------------------#
