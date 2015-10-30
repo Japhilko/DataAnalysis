@@ -161,3 +161,12 @@ shiny::runGitHub(repo='ShinyApps', username='Japhilko',
                  subdir='EurostatMapApp/')
 ```
 
+- [Shiny dashboard](https://rstudio.github.io/shinydashboard/get_started.html)
+
+- [Shiny conference](http://www.eventbrite.com/e/shiny-developer-conference-registration-19153967031)
+
+## Further links
+
+- [formatR](https://cran.r-project.org/web/packages/formatR/index.html)
+
+- [Portrait Ihaka](http://www.r-bloggers.com/ross-ihaka-co-creator-of-r-in-the-economist/)

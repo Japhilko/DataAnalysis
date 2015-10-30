@@ -69,3 +69,5 @@ invisible(update(fm1, verbose = TRUE))
  - [Generalized hierarchical models](http://journal.r-project.org/archive/2010-2/RJournal_2010-2_Roennegaard~et~al.pdf)
  
 - [ML growth models](http://www.r-bloggers.com/analysing-longitudinal-data-multilevel-growth-models-i/)
+
+- [ML workflow](http://www.r-bloggers.com/linear-mixed-effect-model-workflow/)

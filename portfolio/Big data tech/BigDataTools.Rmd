@@ -57,3 +57,5 @@ install_github("amplab-extras/SparkR-pkg", subdir="pkg")
 library(SparkR)
 ```
 
+- [Win Vector Blog](http://www.win-vector.com/blog/)
+- [Statistics to English](http://www.r-bloggers.com/some-key-win-vector-serial-data-science-articles/)
