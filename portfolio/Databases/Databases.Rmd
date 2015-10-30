@@ -23,3 +23,10 @@ output: ioslides_presentation
 - [Install PostGIS](http://www.bostongis.com/?content_name=postgis_tut01)
 
 - [PostGIS in combination with R](http://gis.stackexchange.com/questions/64950/which-is-the-best-way-of-working-with-postgis-data-in-r)
+
+## PostGRESQL
+
+- [Intro to PGadmin](http://www.enterprisedb.com/resources-community/webcasts-podcasts-videos/videos/how-create-postgres-database-using-pgadmin)
+
+ - [Import csv-data](http://stackoverflow.com/questions/19400173/how-should-i-import-data-from-csv-into-a-postgres-table-using-pgadmin-3)
+
