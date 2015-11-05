@@ -339,6 +339,8 @@ install.packages("htmltab")
 install.packages("wordcloud")
 install.packages("tm")    # Text Mining Package
 
+install.packages("Rpoppler")
+
 #------------------------#
 # Panel-Data
 #------------------------#
