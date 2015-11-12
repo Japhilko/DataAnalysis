@@ -41,3 +41,8 @@ plot(cars)
 ## Include a picture
 
 <img src="http://lazowska.cs.washington.edu/MS/DS.wordle.jpg" alt="alt text" width="700x" height="500x">
+
+
+## Links
+
+[Elegant Presentation with R-code](http://zevross.com/blog/2014/11/19/creating-elegant-html-presentations-that-feature-r-code/)
