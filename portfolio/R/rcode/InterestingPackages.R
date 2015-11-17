@@ -97,6 +97,9 @@ install.packages("lubridate")
 
 install.packages("knitr")
 
+
+install.packages("reports")
+
 library(devtools)
 install_github("cboettig/knitcitations")
 
