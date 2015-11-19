@@ -1,0 +1,13 @@
+---
+title: "Documentation"
+author: "Jan-Philipp Kolb"
+date: "19. November 2015"
+output: html_document
+---
+
+
+- [R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+
+- [Happy collaboration with Rmd to docx](http://rmarkdown.rstudio.com/articles_docx.html)
+
+- [Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
