@@ -170,3 +170,5 @@ shiny::runGitHub(repo='ShinyApps', username='Japhilko',
 - [formatR](https://cran.r-project.org/web/packages/formatR/index.html)
 
 - [Portrait Ihaka](http://www.r-bloggers.com/ross-ihaka-co-creator-of-r-in-the-economist/)
+
+- [Notebook for R](http://www.r-bloggers.com/interactive-data-science-with-r-in-apache-zeppelin-notebook/)
