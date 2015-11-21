@@ -26,7 +26,7 @@ install.packages("reshape2")
 
 
 #------------------------#
-# Lehren mit R
+# Teaching with R
 #------------------------#
 
 install.packages("fBasics")
@@ -74,7 +74,7 @@ install.packages("ggvis")
 install.packages("colorRamps")
 
 #------------------------#
-# foreign data sets
+# Import foreign data sets
 #------------------------#
 
 install.packages("xlsx")
@@ -96,6 +96,9 @@ install.packages("lubridate")
 #------------------------#
 
 install.packages("knitr")
+
+
+install.packages("reports")
 
 library(devtools)
 install_github("cboettig/knitcitations")
@@ -141,10 +144,15 @@ install.packages("data.table")
 # Packages for Geography
 #------------------------#
 
+install.packages("maptools")
+
 install.packages("sp")
 install.packages("ggmap")
+
+install.packages("spatial.tools")
 install.packages("spdep")
-install.packages("maptools")
+
+
 install.packages("rworldmap")
 install.packages("rgeos")                 # Interface to Geometry Engine
 install.packages("rasterVis")
