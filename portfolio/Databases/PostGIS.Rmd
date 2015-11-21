@@ -267,3 +267,7 @@ osmosis --read-xml "D:\Daten\Daten\GeoDaten\germany-latest.osm.bz2" --write-pgsi
 ```shell
 osm2pgsql -c -d GermanyOSM -U kolbjp -W --latlong -H localhost D:\Daten\Daten\GeoDaten\germany-latest.osm.bz2 --style D:\Daten\Daten\GeoDaten\default.style
 ```
+
+## Links
+
+[Zielstra - PostGIS ](https://cnr.ncsu.edu/geospatial/wp-content/uploads/sites/6/2014/08/Zielstra_Tonini_021215.pdf)
