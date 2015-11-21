@@ -59,25 +59,6 @@ And even more on:
 [github](http://www.r-bloggers.com/everyone-loves-r-markdown-and-github-stories-from-the-r-summit-day-two/), [DataCamp](http://www.r-bloggers.com/datacamp-talks-user2015aalborg/), [R adventures of Romain Francois](https://csgillespie.wordpress.com/2015/07/01/user-2015-romain-francois-my-r-adventures/), [Mango Solutions at UseR](http://www.r-bloggers.com/mango-solutions-at-user2015/), [Hygge](http://www.r-bloggers.com/hygge-at-user-2015-aalborg/)
 
 
-## Writing own packages
-
-- [R packages by Hadley Wickham](http://r-pkgs.had.co.nz/description.html)
-
-- [Writing vignettes](http://kbroman.org/pkg_primer/pages/vignettes.html)
-
-- [Building and testing packages](https://support.rstudio.com/hc/en-us/articles/200486508-Building-Testing-and-Distributing-Packages)
-
-- [Roxygen 2](http://r-pkgs.had.co.nz/man.html)
-
-## Upload package to CRAN
-
-- [Upload to CRAN](http://kbroman.org/pkg_primer/pages/cran.html)
-
-- [Submit a package](https://cran.r-project.org/submit.html)
-
-- [CRAN policy](https://cran.r-project.org/submit.html)
-- [CRAN Repository Policy](https://cran.r-project.org/web/packages/policies.html)
-
 ## [xkcd comics](http://xkcd.com/1138/)
 
 ![comic](http://imgs.xkcd.com/comics/heatmap.png)
@@ -148,4 +129,10 @@ RWordPress
 
 - [Data Science and R](http://www.r-bloggers.com/some-key-win-vector-serial-data-science-articles/)
 
+- [Data Science Radar](http://www.r-bloggers.com/launching-the-data-science-radar/)
+
 - [Disclosure control](http://www.r-bloggers.com/a-new-method-for-statistical-disclosure-limitation-i/)
+
+## Intersting Projects
+
+- [Infolis](http://infolis.github.io/)
