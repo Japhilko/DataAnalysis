@@ -135,6 +135,8 @@ citation(package = "mice")
 
 ## Rstudio and git
 
+[Rstudio shortcuts](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts)
+
 [Rstudio and git](http://www.r-bloggers.com/rstudio-and-github/)
 
 [Github](https://github.com/jennybc/2015-06-28_r-summit-talk/blob/master/2015-06-28_bryan-r-summit-talk.pdf)
