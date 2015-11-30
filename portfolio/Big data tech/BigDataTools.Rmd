@@ -2,7 +2,7 @@
 title: "Big Data Technologies"
 author: "Jan-Philipp Kolb"
 date: "20. Juli 2015"
-output: ioslides_presentation
+output: html_document
 ---
 
 ## R and Hadoop
@@ -59,3 +59,10 @@ library(SparkR)
 
 - [Win Vector Blog](http://www.win-vector.com/blog/)
 - [Statistics to English](http://www.r-bloggers.com/some-key-win-vector-serial-data-science-articles/)
+
+
+## Most popular Software
+
+[Strata and Hadoop wolrd](http://www.r-bloggers.com/the-2015-strata-hadoop-world-london/)
+
+![pic](http://i1.wp.com/www.mango-solutions.com/wp/wp-content/uploads/2015/05/stratatech.png)
