@@ -1,0 +1,21 @@
+---
+title: "Git commands"
+author: "Jan-Philipp Kolb"
+date: "1. Dezember 2015"
+output: html_document
+---
+
+## Links
+
+[Commit failed - git shell](http://stackoverflow.com/questions/11229843/github-windows-commit-failed-failed-to-create-a-new-commit)
+
+
+## Commands
+
+``` 
+git commit
+```
+
+``` 
+git push
+```
