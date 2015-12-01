@@ -135,6 +135,10 @@ RWordPress
 
 - [Disclosure control](http://www.r-bloggers.com/a-new-method-for-statistical-disclosure-limitation-i/)
 
-## Intersting Projects
+## Interesting Projects
 
 - [Infolis](http://infolis.github.io/)
+
+## Papers for publication
+
+- [Insights from the field](http://surveyinsights.org/)
