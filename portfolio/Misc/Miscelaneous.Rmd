@@ -50,7 +50,7 @@ Journals:
 - [Social Science Computer Review](http://ssc.sagepub.com/)
 
 
-[Computational Statistics and Data Analysis](http://www.journals.elsevier.com/computational-statistics-and-data-analysis/)
+- [Computational Statistics and Data Analysis](http://www.journals.elsevier.com/computational-statistics-and-data-analysis/)
 
 - [Guide for authors](http://www.elsevier.com/journals/computational-statistics-and-data-analysis/0167-9473/guide-for-authors)
 - [style file](http://www.ctan.org/pkg/elsarticle)

@@ -1,0 +1,33 @@
+---
+title: "Media Analysis"
+author: "Jan-Philipp Kolb"
+date: "Sat Dec 05 15:29:00 2015"
+output: html_document
+---
+
+
+[CRAN Task View - Web Technologies](https://cran.r-project.org/web/views/WebTechnologies.html)
+
+[RGoogleTrends Package](http://www.omegahat.org/RGoogleTrends/)
+
+```{r,eval=F}
+install.packages("RGoogleTrends")
+```
+
+[GTrendsR](https://github.com/dvanclev/GTrendsR)
+
+```{r,eval=F}
+library(devtools)
+install.packages("curl")
+install_github("dvanclev/GTrendsR")
+library(GTrendsR)
+```
+
+[rGtrends](https://github.com/emhart/rGtrends)
+
+
+```{r,eval=F}
+install.packages("RGA")
+library(RGA)
+```
+
