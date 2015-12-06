@@ -8,6 +8,9 @@ output: html_document
 
 [CRAN Task View - Web Technologies](https://cran.r-project.org/web/views/WebTechnologies.html)
 
+
+- [Google Trends with R](http://christophriedl.net/2013/08/22/google-trends-with-r/)
+
 [RGoogleTrends Package](http://www.omegahat.org/RGoogleTrends/)
 
 ```{r,eval=F}
@@ -29,5 +32,65 @@ library(GTrendsR)
 ```{r,eval=F}
 install.packages("RGA")
 library(RGA)
+```
+
+## Wikipedia
+
+[Vignette - Using wikipediatrend](https://cran.r-project.org/web/packages/wikipediatrend/vignettes/using-wikipediatrend.html)
+
+```{r,eval=F}
+install.packages("wikipediatrend")
+library(wikipediatrend)
+```
+
+```{r,eval=F}
+library(wikipediatrend)
+page_views <- wp_trend( 
+    page = c( "Millennium_Development_Goals", "Climate_Change") )
+```
+
+
+```{r,eval=F}
+library(ggplot2)
+
+ggplot(page_views, aes(x=date, y=count, group=page, color=page)) + 
+  geom_line(size=1.5) + theme_bw()
+```
+
+
+```{r,eval=F}
+page_views1 <- 
+  wp_trend( 
+    page = "Zika-Virus" ,
+    from = "2000-01-01",
+    to   = prev_month_end()
+  )
+```
+
+```{r,eval=F}
+library(ggplot2)
+
+ggplot(page_views1, aes(x=date, y=count, color=wp_year(date))) + 
+  geom_line() + 
+  stat_smooth(method = "lm", formula = y ~ poly(x, 22), color="#CD0000a0", size=1.2) +
+  theme_bw() 
+```
+
+```{r,eval=F}
+page_views2 <- 
+  wp_trend( 
+    page = c("Zika-Virus", "Zika_virus") ,
+    lang = c("de", "en"),
+    from = Sys.Date()-100
+  )
+```
+
+```{r,eval=F}
+library(ggplot2)
+
+ggplot(page_views2, aes(x=date, y=count, group=lang, color=lang, fill=lang)) + 
+  geom_smooth(size=1.5) + 
+  geom_point() +
+  theme_bw() 
 ```
 
