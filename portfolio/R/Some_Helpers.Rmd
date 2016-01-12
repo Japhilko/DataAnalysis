@@ -2,7 +2,7 @@
 title: "Some Helpers"
 author: "Jan-Philipp Kolb"
 date: "17. April 2015"
-output: ioslides_presentation
+output: slidy_presentation
 ---
 
 ## Update R
@@ -124,7 +124,7 @@ citation(package = "foreign")
 
 ## Cite r-package `mice`
 
-```{r}
+```{r,eval=F}
 citation(package = "mice")
 ```
 
