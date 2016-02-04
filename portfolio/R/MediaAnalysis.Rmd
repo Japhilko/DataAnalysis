@@ -38,6 +38,19 @@ library(RGA)
 
 [Vignette - Using wikipediatrend](https://cran.r-project.org/web/packages/wikipediatrend/vignettes/using-wikipediatrend.html)
 
+
+- [Visualisation of Wikipedia data](http://chrisharrison.net/projects/wikitop/Top50Final2high.png)
+
+
+
+
+## [Wikipedia Cluster Ball](http://chrisharrison.net/index.php/Visualizations/ClusterBall)
+
+![pic](http://chrisharrison.net/projects/clusterball/v2med/humansv2.jpg)
+
+
+
+## 
 ```{r,eval=F}
 install.packages("wikipediatrend")
 library(wikipediatrend)
