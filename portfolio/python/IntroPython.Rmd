@@ -44,6 +44,8 @@ Popularity of Python
 
 - [Video on python](https://www.youtube.com/watch?v=F1_FqvbXHb4)
 
+- [Einführung in Python](https://www.youtube.com/watch?v=T-CckWcJHBo)
+
 
 ## More links
 
