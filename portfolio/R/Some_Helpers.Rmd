@@ -174,3 +174,11 @@ shiny::runGitHub(repo='ShinyApps', username='Japhilko',
 - [Portrait Ihaka](http://www.r-bloggers.com/ross-ihaka-co-creator-of-r-in-the-economist/)
 
 - [Notebook for R](http://www.r-bloggers.com/interactive-data-science-with-r-in-apache-zeppelin-notebook/)
+
+## Working with github
+
+[clean git](http://stackoverflow.com/questions/52704/how-do-you-discard-unstaged-changes-in-git)
+
+```
+git clean - df
+```

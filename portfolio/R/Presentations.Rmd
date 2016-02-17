@@ -43,6 +43,12 @@ plot(cars)
 <img src="http://lazowska.cs.washington.edu/MS/DS.wordle.jpg" alt="alt text" width="700x" height="500x">
 
 
+## Include Formulas
+
+[Latex code](https://github.com/cben/mathdown/wiki/math-in-markdown)
+
 ## Links
 
 [Elegant Presentation with R-code](http://zevross.com/blog/2014/11/19/creating-elegant-html-presentations-that-feature-r-code/)
+
+[Markdown or LaTeX](http://www.schlosser.info/markdown-latex/)
