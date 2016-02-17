@@ -34,3 +34,5 @@ output: ioslides_presentation
 - [nameslist - export](http://troublevn.com/41749/function-lmlist-after-installing-updating-packages-duplicate)
 
 - [Roxygen](http://stackoverflow.com/questions/8597993/does-roxygen2-automatically-write-namespace-directives-for-imports-packages)
+
+- [API Packages](https://cran.r-project.org/web/packages/httr/vignettes/api-packages.html)
