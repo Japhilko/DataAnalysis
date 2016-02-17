@@ -156,3 +156,7 @@ print(x.split(' '))
 ## Create maps
 
 - [Map on touristiness](http://www.bluemoon.ee/~ahti/touristiness-map/build_map.py)
+
+## Android Apps mit Python
+
+[Apps](https://ep2013.europython.eu/conference/talks/developing-android-apps-completely-in-python)
