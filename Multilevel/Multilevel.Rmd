@@ -71,3 +71,5 @@ invisible(update(fm1, verbose = TRUE))
 - [ML growth models](http://www.r-bloggers.com/analysing-longitudinal-data-multilevel-growth-models-i/)
 
 - [ML workflow](http://www.r-bloggers.com/linear-mixed-effect-model-workflow/)
+
+- [Intro ML](http://www.bristol.ac.uk/media-library/sites/cmm/migrated/documents/5-r-sample.pdf)
