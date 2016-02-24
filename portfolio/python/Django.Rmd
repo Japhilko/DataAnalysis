@@ -1,0 +1,14 @@
+---
+title: "Webentwicklung mit Django"
+author: "Jan-Philipp Kolb"
+date: "24. Februar 2016"
+output: html_document
+---
+
+[Workshop Django](http://www.django-workshop.de/)
+
+[django packages](https://www.djangopackages.com/)
+
+```
+pip install django
+```
