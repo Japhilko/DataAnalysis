@@ -1,7 +1,7 @@
 ---
 title: "Some Helpers"
 author: "Jan-Philipp Kolb"
-date: "17. April 2015"
+date: "17 April 2015"
 output: slidy_presentation
 ---
 
@@ -95,7 +95,7 @@ library(knitr)
 purl("/Readme.md")
 ```
 
-
+- [Jennifer Bryan](https://stat545-ubc.github.io/block007_first-use-rmarkdown.html)
 
 ## Rpresentations
 
@@ -144,6 +144,8 @@ citation(package = "mice")
 [Github 2](http://www.r-bloggers.com/get-by-with-a-little-r-help-from-your-friends-at-github/)
 
 [education and github](http://blog.revolutionanalytics.com/2015/06/get-your-r-education-going-with-github.html)
+
+[GitHub Education](https://education.github.com/)
 
 ## What's new on R
 
