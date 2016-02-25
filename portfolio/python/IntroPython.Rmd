@@ -160,3 +160,7 @@ print(x.split(' '))
 ## Android Apps mit Python
 
 [Apps](https://ep2013.europython.eu/conference/talks/developing-android-apps-completely-in-python)
+
+## Flask
+
+<http://flask.pocoo.org/docs/0.10/quickstart/>
