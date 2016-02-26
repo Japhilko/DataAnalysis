@@ -139,7 +139,7 @@ The R-Files
 - [OpenSourceConvention](http://www.oscon.com/open-source-2015)
 
 - [OSCON Europe](http://www.oscon.com/open-source-eu-2015)
-
+ 
 - [GDR Ecologie Statistique](https://sites.google.com/site/gdrecostat/)
 
 - [O'Reilly Strata Conference](http://strataconf.com/)
@@ -151,3 +151,9 @@ The R-Files
 - [Heidelberg Unseminars in Bioinformatics](http://www.hub-hub.de/wiki/index.php?title=HUB_-_Heidelberg_Unseminars_in_Bioinformatics)
 
 - [HUB Events](http://www.hub-hub.de/wiki/index.php?title=EventAds)
+
+
+## Github Usage
+
+- [Cloning a repo on linux](https://help.github.com/articles/cloning-a-repository/)
+
