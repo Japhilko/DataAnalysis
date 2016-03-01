@@ -36,3 +36,6 @@ output: ioslides_presentation
 - [Roxygen](http://stackoverflow.com/questions/8597993/does-roxygen2-automatically-write-namespace-directives-for-imports-packages)
 
 - [API Packages](https://cran.r-project.org/web/packages/httr/vignettes/api-packages.html)
+
+- [Overview - writing packages](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)
+

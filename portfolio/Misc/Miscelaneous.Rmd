@@ -157,3 +157,10 @@ The R-Files
 
 - [Cloning a repo on linux](https://help.github.com/articles/cloning-a-repository/)
 
+## Android Apps
+
+[Java Tool to build Android Apps](https://www.jetbrains.com/idea/)
+
+## Ideas
+
+[Own projects](https://www.kickstarter.com/)
