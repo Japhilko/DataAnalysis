@@ -14,7 +14,7 @@ output: ioslides_presentation
 
 - [Using Azure as an R datasource](http://www.r-bloggers.com/using-azure-as-an-r-datasource-part-2-pulling-data-from-mysqlmariadb/)
 
-- [PostgreSQ](http://wiki.openstreetmap.org/wiki/PostgreSQL)
+- [PostgreSQL](http://wiki.openstreetmap.org/wiki/PostgreSQL)
 
 - [Video](https://www.youtube.com/watch?v=2AVnuu4Ty_A)
 

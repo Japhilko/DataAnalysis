@@ -271,3 +271,8 @@ osm2pgsql -c -d GermanyOSM -U kolbjp -W --latlong -H localhost D:\Daten\Daten\Ge
 ## Links
 
 [Zielstra - PostGIS ](https://cnr.ncsu.edu/geospatial/wp-content/uploads/sites/6/2014/08/Zielstra_Tonini_021215.pdf)
+
+[Data into postgresql](http://skipperkongen.dk/2011/01/20/how-to-import-open-street-map-data-into-postgresql/)
+
+[Setting up postgresql](http://learnosm.org/en/osm-data/setting-up-postgresql/)
+
