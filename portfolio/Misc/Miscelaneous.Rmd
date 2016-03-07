@@ -49,12 +49,45 @@ Journals:
 - [J-reading](http://www.j-reading.org/index.php/geography)
 - [Social Science Computer Review](http://ssc.sagepub.com/)
 
-
 - [Computational Statistics and Data Analysis](http://www.journals.elsevier.com/computational-statistics-and-data-analysis/)
 
 - [Guide for authors](http://www.elsevier.com/journals/computational-statistics-and-data-analysis/0167-9473/guide-for-authors)
 - [style file](http://www.ctan.org/pkg/elsarticle)
 - [What is important](http://www.elsevier.com/connect/8-reasons-i-accepted-your-article)
+
+## Interesting Papers
+
+[Impact factors](http://www.scimagojr.com/journalrank.php?category=3312)
+
+[Journal of applied social science](http://jax.sagepub.com/)
+
+- [example on georeferencing](http://jax.sagepub.com/content/os-21/1/10.full.pdf+html)
+
+
+[Political Geography](http://www.journals.elsevier.com/political-geography/)
+
+[European Sociological Review](http://esr.oxfordjournals.org/)
+
+[Oxford Review of Education](http://www.tandfonline.com/toc/core20/current)
+
+[Research in Social Stratification and Mobility](http://www.journals.elsevier.com/research-in-social-stratification-and-mobility/)
+
+[Survey Research Methods](https://ojs.ub.uni-konstanz.de/srm/)
+
+## Economic Journals
+
+[Journal of Economic Geography](http://www.oxfordjournals.org/our_journals/jnlecg/for_authors/index.html)
+
+
+## Misc on publishing
+
+[Discussion on impact factor](https://www.researchgate.net/post/How_to_find_ISI_journals_by_impact_factor_zero2)
+
+[Critique on scholarly publishing](https://scholarlyoa.com/2015/01/02/bealls-list-of-predatory-publishers-2015/)
+
+[how to get published](http://www.theguardian.com/education/2015/jan/03/how-to-get-published-in-an-academic-journal-top-tips-from-editors)
+
+[three tips on wirting](http://www.theguardian.com/higher-education-network/2014/dec/22/overcoming-writers-block-three-top-tips)
 
 
 ## Open Source platforms
