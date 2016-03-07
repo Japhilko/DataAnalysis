@@ -30,3 +30,8 @@ output: ioslides_presentation
 
  - [Import csv-data](http://stackoverflow.com/questions/19400173/how-should-i-import-data-from-csv-into-a-postgres-table-using-pgadmin-3)
 
+## [CouchDB](https://de.wikipedia.org/wiki/CouchDB)
+
+[Installation on Windows](http://docs.couchdb.org/en/stable/install/windows.html)
+
+[CouchDB and OSM](http://wiki.openstreetmap.org/wiki/OSMCouch)

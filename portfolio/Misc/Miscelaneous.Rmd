@@ -164,3 +164,17 @@ The R-Files
 ## Ideas
 
 [Own projects](https://www.kickstarter.com/)
+
+[OpenSTack](https://de.wikipedia.org/wiki/OpenStack)
+
+[CRE - Cloud Computing](http://cre.fm/cre176-cloud-computing)
+
+
+
+## Filehosting
+
+[OwnCloud](https://de.wikipedia.org/wiki/OwnCloud)
+
+- [Software for filehosting](http://www.cyberciti.biz/cloud-computing/7-awesome-open-source-cloud-storage-software-for-your-privacy-and-security/)
+
+- [Providers](https://owncloud.org/providers/)
