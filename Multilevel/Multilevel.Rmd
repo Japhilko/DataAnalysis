@@ -1,8 +1,8 @@
 ---
 title: "Multilevel models"
 author: "Jan-Philipp Kolb"
-date: "23. Juli 2015"
-output: ioslides_presentation
+date: "Tue Mar 08 08:15:28 2016"
+output: html_document
 ---
 
 ## Intro Regression
@@ -73,3 +73,13 @@ invisible(update(fm1, verbose = TRUE))
 - [ML workflow](http://www.r-bloggers.com/linear-mixed-effect-model-workflow/)
 
 - [Intro ML](http://www.bristol.ac.uk/media-library/sites/cmm/migrated/documents/5-r-sample.pdf)
+
+## More Resources
+
+- Getting started with [multilevel models in R ](http://www.r-bloggers.com/getting-started-with-mixed-effect-models-in-r/)
+
+
+- Bliese [Multilevel](https://cran.r-project.org/doc/contrib/Bliese_Multilevel.pdf)
+
+- [Longitudinal Models](http://www.r-bloggers.com/using-r-and-lmelmer-to-fit-different-two-and-three-level-longitudinal-models/)
+
