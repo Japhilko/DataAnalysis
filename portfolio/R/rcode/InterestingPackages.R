@@ -110,6 +110,7 @@ install.packages("bibtex")
 install.packages("stargazer")
 install.packages("xtable")
 install.packages("apsrtable")
+install.packages("ascii")
 
 install.packages("tables")
 
