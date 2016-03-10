@@ -168,6 +168,10 @@ print(x.split(' '))
 
 ## Ipython Notebook
 
+- [Transcript of Talk python to me](https://talkpython.fm/episodes/transcript/44/project-jupyter-and-ipython)
+
+- [Ipython and Pandas](http://www.dirk-loss.de/ipython-pandas-2013-05/)
+
 - [Ipython](http://ipython.org/)
 
 - [Getting IPython extensions](https://ipython.org/ipython-doc/3/config/extensions/index.html)
