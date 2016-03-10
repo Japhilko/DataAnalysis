@@ -164,3 +164,26 @@ print(x.split(' '))
 ## Flask
 
 <http://flask.pocoo.org/docs/0.10/quickstart/>
+
+
+## Ipython Notebook
+
+- [Ipython](http://ipython.org/)
+
+- [Getting IPython extensions](https://ipython.org/ipython-doc/3/config/extensions/index.html)
+
+- [Advanced Jupyter Notebook Tricks ](http://blog.dominodatalab.com/lesser-known-ways-of-using-notebooks/)
+
+
+## Notebook and R
+
+- [R Essentials](http://anaconda.org/r/r-essentials)
+
+- [conda R](https://www.continuum.io/blog/developer/jupyter-and-conda-r)
+
+- [Using notebook with R](http://blog.revolutionanalytics.com/2015/09/using-r-with-jupyter-notebooks.html)
+
+- [rmagic](https://ipython.org/ipython-doc/2/config/extensions/rmagic.html)
+
+- [rpy2](http://rpy.sourceforge.net/rpy2/doc-2.4/html/interactive.html)
+
