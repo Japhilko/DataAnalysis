@@ -31,7 +31,7 @@ install.packages("reshape2")
 
 install.packages("fBasics")
 install.packages("TeachingSampling")
-install.packages("datasets")
+# install.packages("datasets")
 install.packages("faraway")
 
 install.packages("LearnBayes")
