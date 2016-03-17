@@ -5,6 +5,71 @@ date: "18. September 2015"
 output: html_document
 ---
 
+
+- Install Postgresql
+
+- [Make PostGis Extension](http://postgis.net/install/)
+
+```
+CREATE EXTENSION postgis;
+```
+
+- Download data from [geofabrik](http://download.geofabrik.de/europe/germany.html)
+
+## Making osm2pgsql working
+
+```
+dir osm2pgsql.exe /s /p
+```
+
+
+
+
+
+```
+osm2pgsql -c -d osmBerlin --slim -C  -k  berlin-latest.osm.pbf
+```
+
+```
+osm2pgsql -c -d osmHamburg --slim -C  -k  hamburg-latest.osm.pbf
+```
+
+
+
+```
+osm2pgsql -c -d osmBremen --slim -C  -k  bremen-latest.osm.pbf
+```
+
+```
+osm2pgsql -c -d osmBrandenburg --slim -C  -k  brandenburg-latest.osm.pbf
+```
+
+```
+osm2pgsql -c -d osmBayern --slim -C  -k  bayern-latest.osm.pbf
+```
+
+
+
+## Use QGIS
+
+- [Install on Ubuntu ](http://gis.stackexchange.com/questions/29094/how-to-install-qgis-on-ubuntu-12-04)
+
+- [Problems with Python module](http://gis.stackexchange.com/questions/63927/importerror-no-module-named-qgis-core)
+
+## Making osm2pgsql working
+
+```
+dir osm2pgsql.exe /s /p
+```
+
+
+## Links
+
+[Preliminaries under windows](http://softwaresimian.com/2012/12/02/openstreetmap-osm-install-on-windows-part-i-the-database/)
+
+
+## Further Links
+
 [Quick install of osmosis und windows](http://wiki.openstreetmap.org/wiki/Osmosis/Quick_Install_%28Windows%29)
 
 
