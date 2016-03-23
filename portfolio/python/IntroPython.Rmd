@@ -106,6 +106,8 @@ library(RPyGeo)
 
 - [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/)
 
+- [Online Book](https://automatetheboringstuff.com/)
+
 ## Further Links
 
 - [Execute script](http://www.python-kurs.eu/skript_ausfuehren.php)
@@ -196,3 +198,13 @@ print(x.split(' '))
 ## Flask
 
 - [Intro flask](http://code.tutsplus.com/tutorials/an-introduction-to-pythons-flask-framework--net-28822)
+
+- [Webhosting](https://www.reddit.com/r/flask/comments/2321oc/easiest_and_fastest_way_to_host_flask_python/)
+
+## Screencasts 
+
+[show me do](http://showmedo.com/videotutorials/python)
+
+[5 screencasts](http://pythontips.com/2013/08/02/5-quality-screencasts-worth-watching/)
+
+[free programming book](https://github.com/vhf/free-programming-books/blob/master/free-podcasts-screencasts-en.md#python)
