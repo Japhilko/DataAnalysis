@@ -216,3 +216,9 @@ The R-Files
 - [Software for filehosting](http://www.cyberciti.biz/cloud-computing/7-awesome-open-source-cloud-storage-software-for-your-privacy-and-security/)
 
 - [Providers](https://owncloud.org/providers/)
+
+
+## Share data
+
+- <http://dat-data.com/>
+- [datahub](https://www.npmjs.com/package/dathub)
