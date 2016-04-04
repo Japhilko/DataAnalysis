@@ -167,6 +167,8 @@ print(x.split(' '))
 
 <http://flask.pocoo.org/docs/0.10/quickstart/>
 
+- [Flask website](https://github.com/mitsuhiko/flask-website/tree/master/flask_website)
+
 ## Anaconda
 
 - [Install Anaconda](https://www.continuum.io/downloads)
@@ -201,6 +203,8 @@ print(x.split(' '))
 
 - [Webhosting](https://www.reddit.com/r/flask/comments/2321oc/easiest_and_fastest_way_to_host_flask_python/)
 
+- [Flask for scientists](http://hplgit.github.io/web4sciapps/doc/pub/._web4sa_flask004.html#___sec5)
+
 ## Screencasts 
 
 [show me do](http://showmedo.com/videotutorials/python)
@@ -208,3 +212,9 @@ print(x.split(' '))
 [5 screencasts](http://pythontips.com/2013/08/02/5-quality-screencasts-worth-watching/)
 
 [free programming book](https://github.com/vhf/free-programming-books/blob/master/free-podcasts-screencasts-en.md#python)
+
+[pycast](https://pycast.io/)
+
+[neckbeard republic](http://neckbeardrepublic.com/screencasts/)
+
+- [Python programming](https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_)
