@@ -19,3 +19,13 @@ git commit
 ``` 
 git push
 ```
+
+
+<http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull>
+
+## Problems with disk space
+
+[WinDirStat](http://www.tecchannel.de/storage/tools/2037869/mit_windirstat_kostenlos_speicherplatz_auf_der_festplatte_visualisieren/)
+<https://support.microsoft.com/de-de/kb/912997>
+<http://www.pcwelt.de/tipps/Update-Dateien-loeschen-8357046.html>
+
