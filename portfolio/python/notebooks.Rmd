@@ -1,0 +1,16 @@
+---
+title: "Notebooks"
+author: "Jan-Philipp Kolb"
+date: "4 April 2016"
+output: html_document
+---
+
+## nbconvert
+
+[nbconvert](http://nbconvert.readthedocs.org/en/latest/usage.html)
+
+## Notebook with R
+
+[Install Rkernel](http://blog.revolutionanalytics.com/2015/09/using-r-with-jupyter-notebooks.html)
+
+
