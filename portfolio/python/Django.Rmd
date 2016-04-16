@@ -12,3 +12,7 @@ output: html_document
 ```
 pip install django
 ```
+
+## Django and Visual Studio
+
+[Youtube](https://www.youtube.com/watch?v=KHPoVpL7zHg&index=2&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
