@@ -110,6 +110,8 @@ library(RPyGeo)
 
 ## Further Links
 
+- [Python vs. R](https://www.linkedin.com/pulse/r-conda-anaconda-which-one-poisonous-lakshminarasimhan-santhanam)
+
 - [Execute script](http://www.python-kurs.eu/skript_ausfuehren.php)
 
 - [Python Course](http://www.python-kurs.eu/python_tkinter.php)
@@ -218,3 +220,11 @@ print(x.split(' '))
 [neckbeard republic](http://neckbeardrepublic.com/screencasts/)
 
 - [Python programming](https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_)
+
+## Python and Visual Studio
+
+[PyGame](https://www.youtube.com/watch?v=Kc71us1Yg2M)
+
+[Steve Dower](https://www.youtube.com/watch?v=T68wFIjzMfw&index=5&list=PL0vn7BYv-bTbnxEG7Qrf2s5MnmBr8VOs7)
+
+[Youtube Tutorial](https://www.youtube.com/watch?v=WG3pGmoo8nE&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=10)
