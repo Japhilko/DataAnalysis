@@ -55,8 +55,9 @@ Popularity of Python
 
 - [python](https://www.python.org/dev/peps/pep-0350/#what-are-codetags)
 
-
 - [IDE](http://xcorr.net/2013/04/17/evaluating-ides-for-scientific-python/)
+
+- [/ ways to run a notebook](https://blog.ouseful.info/2014/12/12/seven-ways-of-running-ipython-notebooks/)
 
 ## Even more Links
 
@@ -228,3 +229,7 @@ print(x.split(' '))
 [Steve Dower](https://www.youtube.com/watch?v=T68wFIjzMfw&index=5&list=PL0vn7BYv-bTbnxEG7Qrf2s5MnmBr8VOs7)
 
 [Youtube Tutorial](https://www.youtube.com/watch?v=WG3pGmoo8nE&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=10)
+
+## Python and R
+
+[R magic](https://ipython.org/ipython-doc/1/config/extensions/rmagic.html)
