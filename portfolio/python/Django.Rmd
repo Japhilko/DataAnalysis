@@ -16,3 +16,11 @@ pip install django
 ## Django and Visual Studio
 
 [Youtube](https://www.youtube.com/watch?v=KHPoVpL7zHg&index=2&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+
+## Screencasts Django
+
+[Dive into Django](http://code.tutsplus.com/articles/diving-into-django--net-2969)
+
+[Django Screencasts](https://code.djangoproject.com/wiki/DjangoScreencasts)
+
+[Creating a blog with Django](https://www.youtube.com/watch?v=srHZoj3ASmk)

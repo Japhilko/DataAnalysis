@@ -122,6 +122,8 @@ library(RPyGeo)
 
 - [ArPy](http://video.esri.com/watch/1819/python-map-automation-_dash_-introduction-to-arcpymapping)
 
+- [Install Python 2 and 3](http://stackoverflow.com/questions/3809314/how-to-install-both-python-2-x-and-python-3-x-in-windows-7)
+
 ## Code chunk with python
 
 ```{python}
@@ -233,3 +235,7 @@ print(x.split(' '))
 ## Python and R
 
 [R magic](https://ipython.org/ipython-doc/1/config/extensions/rmagic.html)
+
+## Programming GUI's in python
+
+[Tkinter](http://www.python-kurs.eu/python_tkinter.php)
