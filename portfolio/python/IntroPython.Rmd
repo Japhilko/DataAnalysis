@@ -241,3 +241,7 @@ print(x.split(' '))
 [Tkinter](http://www.python-kurs.eu/python_tkinter.php)
 
 [Screencast Tkinter](https://www.youtube.com/watch?v=RJB1Ek2Ko_Y)
+
+## [Most interesting python modules](https://pythontips.com/2013/07/30/20-python-libraries-you-cant-live-without/)
+
+[requests](http://www.python-requests.org/en/master/user/install/#install)

@@ -21,3 +21,5 @@ Checkbutton(master, text="female", variable=var2).grid(row=2, sticky=W)
 Button(master, text='Quit', command=master.quit).grid(row=3, sticky=W, pady=4)
 Button(master, text='Show', command=var_states).grid(row=4, sticky=W, pady=4)
 mainloop()
+
+# http://www.python-kurs.eu/tkinter_entry_widgets.php
