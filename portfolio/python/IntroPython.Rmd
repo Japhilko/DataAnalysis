@@ -253,3 +253,21 @@ print(x.split(' '))
 ## [Most interesting python modules](https://pythontips.com/2013/07/30/20-python-libraries-you-cant-live-without/)
 
 [requests](http://www.python-requests.org/en/master/user/install/#install)
+
+## Create an executable
+
+- [Windows exe](https://blog.emeidi.com/2012/02/09/python-scripts-unter-windows-in-ausfuehrbare-exe-dateien-umwandeln/)
+
+```
+pyinstaller.py --onedir --name=my_app   HelloWorld.py
+```
+
+- [Using pyinstaller](http://www.dreamincode.net/forums/topic/192592-making-an-exe-file-with-pyinstaller/)
+
+- [PyInstaller](http://pythonhosted.org/PyInstaller/#how-to-install-pyinstaller)
+
+-[Executable in Unix](http://blog.ablepear.com/2012/10/bundling-python-files-into-stand-alone.html)
+
+- [py2exe](http://www.dreamincode.net/forums/topic/192592-making-an-exe-file-with-pyinstaller/)
+
+-[freezing](http://docs.python-guide.org/en/latest/shipping/freezing/)
