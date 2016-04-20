@@ -242,6 +242,14 @@ print(x.split(' '))
 
 [Screencast Tkinter](https://www.youtube.com/watch?v=RJB1Ek2Ko_Y)
 
+[5 best GUIs for Python](http://docs.python-guide.org/en/latest/scenarios/gui/)
+
+[Choosing an IDE](http://pedrokroger.net/choosing-best-python-ide/)
+
+[pydev](http://www.pydev.org/)
+
+[Most interesting modules for python](https://duckduckgo.com/?q=Most+interesting+python+modules)
+
 ## [Most interesting python modules](https://pythontips.com/2013/07/30/20-python-libraries-you-cant-live-without/)
 
 [requests](http://www.python-requests.org/en/master/user/install/#install)
