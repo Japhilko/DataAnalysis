@@ -35,3 +35,7 @@ output: ioslides_presentation
 [Installation on Windows](http://docs.couchdb.org/en/stable/install/windows.html)
 
 [CouchDB and OSM](http://wiki.openstreetmap.org/wiki/OSMCouch)
+
+## Making a dump
+
+- [dump](http://dba.stackexchange.com/questions/23053/copy-postgresql-data-from-one-pc-to-another)
