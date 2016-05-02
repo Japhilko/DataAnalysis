@@ -7,5 +7,5 @@ Created on Sun May  1 10:07:59 2016
 
 import os
 
-def rename_files():
-    
+
+file_list = os.listdir("D:/GESIS/Workshops/PythonLearning/udacity/prank")    
