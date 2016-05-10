@@ -39,3 +39,12 @@ output: ioslides_presentation
 ## Making a dump
 
 - [dump](http://dba.stackexchange.com/questions/23053/copy-postgresql-data-from-one-pc-to-another)
+
+## [R and mongodb](https://cran.r-project.org/web/packages/rmongodb/vignettes/rmongodb_introduction.html)
+
+
+[Cheat sheet](https://cran.r-project.org/web/packages/rmongodb/vignettes/rmongodb_cheat_sheet.pdf)
+```{r,eval=F}
+install.packages("rmongodb")
+```
+
