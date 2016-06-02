@@ -511,6 +511,11 @@ library(rJava)
 
 # http://www.omegahat.org/RSPerl/
 
+
+install.packages("quantmod")
+install.packages("PerformanceAnalytics")
+install.packages("xtsExtra")
+install.packages("rCharts")
 #------------------------#
 # Misc
 #------------------------#
