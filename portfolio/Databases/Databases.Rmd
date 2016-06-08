@@ -48,3 +48,8 @@ output: ioslides_presentation
 install.packages("rmongodb")
 ```
 
+## NoSQL Databases
+
+[A deep dive to nosql db](http://bigdata-madesimple.com/a-deep-dive-into-nosql-a-complete-list-of-nosql-databases/)
+
+[Apache Spark and HBase](https://blog.cloudera.com/blog/2015/08/apache-spark-comes-to-apache-hbase-with-hbase-spark-module/)
