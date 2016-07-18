@@ -1,21 +1,15 @@
----
-title: "Predictive Analytics"
-author: "Jan-Philipp Kolb"
-date: "18 Juli 2016"
-output:
-  html_document:
-    keep_md: true
----
+# Predictive Analytics
+Jan-Philipp Kolb  
+18 Juli 2016  
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 ## [Cross-Validation](http://www.r-bloggers.com/cross-validation-for-predictive-analytics-using-r/)
 
 - loss function
 
-```{r testsamples}
+
+```r
 seed <- 1809
 set.seed(seed)
 
@@ -30,7 +24,13 @@ gen_data <- function(n, beta, sigma_eps) {
 
 # Fit the models
 require(splines)
+```
 
+```
+## Loading required package: splines
+```
+
+```r
 n_rep <- 100
 n_df <- 30
 df <- 1:n_df
@@ -51,7 +51,8 @@ for (i in 1:n_rep) {
 
 
 
-```{r plotdata}
+
+```r
 # Plot the data
 x <- xy[[1]]$x
 X <- cbind(1, poly(x, degree = (length(beta) - 1), raw = TRUE))
@@ -66,14 +67,25 @@ legend(x = "topleft", legend = c("True function", "Linear fit (df = 1)", "Best m
     "darkorange", "steelblue"), text.width = 32, cex = 0.85)
 ```
 
+![](Readme_files/figure-html/plotdata-1.png)<!-- -->
+
 ## [Standards in Predictive Analytics](http://zementis.com/knowledge-base/standards-in-predictive-analytics/) 
 
 - [Predictive Model Markup Language](https://de.wikipedia.org/wiki/Predictive_Model_Markup_Language)
 
-```{r pmml}
+
+```r
 # install.packages("pmml")
 
 library("pmml")
+```
+
+```
+## Warning: package 'pmml' was built under R version 3.3.1
+```
+
+```
+## Loading required package: XML
 ```
 
 
@@ -96,7 +108,8 @@ library("pmml")
 
 - [support vector machines](http://www.svms.org/tutorials/Berwick2003.pdf)
 
-```{r}
+
+```r
 # http://joelcadwell.blogspot.de/2016/05/using-support-vector-machines-as-flower.html
 
 library(e1071)
@@ -107,6 +120,21 @@ attach(iris)
 # default with factor response:
 model <- svm(Species ~ ., data = iris)
 print(model)
+```
+
+```
+## 
+## Call:
+## svm(formula = Species ~ ., data = iris)
+## 
+## 
+## Parameters:
+##    SVM-Type:  C-classification 
+##  SVM-Kernel:  radial 
+##        cost:  1 
+##       gamma:  0.25 
+## 
+## Number of Support Vectors:  51
 ```
 
 ## Links
