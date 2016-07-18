@@ -5,6 +5,15 @@ date: "07/27/2015"
 output: ioslides_presentation
 ---
 
+## Requested Expert Knowledge
+
+- Predictive Analytics
+- [segmentation methods](http://www.forecastingprinciples.com/files/LRF-Ch9b.pdf)
+- [Segmentation method in image processing](http://www.cs.uu.nl/docs/vakken/ibv/reader/chapter10.pdf)
+
+- Key Perfomrance Indicator (KPI) - 
+
+
 ## [Data scientist](http://www.r-bloggers.com/oreilly-data-scientist-salary-and-tools-survey-november-2014/)
 
 <img src="http://lazowska.cs.washington.edu/MS/DS.wordle.jpg" alt="alt text" width="700x" height="500x">
