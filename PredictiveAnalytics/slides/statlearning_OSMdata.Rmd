@@ -1,0 +1,108 @@
+---
+title: "Statistical Learning with OSM data"
+author: "Jan-Philipp Kolb"
+date: "19 Juli 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,eval=F)
+```
+
+## Sights in a city
+
+
+```{r}
+library(geosmdata)
+
+obji <- "tourism=attraction"
+objii <- "attraction"
+placei <- "Berlin"
+osmnodes <- get_osm_nodes(obji,placei)
+saveXML(osmnodes,file=paste0("data/",objii,"_",placei,".xml"))
+extract_osm_nodes()
+info <- extract_osm_nodes(osmnodes,objii)
+```
+
+```{r}
+library("osmar")
+src <- osmsource_api()
+library("ggmap")
+```
+
+
+```{r getosmar}
+placei <- "Sippersfeld, Haupstrasse 50"
+placeii <- "Sippersfeld_Hpstr50"
+gc <- geocode(placei)
+bb <- center_bbox(gc$lon, gc$lat, 1000, 1000)
+ua <- get_osm(bb, source = src)
+save(ua,file=paste0("data/ua_",placeii,".RData"))
+```
+
+
+
+## [Text Mining with Wikipedia Articles](http://www.r-bloggers.com/text-mining-in-r-automatic-categorization-of-wikipedia-articles/)
+
+```{r installpackages}
+install.packages("tm")
+install.packages("proxy")
+```
+
+
+
+```{r}
+library(tm)
+library(stringi)
+library(proxy)
+```
+
+```{r}
+wiki <- "http://en.wikipedia.org/wiki/"
+```
+
+```{r}
+titles <- c("Berlin", "Köln", "Frankfurt_am_Main")
+articles <- character(length(titles))
+
+for (i in 1:length(titles)) {
+    articles[i] <- stri_flatten(readLines(stri_paste(wiki, titles[i])), col = " ")
+}
+docs <- Corpus(VectorSource(articles))
+```
+
+
+```{r}
+library(xml2)
+url <- "http://www.berlin.de/sehenswuerdigkeiten/"
+isite <- read_html(url)
+
+```
+
+
+```{r}
+docs[[1]]
+
+docs2 <- tm_map(docs, function(x) stri_replace_all_regex(x, "<.+?>", " "))
+docs3 <- tm_map(docs2, function(x) stri_replace_all_fixed(x, "\t", " "))
+
+docs4 <- tm_map(docs3, PlainTextDocument)
+docs5 <- tm_map(docs4, stripWhitespace)
+docs6 <- tm_map(docs5, removeWords, stopwords("english"))
+docs7 <- tm_map(docs6, removePunctuation)
+docs8 <- tm_map(docs7, tolower)
+
+docs8[[1]]
+```
+
+
+## Download other tables
+
+```{r}
+library(XML)
+# tab <- readHTMLTable("http://www.top10berlin.de/de/cat/freizeit-268/sehenswuerdigkeiten-der-superlative-326")
+# lists <- readHTMLList("https://de.wikipedia.org/wiki/Liste_von_Sehensw%C3%BCrdigkeiten_in_Berlin")
+```
+
+
+
