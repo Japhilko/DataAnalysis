@@ -9,12 +9,18 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE,eval=F)
 ```
 
-## Sights in a city
+## Getting to know a place
+
+```{r,eval=T}
+library("osmar")
+src <- osmsource_api()
+library("ggmap")
+library("geosmdata")
+```
+
 
 
 ```{r}
-library(geosmdata)
-
 obji <- "tourism=attraction"
 objii <- "attraction"
 placei <- "Berlin"
@@ -22,12 +28,6 @@ osmnodes <- get_osm_nodes(obji,placei)
 saveXML(osmnodes,file=paste0("data/",objii,"_",placei,".xml"))
 extract_osm_nodes()
 info <- extract_osm_nodes(osmnodes,objii)
-```
-
-```{r}
-library("osmar")
-src <- osmsource_api()
-library("ggmap")
 ```
 
 
@@ -40,6 +40,12 @@ ua <- get_osm(bb, source = src)
 save(ua,file=paste0("data/ua_",placeii,".RData"))
 ```
 
+Get a sattelite picture
+
+```{r,eval=T}
+map1 <- qmap(placei,maptype="satellite",zoom=18)
+map1
+```
 
 
 ## [Text Mining with Wikipedia Articles](http://www.r-bloggers.com/text-mining-in-r-automatic-categorization-of-wikipedia-articles/)
