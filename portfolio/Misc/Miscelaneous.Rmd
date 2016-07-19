@@ -227,6 +227,10 @@ The R-Files
 - [Providers](https://owncloud.org/providers/)
 
 
+## Web Pages with Github
+
+[website with github](http://blog.revolunet.com/blog/2015/07/15/beautiful-static-website-in-minutes-with-github/)
+
 ## Share data
 
 - <http://dat-data.com/>
