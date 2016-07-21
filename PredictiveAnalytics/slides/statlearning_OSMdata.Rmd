@@ -47,8 +47,41 @@ map1 <- qmap(placei,maptype="satellite",zoom=18)
 map1
 ```
 
+```{r getbuildings}
+## Get the contours of buildings
+bg_ids <- find(ua, way(tags(k=="building")))
+bg_ids <- find_down(ua, way(bg_ids))
+bg <- subset(ua, ids = bg_ids)
+bg_poly <- as_sp(bg, "polygons")  
+save(bg_poly,file=paste0("data/bg_poly_",placeii,".RData"))
+```
 
+```{r}
+plot(bg_poly)
+```
 
+```{r getosmar}
+placei <- "Kaiserslautern, Merkurstrasse 20"
+placeii <- "KaiserslauternMerkurstrasse20"
+gc <- geocode(placei)
+bb <- center_bbox(gc$lon, gc$lat, 1000, 1000)
+ua <- get_osm(bb, source = src)
+save(ua,file=paste0("data/ua_",placeii,".RData"))
+```
+
+```{r getbuildings2}
+## Get the contours of buildings
+bg_ids <- find(ua, way(tags(k=="building")))
+bg_ids <- find_down(ua, way(bg_ids))
+bg <- subset(ua, ids = bg_ids)
+bg_poly <- as_sp(bg, "polygons")  
+
+plot(bg_poly)
+
+save(bg_poly,file=paste0("data/bg_poly_",placeii,".RData"))
+```
+
+[Classification based on OSM data](https://smarsly.files.wordpress.com/2014/11/wiggenbrock2014b.pdf)
 
 
 ## [Text Mining with Wikipedia Articles](http://www.r-bloggers.com/text-mining-in-r-automatic-categorization-of-wikipedia-articles/)
