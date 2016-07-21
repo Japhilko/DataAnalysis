@@ -48,6 +48,9 @@ map1
 ```
 
 
+
+
+
 ## [Text Mining with Wikipedia Articles](http://www.r-bloggers.com/text-mining-in-r-automatic-categorization-of-wikipedia-articles/)
 
 ```{r installpackages}
