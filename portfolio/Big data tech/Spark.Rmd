@@ -1,0 +1,31 @@
+---
+title: "Spark"
+author: "Jan-Philipp Kolb"
+date: "22 Juli 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+- Example: [hash table](https://en.wikipedia.org/wiki/Hash_table)
+
+- Google map reduce 2004
+
+![Mapreduce](http://alumni.cs.ucr.edu/~jdou/misco/figs/mapreduce.png)
+
+![Second example Mapreduce](http://www.tutorialspoint.com/map_reduce/images/mapreduce_work.jpg)
+
+[Spark vs. Hadoop](http://www.computerwoche.de/a/apache-spark-versus-hadoop,3096930)
+
+
+[Spark at databricks](https://databricks.com/blog/category/engineering)
+
+## Structured vs. unstructured data
+
+- structured - relational database
+- semi-structured - XML, JSON
+- unstructured - text, media

@@ -27,6 +27,10 @@ output: html_document
 
 - [RHadoop](http://www.r-bloggers.com/making-it-easy-to-use-rhadoop-on-hdinsight-hadoop-clusters/)
 
+- [Getting started with Hadoop](https://wiki.apache.org/hadoop/GettingStartedWithHadoop)
+
+- [Hadoop Tutorial](http://hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/)
+
 ## Spark
 
 - [Installing and Starting SparkR ](http://blog.danielemaasit.com/2015/07/26/installing-and-starting-sparkr-locally-on-windows-8-1-and-rstudio/)
