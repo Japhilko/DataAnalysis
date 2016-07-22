@@ -1,0 +1,33 @@
+---
+title: "Get OSM data for statistical learning"
+author: "Jan-Philipp Kolb"
+date: "22 Juli 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview OSm data and data bases
+
+- [Overview table](http://wiki.openstreetmap.org/wiki/Databases_and_data_access_APIs#Database_Schemas)
+
+
+- [Install MongoDB for Windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+
+
+## osmosis and Postgresql
+
+```
+createdb -U postgres -E UTF8 -O postgres slosm
+createlang -U postgres plpgsql slosm
+cd C:\Program Files\osmosis-latest\bin
+```
+
+- [Download data from Geofabrik](http://download.geofabrik.de/)
+
+```
+osmosis.bat --read-xml file="D:\Daten\Daten\GeoDaten\saarland-latest.osm.bz2" --write-pgsql user="postgres" database="slosm"
+```
+
