@@ -29,3 +29,24 @@ knitr::opts_chunk$set(echo = TRUE)
 - structured - relational database
 - semi-structured - XML, JSON
 - unstructured - text, media
+
+## R-Packages
+
+- [FAQ Spark and R](http://r-addict.com/2016/04/06/FAQ-SparkR.html#q1-how-to-explain-what-is-spark-to-the-regular-r-user)
+
+- [Using Spark without knowing Spark syntax](https://amplab-extras.github.io/SparkR-pkg/)
+
+```{r installpackages,eval=F}
+install.packages("SparkR")
+```
+
+```{r}
+library("SparkR")
+```
+
+- [Install Spark for windows 7](http://nishutayaltech.blogspot.de/2015/04/how-to-run-apache-spark-on-windows7-in.html)
+
+- [Installing and starting SparkR](http://www.r-bloggers.com/installing-and-starting-sparkr-locally-on-windows-os-and-rstudio/)
+
+
+## [Getting started with SparkR](http://www.danielemaasit.com/getting-started-with-sparkr/)
