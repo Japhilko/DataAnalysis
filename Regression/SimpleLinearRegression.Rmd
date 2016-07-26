@@ -1,0 +1,113 @@
+---
+title: "Regression"
+author: "Jan-Philipp Kolb"
+date: "26 Juli 2016"
+output:
+  html_document:
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [Linear Model](https://www.youtube.com/watch?v=5ONFqIk3RFg)
+
+The following is based on course by Trevor Hastie and Rob Tibshirani on statistical learning.  
+
+```{r,eval=F}
+install.packages("ISLR")
+```
+
+```{r}
+library("MASS")
+library("ISLR")
+
+library(knitr)
+```
+
+```{r}
+names(Boston)
+?Boston
+```
+
+```{r fitlinearmodel}
+plot(medv~lstat,Boston)
+fit1 <- lm(medv~lstat,Boston)
+summary(fit1)
+```
+
+![Simple Linear Regression](http://i0.wp.com/3.bp.blogspot.com/-M-eh1oV6NT0/Vn4nPWRl-LI/AAAAAAAAAbA/qiLz64Ky2Zw/s320/regression.png?resize=350%2C200)
+
+```{r}
+plot(medv~lstat,Boston)
+abline(fit1,col=c("#8B008B"))
+```
+
+```{r}
+confint(fit1)
+predict(fit1,data.frame(lstat=c(5,10,15)),interval="confidence")
+```
+
+```{r}
+fit2 <- lm(medv~lstat+age,Boston)
+summary(fit2)
+fit3 <- lm(medv~.,Boston)
+summary(fit3)
+```
+
+```{r}
+par(mfrow=c(2,2))
+plot(fit3)
+```
+
+First plot: residuals vs fitted
+
+is there some non-linearity - or straight line
+
+Third plot: Scale Location
+
+is the variance changing with the mean
+
+```{r}
+fit4 <- update(fit3,~.-age-indus)
+summary(fit4)
+```
+
+## Interactions
+
+```{r}
+fit5 <- lm(medv~lstat*age,Boston)
+summary(fit5)
+```
+
+```{r}
+fit6 <- lm(medv ~ lstat +I(lstat^2),Boston)
+summary(fit6)
+attach(Boston)
+
+plot(medv~lstat)
+points(lstat,fitted(fit6),col="red",pch=20)
+
+```
+
+## Fitting Polynomials
+
+```{r}
+fit7 <- lm(medv ~ lstat +poly(lstat,4),Boston)
+plot(medv~lstat)
+points(lstat,fitted(fit7),col="blue",pch=20)
+```
+
+tends to overfit
+
+```{r}
+kable(head(Carseats))
+```
+
+```{r}
+attach(Carseats)
+mod1 <- lm(Sales~.+Income:Advertising,Carseats)
+contrasts(ShelveLoc)
+```
+
