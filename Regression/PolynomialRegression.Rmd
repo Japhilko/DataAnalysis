@@ -1,0 +1,34 @@
+---
+title: "Polynomials"
+author: "Jan-Philipp Kolb"
+date: "27 Juli 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [Polynomial Models](https://www.youtube.com/watch?v=uQBnDGu6TYU)
+
+```{r}
+library("ISLR")
+attach(Wage)
+```
+
+```{r}
+fit <- lm(wage~poly(age,4),data=Wage)
+summary(fit)
+```
+
+```{r}
+agelims <- range(age)
+age.grid <- seq(agelims[1],to=agelims[2] )
+preds <- predict(fit,newdata=list(age=age.grid),se=T)
+se.bands <- cbind(preds$fit+2*preds$se,preds$fit-2*preds$se)
+
+plot(age,wage,col="darkgray")
+lines(age.grid,preds$fit,lwd=2)
+matlines(age.grid,se.bands,col="blue",lty=2)
+```
+
