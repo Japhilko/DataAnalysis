@@ -1,0 +1,52 @@
+---
+title: "Linear Discriminant Analysis"
+author: "Jan-Philipp Kolb"
+date: "27 Juli 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The following is based on a course on statistical learning by [Trevor Hastie ](https://www.youtube.com/watch?v=2cl7JiPzkBY)
+
+## Load Packages
+
+```{r}
+library("ISLR")
+library("MASS")
+```
+
+- [Univariate Linear Discriminant Analysis](https://www.youtube.com/watch?v=QG0pVJXT6EU)
+
+## [Linear discriminant analysis](https://en.wikipedia.org/wiki/Linear_discriminant_analysis)
+
+```{r}
+lda.fit <- lda(Direction~Lag1+Lag2,data=Smarket,
+               subset=Year<2005)
+
+summary(lda.fit)
+plot(lda.fit)
+```
+
+lda fits a linear function for seperating the two groups
+
+```{r}
+sm05 <- subset(Smarket,Year==2005)
+lda.pred <- predict(lda.fit,sm05)
+data.frame(lda.pred)[1:5,]
+```
+
+```{r}
+table(lda.pred$class,sm05$Direction)
+
+mean(lda.pred$class==sm05$Direction)
+
+```
+
+
+
+## Links 
+
+- [Diskriminanzanalyse](https://de.wikipedia.org/wiki/Diskriminanzanalyse)

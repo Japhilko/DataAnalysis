@@ -1,0 +1,30 @@
+---
+title: "Logistic Regression"
+author: "Jan-Philipp Kolb"
+date: "26 Juli 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [Logistic Regression](https://www.youtube.com/watch?v=TxvEVc8YNlU)
+
+```{r}
+library("ISLR")
+names(Smarket)
+attach(Smarket)
+pairs(Smarket,col=Smarket$Direction)
+```
+
+```{r}
+glm.fit <- glm(Direction~Lag1+Lag2,
+               family=binomial,
+               data=Direction)
+summary(glm.fit)
+
+probs <- predict(glm.fit,type="response")
+probs[1:5]
+```
+
