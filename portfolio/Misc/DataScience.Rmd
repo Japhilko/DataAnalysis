@@ -15,6 +15,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Applications for data science](http://www.analyticsvidhya.com/blog/2015/09/applications-data-science/)
 
+- [History of data science](http://www.forbes.com/sites/gilpress/2013/05/28/a-very-short-history-of-data-science/#42bbb11e69fd)
+
 - [Genomics and Big Data](https://www.oreilly.com/ideas/genomics-and-the-role-of-big-data-in-personalizing-the-healthcare-experience)
 
 ## Way to become a data scientist
