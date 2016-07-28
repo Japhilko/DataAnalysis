@@ -2,9 +2,7 @@
 title: "Miscelaneous"
 author: "Jan-Philipp Kolb"
 date: "07/27/2015"
-output:
-  html_document:
-    keep_md: true
+output: ioslides_presentation
 ---
 
 ## Requested Expert Knowledge
@@ -178,6 +176,9 @@ library(rJava)
 
 ## Persons
 
+- [Michael Freeman](http://mfviz.com/#/) - [stolen years](http://guns.periscopic.com/?year=2013)
+
+
 - [Zach Holman](http://zachholman.com/) - [What They Don't Tell You About Public Speaking](http://zachholman.com/posts/what-they-dont-tell-you-about-public-speaking/)
 
 
@@ -185,6 +186,13 @@ The R-Files
 - [Hadley Wickham](http://blog.revolutionanalytics.com/2010/09/the-r-files-hadley-wickham.html)
 
 - [Dirk Eddelbuettel](http://datascience.la/dirk-eddelbuettel-the-user-2014-interview/)
+
+- [Mikola Lysenko](https://www.youtube.com/watch?v=YD7iqHJ0NUI&index=14&list=PLPhU2Tz1TddCis5MZlx1HQeK5GYJoIbu8)
+
+- [Mathew Conlen](http://www.mathisonian.com/)
+
+
+- [More websites of persons](https://plotcon.plot.ly/schedule)
 
 ## Conferences
 
