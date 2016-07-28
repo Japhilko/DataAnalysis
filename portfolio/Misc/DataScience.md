@@ -4,14 +4,32 @@ Jan-Philipp Kolb
 
 
 
-## [Data science](http://www.r-bloggers.com/oreilly-data-scientist-salary-and-tools-survey-november-2014/)
+## Application of [Data science](http://www.r-bloggers.com/oreilly-data-scientist-salary-and-tools-survey-november-2014/)
 
-[Applications for data science](http://www.analyticsvidhya.com/blog/2015/09/applications-data-science/)
+- [Applications for data science](http://www.analyticsvidhya.com/blog/2015/09/applications-data-science/)
 
+- [History of data science](http://www.forbes.com/sites/gilpress/2013/05/28/a-very-short-history-of-data-science/#42bbb11e69fd)
 
-## Way to become a data scientis
+- [Genomics and Big Data](https://www.oreilly.com/ideas/genomics-and-the-role-of-big-data-in-personalizing-the-healthcare-experience)
+
+## Way to become a data scientist
 
 [Six steps before pursuing education data science](http://www.datascienceweekly.org/blog/26-six-steps-to-take-before-pursuing-education-to-get-a-data-science-job)
 
-
 [Metromap Data Science](http://nirvacana.com/thoughts/wp-content/uploads/2013/07/RoadToDataScientist1.png)
+
+## Fundamentals
+
+- Matrices and Linear Algebra Fundamentals
+-Hash Functions, Binary Tree, O(n)
+- Relational Algebra, DB Basics
+- Inner, Outer, Cross, Theta Join
+- [CAP Theorem](https://de.wikipedia.org/wiki/CAP-Theorem)
+- Tabular Data
+- Data Frames and Series
+- [Sharding](https://docs.mongodb.com/manual/sharding/)
+-[OLAP](https://de.wikipedia.org/wiki/Online_Analytical_Processing)
+
+## R vs. Python for Data Science
+
+[KDnuggets](http://www.kdnuggets.com/2015/05/r-vs-python-data-science.html)

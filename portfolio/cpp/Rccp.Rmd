@@ -23,3 +23,5 @@ install.packages("Rcpp")
 ## Working Examples
 
 - [Contact Overpass API with C++](https://help.openstreetmap.org/questions/18684/i-want-to-use-mainoverpass-api-for-retrieving-data-in-c-program)
+
+[Intro to Rcpp](http://www.r-bloggers.com/rcpphoney-introduction/)

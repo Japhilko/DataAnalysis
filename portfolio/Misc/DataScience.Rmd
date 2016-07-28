@@ -23,7 +23,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 [Six steps before pursuing education data science](http://www.datascienceweekly.org/blog/26-six-steps-to-take-before-pursuing-education-to-get-a-data-science-job)
 
-
 [Metromap Data Science](http://nirvacana.com/thoughts/wp-content/uploads/2013/07/RoadToDataScientist1.png)
 
 ## Fundamentals
@@ -38,4 +37,6 @@ knitr::opts_chunk$set(echo = TRUE)
 - [Sharding](https://docs.mongodb.com/manual/sharding/)
 -[OLAP](https://de.wikipedia.org/wiki/Online_Analytical_Processing)
 
+## R vs. Python for Data Science
 
+[KDnuggets](http://www.kdnuggets.com/2015/05/r-vs-python-data-science.html)

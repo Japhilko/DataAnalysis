@@ -80,14 +80,6 @@ legend(x = "topleft", legend = c("True function", "Linear fit (df = 1)", "Best m
 library("pmml")
 ```
 
-```
-## Warning: package 'pmml' was built under R version 3.3.1
-```
-
-```
-## Loading required package: XML
-```
-
 
 - [Intro R and Predictive Analytics](http://www.r-bloggers.com/introductions-to-r-and-predictive-analytics/)
 
