@@ -1,0 +1,13 @@
+---
+title: "Readme"
+author: "Jan-Philipp Kolb"
+date: "29 Juli 2016"
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Machine Learning - Overview
+
