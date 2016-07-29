@@ -11,6 +11,12 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## What is data science
+
+- [Data Science vs. Data Analytic](https://www.import.io/post/data-scientists-vs-data-analysts-why-the-distinction-matters/)
+
+- [Data Scientist Bubble](https://blogs.oracle.com/datawarehousing/entry/why_the_data_scientist_bubble)
+
 ## Application of [Data science](http://www.r-bloggers.com/oreilly-data-scientist-salary-and-tools-survey-november-2014/)
 
 - [Applications for data science](http://www.analyticsvidhya.com/blog/2015/09/applications-data-science/)

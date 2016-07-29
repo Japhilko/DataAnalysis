@@ -1,0 +1,41 @@
+---
+title: "Classification"
+author: "Jan-Philipp Kolb"
+date: "27 Juli 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [K Nearest Neighbours](https://www.youtube.com/watch?v=9TVVF7CS3F4)
+
+The following is based on course by Trevor Hastie and Rob Tibshirani on statistical learning. 
+
+```{r}
+library("class")
+```
+
+```{r,eval=F}
+?knn
+```
+
+```{r}
+attach(Smarket)
+Xlag <- cbind(Lag1,Lag2)
+train <-Year<2005
+knn.pred <- knn(Xlag[train,],Xlag[!train,],Direction[train],k=1)
+```
+
+```{r}
+table(knn.pred,Direction[!train])
+mean(knn.pred==Direction[!train])
+```
+
+```{r}
+knn.pred <- knn(Xlag[train,],Xlag[!train,],Direction[train],k=4)
+table(knn.pred,Direction[!train])
+mean(knn.pred==Direction[!train])
+```
+
