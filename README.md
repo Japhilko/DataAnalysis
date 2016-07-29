@@ -1,3 +1,3 @@
 # Data Analysis
 
-My research on data analysis
+This is a synopsis on my findings on data analysis.
