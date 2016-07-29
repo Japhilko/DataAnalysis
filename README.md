@@ -4,7 +4,7 @@ This is a synopsis on my findings on data analysis.
 
 ## Methods - Maths and Statistics
 
-- [Statistical Classification](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/ClusterAnalysis.Rmd)
+- [Statistical Classification](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/ClusterAnalysis.md)
 
 ## Technology and Programming
 
