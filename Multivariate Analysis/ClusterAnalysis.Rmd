@@ -21,6 +21,35 @@ library(knitr)
 - Within Groups Linkage
 
 
+## Get the data
+
+I will use data from [Openstreetmap](http://www.openstreetmap.org/) to perform the cluster analysis. The data was downloaded using the [Overpass API](http://wiki.openstreetmap.org/wiki/Overpass_API). 
+
+```{r}
+load("data/berplz.RData")
+mydata <- berplz@data[,c("bar","biergarten","cafe","college","fast_food","ice_cream","pub","restaurant")]
+```
+
+```{r}
+kable(head(mydata))
+```
+
+
+## K-Means Clustering
+
+```{r}
+fit <- kmeans(mydata, 4) # 5 cluster solution
+mydata <- data.frame(mydata, fit$cluster)
+berplz@data$kmeans4 <- as.factor(fit$cluster)
+```
+
+```{r}
+library(tmap)
+qtm(berplz,"kmeans4")
+```
+
+
+
 ## [Hierarchical Clustering](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/hclust.html)
 
 Violent crime rates by US state
