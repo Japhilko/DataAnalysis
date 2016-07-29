@@ -38,7 +38,7 @@ kable(head(mydata))
 ## K-Means Clustering
 
 ```{r}
-fit <- kmeans(mydata, 4) # 5 cluster solution
+fit <- kmeans(mydata, 4) # 4 cluster solution
 mydata <- data.frame(mydata, fit$cluster)
 berplz@data$kmeans4 <- as.factor(fit$cluster)
 ```
@@ -49,7 +49,6 @@ qtm(berplz,"kmeans4")
 ```
 
 
-
 ## [Hierarchical Clustering](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/hclust.html)
 
 Violent crime rates by US state
@@ -57,5 +56,11 @@ Violent crime rates by US state
 ```{r}
 hc <- hclust(dist(USArrests), "ave")
 plot(hc)
+```
+
+
+```{r}
+hc2 <- hclust(dist(mydata), "ave")
+plot(hc2)
 ```
 
