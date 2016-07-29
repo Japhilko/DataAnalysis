@@ -1,0 +1,43 @@
+---
+title: "Support Vector Machines"
+author: "Jan-Philipp Kolb"
+date: "29 Juli 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Application Examples
+
+- [SVM with the iris dataset](http://www.r-bloggers.com/using-support-vector-machines-as-flower-finders-name-that-iris/)
+
+```{r}
+library(e1071)
+data(iris)
+attach(iris)
+
+x <- subset(iris, select = -Species)
+y <- Species
+model <- svm(x, y) 
+```
+
+```{r}
+pred <- predict(model, x, decision.values = TRUE)
+attr(pred, "decision.values")[1:4,]
+ 
+# visualize (classes by color, SV by crosses):
+plot(cmdscale(dist(iris[,-5])),
+     col = as.integer(iris[,5]),
+     pch = c("o","+")[1:150 %in% model$index + 1])
+```
+
+## Links
+
+- [SVM - Wikipedia](https://en.wikipedia.org/wiki/Support_vector_machine)
+
+
+## German Links
+
+- Florian Markowetz - [Klassifikation mit Support Vector Machines](http://lectures.molgen.mpg.de/statistik03/docs/Kapitel_16.pdf)
