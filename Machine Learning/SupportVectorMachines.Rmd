@@ -2,7 +2,7 @@
 title: "Support Vector Machines"
 author: "Jan-Philipp Kolb"
 date: "29 Juli 2016"
-output: html_document
+output: md_document
 ---
 
 ```{r setup, include=FALSE}
@@ -37,6 +37,8 @@ plot(cmdscale(dist(iris[,-5])),
 
 - [SVM - Wikipedia](https://en.wikipedia.org/wiki/Support_vector_machine)
 
+
+- Chih-Wei Hsu et al - [A practical guide to SVM](https://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf)
 
 ## German Links
 
