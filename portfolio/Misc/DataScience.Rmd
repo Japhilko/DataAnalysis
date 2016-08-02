@@ -17,6 +17,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Data Scientist Bubble](https://blogs.oracle.com/datawarehousing/entry/why_the_data_scientist_bubble)
 
+- [Data Science at reddit](https://www.reddit.com/r/datascience/)
+
 ## Application of [Data science](http://www.r-bloggers.com/oreilly-data-scientist-salary-and-tools-survey-november-2014/)
 
 - [Applications for data science](http://www.analyticsvidhya.com/blog/2015/09/applications-data-science/)
@@ -29,7 +31,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [German discussion](http://www.wiwi-treff.de/home/lounge/read.php?ukatid=14&f=28&i=279260&t=279260&collapse=1)
 
-- [Elements of Data Science](http://image.slidesharecdn.com/bigdatachartturckzilis-120629095525-phpapp01/95/slide-1-728.jpg?cb=1340981904)
+- [Elements of Data Science](http://image.slidesharecdn.com/bigdatachartturckzilis-120629095525-phpapp01/95/slide-1-728.jpg?cb=1340981904f)
+
+- [How to become a data scientist (German)](http://www.focus.de/finanzen/karriere/perspektiven/arbeit-wie-werde-ich-data-scientist_id_3788707.html)
 
 ## Way to become a data scientist
 
@@ -54,4 +58,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## R vs. Python for Data Science
 
-[KDnuggets](http://www.kdnuggets.com/2015/05/r-vs-python-data-science.html)
+- [KDnuggets](http://www.kdnuggets.com/2015/05/r-vs-python-data-science.html)
+
+- [the 9 best languages for crunching data](http://www.fastcompany.com/3030716/the-9-best-languages-for-crunching-data)

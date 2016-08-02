@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,warning=F)
 ```
 
 ## [The tm package](https://www.r-bloggers.com/text-mining-in-r-automatic-categorization-of-wikipedia-articles/)
@@ -15,12 +15,14 @@ knitr::opts_chunk$set(echo = TRUE)
 install.packages("proxy")
 ```
 
-
-
 ```{r}
 library(tm)
 library(stringi)
 library(proxy)
+```
+
+
+```{r,eval=F}
 wiki <- "http://de.wikipedia.org/wiki/"
 
 titles <- c("Zika-Virus", "Influenza-A-Virus_H1N1", "Spanische_Grippe", "Influenzavirus",
@@ -43,7 +45,7 @@ docs3 <- tm_map(docs2, function(x) stri_replace_all_fixed(x, "\t", " "))
 
 docs4 <- tm_map(docs3, PlainTextDocument)
 docs5 <- tm_map(docs4, stripWhitespace)
-docs6 <- tm_map(docs5, removeWords, stopwords("english"))
+docs6 <- tm_map(docs5, removeWords, stopwords("german"))
 docs7 <- tm_map(docs6, removePunctuation)
 docs8 <- tm_map(docs7, tolower)
 docs8 <- tm_map(docs8, PlainTextDocument)
@@ -53,13 +55,123 @@ save(docs8,file="data/Krankheiten_wiki.Rdata")
 ```
 
 ```{r loaddata}
-load("data/Krankheiten_wiki.Rdata")
+(load("data/Krankheiten_wiki.Rdata"))
+```
+
+## [Basic Text Mining](https://rstudio-pubs-static.s3.amazonaws.com/31867_8236987cf0a8444e962ccd2aec46d9c3.html)
+
+```{r}
+docs <- tm_map(docs8, removePunctuation) 
+docs <- tm_map(docs, removeNumbers)   
+docs <- tm_map(docs, removeWords, stopwords("german")) 
+
+docs <- tm_map(docs, removeWords, c("document", "element"))   
+
+# inspect(docs8[3])
+```
+
+```{r}
+library(SnowballC)   
+docs <- tm_map(docs, stemDocument)  
+
+docs <- tm_map(docs, PlainTextDocument)   
+dtm <- DocumentTermMatrix(docs)   
+dtm
+tdm <- TermDocumentMatrix(docs)   
+
+dtm1 <- DocumentTermMatrix(docs[1])   
+tdm1 <- TermDocumentMatrix(docs[1]) 
+
+dtm2 <- DocumentTermMatrix(docs[2])   
+tdm2 <- TermDocumentMatrix(docs[2]) 
+```
+
+```{r}
+freq <- colSums(as.matrix(dtm))   
+freq1 <- colSums(as.matrix(dtm1))   
+length(freq)   
+
+ord <- order(freq)   
+ord1 <- order(freq1)   
+```
+
+## Focus
+
+```{r}
+dtms <- removeSparseTerms(dtm, 0.1) 
+dtms1 <- removeSparseTerms(dtm1, 0.1) 
+# This makes a matrix that is 10% empty space, maximum.   
+# inspect(dtms)  
+```
+
+## Word Frequencies
+
+```{r}
+library(ggplot2)   
+freq1 <- colSums(as.matrix(dtms1))
+wf1 <- data.frame(word=names(freq1), freq=freq1) 
+
+freq <- colSums(as.matrix(dtms))
+wf <- data.frame(word=names(freq), freq=freq) 
+
+
+p <- ggplot(subset(wf, freq>50), aes(word, freq))    
+p <- p + geom_bar(stat="identity")   
+p <- p + theme(axis.text.x=element_text(angle=45, hjust=1))   
+p   
+```
+
+```{r}
+p <- ggplot(subset(wf1, freq1>10), aes(word, freq))    
+p <- p + geom_bar(stat="identity")   
+p <- p + theme(axis.text.x=element_text(angle=45, hjust=1))   
+p   
+```
+
+## [Intro to text analysis](https://www.r-bloggers.com/intro-to-text-analysis-with-r/)
+
+```{r,eval=F}
+install.packages("devtools")
+
+require(devtools)
+install_url("http://www.omegahat.org/Rstem/Rstem_0.4-1.tar.gz")
+install_url("http://cran.r-project.org/src/contrib/Archive/sentiment/sentiment_0.1.tar.gz")
+install_url("http://cran.r-project.org/src/contrib/Archive/sentiment/sentiment_0.2.tar.gz")
+```
+
+## [Transform to matrix](http://onepager.togaware.com/TextMiningO.pdf)
+
+```{r}
+m <- as.matrix(dtm)
+
+dtms <- removeSparseTerms(dtm, 0.1)
+dim(dtms)
+```
+
+```{r}
+findFreqTerms(dtm, lowfreq=25)
+
+findAssocs(dtm, "februar", corlimit=0.2)
+```
+
+```{r, eval=F}
+# http://bioconductor.org/packages/release/bioc/html/Rgraphviz.html
+source("https://bioconductor.org/biocLite.R")
+biocLite("Rgraphviz")
+```
+
+
+```{r}
+library(Rgraphviz)
+plot(dtm,
+terms=findFreqTerms(dtm, lowfreq=100)[1:50],
+corThreshold=0.5)
 ```
 
 
 ## The dissimilarity
 
-```{r}
+```{r,eval=F}
 docsTDM <- TermDocumentMatrix(docs8)
 
 
@@ -77,9 +189,40 @@ h <- hclust(docsdissim, method = "ward")
 plot(h, labels = titles, sub = "")
 ```
 
+## Hands on text mining
+
+```{r,eval=F}
+install.packages("qdap")
+install.packages("Rgraphviz")
+```
+
+
+
+```{r}
+library(tm)
+# Framework for text mining.
+library(qdap)
+# Quantitative discourse analysis of transcripts.
+library(qdapDictionaries)
+library(dplyr)
+# Data wrangling, pipe operator %>%().
+library(RColorBrewer)
+# Generate palette of colours for plots.
+library(ggplot2)
+# Plot word frequencies.
+library(scales)
+# Include commas in numbers.
+# library(Rgraphviz)
+# Correlation plots.
+```
+
 
 ## Links
 
-[Basic text mining in R](https://rstudio-pubs-static.s3.amazonaws.com/31867_8236987cf0a8444e962ccd2aec46d9c3.html)
+- [Basic text mining in R](https://rstudio-pubs-static.s3.amazonaws.com/31867_8236987cf0a8444e962ccd2aec46d9c3.html)
 
-[Text Analytics - small example](https://www.r-bloggers.com/?s=Text+Analytics+)
+- [Text Analytics - small example](https://www.r-bloggers.com/?s=Text+Analytics+)
+
+- Graham Williams - [Hands on data science with R](http://onepager.togaware.com/TextMiningO.pdf)
+
+- [Text Mining with KoRpus](https://cran.r-project.org/web/packages/koRpus/vignettes/koRpus_vignette.pdf)
