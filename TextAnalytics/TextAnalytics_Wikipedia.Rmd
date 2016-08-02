@@ -1,0 +1,85 @@
+---
+title: "Text Analytics"
+author: "Jan-Philipp Kolb"
+date: "1 August 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [The tm package](https://www.r-bloggers.com/text-mining-in-r-automatic-categorization-of-wikipedia-articles/)
+
+```{r,eval=F}
+install.packages("proxy")
+```
+
+
+
+```{r}
+library(tm)
+library(stringi)
+library(proxy)
+wiki <- "http://de.wikipedia.org/wiki/"
+
+titles <- c("Zika-Virus", "Influenza-A-Virus_H1N1", "Spanische_Grippe", "Influenzavirus",
+    "Vogelgrippe_H5N1", "Legionellose-Ausbruch_in_Warstein_2013", "Legionellose-Ausbruch_in_Jülich_2014")
+
+articles <- character(length(titles))
+
+for (i in 1:length(titles)) {
+    articles[i] <- stri_flatten(readLines(stri_paste(wiki, titles[i])), col = " ")
+}
+
+docs <- Corpus(VectorSource(articles))
+```
+
+## Preparing the data
+
+```{r prepdata,eval=F}
+docs2 <- tm_map(docs, function(x) stri_replace_all_regex(x, "<.+?>", " "))
+docs3 <- tm_map(docs2, function(x) stri_replace_all_fixed(x, "\t", " "))
+
+docs4 <- tm_map(docs3, PlainTextDocument)
+docs5 <- tm_map(docs4, stripWhitespace)
+docs6 <- tm_map(docs5, removeWords, stopwords("english"))
+docs7 <- tm_map(docs6, removePunctuation)
+docs8 <- tm_map(docs7, tolower)
+docs8 <- tm_map(docs8, PlainTextDocument)
+# http://stackoverflow.com/questions/24191728/documenttermmatrix-error-on-corpus-argument
+
+save(docs8,file="data/Krankheiten_wiki.Rdata")
+```
+
+```{r loaddata}
+load("data/Krankheiten_wiki.Rdata")
+```
+
+
+## The dissimilarity
+
+```{r}
+docsTDM <- TermDocumentMatrix(docs8)
+
+
+?proxy::dist
+# https://cran.r-project.org/web/packages/tm/news.html
+# function dissimilarity removed
+docsdissim <- dissimilarity(docsTDM, method = "cosine")
+
+docsdissim2 <- as.matrix(docsdissim)
+rownames(docsdissim2) <- titles
+colnames(docsdissim2) <- titles
+docsdissim2
+h <- hclust(docsdissim, method = "ward")
+
+plot(h, labels = titles, sub = "")
+```
+
+
+## Links
+
+[Basic text mining in R](https://rstudio-pubs-static.s3.amazonaws.com/31867_8236987cf0a8444e962ccd2aec46d9c3.html)
+
+[Text Analytics - small example](https://www.r-bloggers.com/?s=Text+Analytics+)
