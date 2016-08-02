@@ -25,11 +25,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Genomics and Big Data](https://www.oreilly.com/ideas/genomics-and-the-role-of-big-data-in-personalizing-the-healthcare-experience)
 
+## Description Data Science
+
+- [German discussion](http://www.wiwi-treff.de/home/lounge/read.php?ukatid=14&f=28&i=279260&t=279260&collapse=1)
+
+- [Elements of Data Science](http://image.slidesharecdn.com/bigdatachartturckzilis-120629095525-phpapp01/95/slide-1-728.jpg?cb=1340981904)
+
 ## Way to become a data scientist
 
-[Six steps before pursuing education data science](http://www.datascienceweekly.org/blog/26-six-steps-to-take-before-pursuing-education-to-get-a-data-science-job)
+- [Six steps before pursuing education data science](http://www.datascienceweekly.org/blog/26-six-steps-to-take-before-pursuing-education-to-get-a-data-science-job)
 
-[Metromap Data Science](http://nirvacana.com/thoughts/wp-content/uploads/2013/07/RoadToDataScientist1.png)
+- [Metromap Data Science](http://nirvacana.com/thoughts/wp-content/uploads/2013/07/RoadToDataScientist1.png)
+
+
+
 
 ## Fundamentals
 
