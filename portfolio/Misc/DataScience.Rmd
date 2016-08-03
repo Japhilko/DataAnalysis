@@ -19,6 +19,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Data Science at reddit](https://www.reddit.com/r/datascience/)
 
+- [Data science job description](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century/)
+
 ## Application of [Data science](http://www.r-bloggers.com/oreilly-data-scientist-salary-and-tools-survey-november-2014/)
 
 - [Applications for data science](http://www.analyticsvidhya.com/blog/2015/09/applications-data-science/)

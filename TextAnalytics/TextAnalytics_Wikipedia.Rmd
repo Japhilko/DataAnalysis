@@ -162,6 +162,7 @@ biocLite("Rgraphviz")
 
 
 ```{r}
+# http://onepager.togaware.com/TextMiningO.pdf
 library(Rgraphviz)
 plot(dtm,
 terms=findFreqTerms(dtm, lowfreq=100)[1:50],
