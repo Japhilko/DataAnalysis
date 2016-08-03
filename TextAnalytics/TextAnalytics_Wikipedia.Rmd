@@ -13,6 +13,8 @@ knitr::opts_chunk$set(echo = TRUE,warning=F)
 
 ```{r,eval=F}
 install.packages("proxy")
+install.packages("FactoMineR")
+install.packages("tibble")
 ```
 
 ```{r}
@@ -21,13 +23,16 @@ library(stringi)
 library(proxy)
 ```
 
-
-```{r,eval=F}
+```{r}
 wiki <- "http://de.wikipedia.org/wiki/"
 
 titles <- c("Zika-Virus", "Influenza-A-Virus_H1N1", "Spanische_Grippe", "Influenzavirus",
     "Vogelgrippe_H5N1", "Legionellose-Ausbruch_in_Warstein_2013", "Legionellose-Ausbruch_in_Jülich_2014")
+```
 
+
+
+```{r,eval=F}
 articles <- character(length(titles))
 
 for (i in 1:length(titles)) {
@@ -169,6 +174,39 @@ terms=findFreqTerms(dtm, lowfreq=100)[1:50],
 corThreshold=0.5)
 ```
 
+## [PCA](https://dzone.com/articles/manipulate-clusters-of-texts)
+
+```{r}
+dtm2 <- as.matrix(dtm)
+
+frequency <- colSums(dtm2)
+
+frequency <- sort(frequency, decreasing=TRUE)
+
+mots=frequency[frequency>20]
+
+s=dtm2[1,which(colnames(dtm2) %in% names(mots))]
+
+for(i in 2:nrow(dtm2)) s=cbind(s,dtm2[i,which(colnames(dtm2) %in% names(mots))])
+
+colnames(s)=titles
+```
+
+```{r}
+library(FactoMineR)
+
+PCA(s)
+```
+
+Normalization
+
+```{r}
+s0=s/apply(s,1,sd)
+h <- hclust(dist(t(s0)), method = "ward")
+
+plot(h, labels = titles, sub = "")
+```
+
 
 ## The dissimilarity
 
@@ -217,6 +255,16 @@ library(scales)
 # Correlation plots.
 ```
 
+## [Text processing](https://en.wikibooks.org/wiki/R_Programming/Text_Processing)
+
+```{r}
+str1 <- c("ABCDJ89877266HJZ")
+gsub("[A-Z]","-",str1)
+
+str2 <- "ahdsjdkAZZUSJ77328JJHiiis"
+gsub("[:lower:]","-",str2)
+```
+
 
 ## Links
 
@@ -227,3 +275,9 @@ library(scales)
 - Graham Williams - [Hands on data science with R](http://onepager.togaware.com/TextMiningO.pdf)
 
 - [Text Mining with KoRpus](https://cran.r-project.org/web/packages/koRpus/vignettes/koRpus_vignette.pdf)
+
+- [Text Mining mit R](http://winfwiki.wi-fom.de/index.php/Analyse_Text_Mining_mit_R#Information_Retrieval)
+
+- [Accessing Wikipedia with R](http://stackoverflow.com/questions/6095952/how-to-access-wikipedia-from-r)
+
+- [text Mining with R](https://github.com/chenmiao/Big_Data_Analytics_Web_Text/wiki/Machine-Learning-&-Text-Mining-with-R)
