@@ -281,3 +281,9 @@ gsub("[:lower:]","-",str2)
 - [Accessing Wikipedia with R](http://stackoverflow.com/questions/6095952/how-to-access-wikipedia-from-r)
 
 - [text Mining with R](https://github.com/chenmiao/Big_Data_Analytics_Web_Text/wiki/Machine-Learning-&-Text-Mining-with-R)
+
+- [Text mining - Pasteur](https://projets.pasteur.fr/projects/rap-r/wiki/Text_Mining_with_R)
+
+- [Where to start with textmining](https://tedunderwood.com/2012/08/14/where-to-start-with-text-mining/)
+
+- [Text mining with R](http://www.slideshare.net/whitish/textmining-with-r)

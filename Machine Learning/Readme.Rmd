@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - Choice of Algorithm
 
-Naive Bayes, Support Vector Machines, Decision Trees, k-Means Clustering, ...
+Naive Bayes, [Support Vector Machines](https://github.com/Japhilko/DataAnalysis/blob/master/Machine%20Learning/SupportVectorMachines.md), Decision Trees, k-Means Clustering, ...
 
 - Training
 

@@ -33,3 +33,6 @@ plot(fit, uniform=TRUE,
 text(fit, use.n=TRUE, all=TRUE, cex=.8)
 ```
 
+## Links
+
+- CRAN Task View [Machine & Statistical Learning](http://cran.r-project.org/web/views/MachineLearning.html)
