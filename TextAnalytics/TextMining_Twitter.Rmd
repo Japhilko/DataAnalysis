@@ -1,0 +1,32 @@
+---
+title: "Text Mining Twitter"
+author: "Jan-Philipp Kolb"
+date: "4 August 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
+
+```{r,eval=F}
+install.packages("twitteR")
+```
+
+
+```{r}
+library(twitteR)
+# http://thinktostart.com/twitter-authentification-with-r/
+# https://apps.twitter.com/app/new
+# http://iag.me/socialmedia/how-to-create-a-twitter-app-in-8-easy-steps/
+# https://www.researchgate.net/post/How_do_I_extract_tweets_using_R
+
+tweets <- userTimeline("RDataMining", n = 3200)
+```
+
+```{r}
+# http://www.rdatamining.com/docs/RDataMining.pdf
+```
+
