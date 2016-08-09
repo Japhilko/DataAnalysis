@@ -1,0 +1,26 @@
+---
+title: "Text Mining Wikipedia"
+author: "Jan-Philipp Kolb"
+date: "9 August 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+In the following I will show how to download, process and analyse text information from [Wikipedia](https://www.wikipedia.org/). 
+
+## Download Text Data
+
+As an example we use data on different diseases. In this case I have chosen 7 German websites on infectious diseaes.
+
+```{r}
+wiki <- "http://de.wikipedia.org/wiki/"
+
+titles <- c("Zika-Virus", "Influenza-A-Virus_H1N1", "Spanische_Grippe", "Influenzavirus","Vogelgrippe_H5N1","Legionellose-Ausbruch_in_Warstein_2013", "Legionellose-Ausbruch_in_Jülich_2014")
+```
+
+
