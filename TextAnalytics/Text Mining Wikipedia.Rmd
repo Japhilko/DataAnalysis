@@ -6,21 +6,109 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,warning=F,cache=T,message=F)
 ```
 
 ## Introduction
 
 In the following I will show how to download, process and analyse text information from [Wikipedia](https://www.wikipedia.org/). 
 
+## The used Libraries
+
+The R-library [`stringi`](http://stringi.rexamine.com/) by Marek Gagolewski and Bartek Tartanus provides character string processing facilities.
+
+```{r libraries}
+library("stringi")
+```
+
+[`tm`](http://www.jstatsoft.org/v25/i05/) is a R-package to realize text mining. It is authored by Ingo Feinerer, Kurt Hornik, and David Meyer.
+
+```{r}
+library("tm")
+```
+
+And finally we need the [`FactoMineR`](https://cran.r-project.org/web/packages/FactoMineR/vignettes/FactoMineR.pdf)-package created by Sebastien Le, Julie Josse and Francois Husson to perform the principal component analysis. 
+
+```{r}
+library("FactoMineR")
+```
+
+
 ## Download Text Data
 
 As an example we use data on different diseases. In this case I have chosen 7 German websites on infectious diseaes.
 
-```{r}
+```{r wikititles}
 wiki <- "http://de.wikipedia.org/wiki/"
 
 titles <- c("Zika-Virus", "Influenza-A-Virus_H1N1", "Spanische_Grippe", "Influenzavirus","Vogelgrippe_H5N1","Legionellose-Ausbruch_in_Warstein_2013", "Legionellose-Ausbruch_in_Jülich_2014")
 ```
 
 
+```{r}
+articles <- character(length(titles))
+
+for (i in 1:length(titles)){
+    articles[i] <- stri_flatten(readLines(stri_paste(wiki, titles[i])), col = " ")
+}
+
+docs <- Corpus(VectorSource(articles))
+```
+
+## Preparing the data
+
+The following is based on a blog post by Norbert Ryciak on the [automatic categorization of Wikipedia articles](http://www.rexamine.com/2014/06/text-mining-in-r-automatic-categorization-of-wikipedia-articles/). An error message occured, as I evaluated his code and it was possible to solve this problem with a [discussion on stackoverflow](http://stackoverflow.com/questions/24191728/documenttermmatrix-error-on-corpus-argument).
+
+
+```{r prepdata}
+docs2 <- tm_map(docs, function(x) stri_replace_all_regex(x, "<.+?>", " "))
+docs3 <- tm_map(docs2, function(x) stri_replace_all_fixed(x, "\t", " "))
+
+docs4 <- tm_map(docs3, PlainTextDocument)
+docs5 <- tm_map(docs4, stripWhitespace)
+docs6 <- tm_map(docs5, removeWords, stopwords("german"))
+docs7 <- tm_map(docs6, removePunctuation)
+docs8 <- tm_map(docs7, tolower)
+docs8 <- tm_map(docs8, PlainTextDocument)
+```
+
+
+```{r}
+dtm <- DocumentTermMatrix(docs8)  
+```
+
+
+
+## [Principal Component Analysis](https://dzone.com/articles/manipulate-clusters-of-texts)
+
+The following is based on a blog post by  Arthur Charpentier on mining Wikipedia. He uses R to manipulate clusters of texts.
+
+```{r}
+dtm2 <- as.matrix(dtm)
+frequency <- colSums(dtm2)
+frequency <- sort(frequency, decreasing=TRUE)
+words <- frequency[frequency>20]
+s <- dtm2[1,which(colnames(dtm2) %in% names(words))]
+
+for(i in 2:nrow(dtm2)){
+  s <- cbind(s,dtm2[i,which(colnames(dtm2) %in% names(words))])
+} 
+
+colnames(s) <- titles
+```
+
+```{r}
+PCA(s)
+```
+
+In the variables factor map we can see the expected result. The pages on the Legionnaires' disease are very close together, whereas the pages on the Influenza diseases are in another quadrant. 
+
+
+In the following the normalization is done and the results are plotted. 
+
+```{r}
+s0 <- s/apply(s,1,sd)
+h <- hclust(dist(t(s0)), method = "ward")
+
+plot(h, labels = titles, sub = "")
+```
