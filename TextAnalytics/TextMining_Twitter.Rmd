@@ -9,11 +9,21 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## 
+## [Getting the data](http://varianceexplained.org/r/trump-tweets/)
+
+
 
 ```{r,eval=F}
 install.packages("twitteR")
+install.packages("purrr")
 ```
+
+```{r}
+library(dplyr)
+library(purrr)
+library(twitteR)
+```
+
 
 
 ```{r}
