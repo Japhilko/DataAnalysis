@@ -2,7 +2,7 @@
 title: "Links/Resources on R"
 author: "Jan-Philipp Kolb"
 date: "Tue Sep 22 08:31:43 2015"
-output: slidy_presentation
+output: md_document
 ---
 
 
