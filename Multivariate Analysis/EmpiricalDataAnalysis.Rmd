@@ -217,6 +217,7 @@ install.packages("gplots")
 
 
 ```{r}
+
 library(gplots)
   balloonplot(BankWages$job, BankWages$education,
   BankWages$gender, xlab="job", ylab ="education")
