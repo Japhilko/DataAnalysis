@@ -2,7 +2,9 @@
 title: "Empirical Data Analysis"
 author: "Jan-Philipp Kolb"
 date: "24 August 2016"
-output: html_document
+output:
+  html_document:
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}
@@ -187,7 +189,7 @@ predict(pomodi,data.frame(nincome=il,row.names=il),  type="probs")
 
 ## Applied Econometrics with R (AER)
 
-```{r}
+```{r,eval=F}
 install.packages("AER")
 ```
 
@@ -210,7 +212,7 @@ bwplot(BankWages$job ~BankWages$education |
 tab <- table(BankWages$job, BankWages$education)
 ```
 
-```{r}
+```{r,eval=F}
 install.packages("gplots")
 ```
 
