@@ -4,6 +4,8 @@ This is a synopsis on my findings on data analysis.
 
 ## Methods - Maths and Statistics
 
+- [Empirical Data Analysis](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/EmpiricalDataAnalysis.md)
+
 - [Statistical Classification](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/ClusterAnalysis.md)
 
 - [Linear Regression](https://github.com/Japhilko/DataAnalysis/blob/master/Regression/SimpleLinearRegression.Rmd)
