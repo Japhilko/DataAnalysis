@@ -2,7 +2,9 @@
 title: "Links/Resources on R"
 author: "Jan-Philipp Kolb"
 date: "Tue Sep 22 08:31:43 2015"
-output: md_document
+output:
+  html_document:
+    keep_md: true
 ---
 
 
@@ -22,6 +24,10 @@ output: md_document
 - [R for journalists](http://www.scoop.it/t/r-for-journalists)
 
 - [R creativity](http://www.r-bloggers.com/r-user-groups-highlight-r-creativity/)
+
+- [Mighty R](https://www.inwt-statistics.de/blog-artikel-lesen/Statistik-Software_R.html)
+
+![Mighty R](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/R/figure/Rmaechtig.PNG)
 
 ## Intro R
 

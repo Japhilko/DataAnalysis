@@ -1,190 +1,150 @@
-Popularity R
-------------
+# Links/Resources on R
+Jan-Philipp Kolb  
+Tue Sep 22 08:31:43 2015  
 
--   [Development
-    R](http://www.statisticsviews.com/details/feature/8585391/Created-by-statisticians-for-statisticians-How-R-took-the-world-of-statistics-by.html)
 
--   On the [usage of R in
-    Germany](http://www.gulli.com/news/23740-programmiersprache-r-in-der-wissenschaft-immer-beliebter-2014-04-24).
--   R in an [article in the New York
-    Times](http://community.oreilly.de/blog/2011/01/18/statistiksoftware-r/)
+## Popularity R
 
--   [Data Analysts Captivated by R’s
-    Power](http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?_r=1&)
+- [Development R](http://www.statisticsviews.com/details/feature/8585391/Created-by-statisticians-for-statisticians-How-R-took-the-world-of-statistics-by.html)
 
--   [Top 100 R packages for
-    2013 (Jan-May)](http://www.r-statistics.com/2013/06/top-100-r-packages-for-2013-jan-may/)
+- On the [usage of R in Germany](http://www.gulli.com/news/23740-programmiersprache-r-in-der-wissenschaft-immer-beliebter-2014-04-24). 
+- R in an [article in the New York Times](http://community.oreilly.de/blog/2011/01/18/statistiksoftware-r/)
 
--   [A list of R packages, by
-    popularity](http://blog.revolutionanalytics.com/2013/06/a-list-of-r-packages-by-popularity.html)
+- [Data Analysts Captivated by R’s Power](http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?_r=1&)
 
--   [R for journalists](http://www.scoop.it/t/r-for-journalists)
+- [Top 100 R packages for 2013 (Jan-May)](http://www.r-statistics.com/2013/06/top-100-r-packages-for-2013-jan-may/)
 
--   [R
-    creativity](http://www.r-bloggers.com/r-user-groups-highlight-r-creativity/)
+- [A list of R packages, by popularity](http://blog.revolutionanalytics.com/2013/06/a-list-of-r-packages-by-popularity.html)
 
-Intro R
--------
+- [R for journalists](http://www.scoop.it/t/r-for-journalists)
 
--   [Thomas Girke - Programming in
-    R](http://manuals.bioinformatics.ucr.edu/home/programming-in-r)
+- [R creativity](http://www.r-bloggers.com/r-user-groups-highlight-r-creativity/)
 
--   [Teaching
-    R](http://www.r-bloggers.com/teaching-a-short-topic-to-beginner-r-users/)
+- [Mighty R](https://www.inwt-statistics.de/blog-artikel-lesen/Statistik-Software_R.html)
 
--   [Data Wrangling etc.](http://stat545-ubc.github.io/)
+![Mighty R](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/R/figure/Rmaechtig.PNG)
 
--   [youtube on R](http://www.revolutionanalytics.com/what-r)
+## Intro R
 
--   [Learn
-    R](http://www.r-bloggers.com/learn-r-interactively-with-our-new-introduction-to-r-tutorial/)
+- [Thomas Girke - Programming in R](http://manuals.bioinformatics.ucr.edu/home/programming-in-r)
 
-Advanced R tipps
-----------------
+- [Teaching R](http://www.r-bloggers.com/teaching-a-short-topic-to-beginner-r-users/)
 
--   [Coding with
-    pipes](http://www.r-statistics.com/2014/08/simpler-r-coding-with-pipes-the-present-and-future-of-the-magrittr-package/)
+- [Data Wrangling etc.](http://stat545-ubc.github.io/)
 
-R conferences
--------------
+- [youtube on R](http://www.revolutionanalytics.com/what-r)
 
--   [Some R conferences in
-    2015](http://www.r-bloggers.com/some-r-conferences-in-2015/)
+- [Learn R](http://www.r-bloggers.com/learn-r-interactively-with-our-new-introduction-to-r-tutorial/)
 
--   [Get an overview of events](http://10times.com/)
+## Advanced R tipps
 
--   [Inspire
-    Conference](http://inspire.ec.europa.eu/events/conferences/inspire_2014/page/home)
+- [Coding with pipes](http://www.r-statistics.com/2014/08/simpler-r-coding-with-pipes-the-present-and-future-of-the-magrittr-package/)
 
-R-conferences
--------------
+## R conferences
+
+- [Some R conferences in 2015](http://www.r-bloggers.com/some-r-conferences-in-2015/)
+
+- [Get an overview of events](http://10times.com/)
+
+- [Inspire Conference](http://inspire.ec.europa.eu/events/conferences/inspire_2014/page/home)
+
+## R-conferences
 
 [satRday](https://github.com/stephlocke/RSaturday-proposal)
 
-[eoda from UseR15 in
-Aalborg](http://blog.eoda.de/2015/07/03/eoda-auf-der-user-conference-2015-in-aalborg-die-highlights-vom-ersten-praesentationstag-teil-2/)
 
-[UseR Aalborg -
-r-bloggers](http://www.r-bloggers.com/user-2015-conference-in-aalborg/)
+[eoda from UseR15 in Aalborg](http://blog.eoda.de/2015/07/03/eoda-auf-der-user-conference-2015-in-aalborg-die-highlights-vom-ersten-praesentationstag-teil-2/)
 
-[UseR Aalborg -
-twitter](https://twitter.com/search?q=%23user2015&src=typd)
+[UseR Aalborg - r-bloggers](http://www.r-bloggers.com/user-2015-conference-in-aalborg/)
+
+[UseR Aalborg - twitter](https://twitter.com/search?q=%23user2015&src=typd)
 
 And even more on:
 
-[Chronicles Day
-0](http://www.r-bloggers.com/chronicles-from-user-day-0/), [Day
-1](http://www.milanor.net/blog/?p=1765), [Day
-2](http://www.r-bloggers.com/chronicles-from-user-day-2/) and [Day
-3](http://www.r-bloggers.com/chronicles-from-user-day-3/)
+[Chronicles Day 0](http://www.r-bloggers.com/chronicles-from-user-day-0/), [Day 1](http://www.milanor.net/blog/?p=1765), [Day 2](http://www.r-bloggers.com/chronicles-from-user-day-2/) and [Day 3](http://www.r-bloggers.com/chronicles-from-user-day-3/)
 
-[github](http://www.r-bloggers.com/everyone-loves-r-markdown-and-github-stories-from-the-r-summit-day-two/),
-[DataCamp](http://www.r-bloggers.com/datacamp-talks-user2015aalborg/),
-[R adventures of Romain
-Francois](https://csgillespie.wordpress.com/2015/07/01/user-2015-romain-francois-my-r-adventures/),
-[Mango Solutions at
-UseR](http://www.r-bloggers.com/mango-solutions-at-user2015/),
-[Hygge](http://www.r-bloggers.com/hygge-at-user-2015-aalborg/)
+[github](http://www.r-bloggers.com/everyone-loves-r-markdown-and-github-stories-from-the-r-summit-day-two/), [DataCamp](http://www.r-bloggers.com/datacamp-talks-user2015aalborg/), [R adventures of Romain Francois](https://csgillespie.wordpress.com/2015/07/01/user-2015-romain-francois-my-r-adventures/), [Mango Solutions at UseR](http://www.r-bloggers.com/mango-solutions-at-user2015/), [Hygge](http://www.r-bloggers.com/hygge-at-user-2015-aalborg/)
 
-[xkcd comics](http://xkcd.com/1138/)
-------------------------------------
+
+## [xkcd comics](http://xkcd.com/1138/)
 
 ![comic](http://imgs.xkcd.com/comics/heatmap.png)
 
-New Developments UseR 2015 in Aalborg
--------------------------------------
 
--   [Overview in
-    German](http://blog.eoda.de/2015/07/01/eoda-auf-der-user-conference-2015-in-aalborg-die-eindruecke-vom-tutorial-tuesday/)
+## New Developments UseR 2015 in Aalborg
 
--   [Another overview](http://blog.revolutionanalytics.com/user-groups/)
+- [Overview in German](http://blog.eoda.de/2015/07/01/eoda-auf-der-user-conference-2015-in-aalborg-die-eindruecke-vom-tutorial-tuesday/)
 
--   Have a look at [Docker](https://www.docker.com/)
+- [Another overview](http://blog.revolutionanalytics.com/user-groups/)
 
--   [Network analysis with igraph](http://igraph.org/r/)
+- Have a look at [Docker](https://www.docker.com/)
 
--   [Analyze and manage Facebook ads from
-    R](https://github.com/cardcorp/fbRads)
+- [Network analysis with igraph](http://igraph.org/r/)
 
--   Get into contact -
-    [RopenSci](https://ropensci.org/community/#join-us)
-    <https://www.r-consortium.org/>
+- [Analyze and manage Facebook ads from R](https://github.com/cardcorp/fbRads)
 
--   [An alternative for
-    rstudio](http://www.openanalytics.eu/downloads/architect)
+- Get into contact - [RopenSci](https://ropensci.org/community/#join-us)
+<https://www.r-consortium.org/>
 
-Use API's with R
-----------------
+- [An alternative for rstudio](http://www.openanalytics.eu/downloads/architect)
 
--   [Cran Task View - Web
-    Technologies](http://cran.r-project.org/web/views/WebTechnologies.html)
+## Use API's with R
 
--   [Tobi Bosede - Working with XML Data in
-    R](http://www.informit.com/articles/article.aspx?p=2215520)
+- [Cran Task View - Web Technologies](http://cran.r-project.org/web/views/WebTechnologies.html)
 
-<!-- -->
+- [Tobi Bosede - Working with XML Data in R](http://www.informit.com/articles/article.aspx?p=2215520)
 
-    library(downloader)
-    library(RCurl)
-    require("XML")
-    require("plyr")
-    require("ggplot2")
-    require("gridExtra")
-    library(htmlwidgets)
 
-Blogging and R
---------------
+```r
+library(downloader)
+library(RCurl)
+require("XML")
+require("plyr")
+require("ggplot2")
+require("gridExtra")
+library(htmlwidgets)
+```
 
-RWordPress
+## Blogging and R
 
--   [knitr + wordpress](http://yihui.name/knitr/demo/wordpress/)
+RWordPress 
 
--   [web app using
-    R](http://stathack.wordpress.com/2012/11/14/building-a-simple-web-app-using-r/)
+- [knitr + wordpress](http://yihui.name/knitr/demo/wordpress/)
 
--   [R using google
-    blogger](http://nevilleandrade.blogspot.de/2014/10/testing-r-using-google-blogger.html)
 
-Webscraping
------------
+- [web app using R](http://stathack.wordpress.com/2012/11/14/building-a-simple-web-app-using-r/)
 
--   [Gaston Sanchez - Getting Data from the Web with
-    R](http://gastonsanchez.com/work/webdata/getting_web_data_r1_introduction.pdf)
+- [R using google blogger](http://nevilleandrade.blogspot.de/2014/10/testing-r-using-google-blogger.html)
 
--   [Introduction to
-    Webscraping](http://www.training.cam.ac.uk/event/740618)
 
-Tipps and Tricks
-----------------
+## Webscraping
 
--   [Petr Keil - 12 nifty tips for scientists who use
-    computers](http://www.petrkeil.com/?p=2356)
+- [Gaston Sanchez - Getting Data from the Web with R](http://gastonsanchez.com/work/webdata/getting_web_data_r1_introduction.pdf)
 
--   [Reproducability](http://www.r-bloggers.com/reproducibility-in-computational-research/)
+- [Introduction to Webscraping](http://www.training.cam.ac.uk/event/740618)
 
--   [Cross
-    Validation](http://www.r-bloggers.com/how-do-you-know-if-your-model-is-going-to-work-part-4-cross-validation-techniques-2/)
+## Tipps and Tricks
 
-Interactive presentation
-------------------------
+- [Petr Keil - 12 nifty tips for scientists who use computers](http://www.petrkeil.com/?p=2356)
 
--   [htmlwidgets](http://www.buildingwidgets.com/)
+- [Reproducability](http://www.r-bloggers.com/reproducibility-in-computational-research/)
 
--   [Data Science and
-    R](http://www.r-bloggers.com/some-key-win-vector-serial-data-science-articles/)
+- [Cross Validation](http://www.r-bloggers.com/how-do-you-know-if-your-model-is-going-to-work-part-4-cross-validation-techniques-2/)
 
--   [Data Science
-    Radar](http://www.r-bloggers.com/launching-the-data-science-radar/)
+## Interactive presentation
 
--   [Disclosure
-    control](http://www.r-bloggers.com/a-new-method-for-statistical-disclosure-limitation-i/)
+- [htmlwidgets](http://www.buildingwidgets.com/)
 
-Interesting Projects
---------------------
+- [Data Science and R](http://www.r-bloggers.com/some-key-win-vector-serial-data-science-articles/)
 
--   [Infolis](http://infolis.github.io/)
+- [Data Science Radar](http://www.r-bloggers.com/launching-the-data-science-radar/)
 
-Papers for publication
-----------------------
+- [Disclosure control](http://www.r-bloggers.com/a-new-method-for-statistical-disclosure-limitation-i/)
 
--   [Insights from the field](http://surveyinsights.org/)
+## Interesting Projects
+
+- [Infolis](http://infolis.github.io/)
+
+## Papers for publication
+
+- [Insights from the field](http://surveyinsights.org/)
