@@ -1,11 +1,5 @@
----
-title: "Julia Language"
-author: "Jan-Philipp Kolb"
-date: "25. Juli 2015"
-output: md_document
----
-
-## Julia Language
+Julia Language
+--------------
 
 ![Julia Logo](http://julialang.org/)
 
@@ -14,4 +8,3 @@ output: md_document
 <http://www.inwt-statistics.de/blog-artikel-lesen/Statistik-Software_R.html>
 
 <https://github.com/openlayers/openlayers>
-

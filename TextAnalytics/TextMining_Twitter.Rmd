@@ -16,7 +16,17 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r,eval=F}
 install.packages("twitteR")
 install.packages("purrr")
+install.packages("network")
+install.packages("sna")
+install.packages("qdap")
 ```
+
+```{r}
+lapply(c('twitteR', 'dplyr', 'ggplot2', 'lubridate', 'network', 'sna', 'qdap', 'tm'),
+       library, character.only = TRUE)
+```
+
+
 
 ```{r}
 library(dplyr)
@@ -40,3 +50,6 @@ tweets <- userTimeline("RDataMining", n = 3200)
 # http://www.rdatamining.com/docs/RDataMining.pdf
 ```
 
+## Links
+
+- [Playing with Twitter data](https://www.r-bloggers.com/playing-with-twitter-data/)
