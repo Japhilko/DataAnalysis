@@ -16,6 +16,8 @@ This is a synopsis on my findings on data analysis.
 
 - [Programming with Python](https://github.com/Japhilko/DataAnalysis/tree/master/portfolio/python)
 
+- [The Julia Language](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/Julia/JuliaLanguage.Rmd)
+
 ## Getting Data
 
 - [Twitter](https://github.com/Japhilko/DataAnalysis/blob/master/TextAnalytics/TextMining_Twitter.Rmd)

@@ -5,7 +5,7 @@ Tue Sep 22 08:31:43 2015
 
 ## Popularity R
 
-- [Development R](http://www.statisticsviews.com/details/feature/8585391/Created-by-statisticians-for-statisticians-How-R-took-the-world-of-statistics-by.html)
+- Carlos Alberto Gómez Grajales - [Created by statisticians for statisticians: How R took the world of statistics by storm](http://www.statisticsviews.com/details/feature/8585391/Created-by-statisticians-for-statisticians-How-R-took-the-world-of-statistics-by.html)
 
 - On the [usage of R in Germany](http://www.gulli.com/news/23740-programmiersprache-r-in-der-wissenschaft-immer-beliebter-2014-04-24). 
 - R in an [article in the New York Times](http://community.oreilly.de/blog/2011/01/18/statistiksoftware-r/)
@@ -22,7 +22,7 @@ Tue Sep 22 08:31:43 2015
 
 - [Mighty R](https://www.inwt-statistics.de/blog-artikel-lesen/Statistik-Software_R.html)
 
-![Mighty R](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/R/figure/Rmaechtig.PNG)
+![Mighty R](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/R/figure/Rmaechtig.PNG?raw=true)
 
 ## Intro R
 

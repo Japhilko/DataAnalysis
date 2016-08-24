@@ -1,0 +1,224 @@
+---
+title: "Empirical Data Analysis"
+author: "Jan-Philipp Kolb"
+date: "24 August 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,message=F,warning=F)
+```
+
+## Introduction
+
+- [Spotty Statistics](http://www.statlit.org/pdf/2011SchieldISI6up.pdf)
+
+
+## Data
+
+- [Austrian PUF data](http://www.statistik.at/web_de/services/mikrodaten_fuer_forschung_und_lehre/kostenloser_download_von_testdaten/index.html)
+
+- [Regional data RLP](http://www.statistik.rlp.de/regionaldaten/meine-heimat/)
+
+- [Mietspiegel Munich](http://www.statistik.lmu.de/service/datenarchiv/miete/miete03.html)
+
+## Tests
+
+```{r}
+N <- 1000
+INC <- runif(N)
+SEX <- sample(c(1,2),N,replace=T)
+
+t.test(INC[SEX==1],INC[SEX==2])
+```
+
+- high p-value - we cannot reject the null hypothesis
+
+## Regression with categorical y-variable
+
+```{r,eval=F,echo=F}
+install.packages("faraway")
+```
+
+
+```{r}
+library(faraway)
+data(orings)
+plot(damage/6 ~ temp, orings, xlim=c(0,100), ylim=c(0,1),
+    xlab="Temperatur", ylab="Unfall")
+lmod <- lm(damage/6 ~ temp, orings)
+abline(lmod, col=4); abline(h=0); abline(h=1)
+```
+
+
+```{r}
+summary(m<-lm ( am ~ hp + wt,data=mtcars))
+predict(m,data.frame(hp=65,wt=2))
+predict(m,data.frame(hp=180,wt=2))
+```
+
+
+## Galapagos Example
+
+```{r}
+library(faraway)
+data(gala)
+gala<-gala[,-2]
+gala$Species <- round(sqrt(gala$Species))
+head(gala)
+```
+
+
+```{r,eval=F,echo=F}
+install.packages("solaR")
+```
+
+
+```{r}
+ library(solaR)
+ splom(gala[,c(1,2,3,4)])
+```
+
+```{r}
+summary(mod1<-lm(sqrt(Species)~Area+Elevation+Nearest,gala))
+```
+
+```{r}
+predict(mod1,data.frame(Area = 200000,Elevation=40,Nearest=8))
+```
+
+[Information about binary data](http://stat.ethz.ch/education/semesters/WS_2005_06/asr/folien.pdf)
+
+
+## Goodness-of-fit
+
+```{r}
+summary(glm(am ~ hp + wt, data=mtcars,family=binomial) )
+```
+
+## Multinomial Regression
+
+```{r}
+library(MASS)
+example(birthwt)
+
+head(bwt)
+
+summary(bwt)
+```
+
+```{r}
+library(nnet)
+
+multinom(formula = low ~ ., data = bwt)
+```
+
+## Election Example
+
+```{r}
+head(nes96[,c(8:10)])
+data(nes96)
+sPID <- nes96$PID
+
+summary(sPID)
+
+levels(sPID) <- c("Democrat","Democrat","Independent",
+"Independent", "Independent","Republican","Republican")
+
+summary(sPID)
+
+inca <- c(1.5,4,6,8,9.5,10.5,11.5,12.5,13.5,14.5,16,18.5,
+  21,23.5,27.5,32.5,37.5,42.5,47.5,55,67.5,82.5,97.5,115)
+ nincome <- inca[unclass(nes96$income)]
+ summary(nincome)
+ barplot(table(nes96$educ),col="chocolate1")
+```
+
+```{r}
+matplot(prop.table(table(nes96$educ,sPID),1),type="l",
+xlab="Education",ylab="Proportion",lty=c(1,2,5))
+```
+
+```{r}
+library(nnet)
+mmod <- multinom(sPID ~ age + educ + nincome, nes96)
+ mmodi <- step(mmod)
+```
+
+## [Prediction](http://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapters1-12.pdf)
+
+```{r,eval=T}
+il <- 5
+ predict(mmodi,data.frame(nincome=il),type="probs")
+summary(mmodi)
+predict(mmodi,data.frame(nincome=0),type="probs")
+```
+
+We can see more explicitly what this means by predicting probabilities for incomes 1000 Dollar apart and then computing the log-odds:
+
+```{r}
+(pp <-
+predict(mmodi,data.frame(nincome=c(0,1)),type="probs"))
+```
+
+- Akaike-Information criteria (AIC)
+- Wald-Test
+- Likelihood-Ratio-Test
+
+
+##  Ordinal Regression
+
+- Ordered response model
+- Latent variable in ordered response model
+- Proportional odds logistic regression (polr)
+
+```{r}
+library(MASS)
+?polr
+pomod <- polr(sPID ~ age + educ + nincome, nes96)
+c(deviance(pomod), pomod$edf)
+  
+pomodi <- step(pomod)
+summary(pomodi)
+ilogit(0.209)
+ilogit(1.292)-ilogit(0.209)
+predict(pomodi,data.frame(nincome=il,row.names=il),  type="probs")
+```
+
+## Applied Econometrics with R (AER)
+
+```{r}
+install.packages("AER")
+```
+
+
+```{r}
+data("BankWages", package="AER")
+
+summary(BankWages)
+```
+
+```{r}
+library(lattice)
+bwplot(BankWages$job ~BankWages$education | 
+  BankWages$minority)
+bwplot(BankWages$job ~BankWages$education | 
+  BankWages$minority + BankWages$gender)
+```
+
+```{r}
+tab <- table(BankWages$job, BankWages$education)
+```
+
+```{r}
+install.packages("gplots")
+```
+
+
+
+```{r}
+library(gplots)
+  balloonplot(BankWages$job, BankWages$education,
+  BankWages$gender, xlab="job", ylab ="education")
+```
+
