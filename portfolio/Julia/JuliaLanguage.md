@@ -1,7 +1,8 @@
 Julia Language
 --------------
 
-![Julia Logo](http://julialang.org/)
+![Julia
+Logo](https://de.wikipedia.org/wiki/Julia_%28Programmiersprache%29#/media/File:Julia_prog_language.svg)
 
 <http://julialang.org/learning/>
 
