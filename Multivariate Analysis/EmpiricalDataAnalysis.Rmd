@@ -9,6 +9,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,message=F,warning=F)
+library(knitr)
 ```
 
 ## Introduction
@@ -219,14 +220,13 @@ install.packages("gplots")
 
 
 ```{r}
-
 library(gplots)
   balloonplot(BankWages$job, BankWages$education,
   BankWages$gender, xlab="job", ylab ="education")
 ```
 
 ```{r}
-summary(polr(job ~ education + minority, data = BankWages,Hess = TRUE))
+summary(mod1 <- polr(job ~ education + minority, data = BankWages,Hess = TRUE))
 ilogit(mod1$zeta[1])
 predict(mod1,BankWages[1:10,2:4],type="probs")
 ```
@@ -411,6 +411,151 @@ names(children)[1] <- "unqual"
 names(children)[8] <- "m50"
 names(children)[7] <- "50"
 names(children)[6] <- "30"
+```
 
+## Fourfold Plot
+
+```{r}
+library(vcd)
+data("CoalMiners")
+fourfold(CoalMiners)
+```
+
+## Odds Ratio
+
+```{r}
+ summary(l <- oddsratio(CoalMiners))
+ plot(l,
+xlab = "Age Group",
+main = "Breathlessness and Wheeze in Coal Miners")
+# m <- lm(l ~ g + I(g^2))
+# lines(fitted(m), col = "red")
+```
+
+```{r}
+CoalMiners1 <- prop.table(CoalMiners[,,1]  )
+  
+a <- CoalMiners[1,1,1]*CoalMiners[2,2,1]
+
+b <- CoalMiners[2,1,1]*CoalMiners[1,2,1]
+
+log(a/b)
+```
+
+```{r}
+data("Lifeboats")
+attach(Lifeboats)
+ternaryplot(Lifeboats[,4:6],
+pch = ifelse(side == "Port", 1, 19),
+col = ifelse(side == "Port", "red", "blue"),
+id = ifelse(men / total > 0.1, as.character(boat), NA),
+prop_size = 2,
+dimnames_position = "edge",
+main = "Lifeboats on Titanic")
+grid_legend(0.8, 0.9, c(1, 19), c("red", "blue"),
+c("Port", "Starboard"), title = "SIDE")
+```
+
+## Log-linear Models based on [Thompson](http://www.stat.ufl.edu/~aa/cda/Thompson_manual.pdf)
+
+
+Hedderich, Sachs [Angewandte Statistik](http://www.springer.com/de/book/9783662456903)
+
+```{r}
+library(xtable)
+# Example Sachs S. 599
+
+a <- c(123,233,56,35)
+aLev <- c("keine","Lehre","fachspezifisch","Hochschule")
+
+aLev2 <- c("k","l","f","h")
+
+Ausbildung <- rep(aLev,a)
+b <- c(86,19,18)
+bLev <- c("<= 6 Monate","7-12 Monate",">12 Monate") 
+bLev2 <- c("kurz","mittel","lang")
+
+b1 <- c(170,43,20)
+b2 <- c(40,11,5)
+b3 <- c(28,4,3)
+
+Dauer <- c(rep(bLev,b),rep(bLev,b1),rep(bLev,b2),rep(bLev,b3))
+
+kable(table(Ausbildung,Dauer))
+
+
+Ausbildung <- rep(aLev2,a)
+Dauer<- c(rep(bLev2,b),rep(bLev2,b1),rep(bLev2,b2),rep(bLev2,b3))
+```
+
+```{r}
+mosaicplot(table(Ausbildung,Dauer),shade=T,main="")
+```
+
+```{r}
+y <- c(86,19,18,170,43,20,40,11,5,28,4,3)
+n <- sum(y)
+tab <- matrix(y,byrow=TRUE,nrow=4)
+zeit.sum <- apply(tab,2, sum)
+ausb.sum <- apply(tab,1, sum)
+
+L.c <- c(0)
+for (i in 1:4){for (j in 1:3){
+  L.c <- L.c + tab[i,j]* log(ausb.sum[i]*zeit.sum[j]/n^2)
+}}
+
+L.sat <- -2*sum(y*log(y/n))
+
+devianz <- L.c - L.sat
+
+chisq.test(tab)
+
+
+
+Ausbildung <- c(rep("K",3),rep("L",3), rep("F",3),rep("H",3))
+Zeit <- rep(c("k","m","l"),4)
+tab <- data.frame(Ausbildung,Zeit,y)
+fit.sat <- glm(y~Zeit + Ausbildung + Zeit:Ausbildung, family=poisson, data=tab)
+```
+
+## Further Example 
+
+```{r}
+table.8.3<-data.frame(expand.grid(
+marijuana=factor(c("Yes","No"),levels=c("No","Yes")),
+cigarette=factor(c("Yes","No"),levels=c("No","Yes")),
+alcohol=factor(c("Yes","No"),levels=c("No","Yes"))),
+count=c(911,538,44,456,3,43,2,279))
+
+```
+
+## Factor Analysis
+
+```{r}
+
+# R in a Nutshell - Joseph Adler, S.370
+
+?factanal
+
+v1 <- c(1,1,1,1,1,1,1,1,1,1,3,3,3,3,3,4,5,6)
+v2 <- c(1,2,1,1,1,1,2,1,2,1,3,4,3,3,3,4,6,5)
+v3 <- c(3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,5,4,6)
+v4 <- c(3,3,4,3,3,1,1,2,1,1,1,1,2,1,1,5,6,4)
+v5 <- c(1,1,1,1,1,3,3,3,3,3,1,1,1,1,1,6,4,5)
+v6 <- c(1,1,1,2,1,3,3,3,4,3,1,1,1,2,1,6,5,4)
+m1 <- cbind(v1,v2,v3,v4,v5,v6)
+cor(m1)
+factanal(m1, factors = 3) # varimax is the default
+factanal(m1, factors = 3, rotation = "promax")
+
+# The following shows the g factor as PC1
+prcomp(m1)
+
+## formula interface
+factanal(~v1+v2+v3+v4+v5+v6, factors = 3,
+         scores = "Bartlett")$scores
+
+## a realistic example from Bartholomew (1987, pp. 61-65)
+utils::example(ability.cov)
 ```
 
