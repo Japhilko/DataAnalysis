@@ -4,11 +4,17 @@ This is a synopsis on my findings on data analysis.
 
 # Methods - Maths and Statistics
 
+Methods and statistics that can be used for statistical learning and machine learning.
+
 ## [Empirical Data Analysis](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/EmpiricalDataAnalysis.md)
 
 - [Statistical Classification](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/ClusterAnalysis.md)
 
 ## Supervised Learning
+
+- [Decision Trees](https://github.com/Japhilko/DataAnalysis/blob/master/Machine%20Learning/DecisionTrees.Rmd)
+
+- [Analysing Coherences](https://github.com/Japhilko/DataAnalysis/blob/master/Coherences/Measures%20for%20Coherences.Rmd)
 
 - [Linear Regression](https://github.com/Japhilko/DataAnalysis/blob/master/Regression/SimpleLinearRegression.Rmd)
 

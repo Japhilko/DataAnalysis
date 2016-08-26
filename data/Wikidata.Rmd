@@ -1,0 +1,19 @@
+---
+title: "Wikipedia Data"
+author: "Jan-Philipp Kolb"
+date: "26 August 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page)
+
+[WikidataR](https://cran.r-project.org/web/packages/WikidataR/vignettes/Introduction.html)
+
+```{r,eval=F}
+install.packages("WikidataR")
+```
+
