@@ -168,12 +168,18 @@ ct50h <- cutree(hcities, h = 50)
 table(ct50h)
 ```
 
-In this case we choose a value of 110 for the cuclidian distance:
+In this case we choose a value of 140 for the cuclidian distance:
 
 ```{r}
-ct110h <- cutree(hcities, h = 110)
-table(ct110h)
+ct140h <- cutree(hcities, h = 140)
+table(ct140h)
 ```
+
+```{r}
+# tapply(names(ct140h),ct140h,unique)
+```
+
+
 
 ## [More plotting possibilities](https://cran.r-project.org/web/packages/dendextend/vignettes/Cluster_Analysis.html)
 
