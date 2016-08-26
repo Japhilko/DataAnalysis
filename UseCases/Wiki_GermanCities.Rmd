@@ -152,7 +152,27 @@ head(cutree(hcities, k = 1:10))
 ct8 <- cutree(hcities, k = 8)
 
 # tapply(names(ct8),ct8,function(x)x)
+```
 
+In the following we have to [choose a threshold:](https://www.uni-due.de/imperia/md/content/soziologie/stein/skript_clusteranalyse_sose2011.pdf)
+
+```{r}
+ct100h <- cutree(hcities, h = 100)
+table(ct100h)
+```
+
+The lower the threshold, the more groups we get:
+
+```{r}
+ct50h <- cutree(hcities, h = 50)
+table(ct50h)
+```
+
+In this case we choose a value of 110 for the cuclidian distance:
+
+```{r}
+ct110h <- cutree(hcities, h = 110)
+table(ct110h)
 ```
 
 ## [More plotting possibilities](https://cran.r-project.org/web/packages/dendextend/vignettes/Cluster_Analysis.html)

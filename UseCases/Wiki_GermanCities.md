@@ -229,6 +229,50 @@ ct8 <- cutree(hcities, k = 8)
 # tapply(names(ct8),ct8,function(x)x)
 ```
 
+In the following we have to [choose a threshold:](https://www.uni-due.de/imperia/md/content/soziologie/stein/skript_clusteranalyse_sose2011.pdf)
+
+
+```r
+ct100h <- cutree(hcities, h = 100)
+table(ct100h)
+```
+
+```
+## ct100h
+##  1  2  3  4  5  6  7 
+## 21 15  2 35  6  1  2
+```
+
+The lower the threshold, the more groups we get:
+
+
+```r
+ct50h <- cutree(hcities, h = 50)
+table(ct50h)
+```
+
+```
+## ct50h
+##  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 
+##  1  1 15  1  1  1  1 10  4  1  1  1  1  5  1  1  1  1  1  1  1  1  1  1  1 
+## 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 
+##  1  1  1  1  1  2  1  1  1  1  1  1  1  1  1  1  1  1  1  2  1  1  1  1  1
+```
+
+In this case we choose a value of 110 for the cuclidian distance:
+
+
+```r
+ct110h <- cutree(hcities, h = 110)
+table(ct110h)
+```
+
+```
+## ct110h
+##  1  2  3  4  5  6 
+## 21 15  4 35  6  1
+```
+
 ## [More plotting possibilities](https://cran.r-project.org/web/packages/dendextend/vignettes/Cluster_Analysis.html)
 
 
@@ -241,20 +285,13 @@ install.packages("circlize")
 
 ```r
 library(dendextend)
-```
-
-```
-## Warning: package 'dendextend' was built under R version 3.2.5
-```
-
-```r
 dend <- as.dendrogram(hcities)
 dend <- hang.dendrogram(dend,hang_height=10)
 dend <- set(dend, "labels_cex", 0.5)
 plot(dend,horiz=F)
 ```
 
-![](Wiki_GermanCities_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
+![](Wiki_GermanCities_files/figure-html/unnamed-chunk-19-1.png)<!-- -->
 
 
 ```r
@@ -262,7 +299,7 @@ par(mar = rep(0,4))
 circlize_dendrogram(dend)
 ```
 
-![](Wiki_GermanCities_files/figure-html/unnamed-chunk-17-1.png)<!-- -->
+![](Wiki_GermanCities_files/figure-html/unnamed-chunk-20-1.png)<!-- -->
 
 ## Comparing different methods
 
@@ -317,7 +354,7 @@ install.packages("corrplot")
 corrplot::corrplot(wcit_dendlist_cor, "pie", "lower")
 ```
 
-![](Wiki_GermanCities_files/figure-html/unnamed-chunk-21-1.png)<!-- -->
+![](Wiki_GermanCities_files/figure-html/unnamed-chunk-24-1.png)<!-- -->
 
 
 ```r
@@ -325,7 +362,7 @@ wcit_dendlist_cor_spearman <- cor.dendlist(wcit_dendlist, method_coef = "spearma
 corrplot::corrplot(wcit_dendlist_cor_spearman, "pie", "lower")
 ```
 
-![](Wiki_GermanCities_files/figure-html/unnamed-chunk-22-1.png)<!-- -->
+![](Wiki_GermanCities_files/figure-html/unnamed-chunk-25-1.png)<!-- -->
 
 
 ```r
@@ -334,7 +371,7 @@ wcit_dendlist %>% dendlist(which = c(1,8)) %>% ladderize %>%
    tanglegram(faster = TRUE) # 
 ```
 
-![](Wiki_GermanCities_files/figure-html/unnamed-chunk-23-1.png)<!-- -->
+![](Wiki_GermanCities_files/figure-html/unnamed-chunk-26-1.png)<!-- -->
 
 
 ```r
@@ -343,5 +380,5 @@ wcit_dendlist %>% dendlist(which = c(1,4)) %>% ladderize %>%
    tanglegram(common_subtrees_color_branches = TRUE)
 ```
 
-![](Wiki_GermanCities_files/figure-html/unnamed-chunk-24-1.png)<!-- -->
+![](Wiki_GermanCities_files/figure-html/unnamed-chunk-27-1.png)<!-- -->
 
