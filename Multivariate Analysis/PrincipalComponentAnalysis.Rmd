@@ -2,7 +2,9 @@
 title: "Principal Component Analysis"
 author: "Jan-Philipp Kolb"
 date: "24. Juli 2015"
-output: ioslides_presentation
+output:
+  html_document:
+    keep_md: true
 ---
 
 
@@ -14,23 +16,78 @@ library(knitr)
 
 ## [Quick-R on Principal Component Analysis](http://www.statmethods.net/advstats/factor.html)
 
-```{r,echo=F}
-kable(head(USArrests))
+```{r}
+(load("data/berplz.RData"))
+dat <- berplz@data[,-c(1:3)]
+rownames(dat) <- berplz@data$PLZ99
 ```
 
+
+```{r,echo=F}
+kable(head(dat))
+```
+
+```{r}
+kable(cor(dat))
+```
+
+The result is a list containing the coefficients defining each component (sometimes referred to as
+loadings), the principal component scores
+
+```{r}
+osm_pca <- prcomp(dat)
+print(osm_pca)
+plot(dat)
+summary(osm_pca)
+```
+
+Linear combination for the first principal component is
+
+```{r}
+a1 <- osm_pca$rotation[,1]
+a1
+```
+
+- cafe and restaurant are the most important variables
+- biergarten is less important
+
+
+```{r}
+hm <- as.matrix(dat)
+drop(hm%*% osm_pca$rotation[,1])
+```
+
+```{r}
+plot(osm_pca)
+```
+
+
+```{r}
+biplot(osm_pca, col = c("gray", "black"))
+```
 
 
 ```{r}
 #?princomp
-fit <- princomp(USArrests, cor=TRUE)
+fit <- princomp(dat, cor=TRUE)
 fit
 summary(fit) # print variance accounted for
 loadings(fit) # pc loadings
 plot(fit,type="lines") # scree plot
-fit$scores # the principal components
+head(fit$scores) # the principal components
 biplot(fit) 
 ```
 
+```{r,eval=F}
+install.packages("psych")
+```
+
+
+```{r}
+library(psych)
+fit <- principal(mydata, nfactors=5, rotate="varimax")
+fit # print results 
+```
 
 
 
@@ -43,13 +100,15 @@ biplot(fit)
 
 ## Intro Principal Component Analysis
 
-![PCA](http://i2.wp.com/1.bp.blogspot.com/-oIhTE11jN2M/VJal1FsTndI/AAAAAAAACCU/BQOhihmxKbg/s1600/Screen%2BShot%2B2014-12-21%2Bat%2B6.49.01%2BPM.png?zoom=1.5&resize=456%2C310)
+![PCA](figure/PCAvisu.png)
 
+[Source](https://1.bp.blogspot.com/-oIhTE11jN2M/VJal1FsTndI/AAAAAAAACCU/BQOhihmxKbg/s1600/Screen+Shot+2014-12-21+at+6.49.01+PM.png)
 
 ## Intro Principal Component Analysis
 
-![Intro2](http://i1.wp.com/1.bp.blogspot.com/-wXHcQqUbIg4/VJuuXbZlUKI/AAAAAAAACGc/ythfr395Z5s/s1600/Screen%2BShot%2B2014-12-25%2Bat%2B2.25.12%2BPM.png?zoom=1.5&resize=456%2C382)
+![Intro2](figure/princompvisu2.png)
 
+[Source](https://1.bp.blogspot.com/-wXHcQqUbIg4/VJuuXbZlUKI/AAAAAAAACGc/ythfr395Z5s/s1600/Screen+Shot+2014-12-25+at+2.25.12+PM.png)
 
 ## [Plot Principal Component Analysis](https://martinsbioblogg.wordpress.com/2013/06/26/using-r-two-plots-of-principal-component-analysis/)
 ```{r}
@@ -96,4 +155,6 @@ fill=value)
 ## Resources
 
 - [Principal Component Analysis on Imaging](http://www.r-bloggers.com/principal-component-analysis-on-imaging/)
+
+- [Introduction to principal component analysis](https://cran.r-project.org/web/packages/HSAUR/vignettes/Ch_principal_components_analysis.pdf)
 
