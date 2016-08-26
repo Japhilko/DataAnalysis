@@ -2,17 +2,19 @@
 
 This is a synopsis on my findings on data analysis.
 
-## Methods - Maths and Statistics
+# Methods - Maths and Statistics
 
-- [Empirical Data Analysis](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/EmpiricalDataAnalysis.md)
+## [Empirical Data Analysis](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/EmpiricalDataAnalysis.md)
 
 - [Statistical Classification](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/ClusterAnalysis.md)
+
+## Supervised Learning
 
 - [Linear Regression](https://github.com/Japhilko/DataAnalysis/blob/master/Regression/SimpleLinearRegression.Rmd)
 
 - [Non parametric regression](https://github.com/Japhilko/DataAnalysis/tree/master/npRegression)
 
-## Technology and Programming
+# Technology and Programming
 
 - [Programming with R](https://github.com/Japhilko/DataAnalysis/tree/master/portfolio/R)
 
