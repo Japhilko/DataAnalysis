@@ -10,6 +10,8 @@ Methods and statistics that can be used for statistical learning and machine lea
 
 - [Statistical Classification](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/ClusterAnalysis.md)
 
+- [Text Mining](https://github.com/Japhilko/DataAnalysis/blob/master/TextAnalytics/Text%20Mining%20Wikipedia.Rmd)
+
 ## Supervised Learning
 
 - [Decision Trees](https://github.com/Japhilko/DataAnalysis/blob/master/Machine%20Learning/DecisionTrees.Rmd)
@@ -32,4 +34,4 @@ Methods and statistics that can be used for statistical learning and machine lea
 
 - [Twitter](https://github.com/Japhilko/DataAnalysis/blob/master/TextAnalytics/TextMining_Twitter.Rmd)
 
-- [Wikipedia](https://github.com/Japhilko/DataAnalysis/blob/master/TextAnalytics/Text%20Mining%20Wikipedia.Rmd)
+- [Wikipedia](https://github.com/Japhilko/DataAnalysis/blob/master/data/Wikidata.Rmd)

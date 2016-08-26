@@ -1,0 +1,223 @@
+---
+title: "Analysing German Cities"
+author: "Jan-Philipp Kolb"
+date: "26 August 2016"
+output:
+  html_document:
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,cache=T,message=F)
+library(knitr)
+```
+
+## The used Libraries
+
+The R-library [`stringi`](http://stringi.rexamine.com/) by Marek Gagolewski and Bartek Tartanus provides character string processing facilities.
+
+```{r libraries}
+library("stringi")
+```
+
+[`tm`](http://www.jstatsoft.org/v25/i05/) is a R-package to realize text mining. It is authored by Ingo Feinerer, Kurt Hornik, and David Meyer.
+
+```{r}
+library("tm")
+```
+
+And finally we need the [`FactoMineR`](https://cran.r-project.org/web/packages/FactoMineR/vignettes/FactoMineR.pdf)-package created by Sebastien Le, Julie Josse and Francois Husson to perform the principal component analysis. 
+
+```{r}
+library("FactoMineR")
+```
+
+
+
+## Overview - Cities in Germany
+
+```{r}
+library(maps)
+data(world.cities)
+```
+
+```{r,echo=F}
+kable(head(world.cities))
+```
+
+```{r}
+dcities <- world.cities[world.cities$country.etc=="Germany",]
+```
+
+```{r,echo=F}
+kable(head(dcities))
+```
+
+We will do the analysis only on the biggest cities in Germany:
+
+```{r}
+nrow(dcities)
+
+dcities[which.min(dcities$pop),]
+
+dcitiesb <- dcities[dcities$pop>100000,]
+nrow(dcitiesb)
+```
+
+
+## Getting Wikipedia Articles
+
+```{r wikititles}
+wiki <- "http://en.wikipedia.org/wiki/"
+
+titles <- dcitiesb$name
+titles <- gsub(" ","_",titles)
+```
+
+```{r,eval=F}
+articles <- character(length(titles))
+
+for (i in 1:length(titles)){
+    articles[i] <- stri_flatten(readLines(stri_paste(wiki, titles[i])), col = " ")
+    cat(titles[i],"\n")
+}
+save(articles,file="data/GermanCities_Wikipedia.RData")
+```
+
+```{r prepdata,eval=F}
+docs <- Corpus(VectorSource(articles))
+
+docs2 <- tm_map(docs, function(x) stri_replace_all_regex(x, "<.+?>", " "))
+docs3 <- tm_map(docs2, function(x) stri_replace_all_fixed(x, "\t", " "))
+
+docs4 <- tm_map(docs3, PlainTextDocument)
+docs5 <- tm_map(docs4, stripWhitespace)
+docs6 <- tm_map(docs5, removeWords, stopwords("english"))
+docs7 <- tm_map(docs6, removePunctuation)
+docs8 <- tm_map(docs7, tolower)
+docs8 <- tm_map(docs8, PlainTextDocument)
+dtm <- DocumentTermMatrix(docs8)  
+
+save(dtm,file="data/GermanCities_Wikipedia_dtm.RData")
+```
+
+
+## [Principal Component Analysis](https://dzone.com/articles/manipulate-clusters-of-texts)
+
+```{r}
+load("data/GermanCities_Wikipedia_dtm.RData")
+```
+
+
+The following is based on a blog post by  Arthur Charpentier on mining Wikipedia. He uses R to manipulate clusters of texts.
+
+```{r}
+dtm2 <- as.matrix(dtm)
+frequency <- colSums(dtm2)
+frequency <- sort(frequency, decreasing=TRUE)
+words <- frequency[frequency>20]
+s <- dtm2[1,which(colnames(dtm2) %in% names(words))]
+
+for(i in 2:nrow(dtm2)){
+  s <- cbind(s,dtm2[i,which(colnames(dtm2) %in% names(words))])
+} 
+
+colnames(s) <- titles
+```
+
+```{r}
+PCA(s)
+```
+
+
+In the following the normalization is done and the results are plotted. 
+
+```{r}
+s0 <- s/apply(s,1,sd)
+hcities <- hclust(dist(t(s0)), method = "ward")
+
+plot(hcities, labels = titles, sub = "")
+```
+
+```{r,eval=F}
+install.packages("pvclust")
+```
+
+
+[Cutting](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/cutree.html) the result of `hclust` in several groups:
+
+```{r}
+head(cutree(hcities, k = 1:10))
+
+ct8 <- cutree(hcities, k = 8)
+
+# tapply(names(ct8),ct8,function(x)x)
+
+```
+
+## [More plotting possibilities](https://cran.r-project.org/web/packages/dendextend/vignettes/Cluster_Analysis.html)
+
+```{r,eval=F}
+install.packages("dendextend")
+install.packages("circlize")
+```
+
+
+```{r}
+library(dendextend)
+dend <- as.dendrogram(hcities)
+dend <- hang.dendrogram(dend,hang_height=10)
+dend <- set(dend, "labels_cex", 0.5)
+plot(dend,horiz=F)
+```
+
+```{r}
+par(mar = rep(0,4))
+circlize_dendrogram(dend)
+```
+
+## Comparing different methods
+
+```{r}
+hclust_methods <- c("ward.D", "single", "complete", "average", "mcquitty", 
+        "median", "centroid", "ward.D2")
+wcit_dendlist <- dendlist()
+for(i in seq_along(hclust_methods)) {
+   hc_cities <- hclust(dist(t(s0)), method = hclust_methods[i])   
+   wcit_dendlist <- dendlist(wcit_dendlist, as.dendrogram(hc_cities))
+}
+names(wcit_dendlist) <- hclust_methods
+# wcit_dendlist
+```
+
+```{r}
+wcit_dendlist_cor <- cor.dendlist(wcit_dendlist)
+wcit_dendlist_cor
+```
+
+```{r,eval=F}
+install.packages("corrplot")
+```
+
+
+```{r}
+corrplot::corrplot(wcit_dendlist_cor, "pie", "lower")
+```
+
+```{r}
+wcit_dendlist_cor_spearman <- cor.dendlist(wcit_dendlist, method_coef = "spearman")
+corrplot::corrplot(wcit_dendlist_cor_spearman, "pie", "lower")
+```
+
+```{r}
+wcit_dendlist %>% dendlist(which = c(1,8)) %>% ladderize %>% 
+   set("branches_k_color", k=3) %>% 
+   tanglegram(faster = TRUE) # 
+```
+
+```{r}
+wcit_dendlist %>% dendlist(which = c(1,4)) %>% ladderize %>% 
+   set("rank_branches") %>%
+   tanglegram(common_subtrees_color_branches = TRUE)
+```
+

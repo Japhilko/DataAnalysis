@@ -17,3 +17,18 @@ knitr::opts_chunk$set(echo = TRUE)
 install.packages("WikidataR")
 ```
 
+```{r}
+library(WikidataR)
+item <- get_item(id = 1)
+first_claim <- get_property(id = names(item$claims)[1])
+```
+
+```{r}
+all_zika <- find_item("Zika")
+
+first_zika <- get_item(all_zika[[1]]$id)
+```
+
+## Links
+
+- [Introducing WikipediR](https://ironholds.org/blog/introducing-wikipedir/)
