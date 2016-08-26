@@ -7,19 +7,27 @@ output:
     keep_md: true
 ---
 
-```{r,echo=F}
-library(ggplot2)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,message=F,warning=F)
 library(knitr)
-vCA <- T
 ```
 
 
-## Intro factor analysis
+```{r,echo=F}
+library(ggplot2)
+```
 
-![pic](http://www.pflegewiki.de/images/thumb/7/7e/Faktoren_Bsp01.jpg/300px-Faktoren_Bsp01.jpg)
+
+## [Intro factor analysis](https://en.wikipedia.org/wiki/Factor_analysis)
+
+- Target is to analyse the  variability among observed, correlated variables,
+
+- ideally the variablity can be described with a lower number of unobserved variables called factors
+
+![Visualisation - factor analysis](http://www.pflegewiki.de/images/thumb/7/7e/Faktoren_Bsp01.jpg/300px-Faktoren_Bsp01.jpg)
 
 
-## Source for the following
+## Examples for factor analysis
 
 - [Plotting Factor Analysis Results ](http://mindingthebrain.blogspot.de/2015/04/plotting-factor-analysis-results.html)
 
@@ -28,8 +36,17 @@ vCA <- T
 
 ## Get data set
 
-```{r,cache=vCA}
-load(url("http://dmirman.github.io/FAex.Rdata"))
+```{r getdata}
+(load(url("http://dmirman.github.io/FAex.Rdata")))
+```
+
+```{r}
+kable(head(loadings))
+```
+
+
+
+```{r}
 summary(loadings)
 ```
 
@@ -91,7 +108,7 @@ kable(round(Auto.cor,digits=4))
 ```
 
 
-## lattice graphic
+## Lattice Graphic
 
 ```{r,cache=vCA}
 library(lattice)
@@ -165,7 +182,7 @@ round(Auto.Dreh.Ladung,digits=4)
   abline(v=0)
 ```
 
-##
+## The command `factanal`
 
 ```{r,cache=vCA}
 factanal(Auto.frame,factors=2)

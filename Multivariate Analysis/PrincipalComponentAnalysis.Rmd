@@ -12,6 +12,28 @@ library(knitr)
 ```
 
 
+## [Quick-R on Principal Component Analysis](http://www.statmethods.net/advstats/factor.html)
+
+```{r,echo=F}
+kable(head(USArrests))
+```
+
+
+
+```{r}
+#?princomp
+fit <- princomp(USArrests, cor=TRUE)
+fit
+summary(fit) # print variance accounted for
+loadings(fit) # pc loadings
+plot(fit,type="lines") # scree plot
+fit$scores # the principal components
+biplot(fit) 
+```
+
+
+
+
 ## Intro Principal Component Analysis
 
 - Al-Ahmadgaid Asaad [Analysis Programming](http://alstatr.blogspot.de/2014/12/principal-component-analysis-on-imaging.html)
