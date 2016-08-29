@@ -84,7 +84,13 @@ for (i in 1:length(titles)){
 save(articles,file="data/GermanCities_Wikipedia.RData")
 ```
 
-```{r prepdata,eval=F}
+```{r}
+load("data/GermanCities_Wikipedia.RData")
+```
+
+
+
+```{r prepdata,eval=T}
 docs <- Corpus(VectorSource(articles))
 
 docs2 <- tm_map(docs, function(x) stri_replace_all_regex(x, "<.+?>", " "))
@@ -97,14 +103,16 @@ docs7 <- tm_map(docs6, removePunctuation)
 docs8 <- tm_map(docs7, tolower)
 docs8 <- tm_map(docs8, PlainTextDocument)
 dtm <- DocumentTermMatrix(docs8)  
+```
 
+```{r,eval=F}
 save(dtm,file="data/GermanCities_Wikipedia_dtm.RData")
 ```
 
 
 ## [Principal Component Analysis](https://dzone.com/articles/manipulate-clusters-of-texts)
 
-```{r}
+```{r, eval=F}
 load("data/GermanCities_Wikipedia_dtm.RData")
 ```
 
@@ -123,10 +131,14 @@ for(i in 2:nrow(dtm2)){
 } 
 
 colnames(s) <- titles
+rownames(s) <- names(words)
 ```
 
+## Principal Component Analysis
+
 ```{r}
-PCA(s)
+res_pca <- PCA(s)
+res_pca
 ```
 
 
