@@ -2,7 +2,9 @@
 title: "Readme"
 author: "Jan-Philipp Kolb"
 date: "29 Juli 2016"
-output: md_document
+output:
+  html_document:
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}

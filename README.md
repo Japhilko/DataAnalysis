@@ -14,7 +14,7 @@ Methods and statistics that can be used for statistical learning and machine lea
 
 ## Supervised Learning
 
-- [Decision Trees](https://github.com/Japhilko/DataAnalysis/blob/master/Machine%20Learning/DecisionTrees.Rmd)
+- [Decision Trees](https://github.com/Japhilko/DataAnalysis/blob/master/Machine%20Learning/DecisionTrees.md)
 
 - [Analysing Coherences](https://github.com/Japhilko/DataAnalysis/blob/master/Coherences/Measures%20for%20Coherences.Rmd)
 

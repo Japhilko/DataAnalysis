@@ -1,10 +1,16 @@
-Problems
---------
+# Readme
+Jan-Philipp Kolb  
+29 Juli 2016  
 
-Classification, Clustering, Regression, Anomaly detection, Association
-rules, Reinforcement learning, Structured prediction, Feature
-engineering, Feature learning, Online learning, Semi-supervised
-learning, Unsupervised learning, Learning to rank, Grammar induction
 
-[Based on Wikipedia
-Categorization](https://en.wikipedia.org/wiki/Machine_learning)
+
+## Problems
+
+Classification, [Clustering](https://github.com/Japhilko/DataAnalysis/blob/master/UseCases/Wiki_GermanCities.md), [Regression](https://github.com/Japhilko/DataAnalysis/tree/master/Regression), 
+Anomaly detection, Association rules, Reinforcement learning, Structured prediction, Feature engineering, Feature learning, Online learning, Semi-supervised learning, Unsupervised learning, Learning to rank, Grammar induction 
+
+## Supervised learning
+
+Decision trees, Ensembles (Bagging, Boosting, Random forest), k-NN, Linear regression, Naive Bayes, Neural networks, Logistic regression, Perceptron, Relevance vector machine (RVM), Support vector machine (SVM) 
+
+[Based on Wikipedia Categorization ](https://en.wikipedia.org/wiki/Machine_learning)

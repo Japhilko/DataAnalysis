@@ -181,6 +181,34 @@ qtm(koelnplz,c("kmeans8","ct2h"))
 ```
 
 
-[Shapefiles for Colone](http://offenedaten-koeln.de/dataset/stadtteile)
+```{r}
+library("dendextend")
+hclust_methods <- c("ward.D", "single", "complete", "average", "mcquitty", 
+        "median", "centroid", "ward.D2")
+wcit_dendlist <- dendlist()
+for(i in seq_along(hclust_methods)) {
+   hc_cities <- hclust(dist(s0), method = hclust_methods[i])   
+   wcit_dendlist <- dendlist(wcit_dendlist, as.dendrogram(hc_cities))
+}
+names(wcit_dendlist) <- hclust_methods
+```
+
+```{r}
+wcit_dendlist_cor <- cor.dendlist(wcit_dendlist)
+wcit_dendlist_cor
+```
 
 
+
+
+
+## Further Resources
+
+- [Cluster Analysis](http://ecology.msu.montana.edu/labdsv/R/labs/lab13/lab13.html)
+
+- [Tutorial - Hierarchical Cluster Analysis](http://www.r-tutor.com/gpu-computing/clustering/hierarchical-cluster-analysis)
+
+- [Shapefiles for Colone](http://offenedaten-koeln.de/dataset/stadtteile)
+
+
+- [Cluster Analysis with R](http://cc.oulu.fi/~jarioksa/opetus/metodi/sessio3.pdf)
