@@ -13,6 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## [Decision Trees](http://www.statmethods.net/advstats/cart.html)
 
+[Regression tree vs. classification tree](http://www.statmethods.net/advstats/cart.html)
+
+
 ```{r}
 library(rpart)
 ```
@@ -34,6 +37,10 @@ plot(fit, uniform=TRUE,
    main="Classification Tree for Kyphosis")
 text(fit, use.n=TRUE, all=TRUE, cex=.8)
 ```
+
+[Decision Trees and Random Foorest](https://cran.r-project.org/doc/contrib/Zhao_R_and_data_mining.pdf)
+
+
 
 ## Links
 
