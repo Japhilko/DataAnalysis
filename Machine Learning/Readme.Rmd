@@ -1,5 +1,5 @@
 ---
-title: "Readme"
+title: "Machine Learning"
 author: "Jan-Philipp Kolb"
 date: "29 Juli 2016"
 output:
@@ -18,6 +18,19 @@ Anomaly detection, Association rules, Reinforcement learning, Structured predict
 
 ## Supervised learning
 
-Decision trees, Ensembles (Bagging, Boosting, Random forest), k-NN, Linear regression, Naive Bayes, Neural networks, Logistic regression, Perceptron, Relevance vector machine (RVM), Support vector machine (SVM) 
+[Decision trees](https://github.com/Japhilko/DataAnalysis/blob/master/Machine%20Learning/DecisionTrees.md), Ensembles (Bagging, Boosting, Random forest), k-NN, [Linear regression](https://github.com/Japhilko/DataAnalysis/blob/master/Regression/SimpleLinearRegression.md), Naive Bayes, Neural networks, Logistic regression, Perceptron, Relevance vector machine (RVM), Support vector machine (SVM) 
+
+
+## Clustering
+
+BIRCH, Hierarchical, k-means, Expectation-maximization (EM), DBSCAN, OPTICS, Mean-shift 
+
+## Dimensionality Reduction
+
+
+
+[Factor analysis](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/FactorAnalysis.md), CCA, ICA, LDA, NMF, PCA, t-SNE 
+
+
 
 [Based on Wikipedia Categorization ](https://en.wikipedia.org/wiki/Machine_learning)
