@@ -1,0 +1,121 @@
+---
+title: "Analyzing OSM data in zip code areas"
+author: "Jan-Philipp Kolb"
+date: "31 August 2016"
+output:
+  html_document:
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,message=F,warning = F)
+library("knitr")
+```
+
+## The libraries
+
+```{r}
+library("geosmdata")
+library("rgdal")
+```
+
+## The zip code file
+
+[Shape File for zip codes in Germany](http://www.metaspatial.net/download/plz.tar.gz)
+
+```{r,eval=F}
+PLZ <- readOGR ("post_pl.shp","post_pl")
+berplz <- PLZ[PLZ$PLZORT99%in%c("Berlin-West","Berlin (östl. Stadtbezirke)"),]
+hhplz <- PLZ[PLZ$PLZORT99%in%"Hamburg",]
+koelnplz <- PLZ[PLZ$PLZORT99%in%"Köln",]
+
+save(koelnplz,file="data/koelnplz.RData")
+```
+
+```{r}
+load("data/koelnplz.RData")
+```
+
+```{r}
+par(mai=c(0,0,0,0))
+plot(koelnplz,col="royalblue")
+```
+
+## Get OSM data
+
+[Overview of OSM features](http://wiki.openstreetmap.org/wiki/DE:Map_Features)
+
+```{r Koeln,echo=F,eval=F}
+cityI <- "KÃ¶ln"
+cityII <- "Koeln"
+keyI <- "amenity"
+mfeatures <- c("bar","biergarten","cafe","fast_food","ice_cream","pub","restaurant","college")
+
+keylist <- data.frame(keyI,mfeatures,cityI)
+
+cityII <- "Koeln"
+
+for (i in 1:nrow(keylist)){
+  obj_i <- paste0(keylist[i,1],"=",
+                  keylist[i,2])
+  pgi <- get_osm_nodes(object=obj_i,keylist[i,3])
+  info <- extract_osm_nodes(pgi,keylist[i,2])
+  save(info,file=paste0("info_",keylist[i,2],"_",cityII,".RData"))
+  saveXML(pgi,file=paste0("pgi_",keylist[i,1],"_",keylist[i,2],"_",cityII,".xml"))
+}
+```
+
+## Point in Polygon
+
+```{r, eval=F}
+dnam <- dir()
+dnam2 <- agrep("info",dnam)
+dnam3 <- dnam[dnam2]
+dnam4 <- gsub("info_","",dnam3)
+dnam4 <- gsub("_Koeln.RData","",dnam4)
+
+for (i in 1:length(dnam4)){
+  load(dnam3[i])
+  poi <- info
+  coordinates(poi) <- ~ lon + lat
+  proj4string(poi) <- proj4string(koelnplz)
+  ind <- over(poi, koelnplz)
+  
+  tab2plz <- tapply(ind$PLZ99_N,ind$PLZ99_N,length)
+  ind <- match(koelnplz@data$PLZ99_N,names(tab2plz))
+  eval(parse(text=paste0("koelnplz@data$",dnam4[i],"<-tab2plz[ind]")))
+  eval(parse(text=paste0("koelnplz$",dnam4[i],"[is.na(koelnplz$",dnam4[i],")]<-0")))
+}
+
+save(koelnplz,file="koelnplz.RData")
+```
+
+## Plot the results
+
+```{r}
+library("sp")
+```
+
+
+```{r}
+load("data/koelnplz.RData")
+
+spplot(koelnplz,c("cafe","fast_food"))
+```
+
+```{r}
+kable(head(koelnplz@data))
+```
+
+
+
+```{r}
+koelnplz@data$bar2 <- koelnplz@data$bar/sum(koelnplz@data$bar)
+
+koelnplz@data$college2 <- koelnplz@data$college/sum(koelnplz@data$college)
+```
+
+```{r}
+spplot(koelnplz,c("bar2","college2"))
+```
+
