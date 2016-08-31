@@ -1,20 +1,13 @@
----
-title: "Analyzing OSM data in zip code areas"
-author: "Jan-Philipp Kolb"
-date: "31 August 2016"
-output:
-  html_document:
-    keep_md: true
----
+# Analyzing OSM data in zip code areas
+Jan-Philipp Kolb  
+31 August 2016  
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE,message=F,warning = F)
-library("knitr")
-```
+
 
 ## The libraries
 
-```{r}
+
+```r
 library("geosmdata")
 library("rgdal")
 ```
@@ -23,7 +16,8 @@ library("rgdal")
 
 [Shape File for zip codes in Germany](http://www.metaspatial.net/download/plz.tar.gz)
 
-```{r,eval=F}
+
+```r
 PLZ <- readOGR ("post_pl.shp","post_pl")
 berplz <- PLZ[PLZ$PLZORT99%in%c("Berlin-West","Berlin (östl. Stadtbezirke)"),]
 hhplz <- PLZ[PLZ$PLZORT99%in%"Hamburg",]
@@ -32,42 +26,29 @@ koelnplz <- PLZ[PLZ$PLZORT99%in%"Köln",]
 save(koelnplz,file="data/koelnplz.RData")
 ```
 
-```{r}
+
+```r
 load("data/koelnplz.RData")
 ```
 
-```{r}
+
+```r
 par(mai=c(0,0,0,0))
 plot(koelnplz,col="royalblue")
 ```
+
+![](OSM_GermanCities_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 ## Get OSM data
 
 [Overview of OSM features](http://wiki.openstreetmap.org/wiki/DE:Map_Features)
 
-```{r Koeln,echo=F,eval=F}
-cityI <- "KÃ¶ln"
-cityII <- "Koeln"
-keyI <- "amenity"
-mfeatures <- c("bar","biergarten","cafe","fast_food","ice_cream","pub","restaurant","college")
 
-keylist <- data.frame(keyI,mfeatures,cityI)
-
-cityII <- "Koeln"
-
-for (i in 1:nrow(keylist)){
-  obj_i <- paste0(keylist[i,1],"=",
-                  keylist[i,2])
-  pgi <- get_osm_nodes(object=obj_i,keylist[i,3])
-  info <- extract_osm_nodes(pgi,keylist[i,2])
-  save(info,file=paste0("info_",keylist[i,2],"_",cityII,".RData"))
-  saveXML(pgi,file=paste0("pgi_",keylist[i,1],"_",keylist[i,2],"_",cityII,".xml"))
-}
-```
 
 ## Point in Polygon
 
-```{r, eval=F}
+
+```r
 dnam <- dir()
 dnam2 <- agrep("info",dnam)
 dnam3 <- dnam[dnam2]
@@ -92,65 +73,93 @@ save(koelnplz,file="koelnplz.RData")
 
 ## Plot the results
 
-```{r}
+
+```r
 library("sp")
 ```
 
 
-```{r}
+
+```r
 load("data/koelnplz.RData")
 
 spplot(koelnplz,c("cafe","fast_food"))
 ```
 
-```{r}
+![](OSM_GermanCities_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+
+
+```r
 kable(head(koelnplz@data))
 ```
 
+       PLZ99    PLZ99_N  PLZORT99    bar   biergarten   cafe   college   fast_food   ice_cream   pub   restaurant
+-----  ------  --------  ---------  ----  -----------  -----  --------  ----------  ----------  ----  -----------
+3576   50667      50667  Köln          5            0     52         1          36           1    44           99
+3577   50668      50668  Köln          2            0     10         1           7           0    11           29
+3578   50670      50670  Köln          2            0      8         2           6           2    13           36
+3579   50672      50672  Köln         20            1     16         0          19           4    17           56
+3580   50674      50674  Köln         31            1     33         4          40           1    66          117
+3581   50676      50676  Köln         10            0     29         2          31           0    21           44
 
 
-```{r}
+
+
+```r
 koelnplz@data$bar2 <- koelnplz@data$bar/sum(koelnplz@data$bar)
 
 koelnplz@data$college2 <- koelnplz@data$college/sum(koelnplz@data$college)
 ```
 
-```{r}
+
+```r
 spplot(koelnplz,c("bar2","college2"))
 ```
 
+![](OSM_GermanCities_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+
 ## Cluster Analysis
 
-```{r}
+
+```r
 mydata <- koelnplz@data[,c("bar","biergarten","cafe","college","fast_food","ice_cream","pub","restaurant")]
 ```
 
 K-Means Clustering
 
-```{r}
+
+```r
 fit <- kmeans(mydata, 4) # 4 cluster solution
 mydata <- data.frame(mydata, fit$cluster)
 koelnplz@data$kmeans4 <- as.factor(fit$cluster)
 ```
 
 
-```{r}
+
+```r
 library("tmap")
 qtm(koelnplz,"kmeans4")
 ```
 
-```{r}
+![](OSM_GermanCities_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+
+
+```r
 fit8 <- kmeans(mydata, 8) # 8 cluster solution
 mydata <- data.frame(mydata, fit8$cluster)
 koelnplz@data$kmeans8 <- as.factor(fit8$cluster)
 ```
 
-```{r}
+
+```r
 qtm(koelnplz,"kmeans8")
 ```
 
+![](OSM_GermanCities_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
 
-```{r}
+
+
+```r
 rownames(mydata) <- koelnplz$PLZ99_N
 s <- mydata[,-match("fit.cluster",colnames(mydata))]
 s0 <- s
@@ -163,22 +172,33 @@ hcities <- hclust(dist(s0), method = "ward.D2")
 plot(hcities, sub = "")
 ```
 
+![](OSM_GermanCities_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
 
-```{r}
+
+
+```r
 ct2h <- cutree(hcities, h = 2)
 ```
 
-```{r}
+
+```r
 ind <- match(koelnplz$PLZ99_N,names(ct2h))
 koelnplz$ct2h <- as.factor(ct2h[ind])
 ```
 
 
-```{r}
-qtm(koelnplz,"ct2h")
 
+```r
+qtm(koelnplz,"ct2h")
+```
+
+![](OSM_GermanCities_files/figure-html/unnamed-chunk-19-1.png)<!-- -->
+
+```r
 qtm(koelnplz,c("kmeans8","ct2h"))
 ```
+
+![](OSM_GermanCities_files/figure-html/unnamed-chunk-19-2.png)<!-- -->
 
 
 [Shapefiles for Colone](http://offenedaten-koeln.de/dataset/stadtteile)
