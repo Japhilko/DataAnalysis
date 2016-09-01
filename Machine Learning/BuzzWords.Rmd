@@ -1,0 +1,19 @@
+---
+title: "Buzzwords"
+author: "Jan-Philipp Kolb"
+date: "31 August 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [Anomaly Detection](https://www.r-bloggers.com/anomaly-detection-in-r/)
+
+- also known as outlier detection
+
+## Grammar Induction
+
+Alex Clark - [Unsupervised Learning and Grammar
+Induction](http://www.dcs.kcl.ac.uk/staff/lappin/papers/clark-lappin_handbook_chapter.pdf)

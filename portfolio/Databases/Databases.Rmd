@@ -10,6 +10,13 @@ output:
 ## Relational Databases
 
 - SQL is used for querying
+- [Relation model (German)](https://ab.inf.uni-tuebingen.de/teaching/ss03/asa/db_intro.pdf)
+
+## Non relational Databases
+
+- NoSQL - non-relational approach
+- Examples: Riak, Apache Cassandra, [CouchDB](https://www.youtube.com/watch?v=TvRDOLiadtg&list=PLxcWHsmHykmWlXorl8rm-2Ux4HP1sFkub), MongoDB and Redis.
+
 
 ## Learning the query language
 
