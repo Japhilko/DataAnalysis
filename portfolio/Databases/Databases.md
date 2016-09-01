@@ -1,15 +1,6 @@
----
-title: "Databases"
-author: "Jan-Philipp Kolb"
-date: "27. Juli 2015"
-output:
-  html_document:
-    keep_md: true
----
-
-## Relational Databases
-
-- SQL is used for querying
+# Databases
+Jan-Philipp Kolb  
+27. Juli 2015  
 
 ## Learning the query language
 
@@ -50,7 +41,8 @@ output:
 
 
 [Cheat sheet](https://cran.r-project.org/web/packages/rmongodb/vignettes/rmongodb_cheat_sheet.pdf)
-```{r,eval=F}
+
+```r
 install.packages("rmongodb")
 ```
 

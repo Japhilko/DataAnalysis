@@ -27,7 +27,7 @@ BIRCH, Hierarchical, k-means, Expectation-maximization (EM), DBSCAN, OPTICS, Mea
 
 ## Dimensionality Reduction
 
-[Factor analysis](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/FactorAnalysis.md), CCA, ICA, LDA, NMF, PCA, t-SNE 
+[Factor analysis](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/FactorAnalysis.md), canonical-correlation analysis, independent component analysis, LDA, NMF, PCA, t-SNE 
 
 ## Structured prediction
 

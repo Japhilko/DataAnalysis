@@ -35,3 +35,5 @@ Methods and statistics that can be used for statistical learning and machine lea
 - [Twitter](https://github.com/Japhilko/DataAnalysis/blob/master/TextAnalytics/TextMining_Twitter.Rmd)
 
 - [Wikipedia](https://github.com/Japhilko/DataAnalysis/blob/master/data/Wikidata.Rmd)
+
+- [Openstreetmap](https://github.com/Japhilko/DataAnalysis/blob/master/UseCases/OSM_GermanCities.md)
