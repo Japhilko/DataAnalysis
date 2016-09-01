@@ -30,6 +30,8 @@ Methods and statistics that can be used for statistical learning and machine lea
 
 - [The Julia Language](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/Julia/JuliaLanguage.Rmd)
 
+- [Databases](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/Databases/Databases.md)
+
 ## Getting Data
 
 - [Twitter](https://github.com/Japhilko/DataAnalysis/blob/master/TextAnalytics/TextMining_Twitter.Rmd)
