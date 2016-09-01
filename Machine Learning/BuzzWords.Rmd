@@ -2,7 +2,9 @@
 title: "Buzzwords"
 author: "Jan-Philipp Kolb"
 date: "31 August 2016"
-output: html_document
+output:
+  html_document:
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}
