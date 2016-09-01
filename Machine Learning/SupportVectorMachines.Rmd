@@ -2,7 +2,9 @@
 title: "Support Vector Machines"
 author: "Jan-Philipp Kolb"
 date: "29 Juli 2016"
-output: md_document
+output:
+  html_document:
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}
@@ -33,7 +35,24 @@ plot(cmdscale(dist(iris[,-5])),
      pch = c("o","+")[1:150 %in% model$index + 1])
 ```
 
+## [Using Support Vector Machines as Flower Finders: Name that Iris!](http://joelcadwell.blogspot.de/2016/05/using-support-vector-machines-as-flower.html)
+
+
+```{r}
+library(e1071)
+data(iris)
+attach(iris)
+```
+
+```{r}
+model <- svm(Species ~ ., data = iris)
+```
+
+
 ## Links
+
+- Joseph Rickert - [The 5th Tribe, Support Vector Machines and caret](https://www.r-bloggers.com/the-5th-tribe-support-vector-machines-and-caret/)
+
 
 - [SVM - Wikipedia](https://en.wikipedia.org/wiki/Support_vector_machine)
 

@@ -112,3 +112,6 @@ h <- hclust(dist(t(s0)), method = "ward")
 
 plot(h, labels = titles, sub = "")
 ```
+
+
+- [Youtube Video on Text Mining](https://www.youtube.com/watch?v=j1V2McKbkLo)
