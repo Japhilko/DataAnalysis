@@ -20,7 +20,7 @@ BIRCH, Hierarchical, k-means, Expectation-maximization (EM), DBSCAN, OPTICS, Mea
 
 ## Dimensionality Reduction
 
-[Factor analysis](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/FactorAnalysis.md), CCA, ICA, LDA, NMF, PCA, t-SNE 
+[Factor analysis](https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/FactorAnalysis.md), canonical-correlation analysis, independent component analysis, Linear discriminant analysis (LDA), Non-negative matrix factorization (NMF), Principal component analysis (PCA), t-SNE 
 
 ## Structured prediction
 
@@ -32,11 +32,11 @@ k-NN, Local outlier factor
 
 ## Neural nets
 
-Autoencoder, Deep learning, Multilayer perceptron, RNN, Restricted Boltzmann machine, SOM, Convolutional neural network 
+Autoencoder, Deep learning, Multilayer perceptron, Recurrent neural network (RNN), Restricted Boltzmann machine, Self-organizing map (SOM), Convolutional neural network 
 
 ## Reinforcement Learning
 
-Q-Learning, SARSA, Temporal Difference (TD) 
+Q-Learning, State-Action-Reward-State-Action (SARSA), Temporal Difference (TD) 
 
 
 

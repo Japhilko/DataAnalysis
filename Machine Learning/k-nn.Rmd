@@ -1,0 +1,40 @@
+---
+title: "k Nearest Neighbours"
+author: "Jan-Philipp Kolb"
+date: "5 September 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Resources
+
+- [Package `kknn`](https://cran.r-project.org/web/packages/kknn/kknn.pdf)
+
+```{r,eval=F}
+install.packages("kknn")
+```
+
+```{r}
+library("kknn")
+```
+
+
+## [Geographic clustering of UK cities](https://www.r-bloggers.com/geographic-clustering-of-uk-cities/)
+
+```{r}
+install.packages("dbscan")
+```
+
+
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(maps)
+library(dbscan)
+```
+

@@ -18,7 +18,7 @@ Anomaly detection, Association rules, Reinforcement learning, Structured predict
 
 ## Supervised learning
 
-[Decision trees](https://github.com/Japhilko/DataAnalysis/blob/master/Machine%20Learning/DecisionTrees.md), Ensembles (Bagging, Boosting, Random forest), k-NN, [Linear regression](https://github.com/Japhilko/DataAnalysis/blob/master/Regression/SimpleLinearRegression.md), Naive Bayes, Neural networks, Logistic regression, Perceptron, Relevance vector machine (RVM), [Support vector machine (SVM)](https://github.com/Japhilko/DataAnalysis/blob/master/Machine%20Learning/SupportVectorMachines.md)
+[Decision trees](https://github.com/Japhilko/DataAnalysis/blob/master/Machine%20Learning/DecisionTrees.md), Ensembles (Bagging, Boosting, Random forest), k-nearest neighbors algorithm (k-NN), [Linear regression](https://github.com/Japhilko/DataAnalysis/blob/master/Regression/SimpleLinearRegression.md), Naive Bayes, Neural networks, Logistic regression, Perceptron, Relevance vector machine (RVM), [Support vector machine (SVM)](https://github.com/Japhilko/DataAnalysis/blob/master/Machine%20Learning/SupportVectorMachines.md)
 
 
 ## Clustering

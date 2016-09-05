@@ -49,6 +49,24 @@ model <- svm(Species ~ ., data = iris)
 ```
 
 
+## [Support Vector Machines](http://machinelearningmastery.com/non-linear-regression-in-r/)
+
+```{r}
+library(kernlab)
+# load data
+data(longley)
+# fit model
+fit <- ksvm(Employed~., longley)
+# summarize the fit
+summary(fit)
+# make predictions
+predictions <- predict(fit, longley)
+# summarize accuracy
+rmse <- mean((longley$Employed - predictions)^2)
+print(rmse)
+```
+
+
 ## Links
 
 - Joseph Rickert - [The 5th Tribe, Support Vector Machines and caret](https://www.r-bloggers.com/the-5th-tribe-support-vector-machines-and-caret/)
