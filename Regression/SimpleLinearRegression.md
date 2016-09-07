@@ -23,10 +23,6 @@ library("ISLR")
 ## Warning: package 'ISLR' was built under R version 3.2.5
 ```
 
-```r
-library(knitr)
-```
-
 
 ```r
 names(Boston)
@@ -38,15 +34,7 @@ names(Boston)
 ```
 
 ```r
-?Boston
-```
-
-```
-## starting httpd help server ...
-```
-
-```
-##  done
+# ?Boston
 ```
 
 
@@ -82,7 +70,8 @@ summary(fit1)
 ## F-statistic: 601.6 on 1 and 504 DF,  p-value: < 2.2e-16
 ```
 
-![Simple Linear Regression](http://i0.wp.com/3.bp.blogspot.com/-M-eh1oV6NT0/Vn4nPWRl-LI/AAAAAAAAAbA/qiLz64Ky2Zw/s320/regression.png?resize=350%2C200)
+[Picture - Simple Linear Regression](http://i0.wp.com/3.bp.blogspot.com/-M-eh1oV6NT0/Vn4nPWRl-LI/AAAAAAAAAbA/qiLz64Ky2Zw/s320/regression.png?resize=350%2C200)
+
 
 
 ```r

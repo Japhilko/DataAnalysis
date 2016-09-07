@@ -9,6 +9,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
 ```
 
 ## [Linear Model](https://www.youtube.com/watch?v=5ONFqIk3RFg)
@@ -22,13 +23,11 @@ install.packages("ISLR")
 ```{r}
 library("MASS")
 library("ISLR")
-
-library(knitr)
 ```
 
 ```{r}
 names(Boston)
-?Boston
+# ?Boston
 ```
 
 ```{r fitlinearmodel}
@@ -37,7 +36,8 @@ fit1 <- lm(medv~lstat,Boston)
 summary(fit1)
 ```
 
-![Simple Linear Regression](http://i0.wp.com/3.bp.blogspot.com/-M-eh1oV6NT0/Vn4nPWRl-LI/AAAAAAAAAbA/qiLz64Ky2Zw/s320/regression.png?resize=350%2C200)
+[Picture - Simple Linear Regression](http://i0.wp.com/3.bp.blogspot.com/-M-eh1oV6NT0/Vn4nPWRl-LI/AAAAAAAAAbA/qiLz64Ky2Zw/s320/regression.png?resize=350%2C200)
+
 
 ```{r}
 plot(medv~lstat,Boston)
@@ -73,6 +73,17 @@ is the variance changing with the mean
 fit4 <- update(fit3,~.-age-indus)
 summary(fit4)
 ```
+
+## Model Selection
+
+[Quick R - Multiple Regression](http://www.statmethods.net/stats/regression.html)
+
+```{r}
+library(MASS)
+fit <- lm(medv~.,data=Boston)
+step <- stepAIC(fit, direction="both")
+```
+
 
 ## Interactions
 
