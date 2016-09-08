@@ -8,7 +8,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,message = F,warning=F)
 library(knitr)
 ```
 
@@ -95,6 +95,9 @@ calc.relimp(fit,type=c("lmg","last","first","pratt"),
 
 ## Interactions
 
+[with * the coefficients are used and also the interaction between them](http://www.gardenersown.co.uk/education/lectures/r/regression.htm)
+
+
 ```{r}
 fit5 <- lm(medv~lstat*age,Boston)
 summary(fit5)
@@ -130,3 +133,11 @@ mod1 <- lm(Sales~.+Income:Advertising,Carseats)
 contrasts(ShelveLoc)
 ```
 
+## Resources
+
+- Faraway - [Practical Regression and Anova using R](https://cran.r-project.org/doc/contrib/Faraway-PRA.pdf)
+
+- Breheny/Burchett - [Visualization of Regression Models Using visreg](http://myweb.uiowa.edu/pbreheny/publications/visreg.pdf)
+
+- Wheeler - [Visualizing and Diagnosing Output from 
+Geographically Weighted Regression Models](https://www.sph.emory.edu/departments/bios/documents/techdocs/2008/Tech_Report_08-02.pdf)
