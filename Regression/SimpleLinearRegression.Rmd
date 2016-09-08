@@ -82,7 +82,15 @@ summary(fit4)
 library(MASS)
 fit <- lm(medv~.,data=Boston)
 step <- stepAIC(fit, direction="both")
+step$anova # display results 
 ```
+
+```{r}
+library(relaimpo)
+calc.relimp(fit,type=c("lmg","last","first","pratt"),
+   rela=TRUE)
+```
+
 
 
 ## Interactions
