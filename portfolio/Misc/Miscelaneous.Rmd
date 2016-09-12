@@ -2,7 +2,9 @@
 title: "Miscelaneous"
 author: "Jan-Philipp Kolb"
 date: "07/27/2015"
-output: ioslides_presentation
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 ## Requested Expert Knowledge
@@ -252,3 +254,7 @@ The R-Files
 
 - <http://dat-data.com/>
 - [datahub](https://www.npmjs.com/package/dathub)
+
+## Write CSS files
+
+- [CSS Examples](http://www.w3schools.com/css/css_examples.asp)

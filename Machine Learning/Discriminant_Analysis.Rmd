@@ -1,0 +1,14 @@
+---
+title: "Discriminant Analysis"
+author: "Jan-Philipp Kolb"
+date: "9 September 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
+
+- Differentiation between two groups
