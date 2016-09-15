@@ -1,8 +1,10 @@
 ---
-title: "ContingenceAnalysis"
+title: "Contingence Analysis"
 author: "Jan-Philipp Kolb"
-date: "24. Juli 2015"
-output: ioslides_presentation
+date: "24 July 2015"
+output:
+  html_document:
+    keep_md: true
 ---
 
 ```{r,echo=F}
