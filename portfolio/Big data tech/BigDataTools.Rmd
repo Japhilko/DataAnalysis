@@ -73,3 +73,4 @@ library(SparkR)
 
 [Redshift](http://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html)
 
+- [Condor HighTrouput Computing](https://de.wikipedia.org/wiki/HTCondor)
