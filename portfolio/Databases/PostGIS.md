@@ -1,11 +1,6 @@
----
-title: "PostGIS"
-author: "Jan-Philipp Kolb"
-date: "Fri Aug 28 10:07:51 2015"
-output: 
-  html_document: 
-    keep_md: yes
----
+# PostGIS
+Jan-Philipp Kolb  
+Fri Aug 28 10:07:51 2015  
 
 ## Starting Point
 
@@ -176,7 +171,8 @@ WHERE
 - [Getting started with PostgreSQL in R](https://datashenanigan.wordpress.com/2015/05/18/getting-started-with-postgresql-in-r/)
 
 
-```{r,eval=F}
+
+```r
 require("RPostgreSQL")
 pw <- {"xyz"}
 drv <- dbDriver("PostgreSQL")
@@ -189,12 +185,11 @@ drv <- dbDriver("PostgreSQL")
 
 - [How to make R, PostGIS and QGis cooperate](https://hal.inria.fr/file/index/docid/737397/filename/bonin_V2.pdf)
 
-```{r,echo=F,eval=F}
-setwd("")
-```
 
 
-```{r,eval=F,message=F,warning=F}
+
+
+```r
 require(rgdal)
 dsn="PG:dbname='gisdb'"
 ogrListLayers(dsn)
@@ -221,7 +216,8 @@ Google Searches
 
 r-project + postgis
 
-```{r,eval=F}
+
+```r
 # http://postgis.net/
 
 # http://gis.stackexchange.com/questions/64950/which-is-the-best-way-of-working-with-postgis-data-in-r
