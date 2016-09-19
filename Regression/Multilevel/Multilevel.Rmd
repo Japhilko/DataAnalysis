@@ -14,10 +14,12 @@ output:
 ![cartoon](http://www.statistics4u.info/fundstat_germ/img/gm_bivarstat_tusche.png)
 
 
-## Multilevel models ([Bates](http://www.unil.ch/webdav/site/ee/shared/WorkshopD.pdf))
+## Multilevel model  with Dyestuff-Data
 
-- Starts with slide 56
-- Dyestuff-Data are explained in the book: "Statistical Methods in Research and Production"
+- ([Bates](http://www.unil.ch/webdav/site/ee/shared/WorkshopD.pdf)) - Starts with slide 56
+- Dyestuff-Data is explained in the book: "Statistical Methods in Research and Production"
+
+- [model](http://tutorials.iq.harvard.edu/R/Rstatistics/Rstatistics.html#orgheadline36) with a random effects grouping structure, but no fixed-effects predictors:
 
 ```{r}
 library(lme4)

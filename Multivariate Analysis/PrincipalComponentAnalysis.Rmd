@@ -13,6 +13,16 @@ vCA <- T
 library(knitr)
 ```
 
+## Introduction
+
+- [Introduction to Principal Component Analysis](https://tgmstat.wordpress.com/2013/11/21/introduction-to-principal-component-analysis-pca/)
+- dimensionality reduction technique
+- better visualisation of data
+- high correlation between covariates
+- PCA can produce linear combinations of the covariates
+
+## [Computing the principal components](https://www.r-bloggers.com/computing-and-visualizing-pca-in-r/)
+
 
 ## [Quick-R on Principal Component Analysis](http://www.statmethods.net/advstats/factor.html)
 
