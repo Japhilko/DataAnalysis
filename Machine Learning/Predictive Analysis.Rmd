@@ -26,3 +26,9 @@ library(ChoiceModelR)
 
 ![pic](http://3.bp.blogspot.com/-zoM8RVLiJPs/UfaQlM8JSCI/AAAAAAAABAo/OPMaICn5oQY/s1600/p1.png)
 
+
+## [Cross Validation for Predictive Analytics](https://www.r-bloggers.com/cross-validation-for-predictive-analytics-using-r/)
+
+- A model is always at the heart of any prediction
+- it depends on some unknown structural parameters (e.g. the coefficients of a regression model)
+- and tuning parameters (e.g. the number of basis functions in a smoothing spline or the degree of a polynomial)

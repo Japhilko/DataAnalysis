@@ -1,0 +1,18 @@
+---
+title: "Data Science Software"
+author: "Jan-Philipp Kolb"
+date: "20 September 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [Tableau](http://de.slideshare.net/kt166212/tableau-presentation)
+
+- [drag and drop interface](https://www.r-bloggers.com/6-benefits-of-learning-tableau-a-bi-tool-for-interactive-visualization/)
+
+- build interactive dashboards
+
+-
