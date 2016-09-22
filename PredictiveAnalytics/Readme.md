@@ -1,6 +1,49 @@
-# Predictive Analytics
+# Advanced Analytics
 Jan-Philipp Kolb  
 18 Juli 2016  
+
+
+
+## The data behind
+
+- [Real life data](https://www.ispor.org/News/articles/Oct07/RLD.asp)
+
+- [Defining Real World Data](http://social.eyeforpharma.com/evidence/defining-real-world-data-interview-toby-leete-and-dr-ekta-sood)
+
+- [RWD for effective security models](https://blog.opendns.com/2014/06/05/two-new-public-domain-lists-security-researchers/)
+
+- [RWD - critics](https://www.iqwig.de/download/HS15_Einfuehrung_und_Schlusswort_Juergen_Windeler.pdf)
+
+## Advanced Analytics vs Predictive Analytics
+
+- [Advanced Analytics](http://www.searchenterprisesoftware.de/definition/Advanced-Analytics)
+
+
+
+
+## Random Forests
+
+- Trevor Stephens - [Getting Started with R](http://trevorstephens.com/kaggle-titanic-tutorial/r-part-5-random-forests/)
+
+- Trevor Hastie and Rob Tibshirani  - [Random Forests](https://www.youtube.com/watch?v=IY7oWGXb77o)
+
+
+
+```r
+library(randomForest)
+```
+
+```
+## Warning: package 'randomForest' was built under R version 3.2.5
+```
+
+```
+## randomForest 4.6-12
+```
+
+```
+## Type rfNews() to see new features/changes/bug fixes.
+```
 
 
 
