@@ -74,3 +74,9 @@ library(SparkR)
 [Redshift](http://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html)
 
 - [Condor HighTrouput Computing](https://de.wikipedia.org/wiki/HTCondor)
+
+- [Mahout](http://www.heise.de/download/product/mahout-90393)
+
+- [MapReduce](http://dbs.uni-leipzig.de/file/seminar_0910_findling_K%C3%B6nig.pdf)
+
+- [Hadoop Ecosystem](https://blog.codecentric.de/2013/08/einfuhrung-in-hadoop-die-wichtigsten-komponenten-von-hadoop-teil-3-von-5/)

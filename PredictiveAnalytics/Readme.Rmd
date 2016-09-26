@@ -11,6 +11,10 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Introduction
+
+- [10 use cases for predictive analytics](http://xmpro.com/10-predictive-analytics-use-cases-by-industry/)
+
 ## The data behind
 
 - [Real life data](https://www.ispor.org/News/articles/Oct07/RLD.asp)
