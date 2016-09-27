@@ -80,3 +80,13 @@ library(SparkR)
 - [MapReduce](http://dbs.uni-leipzig.de/file/seminar_0910_findling_K%C3%B6nig.pdf)
 
 - [Hadoop Ecosystem](https://blog.codecentric.de/2013/08/einfuhrung-in-hadoop-die-wichtigsten-komponenten-von-hadoop-teil-3-von-5/)
+
+## Misc
+
+- [Power BI](https://powerbi.microsoft.com/de-de/)
+
+- [Data warehousing](https://de.wikipedia.org/wiki/Data-Warehouse)
+
+- [Tableau](http://www.tableau.com/de-de)
+
+- [Tableau for free](https://public.tableau.com/s/)
