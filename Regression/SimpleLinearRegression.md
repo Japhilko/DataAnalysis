@@ -511,6 +511,11 @@ contrasts(ShelveLoc)
 ## Medium    0      1
 ```
 
+## [Akaike Information Criterion](https://en.wikipedia.org/wiki/Akaike_information_criterion)
+
+$$ AIC=2k - 2ln(L) $$ 
+
+
 ## Resources
 
 - Faraway - [Practical Regression and Anova using R](https://cran.r-project.org/doc/contrib/Faraway-PRA.pdf)
