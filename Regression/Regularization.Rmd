@@ -1,0 +1,16 @@
+---
+title: "Regularization"
+author: "Jan-Philipp Kolb"
+date: "29 September 2016"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [Regularization](https://www.quora.com/What-is-regularization-in-machine-learning)
+
+- [Loss function](https://en.wikipedia.org/wiki/Loss_function)

@@ -29,6 +29,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Genomics and Big Data](https://www.oreilly.com/ideas/genomics-and-the-role-of-big-data-in-personalizing-the-healthcare-experience)
 
+- [What Do Data Scientists Do?](http://datasciencedegree.wisconsin.edu/data-science/what-do-data-scientists-do/)
+
 ## Description Data Science
 
 - [German discussion](http://www.wiwi-treff.de/home/lounge/read.php?ukatid=14&f=28&i=279260&t=279260&collapse=1)
@@ -36,6 +38,18 @@ knitr::opts_chunk$set(echo = TRUE)
 - [Elements of Data Science](http://image.slidesharecdn.com/bigdatachartturckzilis-120629095525-phpapp01/95/slide-1-728.jpg?cb=1340981904f)
 
 - [How to become a data scientist (German)](http://www.focus.de/finanzen/karriere/perspektiven/arbeit-wie-werde-ich-data-scientist_id_3788707.html)
+
+- [Data Scientists in action](https://www.analyticsvidhya.com/blog/2015/09/ultimate-data-scientists-world-today/)
+
+- [Talks of Data Scientists](http://www.kdnuggets.com/2016/02/top-10-tedtalks-data-scientists.html)
+
+- [Hans Rosling](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen?language=en)
+
+- [Most influental data scientists](http://www.forbes.com/pictures/lmm45emkh/7-hod-lipson-and-michael-schmidt-computer-scientists-cornell-university/#3d2ae44d76e7)
+
+## Skills of a data scientist
+
+- [must have skills](http://www.burtchworks.com/2014/11/17/must-have-skills-to-become-a-data-scientist/)
 
 ## Way to become a data scientist
 

@@ -123,7 +123,7 @@ points(lstat,fitted(fit7),col="blue",pch=20)
 
 tends to overfit
 
-```{r}
+```{r,echo=F}
 kable(head(Carseats))
 ```
 
@@ -137,6 +137,11 @@ contrasts(ShelveLoc)
 
 $$ AIC=2k - 2ln(L) $$ 
 
+- L is the maximum value of the likelihood function for the model
+
+- k is the number of estimated parameters in the model.
+
+- preferred model is the one with the minimum AIC value
 
 ## Resources
 
