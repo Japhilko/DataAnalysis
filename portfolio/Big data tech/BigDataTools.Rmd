@@ -2,8 +2,15 @@
 title: "Big Data Technologies"
 author: "Jan-Philipp Kolb"
 date: "20. Juli 2015"
-output: html_document
+output: 
+  html_document: 
+    keep_md: yes
 ---
+
+## Hadoop
+
+- [Easy explanation on hadoop](http://www.ap-institute.com/big-data-articles/big-data-what-is-hadoop-%E2%80%93-an-explanation-for-absolutely-anyone.aspx)
+
 
 ## R and Hadoop
 
@@ -48,7 +55,7 @@ output: html_document
 ## Buzz words 
 
 - Resiliant distributed datasets (RDD)
-- MapReduce
+- [MapReduce](http://www.thegeekstuff.com/2014/05/map-reduce-algorithm)
 
 
 ## The R-package
