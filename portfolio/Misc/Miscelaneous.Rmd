@@ -73,6 +73,10 @@ Journals:
 - [style file](http://www.ctan.org/pkg/elsarticle)
 - [What is important](http://www.elsevier.com/connect/8-reasons-i-accepted-your-article)
 
+- [Where to publish R research](https://www.researchgate.net/post/What_is_the_best_peer-reviewed_place_to_publish_an_R_package)
+
+- [plosone](http://journals.plos.org/plosone/)
+
 ## Interesting Papers
 
 [Impact factors](http://www.scimagojr.com/journalrank.php?category=3312)
