@@ -1,11 +1,6 @@
----
-title: "Python Programming"
-author: "Jan-Philipp Kolb"
-date: "Fri Aug 28 10:40:22 2015"
-output: 
-  html_document: 
-    keep_md: yes
----
+# Python Programming
+Jan-Philipp Kolb  
+Fri Aug 28 10:40:22 2015  
 
 ## Why use python
 
@@ -37,23 +32,16 @@ Popularity of Python
 - [Google python class - Intro](https://developers.google.com/edu/python/introduction)
 
 ## Videos
-
 - [Google python class](https://www.youtube.com/watch?v=tKTZoB2Vjuk&feature=youtu.be)
 
 - [Zero to Hero with Python](https://www.youtube.com/watch?v=9uq3w6JJS00)
 
-```{r,echo=F}
- # bis Minute 28:14
-```
+
 
 - [Video on python](https://www.youtube.com/watch?v=F1_FqvbXHb4)
 
 - [Einführung in Python](https://www.youtube.com/watch?v=T-CckWcJHBo)
 
-
-- Jessica McKellar - [A hands-on introduction to Python for beginning programmers](https://www.youtube.com/watch?v=rkx5_MRAV3A)
-
-- Jessica McKellar: [The Future of Python - A Choose Your Own](https://www.youtube.com/watch?v=d1a4Jbjc-vU)
 
 ## More links
 
@@ -79,7 +67,8 @@ Popularity of Python
 
 - [using one programming language in the context of another python and r](http://www.r-bloggers.com/using-one-programming-language-in-the-context-of-another-python-and-r/)
 
-```{r,eval=F}
+
+```r
 library(RPyGeo)
 ```
 
@@ -132,9 +121,14 @@ library(RPyGeo)
 
 ## Code chunk with python
 
-```{python}
+
+```python
 x = 'hello, python world!'
 print(x.split(' '))
+```
+
+```
+## ['hello,', 'python', 'world!']
 ```
 
 - [Source of example](https://raw.githubusercontent.com/yihui/knitr-examples/master/023-engine-python.Rmd)
