@@ -32,6 +32,7 @@ Popularity of Python
 - [Google python class - Intro](https://developers.google.com/edu/python/introduction)
 
 ## Videos
+
 - [Google python class](https://www.youtube.com/watch?v=tKTZoB2Vjuk&feature=youtu.be)
 
 - [Zero to Hero with Python](https://www.youtube.com/watch?v=9uq3w6JJS00)
@@ -42,6 +43,10 @@ Popularity of Python
 
 - [Einführung in Python](https://www.youtube.com/watch?v=T-CckWcJHBo)
 
+
+- Jessica McKellar - [A hands-on introduction to Python for beginning programmers](https://www.youtube.com/watch?v=rkx5_MRAV3A)
+
+- Jessica McKellar: [The Future of Python - A Choose Your Own](https://www.youtube.com/watch?v=d1a4Jbjc-vU)
 
 ## More links
 
@@ -271,3 +276,7 @@ pyinstaller.py --onedir --name=my_app   HelloWorld.py
 - [py2exe](http://www.dreamincode.net/forums/topic/192592-making-an-exe-file-with-pyinstaller/)
 
 -[freezing](http://docs.python-guide.org/en/latest/shipping/freezing/)
+
+## PyCharm
+
+- [Getting started with Pycharm](https://www.youtube.com/watch?v=BPC-bGdBSM8&list=PLQ176FUIyIUZ1mwB-uImQE-gmkwzjNLjP)

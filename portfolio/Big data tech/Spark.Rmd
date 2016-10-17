@@ -48,5 +48,10 @@ library("SparkR")
 
 - [Installing and starting SparkR](http://www.r-bloggers.com/installing-and-starting-sparkr-locally-on-windows-os-and-rstudio/)
 
+- [Wiki SparkR](https://spark.apache.org/docs/latest/sparkr.html)
+
+- [Getting Started with Spark](http://data-scientist-in-training.blogspot.de/2015/02/getting-started-with-spark-kitchen-sink_20.html)
+
+- [Getting started with pyspark](https://www.dataquest.io/blog/pyspark-installation-guide/)
 
 ## [Getting started with SparkR](http://www.danielemaasit.com/getting-started-with-sparkr/)

@@ -30,6 +30,15 @@ Popularity of Python
 
 - [Which Integrated development environment (IDE) to choose](https://wiki.python.org/moin/IntegratedDevelopmentEnvironments)
 
+- [Overview IDEs](https://wiki.python.org/moin/IntegratedDevelopmentEnvironments)
+
+
+- [Best Python IDEs](http://noeticforce.com/best-python-ide-for-programmers-windows-and-mac)
+
+- [Thonny - a new IDE](http://thonny.cs.ut.ee/)
+
+- [Introducing Thonny](https://www.youtube.com/watch?v=nwIgxrXP-X4)
+
 - [How to learn Python and R](http://www.thinkor.org/2013/10/how-to-learn-python-and-r-data-science.html)
 
 ## Google python class
@@ -277,3 +286,11 @@ pyinstaller.py --onedir --name=my_app   HelloWorld.py
 - [py2exe](http://www.dreamincode.net/forums/topic/192592-making-an-exe-file-with-pyinstaller/)
 
 -[freezing](http://docs.python-guide.org/en/latest/shipping/freezing/)
+
+## PyCharm
+
+- [Getting started with Pycharm](https://www.youtube.com/watch?v=BPC-bGdBSM8&list=PLQ176FUIyIUZ1mwB-uImQE-gmkwzjNLjP)
+
+- [PyCharm Edu](https://www.jetbrains.com/pycharm-edu/download/#section=windows-version)
+
+- [Installing and updating packages in PyCharm](https://www.jetbrains.com/help/pycharm/2016.1/installing-uninstalling-and-upgrading-packages.html)
