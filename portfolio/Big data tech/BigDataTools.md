@@ -1,11 +1,6 @@
----
-title: "Big Data Technologies"
-author: "Jan-Philipp Kolb"
-date: "20. Juli 2015"
-output: 
-  html_document: 
-    keep_md: yes
----
+# Big Data Technologies
+Jan-Philipp Kolb  
+20. Juli 2015  
 
 ## Hadoop
 
@@ -16,7 +11,8 @@ output:
 
 - [RHadoop](https://github.com/RevolutionAnalytics/RHadoop/wiki)
 
-```{r}
+
+```r
 # http://rapache.net/
 ```
 
@@ -25,9 +21,6 @@ output:
 - [Tutorial RHadoop](http://hortonworks.com/hadoop-tutorial/using-rhadoop-to-predict-visitors-amount/)
 
 - [RHadoop stack](http://www.r-bloggers.com/become-an-effective-data-hacker-with-the-r-hadoop-stack/)
-
-- [rhadoop](https://github.com/RevolutionAnalytics/RHadoop/wiki)
-
 
 - [Hadoop on Windows](https://wiki.apache.org/hadoop/Hadoop2OnWindows)
 
@@ -65,7 +58,8 @@ output:
 
 [Hints on the usage](http://amplab-extras.github.io/SparkR-pkg/)
 
-```{r,eval=F}
+
+```r
 library(devtools)
 install_github("amplab-extras/SparkR-pkg", subdir="pkg")
 library(SparkR)
@@ -79,7 +73,7 @@ library(SparkR)
 
 [Strata and Hadoop wolrd](http://www.r-bloggers.com/the-2015-strata-hadoop-world-london/)
 
-![Most popular software](http://i1.wp.com/www.mango-solutions.com/wp/wp-content/uploads/2015/05/stratatech.png)
+![pic](http://i1.wp.com/www.mango-solutions.com/wp/wp-content/uploads/2015/05/stratatech.png)
 
 [Redshift](http://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html)
 
@@ -90,19 +84,6 @@ library(SparkR)
 - [MapReduce](http://dbs.uni-leipzig.de/file/seminar_0910_findling_K%C3%B6nig.pdf)
 
 - [Hadoop Ecosystem](https://blog.codecentric.de/2013/08/einfuhrung-in-hadoop-die-wichtigsten-komponenten-von-hadoop-teil-3-von-5/)
-
-## [File Formats](https://www.r-bloggers.com/read-from-hdfs-with-r-brief-overview-of-sparkr/)
-
-
-- plain txt/csv/json files
-- [sequence files](https://wiki.apache.org/hadoop/SequenceFile). You can think of them as serialized java objects. 
-- avro (row-based)
-- paruqet (column-based)
-- orc (column-based)
-
-## Map Reduce
-
-- [A map reduce program in python](http://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/)
 
 ## Misc
 
