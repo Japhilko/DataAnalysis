@@ -11,6 +11,9 @@ output:
 
 - [Easy explanation on hadoop](http://www.ap-institute.com/big-data-articles/big-data-what-is-hadoop-%E2%80%93-an-explanation-for-absolutely-anyone.aspx)
 
+- [A Guide to Python Frameworks for Hadoop](http://blog.cloudera.com/blog/2013/01/a-guide-to-python-frameworks-for-hadoop/)
+
+- [Hadoop I/O: Sequence, Map, Set, Array, BloomMap Files](http://blog.cloudera.com/blog/2011/01/hadoop-io-sequence-map-set-array-bloommap-files/)
 
 ## R and Hadoop
 
@@ -95,10 +98,26 @@ library(SparkR)
 
 
 - plain txt/csv/json files
-- [sequence files](https://wiki.apache.org/hadoop/SequenceFile). You can think of them as serialized java objects. 
+- [sequenceFiles](https://wiki.apache.org/hadoop/SequenceFile). You can think of them as serialized java objects. 
 - avro (row-based)
 - paruqet (column-based)
 - orc (column-based)
+
+## SequenceFiles
+
+- are Java centric
+- [SequenceFiles examples ](http://hadooptutorial.info/hadoop-sequence-files-example/)
+- [Hadoop Training : What is Hadoop SequenceFile?](https://www.youtube.com/watch?v=koWekG53DRs)
+
+- [How to use “typedbytes” or “rawbytes” in Hadoop Streaming?](http://stackoverflow.com/questions/15171514/how-to-use-typedbytes-or-rawbytes-in-hadoop-streaming)
+
+- [How to load data from HDFS sequencefile in python](http://stackoverflow.com/questions/33684625/how-to-load-data-from-hdfs-sequencefile-in-python)
+
+- [Python read file as stream from HDFS](http://stackoverflow.com/questions/12485718/python-read-file-as-stream-from-hdfs)
+
+- [How do I read file stored in HDFS using the Python Open() method?](https://www.quora.com/How-do-I-read-file-stored-in-HDFS-using-the-Python-Open-method)
+
+- [Read sequence files without using Java](https://github.com/matteobertozzi/Hadoop/tree/master/python-hadoop)
 
 ## Map Reduce
 
