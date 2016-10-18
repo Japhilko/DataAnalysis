@@ -85,6 +85,12 @@ step <- stepAIC(fit, direction="both")
 step$anova # display results 
 ```
 
+```{r,eval=F}
+install.packages("relaimpo")
+```
+
+
+
 ```{r}
 library(relaimpo)
 calc.relimp(fit,type=c("lmg","last","first","pratt"),

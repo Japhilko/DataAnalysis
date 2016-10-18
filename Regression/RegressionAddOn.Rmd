@@ -1,0 +1,35 @@
+---
+title: "Simple Regression - Add On"
+author: "Jan-Philipp Kolb"
+date: "18 Oktober 2016"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [Linear Regression with categorial variables and many factors](http://stats.stackexchange.com/questions/122678/linear-regression-including-categorical-variables-with-hundreds-of-levels)
+
+- principal components analysis
+- [principal components regression](http://www.win-vector.com/blog/2016/05/pcr_part1_xonly/)
+
+
+[Performing PCR on a test dataset](https://www.r-bloggers.com/performing-principal-components-regression-pcr-in-r/)
+
+```{r,eval=F}
+install.packages("pls")
+```
+
+Partial Least Squares and Principal Component Regression:
+
+```{r}
+require(pls)
+set.seed (1000)
+
+pcr_model <- pcr(Sepal.Length~., data = iris, scale = TRUE, validation = "CV")
+```
+
+

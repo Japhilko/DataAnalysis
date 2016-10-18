@@ -317,6 +317,13 @@ step$anova # display results
 
 
 ```r
+install.packages("relaimpo")
+```
+
+
+
+
+```r
 library(relaimpo)
 calc.relimp(fit,type=c("lmg","last","first","pratt"),
    rela=TRUE)
@@ -466,7 +473,7 @@ plot(medv~lstat)
 points(lstat,fitted(fit6),col="red",pch=20)
 ```
 
-![](SimpleLinearRegression_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](SimpleLinearRegression_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
 
 ## Fitting Polynomials
 
@@ -477,15 +484,9 @@ plot(medv~lstat)
 points(lstat,fitted(fit7),col="blue",pch=20)
 ```
 
-![](SimpleLinearRegression_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+![](SimpleLinearRegression_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
 
 tends to overfit
-
-
-```r
-kable(head(Carseats))
-```
-
 
 
  Sales   CompPrice   Income   Advertising   Population   Price  ShelveLoc    Age   Education  Urban   US  
@@ -515,6 +516,11 @@ contrasts(ShelveLoc)
 
 $$ AIC=2k - 2ln(L) $$ 
 
+- L is the maximum value of the likelihood function for the model
+
+- k is the number of estimated parameters in the model.
+
+- preferred model is the one with the minimum AIC value
 
 ## Resources
 
