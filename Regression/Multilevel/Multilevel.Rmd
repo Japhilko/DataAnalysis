@@ -80,6 +80,8 @@ invisible(update(fm1, verbose = TRUE))
 
 ## More Resources
 
+- [Part on Multilevel modelling](http://tutorials.iq.harvard.edu/R/Rstatistics/Rstatistics.html)
+
 - Getting started with [multilevel models in R ](http://www.r-bloggers.com/getting-started-with-mixed-effect-models-in-r/)
 
 

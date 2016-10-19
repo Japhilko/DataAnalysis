@@ -2,7 +2,9 @@
 title: "Generalized linear regression"
 author: "Jan-Philipp Kolb"
 date: "24. Juli 2015"
-output: ioslides_presentation
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 ```{r,echo=F}
@@ -178,3 +180,6 @@ pomodi <- step ( pomod )
 summary ( pomodi )
 ```
 
+## Further Resources
+
+- [Impact Coding](http://www.win-vector.com/blog/2012/07/modeling-trick-impact-coding-of-categorical-variables-with-many-levels/)
