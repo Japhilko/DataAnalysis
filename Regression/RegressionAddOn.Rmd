@@ -32,4 +32,11 @@ set.seed (1000)
 pcr_model <- pcr(Sepal.Length~., data = iris, scale = TRUE, validation = "CV")
 ```
 
+## Shrinkage
+
+Global, Parameterwise and Joint Shrinkage Factor Estimation:
+
+```{r}
+library(shrink)
+```
 
