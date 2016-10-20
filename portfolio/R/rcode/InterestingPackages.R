@@ -326,6 +326,7 @@ install.packages("Amelia")
 
 	# Packages fuer internet of things
 install.packages("rjson")
+install.packages("RJSONIO")
 install.packages("RCurl")
 install.packages("googleVis")
 install.packages("plotKML") # isualization of Spatial and Spatio-Temporal Objects in Google Earth
