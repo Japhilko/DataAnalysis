@@ -91,6 +91,8 @@ install.packages("magrittr")
 # dates and times
 install.packages("lubridate")
 
+install.packages("tidyr")
+
 #------------------------#
 # Reproducible Research
 #------------------------#

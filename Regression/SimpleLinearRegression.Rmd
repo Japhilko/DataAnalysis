@@ -98,6 +98,8 @@ calc.relimp(fit,type=c("lmg","last","first","pratt"),
 ```
 
 
+- [Model selection when the number of variables exceeds the number of observations](https://web.stanford.edu/~vcs/thesis.pdf)
+
 
 ## Interactions
 
@@ -155,5 +157,6 @@ $$ AIC=2k - 2ln(L) $$
 
 - Breheny/Burchett - [Visualization of Regression Models Using visreg](http://myweb.uiowa.edu/pbreheny/publications/visreg.pdf)
 
-- Wheeler - [Visualizing and Diagnosing Output from 
-Geographically Weighted Regression Models](https://www.sph.emory.edu/departments/bios/documents/techdocs/2008/Tech_Report_08-02.pdf)
+- Wheeler - [Visualizing and Diagnosing Output from Geographically Weighted Regression Models](https://www.sph.emory.edu/departments/bios/documents/techdocs/2008/Tech_Report_08-02.pdf)
+
+- William King - [multiple regression](https://ww2.coastal.edu/kingw/statistics/R-tutorials/multregr.html)
