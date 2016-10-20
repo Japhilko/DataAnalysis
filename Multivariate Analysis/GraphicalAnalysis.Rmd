@@ -11,4 +11,26 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## 
+## [Plotting Confidence Intervals](http://stackoverflow.com/questions/14069629/plotting-confidence-intervals)
+
+```{r,eval=F}
+install.packages("plotrix")
+```
+
+
+
+```{r}
+library(plotrix)
+set.seed(0815)
+x <- 1:10
+F <- runif(10,1,2) 
+L <- runif(10,0,1)
+U <- runif(10,2,3)
+
+require(plotrix)
+plotCI(x, F, ui=U, li=L)
+```
+
+## Resources
+
+- [Computing and visualizing PCA in R](https://www.r-bloggers.com/computing-and-visualizing-pca-in-r/)

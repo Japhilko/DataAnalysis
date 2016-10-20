@@ -160,3 +160,5 @@ $$ AIC=2k - 2ln(L) $$
 - Wheeler - [Visualizing and Diagnosing Output from Geographically Weighted Regression Models](https://www.sph.emory.edu/departments/bios/documents/techdocs/2008/Tech_Report_08-02.pdf)
 
 - William King - [multiple regression](https://ww2.coastal.edu/kingw/statistics/R-tutorials/multregr.html)
+
+- [Coding for Categorical Variables in Regression Models](http://statistics.ats.ucla.edu/stat/r/modules/dummy_vars.htm)
