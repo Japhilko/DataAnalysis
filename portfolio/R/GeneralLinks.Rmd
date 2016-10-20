@@ -154,6 +154,6 @@ RWordPress
 - On the [usage of R in Germany](http://www.gulli.com/news/23740-programmiersprache-r-in-der-wissenschaft-immer-beliebter-2014-04-24). 
 
 
-## Papers for publication
+## Create Packages
 
-- [Insights from the field](http://surveyinsights.org/)
+- [Rtools for Windows](https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows)

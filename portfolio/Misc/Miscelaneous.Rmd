@@ -52,6 +52,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 ## Writing R-packages
 
 - [Packages in Rstudio](http://www.r-bloggers.com/smart-hackathon-day-2-writing-packages-in-rstudio/)
+
 - [Overview R-packages](http://www.rstudio.com/ide/docs/packages/overview)
 
 ## Where to publish research
@@ -76,6 +77,8 @@ Journals:
 - [Where to publish R research](https://www.researchgate.net/post/What_is_the_best_peer-reviewed_place_to_publish_an_R_package)
 
 - [plosone](http://journals.plos.org/plosone/)
+
+- [Insights from the field](http://surveyinsights.org/)
 
 ## Interesting Papers
 
