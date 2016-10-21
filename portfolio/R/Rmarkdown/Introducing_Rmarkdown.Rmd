@@ -1,0 +1,17 @@
+---
+title: "Introducing Rmarkdown"
+author: "Jan-Philipp Kolb"
+date: "21 Oktober 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Links
+
+- [Getting started](http://rmarkdown.rstudio.com/)
+
+- [Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+
