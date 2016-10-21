@@ -34,3 +34,5 @@ plotCI(x, F, ui=U, li=L)
 ## Resources
 
 - [Computing and visualizing PCA in R](https://www.r-bloggers.com/computing-and-visualizing-pca-in-r/)
+
+- [Alternatives for boxplots](http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page-r-software-and-data-visualization)

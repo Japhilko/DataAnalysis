@@ -529,6 +529,7 @@ install.packages("roxygen2")
 # Just for fun
 #------------------------#
 
+install.packages("shinyjs")
 devtools::install_github("jbkunst/rchess")
 
 
