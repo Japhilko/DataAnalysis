@@ -1,11 +1,6 @@
----
-title: "Write a package"
-author: "Jan-Philipp Kolb"
-date: "21. November 2015"
-output: 
-  html_document: 
-    keep_md: yes
----
+# Write a package
+Jan-Philipp Kolb  
+21. November 2015  
 
 
 ## Writing own packages
@@ -43,5 +38,4 @@ output:
 
 ## Namespaces
 
-- Karl Broman - [Writing documentation with Roxygen2 ](http://kbroman.org/pkg_primer/pages/docs.html)
 - [Namespace](http://r-pkgs.had.co.nz/namespace.html)
