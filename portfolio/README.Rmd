@@ -1,0 +1,16 @@
+---
+title: "Readme"
+author: "Jan-Philipp Kolb"
+date: "28 Oktober 2016"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R
+
+- [Writing packages in R](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/R/WriteRpackages.md)
