@@ -13,6 +13,8 @@ Jan-Philipp Kolb
 
 - [Roxygen 2](http://r-pkgs.had.co.nz/man.html)
 
+- [Generating .rd files](https://cran.r-project.org/web/packages/roxygen2/vignettes/rd.html)
+
 ## Upload package to CRAN
 
 - [Upload to CRAN](http://kbroman.org/pkg_primer/pages/cran.html)
@@ -36,6 +38,11 @@ Jan-Philipp Kolb
 
 - [Overview - writing packages](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)
 
+- [Writing documentation with roxygen2](http://kbroman.org/pkg_primer/pages/docs.html)
+
 ## Namespaces
 
+- Karl Broman - [Writing documentation with Roxygen2 ](http://kbroman.org/pkg_primer/pages/docs.html)
 - [Namespace](http://r-pkgs.had.co.nz/namespace.html)
+
+- [Best practices for writing an API package](https://cran.r-project.org/web/packages/httr/vignettes/api-packages.html)

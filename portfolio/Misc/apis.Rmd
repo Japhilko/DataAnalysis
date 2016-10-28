@@ -1,0 +1,14 @@
+---
+title: "API's"
+author: "Jan-Philipp Kolb"
+date: "28 Oktober 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+- [Learn about APIs](https://zapier.com/learn/apis/)
+
+- [Media Types](https://en.wikipedia.org/wiki/Media_type)

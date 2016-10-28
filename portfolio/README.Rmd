@@ -11,6 +11,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R
+## Programming with R
 
 - [Writing packages in R](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/R/WriteRpackages.md)
