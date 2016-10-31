@@ -36,6 +36,8 @@ Jan-Philipp Kolb
 
 - [API Packages](https://cran.r-project.org/web/packages/httr/vignettes/api-packages.html)
 
+- [httr quickstart guide](https://cran.r-project.org/web/packages/httr/vignettes/quickstart.html)
+
 - [Overview - writing packages](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)
 
 - [Writing documentation with roxygen2](http://kbroman.org/pkg_primer/pages/docs.html)
@@ -46,3 +48,13 @@ Jan-Philipp Kolb
 - [Namespace](http://r-pkgs.had.co.nz/namespace.html)
 
 - [Best practices for writing an API package](https://cran.r-project.org/web/packages/httr/vignettes/api-packages.html)
+
+- [Good R Packages](http://blog.revolutionanalytics.com/2016/05/good-r-packages.html)
+
+- [Hidden functions in R](https://www.hsph.harvard.edu/statinformatics/soft/files/buildingrpackages.pdf)
+
+## Check routines
+
+- [Checking an R package ](http://kbroman.org/pkg_primer/pages/check.html)
+
+- [Older version of R](http://stackoverflow.com/questions/1188544/getting-windows-to-start-r-in-batch-mode-using-the-start-command)
