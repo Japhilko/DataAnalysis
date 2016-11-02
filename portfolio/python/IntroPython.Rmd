@@ -139,6 +139,8 @@ library(RPyGeo)
 
 - [Install Python 2 and 3](http://stackoverflow.com/questions/3809314/how-to-install-both-python-2-x-and-python-3-x-in-windows-7)
 
+- [Package Installation](http://www.lfd.uci.edu/~gohlke/pythonlibs/)
+
 ## Code chunk with python
 
 ```{python}
@@ -294,3 +296,9 @@ pyinstaller.py --onedir --name=my_app   HelloWorld.py
 - [PyCharm Edu](https://www.jetbrains.com/pycharm-edu/download/#section=windows-version)
 
 - [Installing and updating packages in PyCharm](https://www.jetbrains.com/help/pycharm/2016.1/installing-uninstalling-and-upgrading-packages.html)
+
+## Tutorials for python
+
+- [Getting started with Kivy](https://pythonprogramming.net/kivy-application-development-tutorial/)
+
+- [Tutorial in German](https://www.youtube.com/watch?v=dyJdLalc7TA&list=PLNmsVeXQZj7q0ao69AIogD94oBgp3E9Zs)
