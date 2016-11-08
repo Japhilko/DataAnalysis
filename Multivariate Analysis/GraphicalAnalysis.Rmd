@@ -31,6 +31,28 @@ require(plotrix)
 plotCI(x, F, ui=U, li=L)
 ```
 
+## [Plotting Time Series](https://cran.r-project.org/web/packages/timeSeries/vignettes/timeSeriesPlot.pdf)
+
+```{r}
+# install.packages("timeSeries")
+library(timeSeries)
+```
+
+```{r}
+tS1 <- 100 * cumulated(LPP2005REC[, 1]) # SBI (univariate)
+tS2 <- 100 * cumulated(LPP2005REC[, 1:2]) # SBI & SPI (bivariate)
+tS3 <- 100 * cumulated(LPP2005REC[, 1:3]) # SBI, SPI, SWIIT (Swiss Market)
+tS6 <- 100 * cumulated(LPP2005REC[, 1:6]) # Swiss and Foreign Market Indexes
+5
+```
+
+```{r}
+par(mfrow=c(1, 1))
+plot(tS3, plot.type="s")
+```
+
+
+
 ## Resources
 
 - [Computing and visualizing PCA in R](https://www.r-bloggers.com/computing-and-visualizing-pca-in-r/)
