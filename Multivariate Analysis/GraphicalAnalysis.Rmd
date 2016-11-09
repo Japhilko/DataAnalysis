@@ -20,6 +20,7 @@ install.packages("plotrix")
 
 
 ```{r}
+# install.packages("plotrix")
 library(plotrix)
 set.seed(0815)
 x <- 1:10
@@ -50,6 +51,18 @@ tS6 <- 100 * cumulated(LPP2005REC[, 1:6]) # Swiss and Foreign Market Indexes
 par(mfrow=c(1, 1))
 plot(tS3, plot.type="s")
 ```
+
+
+## Visualizing Categorical Data
+
+- [Working with categorical data with R and the vcd and vcdExtra packages](https://cran.r-project.org/web/packages/vcdExtra/vignettes/vcd-tutorial.pdf)
+
+- New Approaches in Visualization of Categorical Data: R Package extracat
+
+## Misc 
+
+- [Legends in Base Graphics](http://stackoverflow.com/questions/3932038/plot-a-legend-outside-of-the-plotting-area-in-base-graphics)
+
 
 
 
