@@ -63,3 +63,8 @@ output:
 - [Checking an R package ](http://kbroman.org/pkg_primer/pages/check.html)
 
 - [Older version of R](http://stackoverflow.com/questions/1188544/getting-windows-to-start-r-in-batch-mode-using-the-start-command)
+
+
+## Misc
+
+- [Naming Conventions](http://robinlovelace.net/r/2014/07/15/naming-conventions-r.html)
