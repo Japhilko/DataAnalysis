@@ -7,6 +7,9 @@ output:
     keep_md: true
 ---
 
+## [Learning SQL and Database Concepts](http://www.vertabelo.com/blog/notes-from-the-lab/18-best-online-resources-for-learning-sql-and-database)
+
+
 ## Relational Databases
 
 - SQL is used for querying
