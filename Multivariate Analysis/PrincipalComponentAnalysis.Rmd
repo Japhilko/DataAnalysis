@@ -7,21 +7,23 @@ output:
     keep_md: true
 ---
 
-
-```{r,echo=F}
-vCA <- T
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
 ```
 
 ## Introduction
 
 - [Introduction to Principal Component Analysis](https://tgmstat.wordpress.com/2013/11/21/introduction-to-principal-component-analysis-pca/)
+
 - dimensionality reduction technique
 - better visualisation of data
 - high correlation between covariates
 - PCA can produce linear combinations of the covariates
 
-## [Computing the principal components](https://www.r-bloggers.com/computing-and-visualizing-pca-in-r/)
+[Computing the principal components](https://www.r-bloggers.com/computing-and-visualizing-pca-in-r/)
+
+
 
 
 ## [Quick-R on Principal Component Analysis](http://www.statmethods.net/advstats/factor.html)
@@ -93,7 +95,8 @@ install.packages("psych")
 ```
 
 
-```{r}
+```{r,eval=F}
+# install.packages("psych")
 library(psych)
 fit <- principal(mydata, nfactors=5, rotate="varimax")
 fit # print results 
@@ -121,6 +124,7 @@ fit # print results
 [Source](https://1.bp.blogspot.com/-wXHcQqUbIg4/VJuuXbZlUKI/AAAAAAAACGc/ythfr395Z5s/s1600/Screen+Shot+2014-12-25+at+2.25.12+PM.png)
 
 ## [Plot Principal Component Analysis](https://martinsbioblogg.wordpress.com/2013/06/26/using-r-two-plots-of-principal-component-analysis/)
+
 ```{r}
 sample.groups <- c(rep(1, 10), rep(2, 10), rep(3, 10),
   rep(4, 10), rep(5, 10))
@@ -160,7 +164,16 @@ qplot(x=Var1, y=Var2, data=melt(cor(data)), geom="tile",
 fill=value)
 ```
 
+## [PCA with categorical variables](https://cran.r-project.org/web/packages/PCAmixdata/PCAmixdata.pdf)
 
+```{r}
+install.packages("PCAmixdata")
+library(PCAmixdata)
+data(decathlon)
+kable(head(decathlon))
+```
+
+- [Correspondence analysis](http://r.789695.n4.nabble.com/PCA-and-categorical-data-td881939.html)
 
 ## Resources
 

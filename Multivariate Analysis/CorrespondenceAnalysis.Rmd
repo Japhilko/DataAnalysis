@@ -1,0 +1,37 @@
+---
+title: "Correspondence Analysis"
+author: "Jan-Philipp Kolb"
+date: "14 November 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Package FactoMineR
+
+```{r}
+# install.packages("FactoMineR")
+library("FactoMineR")
+
+data("children")
+res.ca <- CA(children, col.sup = 6:8, row.sup = 15:18)
+```
+
+## [Multiple Correspondence Analysis](http://gastonsanchez.com/how-to/2012/10/13/MCA-in-R/)
+
+```{r}
+library(FactoMineR)
+data(tea)
+res.mca <- MCA(tea,quanti.sup=19,
+               quali.sup=20:36)
+summary(res.mca)
+plot(res.mca,invisible=c("var","quali.sup","quanti.sup"),cex=0.7)
+```
+
+## Resources
+
+- [Quick R on Correspondence Analysis](http://www.statmethods.net/advstats/ca.html)
+
+- [Correspondence Analysis in Archaeology](http://cainarchaeology.weebly.com/)
