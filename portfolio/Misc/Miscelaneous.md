@@ -1,11 +1,6 @@
----
-title: "Miscelaneous"
-author: "Jan-Philipp Kolb"
-date: "07/27/2015"
-output: 
-  html_document: 
-    keep_md: yes
----
+# Miscelaneous
+Jan-Philipp Kolb  
+07/27/2015  
 
 ## Requested Expert Knowledge
 
@@ -80,13 +75,13 @@ Journals:
 
 - [Insights from the field](http://surveyinsights.org/)
 
-## Interesting Journals
+## Interesting Papers
+
+[Impact factors](http://www.scimagojr.com/journalrank.php?category=3312)
 
 [Journal of applied social science](http://jax.sagepub.com/)
 
-- [Sociological Practice](http://www.springer.com/social+sciences/journal/11210)
-
-- [Example on georeferencing](http://jax.sagepub.com/content/os-21/1/10.full.pdf+html)
+- [example on georeferencing](http://jax.sagepub.com/content/os-21/1/10.full.pdf+html)
 
 
 [Political Geography](http://www.journals.elsevier.com/political-geography/)
@@ -106,9 +101,7 @@ Journals:
 
 ## Misc on publishing
 
-- [Impact factors](http://www.scimagojr.com/journalrank.php?category=3312)
-
-- [Discussion on impact factor](https://www.researchgate.net/post/How_to_find_ISI_journals_by_impact_factor_zero2)
+[Discussion on impact factor](https://www.researchgate.net/post/How_to_find_ISI_journals_by_impact_factor_zero2)
 
 [Critique on scholarly publishing](https://scholarlyoa.com/2015/01/02/bealls-list-of-predatory-publishers-2015/)
 
@@ -138,7 +131,8 @@ journals easy to publish
 
 - [JRI - Java/R Interface](http://rforge.net/JRI/index.html)
 
-```{r,eval=F}
+
+```r
 system.file("jri",package="rJava")
 library(rJava)
 ```
