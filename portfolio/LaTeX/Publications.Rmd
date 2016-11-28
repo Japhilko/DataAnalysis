@@ -84,7 +84,14 @@ xtable(tabAB)
 ```{r}
 colnames(tabAB)[3] <- "$A^2$"
 xtable(tabAB)
+xtabAB <- xtable(tabAB)
 ```
+
+```{r}
+# align(xtabAB)
+```
+
+
 
 ## Flushed left
 
