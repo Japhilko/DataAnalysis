@@ -84,6 +84,26 @@ legend('center','groups',c("A","B","C"), lty = c(1,2,3),
 ```
 
 
+## [Producing a line plot with `ggplot2`](http://www.sthda.com/english/wiki/ggplot2-line-types-how-to-change-line-types-of-a-graph-in-r-software)
+
+
+```{r}
+df2 <- data.frame(sex = rep(c("Female", "Male"), each=3),
+                  time=c("breakfeast", "Lunch", "Dinner"),
+                  bill=c(10, 30, 15, 13, 40, 17) )
+head(df2)
+```
+
+
+```{r}
+ggplot(df2, aes(x=time, y=bill, group=sex)) +
+  geom_line(aes(linetype=sex, color=sex))+
+  geom_point(aes(color=sex))+
+  theme(legend.position="top")
+```
+
+- [Size of axis labels](http://stackoverflow.com/questions/14942681/change-size-of-axes-title-and-labels-in-ggplot2)
+
 
 ## Resources
 
