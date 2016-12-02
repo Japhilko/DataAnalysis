@@ -86,6 +86,29 @@ Journals:
 
 - [Sociological Practice](http://www.springer.com/social+sciences/journal/11210)
 
+- [Journal of Computer Science](http://thescipub.com/journals/jcs)
+
+- [Journal of Artificial Societies and Social Simulation](http://jasss.soc.surrey.ac.uk/JASSS.html)
+
+- [Data in Brief](http://www.journals.elsevier.com/data-in-brief)
+
+- [Data Science Journal](http://datascience.codata.org/)
+
+- [Software Journal](http://www.jsoftware.us/list-163-1.html)
+
+- [Journal of Computer Science](http://www.scimagojr.com/journalsearch.php?q=11700154336&tip=sid&clean=0)
+
+- [Journal of Computer Science and Technology](http://www.scimagojr.com/journalsearch.php?q=26132&tip=sid&clean=0)
+
+- [Education and Information Technologies](http://www.scimagojr.com/journalsearch.php?q=144955&tip=sid&clean=0)
+
+- [Journal of Regional Analysis and Policy](http://www.scimagojr.com/journalsearch.php?q=24405&tip=sid&clean=0)
+
+## Examples for Journal Articles
+
+- maps - [JOSIS](http://www.josis.org/index.php/josis/article/viewFile/240/155)
+
+
 - [Example on georeferencing](http://jax.sagepub.com/content/os-21/1/10.full.pdf+html)
 
 
