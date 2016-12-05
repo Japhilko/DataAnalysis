@@ -145,6 +145,12 @@ journals easy to publish
 
 [find journals](https://www.researchgate.net/post/How_to_find_ISI_journals_by_impact_factor_zero2)
 
+
+```{r,eval=F}
+install.packages("rticles")
+```
+
+
 ## Open Source platforms
 
 - [Intro Github](https://guides.github.com/introduction/)
