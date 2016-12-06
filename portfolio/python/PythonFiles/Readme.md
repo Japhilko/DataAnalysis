@@ -285,5 +285,6 @@ pyinstaller.py --onedir --name=my_app   HelloWorld.py
 
 - [Matthias Bussonnier](https://www.youtube.com/results?search_query=pycon+Matthias+Bussonnier)
 
-https://www.youtube.com/watch?v=aintdHnqaio
-https://www.youtube.com/results?search_query=pycon+steve+dower
+- [Steve Dower: What's coming in Python 3.5 and why you should be excited](https://www.youtube.com/watch?v=aintdHnqaio)
+
+- [Steve Dower](https://www.youtube.com/results?search_query=pycon+steve+dower)
