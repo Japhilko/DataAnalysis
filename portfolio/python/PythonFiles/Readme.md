@@ -280,3 +280,10 @@ pyinstaller.py --onedir --name=my_app   HelloWorld.py
 ## PyCharm
 
 - [Getting started with Pycharm](https://www.youtube.com/watch?v=BPC-bGdBSM8&list=PLQ176FUIyIUZ1mwB-uImQE-gmkwzjNLjP)
+
+## Videos on Python
+
+- [Matthias Bussonnier](https://www.youtube.com/results?search_query=pycon+Matthias+Bussonnier)
+
+https://www.youtube.com/watch?v=aintdHnqaio
+https://www.youtube.com/results?search_query=pycon+steve+dower
