@@ -26,17 +26,15 @@ install.packages("ReporteRs")
 - [ReporteRs](http://www.graphdoctor.com/archives/3)
 
 
-## 
+## Various Topics
+
+- [Adding the recent date to Rmarkdown document](http://stackoverflow.com/questions/23449319/yaml-current-date-in-rmarkdown)
 
 - [Bibliographies and Citations](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
 
 - [RStudio Formats](http://rmarkdown.rstudio.com/formats.html)
 
 - [Creating New Formats](http://rmarkdown.rstudio.com/developer_custom_formats.html)
-
-
-
-
 
 ## Transform from LaTeX to Word
 
