@@ -104,6 +104,9 @@ Journals:
 
 - [Journal of Regional Analysis and Policy](http://www.scimagojr.com/journalsearch.php?q=24405&tip=sid&clean=0)
 
+- [gis.science](http://gispoint.de/autorenhinweise/autorenhinweise-gis-science.html)
+
+
 ## Examples for Journal Articles
 
 - maps - [JOSIS](http://www.josis.org/index.php/josis/article/viewFile/240/155)
