@@ -39,3 +39,9 @@ install.packages("ReporteRs")
 ## Transform from LaTeX to Word
 
 - [Converters](http://www.tug.org/utilities/texconv/textopc.html)
+
+- [Keep TeX](http://rmarkdown.rstudio.com/pdf_document_format.html)
+
+## Citations
+
+[Citing R packages](http://www.carlboettiger.info/2012/03/20/citing-r-packages.html)
