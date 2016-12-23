@@ -1,6 +1,6 @@
 # Data Analysis
 
-This is a synopsis on my findings on data analysis.
+This is a synopsis on my findings on data analysis and [data science](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/Misc/DataScience.Rmd).
 
 # Methods - Maths and Statistics
 
