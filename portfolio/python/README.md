@@ -10,3 +10,7 @@ Get started with Python
 
 
 ## [Web Development](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/python/WebDevelopment/Django.Rmd)
+
+## Links
+
+- [Awsome python](https://github.com/vinta/awesome-python)
