@@ -55,7 +55,13 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 - [Overview R-packages](http://www.rstudio.com/ide/docs/packages/overview)
 
+## How to publish research
+
+- [7 steps to publishing in a scientific journal](https://www.elsevier.com/connect/7-steps-to-publishing-in-a-scientific-journal)
+
 ## Where to publish research
+
+- [Elsevier Journal Finder](http://journalfinder.elsevier.com/)
 
 - [In which journals should I publish my software?](http://www.software.ac.uk/resources/guides/which-journals-should-i-publish-my-software)
 
