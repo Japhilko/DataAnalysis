@@ -20,15 +20,6 @@ output:
 
 - [Generating .rd files](https://cran.r-project.org/web/packages/roxygen2/vignettes/rd.html)
 
-## Upload package to CRAN
-
-- [Upload to CRAN](http://kbroman.org/pkg_primer/pages/cran.html)
-
-- [Submit a package](https://cran.r-project.org/submit.html)
-
-- [CRAN policy](https://cran.r-project.org/submit.html)
-- [CRAN Repository Policy](https://cran.r-project.org/web/packages/policies.html)
-
 ## Checking a package
 
 - [Package check](http://r-pkgs.had.co.nz/check.html)
@@ -63,6 +54,16 @@ output:
 - [Checking an R package ](http://kbroman.org/pkg_primer/pages/check.html)
 
 - [Older version of R](http://stackoverflow.com/questions/1188544/getting-windows-to-start-r-in-batch-mode-using-the-start-command)
+
+## Upload package to CRAN
+
+- [Upload to CRAN](http://kbroman.org/pkg_primer/pages/cran.html)
+
+- [Submit a package](https://cran.r-project.org/submit.html)
+
+- [CRAN policy](https://cran.r-project.org/submit.html)
+- [CRAN Repository Policy](https://cran.r-project.org/web/packages/policies.html)
+
 
 
 ## Misc
