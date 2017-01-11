@@ -4,4 +4,8 @@ Jan-Philipp Kolb
 
 
 
-## 
+## Topics
+
+- [Authoring presentations with R](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/R/presentations/Presentations.Rmd)
+
+- [Write R-Packages](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/R/Rmarkdown/WriteRpackages.md)
