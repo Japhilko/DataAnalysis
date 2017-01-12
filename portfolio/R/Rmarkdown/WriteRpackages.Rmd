@@ -55,7 +55,21 @@ output:
 
 - K. Broman - [Getting your R package on CRAN](http://kbroman.org/pkg_primer/pages/cran.html)
 
-- [Submit a package](https://cran.r-project.org/submit.html)
+- Page to - [Submit package to CRAN](https://cran.r-project.org/submit.html)
+
+- .tar.gz files only
+
+## [Building and installing an R package](http://kbroman.org/pkg_primer/pages/build.html)
+
+- If you are using windows - install [Rtools](https://cran.r-project.org/bin/windows/Rtools/)
+
+- Open Powershell
+- Go to the directory that contains your package directory.
+
+```
+R CMD build package_xy
+```
+
 
 - [CRAN policy](https://cran.r-project.org/submit.html)
 - [CRAN Repository Policy](https://cran.r-project.org/web/packages/policies.html)
