@@ -16,3 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 - [Authoring presentations with R](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/R/presentations/Presentations.Rmd)
 
 - [Write R-Packages](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/R/Rmarkdown/WriteRpackages.md)
+
+- [Elaborate Shiny Apps](https://github.com/Japhilko/DataAnalysis/tree/master/portfolio/R/shinyApps)
+
+- [Webscraping with R](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/R/Webscraping/Webscraping.R)
