@@ -1,0 +1,14 @@
+---
+title: "Overview Presentations with R"
+author: "Jan-Philipp Kolb"
+date: "12 Januar 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Using CSS
+
+- [Custom CSS](http://rmarkdown.rstudio.com/slidy_presentation_format.html#custom_css)
