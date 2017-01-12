@@ -39,11 +39,18 @@ output:
 - [Roxygen](http://stackoverflow.com/questions/8597993/does-roxygen2-automatically-write-namespace-directives-for-imports-packages)
 
 
-- Help to get the meta things right - [Roxygen 2](http://r-pkgs.had.co.nz/man.html) | [Writing vignettes](http://kbroman.org/pkg_primer/pages/vignettes.html)
+- Help to get the meta things right - [Roxygen 2](http://r-pkgs.had.co.nz/man.html) 
 
-- [Building and testing packages](https://support.rstudio.com/hc/en-us/articles/200486508-Building-Testing-and-Distributing-Packages)
+
+## Package Vignettes
+
+- [Non Sweave Vignettes](https://cran.r-project.org/doc/manuals/r-devel/R-exts.html#Non_002dSweave-vignettes)
+
+- [Writing vignettes](http://kbroman.org/pkg_primer/pages/vignettes.html)
 
 ## Check routines
+
+- [Building and testing packages](https://support.rstudio.com/hc/en-us/articles/200486508-Building-Testing-and-Distributing-Packages)
 
 - [Package check](http://r-pkgs.had.co.nz/check.html)
 

@@ -12,3 +12,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Using CSS
 
 - [Custom CSS](http://rmarkdown.rstudio.com/slidy_presentation_format.html#custom_css)
+
+
+- [Cheatsheet Rmarkdown](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
