@@ -85,4 +85,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [the 9 best languages for crunching data](http://www.fastcompany.com/3030716/the-9-best-languages-for-crunching-data)
 
+
+## Examples for Data Mining
+
+- [Spiegel Mining](https://media.ccc.de/v/33c3-7912-spiegelmining_reverse_engineering_von_spiegel-online#video&t=240)
+
 ## Root Cause Analysis

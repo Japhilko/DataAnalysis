@@ -77,11 +77,14 @@ output:
 R CMD build package_xy
 ```
 
+- [Customizing Package Build Options](https://support.rstudio.com/hc/en-us/articles/200486518-Customizing-Package-Build-Options)
+
+
 
 - [CRAN policy](https://cran.r-project.org/submit.html)
 - [CRAN Repository Policy](https://cran.r-project.org/web/packages/policies.html)
 
-
+- [Releasing a package](http://r-pkgs.had.co.nz/release.html)
 
 ## Misc
 
@@ -91,4 +94,6 @@ R CMD build package_xy
 
 
 - [Hidden functions in R](https://www.hsph.harvard.edu/statinformatics/soft/files/buildingrpackages.pdf)
+
+- [Checklist for an R package update in CRAN](http://www.wais.kamil.rzeszow.pl/checklist-for-an-r-package-update-in-cran/)
 
