@@ -282,7 +282,7 @@ The R-Files
 
 [CRE - Cloud Computing](http://cre.fm/cre176-cloud-computing)
 
-
+- [Interesting Books](https://www.r-bloggers.com/books-i-like/)
 
 ## Filehosting
 
