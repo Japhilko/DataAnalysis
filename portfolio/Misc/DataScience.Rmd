@@ -90,4 +90,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Spiegel Mining](https://media.ccc.de/v/33c3-7912-spiegelmining_reverse_engineering_von_spiegel-online#video&t=240)
 
+- [Website SpiegelMining](http://www.dkriesel.com/spiegelmining)
+ and [David Kriesel](http://www.dkriesel.com/)
 ## Root Cause Analysis
