@@ -186,3 +186,8 @@ git clean - df
 ```
 
 [Solve Problems with github](http://stackoverflow.com/questions/15127078/git-pull-is-not-possible-unmerged-files)
+
+
+- [ re-educating people who learned R before it was cool](http://kbroman.org/hipsteR/)
+
+- [Slidify my R journey](https://www.r-bloggers.com/slidify-my-r-journey-from-matlabulous-to-rcrimemap/)
