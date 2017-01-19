@@ -269,6 +269,7 @@ The R-Files
 ## Github Usage
 
 - [Cloning a repo on linux](https://help.github.com/articles/cloning-a-repository/)
+- [Github ubuntu](https://www.howtoforge.com/tutorial/install-git-and-github-on-ubuntu-14.04/)
 
 ## Android Apps
 
