@@ -5,6 +5,10 @@ date: "05/05/2015"
 output: ioslides_presentation
 ---
 
+## First Steps
+
+- [Install LaTeX on Linux](http://milq.github.io/install-latex-ubuntu-debian/)
+
 ## Creating a minimal example
 
 - [Minimal example](ftp://ftp.dante.de/tex-archive/info/dickimaw/dickimaw-minexample.pdf)
