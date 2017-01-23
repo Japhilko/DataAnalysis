@@ -1,11 +1,6 @@
----
-title: "Notebooks"
-author: "Jan-Philipp Kolb"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-output: 
-  html_document: 
-    keep_md: yes
----
+# Notebooks
+Jan-Philipp Kolb  
+`r format(Sys.time(), '%d %B, %Y')`  
 
 ## Information
 

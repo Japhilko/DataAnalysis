@@ -11,3 +11,5 @@ output: html_document
 - [Happy collaboration with Rmd to docx](http://rmarkdown.rstudio.com/articles_docx.html)
 
 - [Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+
+- [Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
