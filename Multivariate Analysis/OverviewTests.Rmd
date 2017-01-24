@@ -1,12 +1,39 @@
 ---
 title: "Overview Statistical Tests"
 author: "Jan-Philipp Kolb"
-date: "27. Juli 2015"
-output: html_document
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document: 
+    keep_md: yes
 ---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,cache=T)
+```
+
 
 ## Overview
 
 - [Overview](http://statistik-dresden.de/archives/6026)
 
 ![Tests](http://www.methodenberatung.uzh.ch/static/entscheidbaum/entscheidbaum.jpg)
+
+- Maße der zentralen Tendenz sind der Mittelwert und der Median zum Beispiel. 
+
+## [Mann-Whitney U Test](https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test)
+
+- R Tutorial [Mann-Whitney-Wilcoxon Test](http://www.r-tutor.com/elementary-statistics/non-parametric-methods/mann-whitney-wilcoxon-test)
+
+```{r}
+mtcars$mpg
+```
+
+```{r}
+table(mtcars$am )
+```
+
+```{r}
+wilcox.test(mpg ~ am, data=mtcars) 
+```
+
