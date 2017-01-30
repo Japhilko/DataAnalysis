@@ -8,7 +8,8 @@ output: md_document
 ## Julia Language
 
 
-[Learning Julia](http://julialang.org/learning/)
+- [Learning Julia](http://julialang.org/learning/)
 
+- [Julia by Example](https://juliabyexample.helpmanual.io/)
 
 

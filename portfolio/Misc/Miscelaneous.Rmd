@@ -306,3 +306,5 @@ The R-Files
 ## Write CSS files
 
 - [CSS Examples](http://www.w3schools.com/css/css_examples.asp)
+
+- [thumbs.db](http://www.giga.de/software/multimedia/welchen-zweck-hat-thumbs.db-und-wie-kann-man-sie-deaktivieren/)
