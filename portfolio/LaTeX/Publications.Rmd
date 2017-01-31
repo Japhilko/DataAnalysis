@@ -19,7 +19,7 @@ output: ioslides_presentation
 - [Overview of fonts](http://www.math.tu-dresden.de/~rudl/latex/fonts.pdf)
 
 
-![picFonts](http://homepage3.nifty.com/tsato/xfig/html/images/text-font-panel.gif)
+- [Example for Fonts](http://homepage3.nifty.com/tsato/xfig/html/images/text-font-panel.gif)
 
 ## Listings environment
 
@@ -57,10 +57,9 @@ barplot(1,col=rgb(.9,0.8,0.6))
 
 ## XeLaTeX
 
-<http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=xetex>
+- [Xetex](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=xetex)
 
-<http://www.r-bloggers.com/using-sweave-with-xelatex/>
-
+- [Using sweave with xelatex](http://www.r-bloggers.com/using-sweave-with-xelatex/)
 
 ## Making LaTeX tables with knitr
 
@@ -95,7 +94,13 @@ xtabAB <- xtable(tabAB)
 # align(xtabAB)
 ```
 
+## Links in LaTeX documents
 
+- [Package hyperref](https://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_hyperref)
+
+- [Coloured Links](http://texwelt.de/wissen/fragen/1121/wie-entferne-ich-die-roten-rahmen-um-hyperlinks)
+
+- [Per Cent Sign in Link](http://tex.stackexchange.com/questions/12230/getting-percent-sign-into-an-url-in-a-footnote)
 
 ## Misc
 
