@@ -245,6 +245,8 @@ The R-Files
 
 ## Conferences
 
+- [R meetups and conferences](https://www.r-bloggers.com/list-of-r-conferences-and-user-groups-2/)
+
 - [Overview of conferences](http://lanyrd.com/)
 
 - [EARL conference](http://www.earl-conference.com/)
