@@ -85,6 +85,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [the 9 best languages for crunching data](http://www.fastcompany.com/3030716/the-9-best-languages-for-crunching-data)
 
+- [A Glimpse into The Daily Life of a Data Scientist](https://www.r-bloggers.com/a-glimpse-into-the-daily-life-of-a-data-scientist/)
+
+- [Choosing Software to Publish your Data Science Portfolio](https://www.r-bloggers.com/choosing-software-to-publish-your-data-science-portfolio/)
 
 ## Examples for Data Mining
 
@@ -92,4 +95,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Website SpiegelMining](http://www.dkriesel.com/spiegelmining)
  and [David Kriesel](http://www.dkriesel.com/)
+
+
 ## Root Cause Analysis

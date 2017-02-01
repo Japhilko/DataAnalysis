@@ -29,3 +29,6 @@ git push
 <https://support.microsoft.com/de-de/kb/912997>
 <http://www.pcwelt.de/tipps/Update-Dateien-loeschen-8357046.html>
 
+## Links
+
+- [Using github and rstudio](https://www.r-bloggers.com/version-control-file-sharing-and-collaboration-using-github-and-rstudio/)
