@@ -132,3 +132,5 @@ library(SparkR)
 - [Tableau](http://www.tableau.com/de-de)
 
 - [Tableau for free](https://public.tableau.com/s/)
+
+- [Excellent Tutorials at KDD2015](http://www.kdd.org/kdd2015/tutorial.html)
