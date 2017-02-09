@@ -98,3 +98,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ## Root Cause Analysis
+
+## Links
+
+- [Emily Robinson, from Social Scientist to Data Scientist](https://www.r-bloggers.com/emily-robinson-from-social-scientist-to-data-scientist/)
+
+
+- [What Programming Languages Are Used Most on Weekends?](https://www.r-bloggers.com/what-programming-languages-are-used-most-on-weekends/)
