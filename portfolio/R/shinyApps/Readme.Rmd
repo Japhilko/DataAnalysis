@@ -1,0 +1,27 @@
+---
+title: "Readme"
+author: "Jan-Philipp Kolb"
+date: "16 Februar 2017"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
+
+
+- [How to run Shiny apps](C:\Users\kolbjp\Documents\GitHub\DataAnalysis\portfolio\R\shinyApps)
+
+```{r}
+library(shiny)
+runGitHub("shiny_example", "rstudio")
+```
+
+```{r}
+runGitHub("Japhilko/ShinyApps/EurostatMapApp")
+```
+
