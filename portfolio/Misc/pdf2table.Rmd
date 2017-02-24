@@ -1,0 +1,55 @@
+---
+title: "PDF to table"
+author: "Jan-Philipp Kolb"
+date: "24 Februar 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## In General
+
+- [Extract / Identify Tables from PDF python](http://stackoverflow.com/questions/28532770/extract-identify-tables-from-pdf-python)
+
+- [Extracting table contents from a collection of PDF files](http://stackoverflow.com/questions/17217194/extracting-table-contents-from-a-collection-of-pdf-files/26110587#26110587)
+
+- [tool pdftables](https://pdftables.com/)
+
+## Use Case
+
+```{r}
+# https://www.r-bloggers.com/introducing-pdftools-a-fast-and-portable-pdf-extractor/
+
+# http://stackoverflow.com/questions/9185831/reading-data-from-pdf-files-into-r
+
+# install.packages("pdftools")
+
+library(pdftools)
+
+setwd("J:/Work/ESS/ERIC/Workprogramme/SamplingAndWeighting_3rdWP")
+txt <- pdf_text("ITT-Sampling-Expert-Panel-Chair-updated.pdf")
+
+cat(txt[5])
+
+download.file("http://arxiv.org/pdf/1403.2805.pdf", "1403.2805.pdf", mode = "wb")
+txt <- pdf_text("1403.2805.pdf")
+
+cat(txt[1])
+```
+
+
+
+
+## Converting PDF tables with R
+
+- [Convert PDF Tables](https://cran.r-project.org/web/packages/pdftables/vignettes/convert_pdf_tables.html)
+
+- [Package pdftables](https://cran.r-project.org/web/packages/pdftables/pdftables.pdf)
+
+- [Introducing pdftools - A fast and portable PDF extractor](https://ropensci.org/blog/2016/03/01/pdftools-and-jeroen)
+
+- [Reading table data from PDF files](https://stat.ethz.ch/pipermail/r-help/2012-February/302424.html)
+
+- [Reading PDF files into R for text mining](http://data.library.virginia.edu/reading-pdf-files-into-r-for-text-mining/)
