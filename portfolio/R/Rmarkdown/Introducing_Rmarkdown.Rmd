@@ -15,3 +15,4 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 
+- [Interactive Documents](http://rmarkdown.rstudio.com/authoring_shiny.html)
