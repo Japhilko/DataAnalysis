@@ -1,0 +1,64 @@
+---
+title: "Word Documents with Rmarkdown"
+author: "Jan-Philipp Kolb"
+date: "7 MÃ¤rz 2017"
+output:
+  word_document:
+    reference_docx:
+      Rmarkdown_word_reference.docx
+  html_document:
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [Word Documents](http://rmarkdown.rstudio.com/word_document_format.html)
+
+
+- [Happy collaboration with Rmd to docx  ](http://rmarkdown.rstudio.com/articles_docx.html)
+
+```{r}
+library(knitr)
+tab1c <- data.frame(a=1:4,b=4:1)
+kable(tab1c)
+```
+
+## Creating tables
+
+- [Tables with htmlTable and some alternatives](https://cran.r-project.org/web/packages/htmlTable/vignettes/tables.html)
+
+- [Figures and tables ](http://kbroman.org/knitr_knutshell/pages/figs_tables.html)
+
+## HTML table
+
+```{r,eval=F}
+library(htmlTable)
+htmlTable(output,
+          header =  paste(c("1st", "2nd",
+                            "3rd", "4th"), "header"),
+          rnames = paste(c("1st", "2nd",
+                           "3rd", "4th"), "row"),
+          rgroup = c("Group A",
+                     "Group B"),
+          n.rgroup = c(2,2),
+          cgroup = c("Cgroup 1", "Cgroup 2&dagger;"),
+          n.cgroup = c(2,2), 
+          caption="Basic table with both column spanners (groups) and row groups",
+          tfoot="&dagger; A table footer commment")
+```
+
+```{r}
+library(xtable)
+
+xtable(tab1c)
+```
+
+## [Knitr & Rmarkdown docx tables](http://stackoverflow.com/questions/37671868/knitr-rmarkdown-docx-tables)
+
+- [Style Basics in Word](https://support.office.com/en-us/article/Style-basics-in-Word-d382f84d-5c38-4444-98a5-9cbb6ede1ba4#bm1)
+
+- [Table styles](https://support.office.com/en-us/article/Style-basics-in-Word-d382f84d-5c38-4444-98a5-9cbb6ede1ba4#bm2e)
+
+- [Table styles - explanation in German](http://praxistipps.chip.de/word-eigene-tabellenvorlagen-erstellen_2273)
