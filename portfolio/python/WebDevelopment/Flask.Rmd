@@ -1,0 +1,16 @@
+---
+title: "Flask"
+author: "Jan-Philipp Kolb"
+date: "2 März 2017"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Flask Tutorials
+
+- Miguel Grinberg - [The Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)

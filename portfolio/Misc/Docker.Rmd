@@ -1,0 +1,24 @@
+---
+title: "Docker"
+author: "Jan-Philipp Kolb"
+date: "2 März 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
+
+- [Install docker toolbox](https://github.com/docker/toolbox/releases/tag/v1.12.5)
+
+- [Getting started with Docker](https://docs.docker.com/engine/getstarted/)
+
+- [Verify your installation](https://docs.docker.com/engine/getstarted/step_one/#step-3-verify-your-installation)
+
+- [Docker problem](http://stackoverflow.com/questions/33725779/failed-to-open-create-the-internal-network-vagrant-on-windows10/33733486#33733486)
+
+- [Docker quick start treminal fails to start](https://github.com/docker/toolbox/issues/473)
+
+- [An error ocurred trying to connect](https://forums.docker.com/t/windows-an-error-occurred-trying-to-connect/4384/2)
