@@ -42,6 +42,11 @@ install.packages("ReporteRs")
 
 - [Keep TeX](http://rmarkdown.rstudio.com/pdf_document_format.html)
 
+## Pandoc Tables
+
+
+
+
 ## Citations
 
 [Citing R packages](http://www.carlboettiger.info/2012/03/20/citing-r-packages.html)
