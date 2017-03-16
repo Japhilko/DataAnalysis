@@ -57,3 +57,5 @@ library("SparkR")
 ## [Getting started with SparkR](http://www.danielemaasit.com/getting-started-with-sparkr/)
 
 - [Apache Spark for Big Analytics](https://www.r-bloggers.com/apache-spark-for-big-analytics/)
+
+- [New screencast: using R and RStudio to install and experiment with Apache Spark](https://www.r-bloggers.com/new-screencast-using-r-and-rstudio-to-install-and-experiment-with-apache-spark/)
