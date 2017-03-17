@@ -53,3 +53,10 @@ cat(txt[1])
 - [Reading table data from PDF files](https://stat.ethz.ch/pipermail/r-help/2012-February/302424.html)
 
 - [Reading PDF files into R for text mining](http://data.library.virginia.edu/reading-pdf-files-into-r-for-text-mining/)
+
+## Merge pdfs
+
+```{python,eval=F}
+from pyPdf import PdfFileWriter, PdfFileReader
+```
+
