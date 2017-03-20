@@ -134,3 +134,7 @@ library(SparkR)
 - [Tableau for free](https://public.tableau.com/s/)
 
 - [Excellent Tutorials at KDD2015](http://www.kdd.org/kdd2015/tutorial.html)
+
+## Docker
+
+- [Getting Started with Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
