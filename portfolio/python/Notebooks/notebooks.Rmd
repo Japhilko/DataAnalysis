@@ -17,6 +17,7 @@ output:
 - [Turn a GitHub repo into a collection of interactive notebooks](http://mybinder.org/)
 
 - [Rendering Notebooks on GitHub](http://blog.jupyter.org/2015/05/07/rendering-notebooks-on-github/)
+- [Presentation slides with Jupyter Notebook](http://echorand.me/presentation-slides-with-jupyter-notebook.html)
 
 - [nbconvert](http://nbconvert.readthedocs.org/en/latest/usage.html)
 
