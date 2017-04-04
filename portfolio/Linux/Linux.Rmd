@@ -1,0 +1,14 @@
+---
+title: "Linux"
+author: "Jan-Philipp Kolb"
+date: "4 April 2017"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 

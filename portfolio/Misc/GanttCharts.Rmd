@@ -1,0 +1,21 @@
+---
+title: "Gantt Chart"
+author: "Jan-Philipp Kolb"
+date: "4 April 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Gantt Chart Excel
+
+- [Zellen vertikel mittig ausrichten](http://www.grundlagen-computer.de/software/vertikale-horizontale-ausrichtung-zellen-verbinden)
+
+- [Format auf mehrere Zeilen übertragen](https://www.controllingportal.de/Fachinfo/Excel-Tipps/Formate-schnell-mehrfach-uebertragen.html)
+
+
+## Export to pdf
+
+- [Weiße Flächen löschen](http://stackoverflow.com/questions/39758873/pdfrw-how-to-trim-white-space-around-the-page)
