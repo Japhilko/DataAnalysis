@@ -7,4 +7,10 @@ Created on Tue Apr 04 14:18:53 2017
 
 # !pip install pdfminer
 
-!pip install pdfCropMargins
+# https://pypi.python.org/pypi/pdfCropMargins
+
+# !pip install pdfCropMargins
+
+import pdfCropMargins
+
+pdf-crop-margins -h | more
