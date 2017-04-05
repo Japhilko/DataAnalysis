@@ -15,7 +15,33 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Format auf mehrere Zeilen übertragen](https://www.controllingportal.de/Fachinfo/Excel-Tipps/Formate-schnell-mehrfach-uebertragen.html)
 
+- [Sprache einstellen](http://praxistipps.chip.de/excel-sprache-aendern-so-gehts_49010)
+
+- [Linienart auf alle Felder übertragen](http://www.excel-helfer.de/excel-2010-rahmen-um-zellen-und-bereiche.html)
+
+
+- [Gleiche Zeilenbreite](https://www.experto.de/office/excel-2002-bis-2010-allen-zeilen-die-gleiche-zeilenhoehe-zuweisen.html)
 
 ## Export to pdf
 
 - [Weiße Flächen löschen](http://stackoverflow.com/questions/39758873/pdfrw-how-to-trim-white-space-around-the-page)
+
+
+
+- [pdfCropMargins](https://pypi.python.org/pypi/pdfCropMargins)
+
+```
+pdf-crop-margins -v -s -u J:/Work/Statistik/Kolb/ESS/Antrag/GanttChartSWEPTender6.pdf
+```
+
+
+```
+pdf-crop-margins -v -s -u J:/Work/Statistik/Kolb/ESS/Antrag/GanttChartSWEPTender_round8.pdf
+```
+
+
+
+```
+pdf-crop-margins -v -s -u J:/Work/Statistik/Kolb/ESS/Antrag/GanttChartSWEPTender_round9.pdf
+```
+
