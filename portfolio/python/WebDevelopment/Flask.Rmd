@@ -14,3 +14,17 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Flask Tutorials
 
 - Miguel Grinberg - [The Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+
+- [Miguel Grinberg - Flask Workshop](https://www.youtube.com/watch?v=DIcpEg77gdE)
+
+
+## Flask and Github
+
+- [Hosting static Flask sites for free on Github Pages](http://stevenloria.com/hosting-static-flask-sites-for-free-on-github-pages/)
+
+
+# HTML 
+
+- [Button](https://www.w3schools.com/tags/tag_button.asp)
+
+- [Icons](https://www.w3schools.com/icons/)
