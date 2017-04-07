@@ -67,4 +67,9 @@ pdf-crop-margins -v -s -u J:/Work/Statistik/Kolb/ESS/Antrag/GanttChartSWEPTender
 pdf-crop-margins -v -s -u J:/Work/Statistik/Kolb/ESS/Antrag/GanttChartSWEPTender_out.pdf
 ```
 
+```
+pdf-crop-margins -v -s -u J:/Work/Statistik/Kolb/ESS/Antrag/GanttChart/GanttChartSWEPTender_r9.pdf
+```
+
+
 
