@@ -112,3 +112,15 @@ Flushed left
 - [Include graphics](http://www.golatex.de/wiki/%5Cincludegraphics)
 
 - [Upper Case Letters in Bibliography](http://texwelt.de/wissen/fragen/6335/wie-verhindere-ich-dass-bibtex-meine-titel-in-kleinbuchstaben-schreibt)
+
+## Further tipps
+
+- [Scalebox](https://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_scalebox)
+
+- [page boundaries](http://overspice.blogspot.de/2007/10/latex-seitenrnder-einrichten.html)
+
+- [no page numbering](http://tex.stackexchange.com/questions/54333/no-page-numbering)
+
+- [xtable graph gallery](https://cran.r-project.org/web/packages/xtable/vignettes/xtableGallery.pdf)
+
+- [Pdfpages Paket ](https://www.namsu.de/Extra/pakete/Pdfpages.html)

@@ -54,6 +54,22 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Problem with pictures](http://stackoverflow.com/questions/11596777/flask-not-serving-pictures)
 
+
+
+## Web Apps
+
+- [Adding a map](http://jonathansoma.com/tutorials/webapps/mapping-our-schools/)
+
+- [Build a simple JS app](https://www.awwwards.com/build-a-simple-javascript-app-the-mvc-way.html)
+
+
+
 ## Examples
 
 - [Kill the yak](http://killtheyak.com/)
+
+- [JS apps](http://www.creativebloq.com/web-design/examples-of-javascript-1233964)
+
+- [Simple JS](http://userwww.sfsu.edu/infoarts/technical/howto/wilson.javascript.exampls.html)
+
+- [Simple JS examples](http://www.cs.princeton.edu/courses/archive/fall10/cos109/JS_topost/)
