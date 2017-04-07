@@ -22,6 +22,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Gleiche Zeilenbreite](https://www.experto.de/office/excel-2002-bis-2010-allen-zeilen-die-gleiche-zeilenhoehe-zuweisen.html)
 
+- [Text aus zwei Zellen in einer zusammenfassen](https://support.office.com/de-de/article/Kombinieren-von-Texten-aus-mehreren-Zellen-in-einer-Zelle-81ba0946-ce78-42ed-b3c3-21340eb164a6)
+
+- [Extra dicke Rahmenlinien](https://support.office.com/de-de/article/%C3%84ndern-der-Farbe-Art-oder-St%C3%A4rke-einer-Linie-f96364db-4e03-4d0d-9243-e19084e49253)
+
 ## Export to pdf
 
 - [Weiße Flächen löschen](http://stackoverflow.com/questions/39758873/pdfrw-how-to-trim-white-space-around-the-page)
@@ -44,7 +48,23 @@ pdf-crop-margins -v -s -u J:/Work/Statistik/Kolb/ESS/Antrag/GanttChartSWEPTender
 ```
 
 ```
-pdf-crop-margins -v -s -u J:/Work/Statistik/Kolb/ESS/Antrag/GanttChartSWEPTender7.pdf
+pdf-crop-margins -v -s -u J:/Work/Statistik/Kolb/ESS/Antrag/GanttChartSWEPTender9.pdf
+```
+
+
+```
+pdf-crop-margins -v -s -u J:/Work/Statistik/Kolb/ESS/Antrag/GanttChartSWEPTender_round8.pdf
+```
+
+
+
+```
+pdf-crop-margins -v -s -u J:/Work/Statistik/Kolb/ESS/Antrag/GanttChartSWEPTender_round9fin.pdf
+```
+
+
+```
+pdf-crop-margins -v -s -u J:/Work/Statistik/Kolb/ESS/Antrag/GanttChartSWEPTender_out.pdf
 ```
 
 
