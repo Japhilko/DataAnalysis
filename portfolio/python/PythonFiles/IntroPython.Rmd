@@ -313,3 +313,8 @@ pyinstaller.py --onedir --name=my_app   HelloWorld.py
 - [beaker](https://github.com/bbangert/beaker)
 
 - [exploring awesome python](https://talkpython.fm/episodes/show/96/exploring-awesome-python)
+
+
+## Further Links
+
+- [Can I make an Android app with Python?](https://www.quora.com/Can-I-make-an-Android-app-with-Python)
