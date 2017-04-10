@@ -1,15 +1,8 @@
----
-title: "Flask"
-author: "Jan-Philipp Kolb"
-date: "2 März 2017"
-output: 
-  html_document: 
-    keep_md: yes
----
+# Flask
+Jan-Philipp Kolb  
+2 März 2017  
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 ## Flask Tutorials
 
@@ -17,15 +10,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Miguel Grinberg - Flask Workshop](https://www.youtube.com/watch?v=DIcpEg77gdE)
 
+## Flask Tutorials
+
 - [Flask style](http://flask.pocoo.org/docs/0.12/tutorial/css/#tutorial-css)
 
-## Flask and Git
+## Flask and Github
 
 - [Hosting static Flask sites for free on Github Pages](http://stevenloria.com/hosting-static-flask-sites-for-free-on-github-pages/)
 
 - [Frozen Flask + Github Pages Example](https://github.com/sloria/flask-ghpages-example)
-
-- [Using Gitlab CI Feature To Build and Test Python Flask Application and MongoDB](https://medium.com/@farshid.ghods/using-gitlab-ci-feature-to-build-and-test-python-flask-application-and-mongodb-6e2de21a4219)
 
 ## CSS
 
@@ -63,13 +56,6 @@ knitr::opts_chunk$set(echo = TRUE)
 - [Build a simple JS app](https://www.awwwards.com/build-a-simple-javascript-app-the-mvc-way.html)
 
 
-- [Creating a Web App From Scratch Using Python Flask and MySQL](https://code.tutsplus.com/tutorials/creating-a-web-app-from-scratch-using-python-flask-and-mysql--cms-22972)
-
-- [Creating a Web App From Scratch Using Python Flask and MySQL](https://code.tutsplus.com/tutorials/creating-a-web-app-from-scratch-using-python-flask-and-mysql--cms-22972)
-
-- [jQuery with Flask Tutorial](https://pythonprogramming.net/jquery-flask-tutorial/)
-
-- [Websockets](https://blog.miguelgrinberg.com/post/easy-websockets-with-flask-and-gevent)
 
 ## Examples
 
