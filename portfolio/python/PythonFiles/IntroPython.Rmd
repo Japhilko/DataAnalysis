@@ -11,7 +11,7 @@ output:
 
 Popularity of Python
 
-- [Resons for python](http://www.fullstackpython.com/why-use-python.html)
+- [Reasons for python](http://www.fullstackpython.com/why-use-python.html)
 - [10 Reasons Python Rocks for Research](https://www.stat.washington.edu/~hoytak/blog/whypython.html)
 
 [pic](https://raw.githubusercontent.com/Japhilko/DataAnalysis/master/data/figure/tenReasonsPython.PNG)
