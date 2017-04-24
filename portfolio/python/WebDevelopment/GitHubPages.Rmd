@@ -1,0 +1,34 @@
+---
+title: "Creating a Github Page"
+author: "Jan-Philipp Kolb"
+date: "24 April 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## First steps
+
+- [Setting up a project website](https://pages.github.com/)
+
+- [Ready to get started? Roll vanilla, or generate a site for your project.](https://pages.github.com/)
+
+- [Creating Project Pages using the command line](https://help.github.com/articles/creating-project-pages-using-the-command-line/)
+
+```
+git clone https://github.com/user/repository.git
+```
+
+
+```
+git branch
+```
+
+
+```
+echo "My Page" > index.html
+git add index.html
+```
+
