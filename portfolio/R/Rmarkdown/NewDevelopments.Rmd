@@ -1,0 +1,30 @@
+---
+title: "New Developments"
+author: "Jan-Philipp Kolb"
+date: "11 Mai 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R-bloggers Intro
+
+-[Intro ](https://www.r-bloggers.com/technical-foundations-of-informatics-a-modern-introduction-to-r/)
+
+## [Creating a blog with R](https://github.com/rstudio/blogdown)
+
+```{r,eval=F}
+devtools::install_github('rstudio/blogdown')
+blogdown::install_hugo()
+```
+
+```{r}
+blogdown::new_site()
+```
+
+- [more info about creating a blog](https://bookdown.org/yihui/blogdown/)
+
+- [Github + Travis](https://docs.travis-ci.com/user/for-beginners)
+
