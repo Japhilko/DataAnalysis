@@ -1,0 +1,23 @@
+---
+title: "Dashboards"
+author: "Jan-Philipp Kolb"
+date: "21 Mai 2017"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Links
+
+- [Bookmarking state](https://shiny.rstudio.com/articles/bookmarking-state.html)
+
+- [shinydashboard](https://www.r-bloggers.com/shinydashboard-0-6-0/)
+
+```{r,eval=F}
+install.packages("shinydashboard")
+```
+
