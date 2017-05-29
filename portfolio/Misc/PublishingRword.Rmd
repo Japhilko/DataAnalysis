@@ -50,3 +50,5 @@ install.packages("ReporteRs")
 ## Citations
 
 [Citing R packages](http://www.carlboettiger.info/2012/03/20/citing-r-packages.html)
+
+- [Alterantives for Jabref](http://bib-it.sourceforge.net/index.php)
