@@ -310,3 +310,12 @@ The R-Files
 - [CSS Examples](http://www.w3schools.com/css/css_examples.asp)
 
 - [thumbs.db](http://www.giga.de/software/multimedia/welchen-zweck-hat-thumbs.db-und-wie-kann-man-sie-deaktivieren/)
+
+
+## Time tracking programs
+
+- python + track working time
+
+- [Worklog: A Python Work Time Logger Using SQLite](https://github.com/Maggeych/worklog)
+
+- [Best commandline time tracking application?](https://stackoverflow.com/questions/398344/best-commandline-time-tracking-application)
