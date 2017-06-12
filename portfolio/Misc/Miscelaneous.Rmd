@@ -319,3 +319,9 @@ The R-Files
 - [Worklog: A Python Work Time Logger Using SQLite](https://github.com/Maggeych/worklog)
 
 - [Best commandline time tracking application?](https://stackoverflow.com/questions/398344/best-commandline-time-tracking-application)
+
+
+## In the meantime - interesting websites
+
+- [Schockwellenreiter](http://blog.schockwellenreiter.de/index.html)
+
