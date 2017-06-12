@@ -105,3 +105,5 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 - [What Programming Languages Are Used Most on Weekends?](https://www.r-bloggers.com/what-programming-languages-are-used-most-on-weekends/)
+
+- [Download Emacs](https://sourceforge.net/projects/emacsbinw64/?source=typ_redirect)
