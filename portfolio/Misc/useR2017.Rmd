@@ -1,0 +1,31 @@
+---
+title: "UseR 2017 condensed"
+author: "Jan-Philipp Kolb"
+date: "6 Juli 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
+
+[Jim Hester](https://github.com/jimhester) - [SQL preview in Rstudio](https://github.com/rstudio/rstudio-conf/blob/master/2017/Database_Best_Practices-Jim_Hester/2017_01_13-RStudio_conf-Database_Best_Practices.Rmd)
+
+
+- [purr tutorial](https://github.com/cwickham/purrr-tutorial)
+
+
+- [teach data science to new users](https://github.com/mine-cetinkaya-rundel/2017-07-05-teach-ds-to-new-user/blob/master/teach-ds-to-new-user.pdf)
+
+
+```{r}
+install.packages("learnr")
+```
+
+- [Livestream User Conference](https://event.microsoft.com/events/2017/1707/UserConference/)
+
+- [Revolutions useR](http://blog.revolutionanalytics.com/2017/07/user-2017-livestream.html)
+
+- [purrr tutorial](https://github.com/cwickham/purrr-tutorial)
