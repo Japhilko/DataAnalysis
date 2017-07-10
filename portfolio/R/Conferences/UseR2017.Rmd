@@ -1,0 +1,17 @@
+---
+title: "UseR 2017 condensed"
+author: "Jan-Philipp Kolb"
+date: "9 Juli 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Tutorials
+
+- [Data Carpentry: Open and Reproducible Research with R](https://www.user2017.brussels/uploads/FrancoisMichonneau.html)
+- [Geospatial ](https://user2017.sched.com/event/Avzt/geospatial-visualization-using-r)
+
+[riot workshop](http://riotworkshop.github.io/)
