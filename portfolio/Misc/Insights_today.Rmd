@@ -1,0 +1,28 @@
+---
+title: "Insights from Today"
+author: "Jan-Philipp Kolb"
+date: "10 Juli 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 10 Juli 2017
+
+## Designing a Shiny Table
+
+- [Colored background in shiny table](https://stackoverflow.com/questions/22684162/r-shiny-color-dataframe)
+
+- [Cell coloring in Shiny Rendertable](https://stackoverflow.com/questions/39692938/cell-coloring-in-shiny-rendertable)
+
+## Packages Installed
+
+- [Check for installed packages before running install.packages() duplicate](https://stackoverflow.com/questions/9341635/check-for-installed-packages-before-running-install-packages)
+## Natural Language Processing
+
+- [Remove numbers from alphanumeric characters](https://stackoverflow.com/questions/13590139/remove-numbers-from-alphanumeric-characters) 
+- [How to remove all whitespace from a string](https://stackoverflow.com/questions/5992082/how-to-remove-all-whitespace-from-a-string) 
+- [Removing all non numeric characters from a string](http://r.789695.n4.nabble.com/removing-all-non-numeric-characters-from-a-string-but-not-quot-quot-td4723146.html)
+
