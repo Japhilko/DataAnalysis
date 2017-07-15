@@ -29,3 +29,7 @@ install.packages("learnr")
 - [Revolutions useR](http://blog.revolutionanalytics.com/2017/07/user-2017-livestream.html)
 
 - [purrr tutorial](https://github.com/cwickham/purrr-tutorial)
+
+-[geospatial](https://bhaskarvk.github.io/user2017.geodataviz/presentations/05-Ways_to_Output_Maps.html#1)
+
+## 

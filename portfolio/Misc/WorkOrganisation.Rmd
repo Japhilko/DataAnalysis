@@ -1,0 +1,28 @@
+---
+title: "Trello and R"
+author: "Jan-Philipp Kolb"
+date: "14 Juli 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
+
+```{r}
+library(trelloR)
+url = "https://trello.com/b/ImArAkdt/forschung"
+idb = get_id_board(url = url)
+cards = get_board_cards(idb, limit = 5)
+
+id <- cards$id
+cards$name
+cards$due
+cards$dueComplete
+cards$url
+
+# captain = trello_search_members("Captain America", token = my_token)
+```
+
