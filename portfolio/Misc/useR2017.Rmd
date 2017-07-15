@@ -11,15 +11,21 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## 
 
+- [useR! 2017](https://conf.rweekly.org/user-2017.html)
+
+- [Back from User17](http://colinfay.me/back-user2017/)
+
 [Jim Hester](https://github.com/jimhester) - [SQL preview in Rstudio](https://github.com/rstudio/rstudio-conf/blob/master/2017/Database_Best_Practices-Jim_Hester/2017_01_13-RStudio_conf-Database_Best_Practices.Rmd)
 
+
+- [Teach tidyverse](http://varianceexplained.org/r/teach-tidyverse/)
 
 - [purr tutorial](https://github.com/cwickham/purrr-tutorial)
 
 
 - [teach data science to new users](https://github.com/mine-cetinkaya-rundel/2017-07-05-teach-ds-to-new-user/blob/master/teach-ds-to-new-user.pdf)
 
-
+  
 ```{r}
 install.packages("learnr")
 ```
@@ -32,4 +38,12 @@ install.packages("learnr")
 
 -[geospatial](https://bhaskarvk.github.io/user2017.geodataviz/presentations/05-Ways_to_Output_Maps.html#1)
 
+- [Natural Language Processing](https://github.com/statsmaths/useR2017_nlp)
+
 ## 
+
+- [rweekly](https://rweekly.org/)
+- [Data Carpentry](http://www.datacarpentry.org/)
+- [R community](http://blog.revolutionanalytics.com/2017/06/r-community.html)
+
+- [future of tidyverse](https://www.r-bloggers.com/what-is-magrittrs-future-in-the-tidyverse/)

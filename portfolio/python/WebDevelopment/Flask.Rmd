@@ -80,3 +80,5 @@ knitr::opts_chunk$set(echo = TRUE)
 - [Simple JS](http://userwww.sfsu.edu/infoarts/technical/howto/wilson.javascript.exampls.html)
 
 - [Simple JS examples](http://www.cs.princeton.edu/courses/archive/fall10/cos109/JS_topost/)
+
+- [Michał Karzyński - Building beautiful RESTful APIs using Flask](https://www.youtube.com/watch?v=OTWs0wPHU-g)

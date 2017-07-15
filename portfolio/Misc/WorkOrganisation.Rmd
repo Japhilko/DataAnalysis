@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## 
+## [Trello and R](https://github.com/jchrom/trelloR)
 
 ```{r}
 library(trelloR)
@@ -26,3 +26,8 @@ cards$url
 # captain = trello_search_members("Captain America", token = my_token)
 ```
 
+## Trello and Python
+
+- [Examples](http://pythonhosted.org/trello/examples.html)
+
+- [trello 0.9.1](https://pypi.python.org/pypi/trello)
