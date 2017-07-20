@@ -1,0 +1,28 @@
+---
+title: "Teaching with Jupyter"
+author: "Jan-Philipp Kolb"
+date: "20 Juli 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [Teaching with IPython:Jupyter Notebooks and JupyterHub | SciPy 2015 | Jessica Hamrick](https://www.youtube.com/watch?v=OuhtpxGuboY) 
+
+
+
+[Rackspace](https://developer.rackspace.com/blog/deploying-jupyterhub-for-education/)
+
+[](https://developer.rackspace.com/blog/how-did-we-serve-more-than-20000-ipython-notebooks-for-nature/)
+
+[JupyterHub](http://jupyterhub.readthedocs.io/en/latest/getting-started.html)
+
+Docker + NFS
+
+
+## [Mike BRIGHT - Jupyter for everything else](https://www.youtube.com/watch?v=wG6u51uuXEA)
+
+
+- [Matlab](https://de.mathworks.com/products/matlab.html)
