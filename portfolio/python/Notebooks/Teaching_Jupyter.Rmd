@@ -21,8 +21,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Docker + NFS
 
+- [jupyterHub](https://github.com/jupyterhub/jupyterhub)
+- [notebook to collaborate](https://groups.google.com/forum/#!topic/jupyter/r7QSObF5YSg)
 
 ## [Mike BRIGHT - Jupyter for everything else](https://www.youtube.com/watch?v=wG6u51uuXEA)
 
 
 - [Matlab](https://de.mathworks.com/products/matlab.html)
+
