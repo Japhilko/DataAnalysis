@@ -1,7 +1,7 @@
 ---
 title: "Word Documents with Rmarkdown"
 author: "Jan-Philipp Kolb"
-date: "7 MÃ¤rz 2017"
+date: "7 Maerz 2017"
 output:
   word_document:
     reference_docx:
