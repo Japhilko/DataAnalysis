@@ -62,3 +62,8 @@ xtable(tab1c)
 - [Table styles](https://support.office.com/en-us/article/Style-basics-in-Word-d382f84d-5c38-4444-98a5-9cbb6ede1ba4#bm2e)
 
 - [Table styles - explanation in German](http://praxistipps.chip.de/word-eigene-tabellenvorlagen-erstellen_2273)
+
+## Footnotes in Rmarkdown
+
+- [Pandoc Markdown](http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html)
+
