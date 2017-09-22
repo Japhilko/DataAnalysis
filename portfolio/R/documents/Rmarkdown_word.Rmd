@@ -67,3 +67,4 @@ xtable(tab1c)
 
 - [Pandoc Markdown](http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html)
 
+- [Formatvorlagen anpassen in Word](https://www.studium-und-pc.de/word-2010-formatvorlagen-anpassen.htm)
