@@ -1,0 +1,59 @@
+---
+title: "String Matching Regular Expressions"
+author: "Jan-Philipp Kolb"
+date: "12 Oktober 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+r-project + agrep find pattern that fits best
+
+## r-project get nr of words in string
+
+-[agrep: only return best match(es)](https://stackoverflow.com/questions/5721883/agrep-only-return-best-matches)
+
+[Number of words in a string](https://stat.ethz.ch/pipermail/r-help/2008-April/159125.html)
+
+## r-project + regular expression find one or more digits
+
+- [R Regexp - extract number with 5 digits
+](https://stackoverflow.com/questions/26558764/r-regexp-extract-number-with-5-digits)
+
+- [Extract a regular expression match in R version 2.10
+](https://stackoverflow.com/questions/2192316/extract-a-regular-expression-match-in-r-version-2-10)
+
+
+
+- [Is there a way to paste together the elements of a vector in R without using a loop?](https://stackoverflow.com/questions/6698839/is-there-a-way-to-paste-together-the-elements-of-a-vector-in-r-without-using-a-l)
+
+- [Testing Regular Expressions](http://rubular.com/r/ImZaRigMv5)
+
+
+- [Regular Expressions as used in R](https://stat.ethz.ch/R-manual/R-devel/library/base/html/regex.html)
+
+- [Regex : Find a number between parentheses](https://stackoverflow.com/questions/13807207/regex-find-a-number-between-parentheses)
+
+## r-project regular expression find any number in braces
+
+- [R grep pattern regex with brackets
+](https://stackoverflow.com/questions/7992436/r-grep-pattern-regex-with-brackets)
+
+- [Extract info inside all parenthesis in R
+](https://stackoverflow.com/questions/8613237/extract-info-inside-all-parenthesis-in-r)
+
+## r-project + strsplit + regular expression
+
+
+## r-project + issorted
+
+r-project find elements that are not in increasing order
+
+- [issorted](https://de.mathworks.com/help/matlab/ref/issorted.html?requestedDomain=www.mathworks.com)
+
+[Test if an Object is Not Sorted](https://stat.ethz.ch/R-manual/R-devel/library/base/html/is.unsorted.html)
+- [strsplit](http://rfunction.com/archives/1499)
+
+- []
