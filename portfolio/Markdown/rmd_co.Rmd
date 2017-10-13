@@ -1,0 +1,18 @@
+---
+title: "Rmarkdown and Co"
+author: "Jan-Philipp Kolb"
+date: "13 Oktober 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Line breaks in Markdown
+
+- [Markdown Basics](http://rmarkdown.rstudio.com/authoring_basics.html) 
+
+## rmarkdown line break in code blocks
+
+ 
