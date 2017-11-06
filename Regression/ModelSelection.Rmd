@@ -7,9 +7,24 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
 ```
 
-## 
+## bestglm
 
 - [bestglm: Best Subset GLM](https://cran.r-project.org/web/packages/bestglm/vignettes/bestglm.pdf)
+
+```{r}
+library(bestglm)
+data(manpower)
+kable(head(manpower))
+mod1 <- bestglm(manpower, IC = "AIC")
+mod1$BestModel
+mod1$Bestq
+mod1$ModelReport
+```
+
+```{r}
+summary(manpower$Load)
+```
 
