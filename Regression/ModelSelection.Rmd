@@ -1,0 +1,15 @@
+---
+title: "Model Selection"
+author: "Jan-Philipp Kolb"
+date: "6 November 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
+
+- [bestglm: Best Subset GLM](https://cran.r-project.org/web/packages/bestglm/vignettes/bestglm.pdf)
+
