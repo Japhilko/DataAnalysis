@@ -1,0 +1,28 @@
+---
+title: "FileManagement"
+author: "Jan-Philipp Kolb"
+date: "7 November 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
+
+- [Copying files with R](https://amywhiteheadresearch.wordpress.com/2014/11/12/copying-files-with-r/)
+
+```{r,eval=F}
+# identify the folders
+current.folder <- "C:/Where my files currently live"
+new.folder <- "H:/Where I want my files to be copied to"
+ 
+# find the files that you want
+list.of.files <- list.files(current.folder, "SDM\\.tif$",full.names=T)
+ 
+# copy the files to the new folder
+file.copy(list.of.files, new.folder)
+```
+
+- [R function of the day - dir.create](http://rfunction.com/archives/2432)
