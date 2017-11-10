@@ -26,3 +26,11 @@ file.copy(list.of.files, new.folder)
 ```
 
 - [R function of the day - dir.create](http://rfunction.com/archives/2432)
+
+- [Rename files](https://stackoverflow.com/questions/10758965/how-do-i-rename-files-using-r)
+
+```{r}
+file.rename(list.files(pattern="water_*.img"), paste0("water_", 1:700))
+```
+
+
