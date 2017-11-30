@@ -1,0 +1,56 @@
+---
+title: "Import and Export with R"
+author: "Jan-Philipp Kolb"
+date: "30 November 2017"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Import Excel data
+
+- [List xlsx sheetnames with R](https://stackoverflow.com/questions/12380356/list-xlsx-sheetnames-with-r)
+
+
+```{r,eval=F}
+library(xlsx)
+
+wb <- loadWorkbook(your_xlsx_file)
+sheets <- getSheets(wb) 
+```
+
+## [Read excel file with formulas in cells into R](https://stackoverflow.com/questions/32014692/read-excel-file-with-formulas-in-cells-into-r)
+
+```{r,eval=F}
+install.packages("readxl")
+```
+
+
+```{r,eval=F}
+library(readxl)
+raw = read_excel(file, sheet=sheet)
+```
+
+
+## [Reading Excel Formulas as values](http://r.789695.n4.nabble.com/Reading-Excel-Formulas-as-values-td4630186.html)
+
+```{r,eval=F}
+install.packages("RODBC")
+```
+
+```{r}
+library(RODBC)
+channel <- odbcConnect("bdr.xls") # if this was set up as a DSN
+channel2 <-
+ odbcDriverConnect(paste("DRIVER=Microsoft Excel Driver (*.xls)",
+                         "DBQ=D:\bdr\hills.xls",
+                         "ReadOnly=False", sep = ";"))
+## or "DRIVER=Microsoft Excel Driver (*.xls *.xlsx, *.xlsm, *.xlsb)"
+channel3 <- odbcConnectExcel("hills.xls")
+
+```
+
