@@ -13,5 +13,5 @@ knitr::opts_chunk$set(echo = TRUE)
 
 [How to set default template for new “.R” files in rstudio](https://stackoverflow.com/questions/35158708/how-to-set-default-template-for-new-r-files-in-rstudio)
 
-
+[	Enhancing Reproducibility and Collaboration via Management of R Package Cohorts](https://www.jstatsoft.org/article/view/v082i01)
 
