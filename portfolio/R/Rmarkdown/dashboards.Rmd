@@ -1,0 +1,71 @@
+---
+title: "Dashboards"
+author: "Jan-Philipp Kolb"
+date: "7 Januar 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [Awesome R Shiny](https://github.com/grabear/awesome-rshiny)
+
+
+```{r,eval=F}
+install.packages("shinydashboard")
+install.packages("shinythemes")
+install.packages("shinygadgets")
+install.packages("shinyAce")
+```
+
+```{r}
+# - Twitter Bootstrap Components for Shiny.
+install.packages("shinyBS")
+# - Common javascript operations in shiny via R code.
+install.packages("shinyjs")
+# - Colour picker widget that can be used in different contexts in R.
+install.packages("colourpicker")
+#  - Alternative way to build shiny apps based on event handlers.
+install.packages("shinyEvents")
+#  - Various UI widgets/components not part of Shiny e.g. alerts, styled buttons.
+install.packages("ShinySky")
+#  - Business analytics using R and Shiny.
+install.packages("radiant")
+
+# - Enables Shiny application developers to use the jsTree library in their applications.
+install.packages("shinyTree")
+
+# - Provides visual and numerical summaries of model parameters and convergence diagnostics for 
+#MCMC simulations.
+install.packages("shinystan")
+# - jQuery UI interactions and effects for shiny.
+install.packages("shinyjqui")
+# - Shiny and R Markdown addons to Bootstrap 3.
+install.packages("bsplus")
+
+# - Extends the functionality of shiny by providing an API for client side access to the server file system.
+install.packages("shinyFiles")
+#  - Create Shiny drag and drop elements in R.
+install.packages("shinyDND")
+#  - Easily create questionnaire-type forms with Shiny.
+install.packages("shinyforms")
+
+#  - Insert interactive charts from ECharts into Shiny.
+install.packages("ECharts2Shiny")
+# - Display user feedback along side Shiny inputs.
+install.packages("shinyFeedback")
+# - Add CSS loader animations to Shiny outputs.
+install.packages("shinycssloader")
+# - Enable regular expression searches within a shiny selectize object.
+install.packages("regexSelect")
+# - clipboard.js for R/Shiny Applications.
+install.packages("rclipboard")
+# - Widget for interactive selection of directories.
+install.packages("directoryInput")
+#  - Implements Google Material Design in Shiny Applications.
+install.packages("shinymaterial")
+#  - Series of Shiny modules to help Shiny sense the world around it.
+install.packages("shinysense")
+```
+
