@@ -69,3 +69,26 @@ install.packages("shinymaterial")
 install.packages("shinysense")
 ```
 
+<!--
+learnr, soccer, survey
+-->
+
+
+
+## shinydashboard und flex dashboard (only static) 
+
+
+## shinyWidgets 
+
+- viele neue Inputs (dropdown Menu). 
+
+## User Interface bauen 
+
+shiny.semantics 
+
+- [Icons](http://fontawesome.io) 
+
+- modularisieren
+
+generische API (shiny modules) und ein package shinypod. 
+
