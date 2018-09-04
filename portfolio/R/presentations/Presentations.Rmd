@@ -52,3 +52,5 @@ plot(cars)
 [Elegant Presentation with R-code](http://zevross.com/blog/2014/11/19/creating-elegant-html-presentations-that-feature-r-code/)
 
 [Markdown or LaTeX](http://www.schlosser.info/markdown-latex/)
+
+- [Link color](https://stackoverflow.com/questions/40892802/r-markdown-link-is-not-formatted-blue-when-knitted-to-pdf)
