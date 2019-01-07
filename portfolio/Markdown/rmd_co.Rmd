@@ -18,3 +18,5 @@ knitr::opts_chunk$set(echo = TRUE)
  ## Work with Graphics and Rmarkdown
  
  - [Tips and tricks for working with images and figures in R Markdown documents](https://www.zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/)
+ 
+ ## [Marp](https://yhatt.github.io/marp/)
