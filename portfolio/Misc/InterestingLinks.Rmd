@@ -1,0 +1,24 @@
+---
+title: "Interesting Links"
+author: "Jan-Philipp Kolb"
+date: "1 Februar 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
+
+
+
+
+
+https://github.com/TwoHorus?tab=following
+
+https://github.com/R3lu?tab=following
+
+https://github.com/Japhilko/DataAnalysis/blob/master/Multivariate%20Analysis/FactorAnalysis.Rmd
+
+https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/Misc/DataScience.Rmd

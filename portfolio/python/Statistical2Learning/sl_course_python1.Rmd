@@ -1,0 +1,36 @@
+---
+title: "Statistical learning with python"
+author: "Jan-Philipp Kolb"
+date: "1 Februar 2019"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Install package triage
+
+- Install package PyYAML
+
+##
+
+![](figure/porblem_triage.PNG)
+
+<!--
+
+anaconda navigator install triage
+https://docs.anaconda.com/anaconda/user-guide/tasks/install-packages/
+
+python package triage
+https://pypi.org/project/triage/
+
+triage Cannot uninstall 'PyYAML'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
+
+https://github.com/pypa/pip/issues/4805
+https://github.com/pypa/pip/issues/5247
+https://stackoverflow.com/questions/49911550/how-to-upgrade-disutils-package-pyyaml
+
+removing package manually from "site-packages".
+
+-->
