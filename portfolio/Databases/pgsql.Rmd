@@ -1,0 +1,25 @@
+---
+title: "PostgreSQL"
+author: "Jan-Philipp Kolb"
+date: "1 2 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Localhost
+
+Der Name localhost ist in der Netzwerktechnik der per Internetstandard definierte Domainname der virtuellen IP-Adresse eines auf dem momentan genutzten eigenen Rechner laufenden Servers.
+
+
+Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Localhost)
+
+
+## 
+
+![](figure/pgsql_localhost.PNG)
+
+## Find Server and Port PGSQL is running on
