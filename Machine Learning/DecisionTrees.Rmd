@@ -38,7 +38,7 @@ plot(fit, uniform=TRUE,
 text(fit, use.n=TRUE, all=TRUE, cex=.8)
 ```
 
-[Decision Trees and Random Foorest](https://cran.r-project.org/doc/contrib/Zhao_R_and_data_mining.pdf)
+[Decision Trees and Random Forest](https://cran.r-project.org/doc/contrib/Zhao_R_and_data_mining.pdf)
 
 
 
