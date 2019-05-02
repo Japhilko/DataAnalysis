@@ -2,16 +2,20 @@
 title: "Rmarkdown and Co"
 author: "Jan-Philipp Kolb"
 date: "13 Oktober 2017"
-output: html_document
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Line breaks in Markdown
+## Rmarkdown in general
 
-- [Markdown Basics](http://rmarkdown.rstudio.com/authoring_basics.html) 
+- [Pimp my RMD: a few tips for R Markdown](https://holtzy.github.io/Pimp-my-rmd/)
+
+- Line breaks in Markdown - [Markdown Basics](http://rmarkdown.rstudio.com/authoring_basics.html) 
 
 ## rmarkdown line break in code blocks
 
@@ -20,3 +24,4 @@ knitr::opts_chunk$set(echo = TRUE)
  - [Tips and tricks for working with images and figures in R Markdown documents](https://www.zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/)
  
  ## [Marp](https://yhatt.github.io/marp/)
+ 
