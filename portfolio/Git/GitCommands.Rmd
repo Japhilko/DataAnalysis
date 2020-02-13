@@ -11,6 +11,8 @@ output: html_document
 
 ## Links
 
+- [Makefile git add commit push github All in One command](https://medium.com/@panjeh/makefile-git-add-commit-push-github-all-in-one-command-9dcf76220f48)
+
 - [Commit failed - git shell](http://stackoverflow.com/questions/11229843/github-windows-commit-failed-failed-to-create-a-new-commit)
 
 - [Git cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
