@@ -21,3 +21,8 @@ knitr::opts_chunk$set(echo = TRUE)
 install.packages("shinydashboard")
 ```
 
+## ggplot2 graphics in dashboards
+
+- [The structure of a dashboard](https://rstudio.github.io/shinydashboard/structure.html)
+
+- [graphics background](http://www.sthda.com/english/wiki/ggplot2-themes-and-background-colors-the-3-elements)
