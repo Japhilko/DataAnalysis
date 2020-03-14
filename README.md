@@ -1,6 +1,13 @@
 # Data Analysis
 
-This is a synopsis on my findings on data analysis and [data science](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/Misc/DataScience.Rmd).
+This is a synopsis on my findings and activities on data analysis and [data science](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/Misc/DataScience.Rmd).
+
+# Toolsets
+
+## R-Project
+
+e.g. tidyverse, caret,  MLmetrics
+
 
 # Methods - Maths and Statistics
 
