@@ -3,9 +3,13 @@ output:
   html_document: 
     keep_md: yes
 ---
+
 # Data Analysis
 
 This is a synopsis on my findings and activities on data analysis and [data science](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/Misc/DataScience.md).
+
+- [Here](https://github.com/Japhilko/DataAnalysis/tree/master/Presentations) you can see all my presentations. 
+
 
 # Toolsets
 

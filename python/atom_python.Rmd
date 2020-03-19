@@ -1,0 +1,21 @@
+---
+title: "Atom and Python"
+author: "Jan-Philipp Kolb"
+date: "16 3 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Use python from Atom 
+
+- [20 ATOM Plug-ins For Python Development](https://medium.com/issuehunt/20-atom-plug-ins-for-python-development-d6b10f8fa33e)
+
+- there is a + button on the botomn left side - this is to open a console
+
+- Afterwards you can send commands with Alt + R to the console
+
+
+

@@ -14,18 +14,22 @@ import os
 import youtube_dl
 
 
-os.chdir("D:/Daten/Privat/Musik/")
+os.chdir("E:/Privat/Musik/")
 
 options = {
     'format': 'bestaudio/best', # choice of quality
     'extractaudio' : True,      # only keep the audio
-    'audioformat' : "mp3",      # convert to mp3 
+    'audioformat' : "mp3",      # convert to mp3
     'outtmpl': '%(id)s',        # name the file the ID of the video
     'noplaylist' : True,        # only download single song, not playlist
 }
   # save file as the YouTube ID
 with youtube_dl.YoutubeDL(options) as ydl:
     ydl.download(['https://www.youtube.com/watch?v=SblzGUy_sHQ'])
+
+with youtube_dl.YoutubeDL(options) as ydl:
+    ydl.download(['https://www.youtube.com/watch?v=pWMqCKn4jOI&list=RDpWMqCKn4jOI&start_radio=1'])
+
 
 
 ###################################################
@@ -49,7 +53,7 @@ def make_savepath(title, artist, savedir=savedir):
 options = {
     'format': 'bestaudio/best', # choice of quality
     'extractaudio' : True,      # only keep the audio
-    'audioformat' : "mp3",      # convert to mp3 
+    'audioformat' : "mp3",      # convert to mp3
     'outtmpl': '%(id)s',        # name the file the ID of the video
     'noplaylist' : True,}       # only download single song, not playlist
 ydl = youtube_dl.YoutubeDL(options)
