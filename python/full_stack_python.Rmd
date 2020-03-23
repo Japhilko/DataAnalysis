@@ -1,0 +1,13 @@
+---
+title: "Full stack python"
+author: "Jan-Philipp Kolb"
+date: "20 3 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [Explaining full stack python](https://www.fullstackpython.com/postgresql.html)
+

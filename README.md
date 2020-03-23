@@ -8,7 +8,7 @@ output:
 
 This is a synopsis on my findings and activities on data analysis and [data science](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/Misc/DataScience.md).
 
-- [Here](https://github.com/Japhilko/DataAnalysis/tree/master/Presentations) you can see all my presentations. 
+- [Here](https://github.com/Japhilko/DataAnalysis/tree/master/Presentations) you can see some of my presentations. 
 
 
 # Toolsets
@@ -16,6 +16,10 @@ This is a synopsis on my findings and activities on data analysis and [data scie
 ## R-Project
 
 e.g. tidyverse, caret,  MLmetrics
+
+## Python
+
+
 
 
 # Methods - Maths and Statistics
