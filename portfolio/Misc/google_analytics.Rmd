@@ -1,0 +1,15 @@
+---
+title: "Google Analytics"
+author: "Jan-Philipp Kolb"
+date: "20 3 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
+
+
+- [Property einrichten](https://support.google.com/analytics/answer/1042508)
