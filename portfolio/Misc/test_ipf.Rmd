@@ -1,0 +1,28 @@
+---
+title: "ipf Algorithmus"
+author: "Jan-Philipp Kolb"
+date: "18 8 2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Das `surveysd` Paket
+
+
+- [Vignette IPF](https://cran.r-project.org/web/packages/surveysd/vignettes/ipf.html)
+
+
+```{r}
+install.packages("surveysd")
+library(surveysd)
+install.packages("mipfp")
+```
+
+## [Das `mipfp` Paket](https://cran.r-project.org/web/packages/mipfp/mipfp.pdf)
+
+
+
+
