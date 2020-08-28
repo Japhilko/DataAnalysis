@@ -9,4 +9,18 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## 
+
+## Measure the time while programming with R
+
+- [5 ways to measure running time of R code](https://www.r-bloggers.com/5-ways-to-measure-running-time-of-r-code/)
+
+## Atom for hacking some python
+
+- [Useful extensions for Atom and Python](https://medium.com/issuehunt/20-atom-plug-ins-for-python-development-d6b10f8fa33e)
+
+- Open the Install Packages/Themes by click Packages --> Settings View and select Install Packages/Themes.
+
+
+## Creating a web app with flask
+
+- [flask tutorial](https://www.youtube.com/watch?v=MwZwr5Tvyxo)
