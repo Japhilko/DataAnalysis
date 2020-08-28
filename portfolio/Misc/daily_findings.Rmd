@@ -1,0 +1,12 @@
+---
+title: "Daily findings"
+author: "Jan-Philipp Kolb"
+date: "28 8 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
