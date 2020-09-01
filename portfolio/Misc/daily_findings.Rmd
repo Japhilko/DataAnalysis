@@ -20,6 +20,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - Open the Install Packages/Themes by click Packages --> Settings View and select Install Packages/Themes.
 
+- [Run Python - Package for Atom](https://atom.io/packages/atom-python-run)
+
 
 ## Creating a web app with flask
 
