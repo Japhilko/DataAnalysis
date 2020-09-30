@@ -52,7 +52,14 @@ Methods and statistics that can be used for statistical learning and machine lea
 
 - [Databases](https://github.com/Japhilko/DataAnalysis/blob/master/portfolio/Databases/Databases.md)
 
-## Getting Data
+## Parallelisation
+
+Parallelisation can be necessary due to four reasons:
+
+- not enough [memory size](https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/memory.size#:~:text=The%20minimum%20is%20currently%2032Mb,the%20limit%20is%20currently%208Tb.)
+
+
+# Getting Data
 
 - [Twitter](https://github.com/Japhilko/DataAnalysis/blob/master/TextAnalytics/TextMining_Twitter.Rmd)
 
