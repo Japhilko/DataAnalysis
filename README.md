@@ -57,6 +57,11 @@ Methods and statistics that can be used for statistical learning and machine lea
 Parallelisation can be necessary due to four reasons:
 
 - not enough [memory size](https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/memory.size#:~:text=The%20minimum%20is%20currently%2032Mb,the%20limit%20is%20currently%208Tb.)
+- to much cpu time is needed
+- I/O needs to much time
+- transfer to network needs to much time
+
+[Simple Memory Profiling in R](https://cran.r-project.org/web/packages/profmem/vignettes/profmem.html)
 
 
 # Getting Data
