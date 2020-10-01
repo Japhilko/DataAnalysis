@@ -1,0 +1,4 @@
+s = 'audacity'
+
+
+print( s[2:3])

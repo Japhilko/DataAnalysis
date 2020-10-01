@@ -22,6 +22,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Run Python - Package for Atom](https://atom.io/packages/atom-python-run)
 
+- Install [python tools](https://atom.io/packages/python-tools) and run python code from atom
+
+- [Using Atom as a Python editor](https://pythonhow.com/using-atom-as-a-python-editor/)
+
+
+<!--
+https://atom.io/packages/atom-python-run
+-->
+
 
 ## Creating a web app with flask
 
