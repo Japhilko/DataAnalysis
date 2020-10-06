@@ -17,11 +17,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - Line breaks in Markdown - [Markdown Basics](http://rmarkdown.rstudio.com/authoring_basics.html) 
 
-## rmarkdown line break in code blocks
+## Rmarkdown line break in code blocks
 
  ## Work with Graphics and Rmarkdown
  
  - [Tips and tricks for working with images and figures in R Markdown documents](https://www.zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/)
  
  ## [Marp](https://yhatt.github.io/marp/)
+ 
+ ## Citing and work with references
+ 
+ - [Bibliographies and Citations](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
+ 
  
