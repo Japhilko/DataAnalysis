@@ -44,3 +44,5 @@ git push
 - [How do I tell Git for Windows where to find my private RSA key](http://serverfault.com/questions/194567/how-do-i-tell-git-for-windows-where-to-find-my-private-rsa-key)
 
 - [Reset local repository branch to be just like remote repository HEAD](http://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head)
+
+- [What is a bare repo](http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/)
