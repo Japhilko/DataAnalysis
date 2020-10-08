@@ -9,5 +9,7 @@
 
 - [Tabellenzellen verbinden](https://infos.seibert-media.net/display/Productivity/Tabellenzellen+in+Confluence+miteinander+verbinden)
 
+- [Confluence Seiten nach Word exportieren](https://www.k15t.com/blog/2017/02/exporting-confluence-pages-to-word-built-in-exporter-vs-scroll-office)
+
 - [Vertikalen Strich einführen]()
 
