@@ -5,6 +5,9 @@ date: "19. November 2015"
 output: html_document
 ---
 
+## Rmarkdown
+
+- [R Markdown - the definitive guide](https://bookdown.org/yihui/rmarkdown/)
 
 - [R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
 
@@ -13,3 +16,8 @@ output: html_document
 - [Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 
 - [Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+
+
+## Make R-code prettier
+
+- [The package styler](https://stackoverflow.com/questions/15703553/auto-format-r-code-in-rstudio)
