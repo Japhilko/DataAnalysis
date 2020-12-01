@@ -7,6 +7,13 @@ output:
     keep_md: yes
 ---
 
+## Handling big data in R
+
+- [Handling large data sets in R](https://rpubs.com/msundar/large_data_analysis#:~:text=R%20Objects%20live%20in%20memory%20entirely.&text=Not%20possible%20to%20index%20objects,limit%20around%202%2D4%20GB.)
+
+- [Stackoverflow question on practical limits](https://stackoverflow.com/questions/5233769/practical-limits-of-r-data-frame)
+
+
 ## Hadoop
 
 - [Easy explanation on hadoop](http://www.ap-institute.com/big-data-articles/big-data-what-is-hadoop-%E2%80%93-an-explanation-for-absolutely-anyone.aspx)
