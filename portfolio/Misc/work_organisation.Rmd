@@ -1,0 +1,14 @@
+---
+title: "Work Organisation"
+author: "Jan-Philipp Kolb"
+date: "29 10 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Task Manager
+
+- [Overview of task manager software](https://www.getapp.com/p/sem/task-management-software?t=Top%20Task%20Manager%20Software&camp=bing&utm_content=o&utm_source=ps-bing&utm_campaign=COM_EMEA_Desktop_BE-Task_Management&utm_medium=cpc&account_campaign_id=267724061&account_adgroup_id=1175378637015235&ad_id=73461353524920&msclkid=33a5a813864e1cae9c86f78bbfe67e93)

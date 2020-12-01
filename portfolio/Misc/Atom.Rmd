@@ -1,0 +1,17 @@
+---
+title: "Atom"
+author: "Jan-Philipp Kolb"
+date: "30 10 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+- [Introducing Atom](https://www.edureka.co/blog/atom-python-ide/)
+
+- [Atom Shortcut table](https://atom.io/packages/atom-shortcuts)
+
+- [IDE Terminal](https://atom.io/packages/platformio-ide-terminal)
