@@ -17,6 +17,11 @@ output: ioslides_presentation
 
 [Grunt The JavaScript Task Runner](http://gruntjs.com/)
 
+
+## [jQuery](https://www.w3schools.com/jquery/)
+
+jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.
+
 ## R and Javascript
 
 - Jeroen Ooms - [Introducing V8: An Embedded JavaScript Engine for R](https://www.opencpu.org/posts/v8-release-0-2/)
