@@ -22,7 +22,7 @@ output:
 <img src="http://lazowska.cs.washington.edu/MS/DS.wordle.jpg" alt="alt text" width="700x" height="500x">
 
 
-## Way to become a data scientis
+## Way to become a data scientist
 
 [Six steps before pursuing education data science](http://www.datascienceweekly.org/blog/26-six-steps-to-take-before-pursuing-education-to-get-a-data-science-job)
 
@@ -69,7 +69,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 - [journal list](http://www.statsci.org/jourlist.html)
 
-Journals:
+## Journals:
 
 - [J-reading](http://www.j-reading.org/index.php/geography)
 - [Social Science Computer Review](http://ssc.sagepub.com/)
@@ -320,6 +320,10 @@ The R-Files
 
 - [Best commandline time tracking application?](https://stackoverflow.com/questions/398344/best-commandline-time-tracking-application)
 
+
+## Career
+
+- [How to write a Europass CV](https://www.europass.at/fileadmin/dateien_redaktion/lebenslauf/CVInstructionsdt.pdf)
 
 ## In the meantime - interesting websites
 
