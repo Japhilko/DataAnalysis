@@ -11,6 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction
 
+- [Intro to Spark on Wikipedia](https://de.wikipedia.org/wiki/Apache_Spark)
+
 - Example: [hash table](https://en.wikipedia.org/wiki/Hash_table)
 
 - Google map reduce 2004
