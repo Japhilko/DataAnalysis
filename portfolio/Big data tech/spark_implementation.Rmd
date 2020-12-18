@@ -1,0 +1,25 @@
+---
+title: "Apache Spark"
+author: "Jan-Philipp Kolb"
+date: "16 12 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
+
+- Spark besteht aus mehreren Komponenten: Spark Core, Spark SQL
+- Spark Core stellt Infrastruktur-Funktionalitäten zur Verfügung wie bspw. das Scheduling
+
+
+## Offene Fragen
+
+- Wann ist es sinnvoll Apache Spark einzusetzen?
+- Welche Bedingungen müssen für die Nutzung von Spark erfüllt sein?
+
+
+https://www.youtube.com/watch?v=8gksrZUtxk0&ab_channel=SaltLakeCityRUsersGroup
+https://www.informatik-aktuell.de/entwicklung/methoden/einfuehrung-in-spark-ein-text-mining-projekt.html
