@@ -7,3 +7,10 @@ output: slidy_presentation
 
 ## [Background color](http://www.w3schools.com/tags/att_body_bgcolor.asp)
 
+
+
+- [Size of an image](https://de.wikihow.com/In-HTML-die-Breite-und-H%C3%B6he-eines-Bilds-festlegen)
+
+- [Change the background](https://praxistipps.chip.de/html-hintergrundfarbe-aendern-so-gehts_44867)
+
+- [Build your own webpage with html and css](https://www.youtube.com/watch?v=qmTNnZCDJY0&ab_channel=BastiKlein)
